@@ -1,0 +1,1416 @@
+fileFormatVersion: 2
+guid: f294a8a0e66b6b6489c9e5681c094a50
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5853266368157345795
+    second: Mind-Sheet(1)_0
+  - first:
+      213: -1727580624900758757
+    second: Mind-Sheet(1)_1
+  - first:
+      213: -7385420535192354314
+    second: Mind-Sheet(1)_2
+  - first:
+      213: 8642937522711398233
+    second: Mind-Sheet(1)_3
+  - first:
+      213: 6201272905403070150
+    second: Mind-Sheet(1)_4
+  - first:
+      213: 5221150630617362970
+    second: Mind-Sheet(1)_5
+  - first:
+      213: -7029012171316062929
+    second: Mind-Sheet(1)_6
+  - first:
+      213: -1731589588305269148
+    second: Mind-Sheet(1)_7
+  - first:
+      213: -4124239123576387222
+    second: Mind-Sheet(1)_8
+  - first:
+      213: -2388620330636170966
+    second: Mind-Sheet(1)_9
+  - first:
+      213: 8494423147661247960
+    second: Mind-Sheet(1)_10
+  - first:
+      213: -1883027645317348849
+    second: Mind-Sheet(1)_11
+  - first:
+      213: 4993796561633309245
+    second: Mind-Sheet(1)_12
+  - first:
+      213: 5191882560296736045
+    second: Mind-Sheet(1)_13
+  - first:
+      213: 4576044719504597882
+    second: Mind-Sheet(1)_14
+  - first:
+      213: -4900906269399878163
+    second: Mind-Sheet(1)_15
+  - first:
+      213: -4208553197601419246
+    second: Mind-Sheet(1)_16
+  - first:
+      213: 402232261959135802
+    second: Mind-Sheet(1)_17
+  - first:
+      213: -4084708103877987918
+    second: Mind-Sheet(1)_18
+  - first:
+      213: -1571125310235431765
+    second: Mind-Sheet(1)_19
+  - first:
+      213: -1348938033892037393
+    second: Mind-Sheet(1)_20
+  - first:
+      213: 2667947380776931783
+    second: Mind-Sheet(1)_21
+  - first:
+      213: 3981481934606683825
+    second: Mind-Sheet(1)_22
+  - first:
+      213: 3195336909880726558
+    second: Mind-Sheet(1)_23
+  - first:
+      213: -2386655442884722356
+    second: Mind-Sheet(1)_24
+  - first:
+      213: -939120451155838484
+    second: Mind-Sheet(1)_25
+  - first:
+      213: 2054687785239463133
+    second: Mind-Sheet(1)_26
+  - first:
+      213: -3580329487935607574
+    second: Mind-Sheet(1)_27
+  - first:
+      213: -4486683495861216613
+    second: Mind-Sheet(1)_28
+  - first:
+      213: 7319783627767315866
+    second: Mind-Sheet(1)_29
+  - first:
+      213: -1833386608319626635
+    second: Mind-Sheet(1)_30
+  - first:
+      213: -2158389237961915723
+    second: Mind-Sheet(1)_31
+  - first:
+      213: 4430953646289978761
+    second: Mind-Sheet(1)_32
+  - first:
+      213: -5550608786363446404
+    second: Mind-Sheet(1)_33
+  - first:
+      213: 451857787619825186
+    second: Mind-Sheet(1)_34
+  - first:
+      213: 6735194463369580526
+    second: Mind-Sheet(1)_35
+  - first:
+      213: 1019707541469310117
+    second: Mind-Sheet(1)_36
+  - first:
+      213: -4712213314876497139
+    second: Mind-Sheet(1)_37
+  - first:
+      213: 4805988909947809031
+    second: Mind-Sheet(1)_38
+  - first:
+      213: 9165888498147766747
+    second: Mind-Sheet(1)_39
+  - first:
+      213: -7779326244657358201
+    second: Mind-Sheet(1)_40
+  - first:
+      213: 5310642101357718441
+    second: Mind-Sheet(1)_41
+  - first:
+      213: 8349426123266259837
+    second: Mind-Sheet(1)_42
+  - first:
+      213: 4638993407211198808
+    second: Mind-Sheet(1)_43
+  - first:
+      213: 983521799498417689
+    second: Mind-Sheet(1)_44
+  - first:
+      213: 9100929682736205732
+    second: Mind-Sheet(1)_45
+  - first:
+      213: -3647605947923208668
+    second: Mind-Sheet(1)_46
+  - first:
+      213: 8670139653417704888
+    second: Mind-Sheet(1)_47
+  - first:
+      213: -1532139851614283069
+    second: Mind-Sheet_0
+  - first:
+      213: -1192669201960313982
+    second: Mind-Sheet_1
+  - first:
+      213: 5428971790801751825
+    second: Mind-Sheet_2
+  - first:
+      213: -5867276934438778697
+    second: Mind-Sheet_3
+  - first:
+      213: -62670781803782222
+    second: Mind-Sheet_4
+  - first:
+      213: 4983782759213814733
+    second: Mind-Sheet_5
+  - first:
+      213: -4751914103832407816
+    second: Mind-Sheet_6
+  - first:
+      213: -7399443135754110801
+    second: Mind-Sheet_7
+  - first:
+      213: 2646282666552232788
+    second: Mind-Sheet_8
+  - first:
+      213: 706329673837914357
+    second: Mind-Sheet_9
+  - first:
+      213: 2760750780899730172
+    second: Mind-Sheet_10
+  - first:
+      213: 1838749988648005945
+    second: Mind-Sheet_11
+  - first:
+      213: 6025774848565682915
+    second: Mind-Sheet_12
+  - first:
+      213: 1076438971650940307
+    second: Mind-Sheet_13
+  - first:
+      213: -5383392606662629526
+    second: Mind-Sheet_14
+  - first:
+      213: -7334769695981205329
+    second: Mind-Sheet_15
+  - first:
+      213: 1896930982215965317
+    second: Mind-Sheet_16
+  - first:
+      213: 5633784492622087233
+    second: Mind-Sheet_17
+  - first:
+      213: -7146060828595625320
+    second: Mind-Sheet_18
+  - first:
+      213: 8923027599992606595
+    second: Mind-Sheet_19
+  - first:
+      213: -674810111300267206
+    second: Mind-Sheet_20
+  - first:
+      213: -6190106033514339884
+    second: Mind-Sheet_21
+  - first:
+      213: 699519945063344538
+    second: Mind-Sheet_22
+  - first:
+      213: -8793041386530496337
+    second: Mind-Sheet_23
+  - first:
+      213: 8189219789611553967
+    second: Mind-Sheet_24
+  - first:
+      213: -4833261302193942510
+    second: Mind-Sheet_25
+  - first:
+      213: 3493425599479107683
+    second: Mind-Sheet_26
+  - first:
+      213: -4534406940042157768
+    second: Mind-Sheet_27
+  - first:
+      213: -1449223515575919345
+    second: Mind-Sheet_28
+  - first:
+      213: 704246208132297753
+    second: Mind-Sheet_29
+  - first:
+      213: -2448635180273249229
+    second: Mind-Sheet_30
+  - first:
+      213: 703160473432821553
+    second: Mind-Sheet_31
+  - first:
+      213: 7173689876725184048
+    second: Mind-Sheet_32
+  - first:
+      213: -112344221010214259
+    second: Mind-Sheet_33
+  - first:
+      213: -6665777775190412324
+    second: Mind-Sheet_34
+  - first:
+      213: -2086844739276143108
+    second: Mind-Sheet_35
+  - first:
+      213: -618255771555846458
+    second: Mind-Sheet_36
+  - first:
+      213: -6034964681947249939
+    second: Mind-Sheet_37
+  - first:
+      213: 563694867051776585
+    second: Mind-Sheet_38
+  - first:
+      213: 584335703853832931
+    second: Mind-Sheet_39
+  - first:
+      213: 6074808171143261299
+    second: Mind-Sheet_40
+  - first:
+      213: 9201340191120704676
+    second: Mind-Sheet_41
+  - first:
+      213: -8611466149903508003
+    second: Mind-Sheet_42
+  - first:
+      213: 37704541371402340
+    second: Mind-Sheet_43
+  - first:
+      213: -5495377558299610419
+    second: Mind-Sheet_44
+  - first:
+      213: -5659878831120689715
+    second: Mind-Sheet_45
+  - first:
+      213: 3155176746612852496
+    second: Mind-Sheet_46
+  - first:
+      213: 1693949717858865398
+    second: Mind-Sheet_47
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mind-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca9f4e2ceebcbae0800000000000000
+      internalID: -1532139851614283069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b5b9a0ea9c27fe0800000000000000
+      internalID: -1192669201960313982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fca5e6415975b40800000000000000
+      internalID: 5428971790801751825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b80febd6be339ea0800000000000000
+      internalID: -5867276934438778697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf1ac88149512ff0800000000000000
+      internalID: -62670781803782222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 350
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3d7a8a304f92540800000000000000
+      internalID: 4983782759213814733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f096ed9c4fcd0eb0800000000000000
+      internalID: -4751914103832407816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa87ca50ca5ef4990800000000000000
+      internalID: -7399443135754110801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b8e1b801c79b420800000000000000
+      internalID: 2646282666552232788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f82d6798136dc900800000000000000
+      internalID: 706329673837914357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf229e84538205620800000000000000
+      internalID: 2760750780899730172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 300
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9313e106f5d848910800000000000000
+      internalID: 1838749988648005945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2ad318c4adf9350800000000000000
+      internalID: 6025774848565682915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d14af9a8740fe00800000000000000
+      internalID: 1076438971650940307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67e86952f85a45b0800000000000000
+      internalID: -5383392606662629526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa88db1a2d9a53a90800000000000000
+      internalID: -7334769695981205329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a5a6e8da0435a10800000000000000
+      internalID: 1896930982215965317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 250
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14408df95293f2e40800000000000000
+      internalID: 5633784492622087233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8926930b98714dc90800000000000000
+      internalID: -7146060828595625320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fc0927356f4db70800000000000000
+      internalID: 8923027599992606595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a331b1177c792a6f0800000000000000
+      internalID: -674810111300267206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d1206eeb53581aa0800000000000000
+      internalID: -6190106033514339884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a992dce0fa135b900800000000000000
+      internalID: 699519945063344538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 200
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa0aa8c4277d8f580800000000000000
+      internalID: -8793041386530496337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa45563a204f5a170800000000000000
+      internalID: 8189219789611553967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2109610147eccecb0800000000000000
+      internalID: -4833261302193942510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3605532e2142b7030800000000000000
+      internalID: 3493425599479107683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831a8bf89ec8211c0800000000000000
+      internalID: -4534406940042157768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0d54f114e253ebe0800000000000000
+      internalID: -1449223515575919345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 150
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914342ee13cf5c900800000000000000
+      internalID: 704246208132297753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334d947e643b40ed0800000000000000
+      internalID: -2448635180273249229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f0f0f99b022c900800000000000000
+      internalID: 703160473432821553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036350f5fe01e8360800000000000000
+      internalID: 7173689876725184048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d824e16b68fd07ef0800000000000000
+      internalID: -112344221010214259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3f4162e666e73a0800000000000000
+      internalID: -6665777775190412324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 100
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf58d0624c90a03e0800000000000000
+      internalID: -2086844739276143108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c62414c6a38b67f0800000000000000
+      internalID: -618255771555846458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de2818ca89f7f3ca0800000000000000
+      internalID: -6034964681947249939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a0558be75a2d700800000000000000
+      internalID: 563694867051776585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea19c90a3afb1800800000000000000
+      internalID: 584335703853832931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c62af88dd0e4450800000000000000
+      internalID: 6074808171143261299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4464d272ab1bf70800000000000000
+      internalID: 9201340191120704676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd53b3892ded7880800000000000000
+      internalID: -8611466149903508003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4688cd2a414f58000800000000000000
+      internalID: 37704541371402340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2f5eaf93f7cb3b0800000000000000
+      internalID: -5495377558299610419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55c4fb0321471b0800000000000000
+      internalID: -5659878831120689715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0178e61c88079cb20800000000000000
+      internalID: 3155176746612852496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0d9502b4e128710800000000000000
+      internalID: 1693949717858865398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
