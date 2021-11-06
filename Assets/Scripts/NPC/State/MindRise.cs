@@ -1,18 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace NPC
 {
-    [CreateAssetMenu(fileName = "麦德跳跃状态", menuName = "角色/状态/麦德跳跃")]
-    public class MindJump : BaseState
+    [CreateAssetMenu(fileName = "麦德上升状态", menuName = "角色/状态/麦德上升")]
+    public class MindRise : BaseState
     {
-        /// <summary>
-        /// 跳跃程度
-        /// </summary>
-        [SerializeField]
-        private float _jumpScale;
-
         /// <summary>
         /// 移动倍率
         /// </summary>
@@ -22,14 +14,13 @@ namespace NPC
         public override void OnEnter(BehaviorStateMachine user)
         {
             base.OnEnter(user);
-            user.Model.RigidBody.AddForce(Vector2.up * _jumpScale * user.Model.JumpHeight);
-            user.Animator.SetBool("IsJump", true);
+            user.Animator.SetBool("IsRise", true);
         }
 
         public override void OnExit(BehaviorStateMachine user)
         {
             base.OnExit(user);
-            user.Animator.SetBool("IsJump", false);
+            user.Animator.SetBool("IsRise", false);
         }
 
         public override void OnUpdate(BehaviorStateMachine user)
@@ -39,10 +30,6 @@ namespace NPC
             int horizontal =
                 System.Convert.ToInt32(Input.GetKey(pair[KeyType.Right]))
                 - System.Convert.ToInt32(Input.GetKey(pair[KeyType.Left]));
-
-            //下-1 中0 上1
-            bool jump = Input.GetKeyDown(pair[KeyType.Jump]);
-            //左-1 中0 右1
 
             if (horizontal == 0) { return; }
             if (horizontal == 1)

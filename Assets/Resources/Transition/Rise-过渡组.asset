@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccc17b633d7cb614ba542d89b76326dd, type: 3}
-  m_Name: "Idle\u8FC7\u6E21\u7EC4"
+  m_Name: "Rise-\u8FC7\u6E21\u7EC4"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -24,14 +24,5 @@ MonoBehaviour:
   _expression:
   - Transition: {fileID: 11400000, guid: 1898f4092e1d412418c8b485697935c9, type: 2}
     Inverse: 1
-    Type: 0
-  - Transition: {fileID: 11400000, guid: 7024ca0b1e9e9d141847f2d1230bff1e, type: 2}
-    Inverse: 1
-    Type: 0
-  - Transition: {fileID: 11400000, guid: 4fb1955d5b1dac74b871ae76e6c08379, type: 2}
-    Inverse: 1
-    Type: 0
-  - Transition: {fileID: 11400000, guid: 72efac73655f1704b80e00d33045edbb, type: 2}
-    Inverse: 0
     Type: 0
   Inverse: 0

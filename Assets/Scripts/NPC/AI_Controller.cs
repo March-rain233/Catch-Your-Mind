@@ -25,7 +25,7 @@ namespace NPC
         /// 状态图
         /// </summary>
         [SerializeField]
-        private Dictionary<string, TransitionInfo[]> _map;
+        private Dictionary<string, TransitionInfo[]> _graph;
 
         /// <summary>
         /// 任何状态过渡
@@ -70,7 +70,7 @@ namespace NPC
                 }
             }
             //再检查当前状态的过渡是否符合
-            map = _map[user.CurState];
+            map = _graph[user.CurState];
             for(int i = 0; i < map.Length; ++i)
             {
                 if (map[i].Transition.Reason(user))

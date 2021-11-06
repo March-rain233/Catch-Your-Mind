@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dfdacfdd71e1b24fbb11717a64ab744, type: 3}
-  m_Name: "Left\u6309\u952E\u8FC7\u6E21"
+  m_Name: "Jump-\u6309\u952E\u8FC7\u6E21"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -21,5 +21,5 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  _keyType: 2
+  _keyType: 0
   _pressType: 1

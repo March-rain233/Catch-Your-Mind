@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ccc17b633d7cb614ba542d89b76326dd, type: 3}
-  m_Name: "Move\u8FC7\u6E21\u7EC4"
+  m_Name: "Walk-\u8FC7\u6E21\u7EC4"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -28,6 +28,9 @@ MonoBehaviour:
   - Transition: {fileID: 11400000, guid: 4fb1955d5b1dac74b871ae76e6c08379, type: 2}
     Inverse: 0
     Type: 1
+  - Transition: {fileID: 11400000, guid: 0eb23791f9c815444a2c543693ccc896, type: 2}
+    Inverse: 1
+    Type: 0
   - Transition: {fileID: 11400000, guid: 72efac73655f1704b80e00d33045edbb, type: 2}
     Inverse: 0
     Type: 0

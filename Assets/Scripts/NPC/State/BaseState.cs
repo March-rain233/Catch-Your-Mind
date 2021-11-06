@@ -24,7 +24,7 @@ namespace NPC
         /// </summary>
         public virtual void OnEnter(BehaviorStateMachine user)
         {
-            Debug.Log($"进入{this.name}状态");
+            Debug.Log($"进入{this.name}");
         }
 
         /// <summary>
@@ -32,7 +32,7 @@ namespace NPC
         /// </summary>
         public virtual void OnExit(BehaviorStateMachine user)
         {
-            Debug.Log($"退出{this.name}状态");
+            Debug.Log($"退出{this.name}");
         }
 
         /// <summary>
