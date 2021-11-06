@@ -7,12 +7,10 @@ using UnityEngine;
 /// </summary>
 public enum KeyType
 {
-    Up,
-    Down,
+    Jump,
     Right,
     Left,
     Run,
-    Rool,
     Interact,
     Skip
 }

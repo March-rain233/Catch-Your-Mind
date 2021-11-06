@@ -38,7 +38,7 @@ namespace NPC
         {
             get
             {
-                return Model.Anim;
+                return Model.Animator;
             }
         }
 
@@ -57,6 +57,7 @@ namespace NPC
                 RunTime = 0;
             }
         }
+        [SerializeField, SetProperty("CurState")]
         private string _curState;
 
         /// <summary>

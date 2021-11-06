@@ -19,13 +19,13 @@ namespace NPC
         public override void OnEnter(BehaviorStateMachine user)
         {
             base.OnEnter(user);
-            user.Animator.SetBool("Walk", true);
+            user.Animator.SetBool("IsWalk", true);
         }
 
         public override void OnExit(BehaviorStateMachine user)
         {
             base.OnExit(user);
-            user.Animator.SetBool("Walk", false);
+            user.Animator.SetBool("IsWalk", false);
         }
 
         public override void OnUpdate(BehaviorStateMachine user)
@@ -37,17 +37,17 @@ namespace NPC
                 - System.Convert.ToInt32(Input.GetKey(pair[KeyType.Left]));
 
             //下-1 中0 上1
-            bool jump = Input.GetKeyDown(pair[KeyType.Up]);
+            bool jump = Input.GetKeyDown(pair[KeyType.Jump]);
             //左-1 中0 右1
 
             if (horizontal == 0) { return; }
             if(horizontal == 1)
             {
-                user.Model.FaceDir = true;
+                user.Model.FaceDir = 1;
             }
             else
             {
-                user.Model.FaceDir = false;
+                user.Model.FaceDir = -1;
             }
             user.Model.RigidBody.velocity = new Vector2(horizontal * _moveScale * user.Model.Speed, 0);
         }

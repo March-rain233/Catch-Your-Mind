@@ -17,6 +17,12 @@ namespace NPC
     public class NPC_Model : MonoBehaviour, IBaseModel
     {
         /// <summary>
+        /// 地面所在层级
+        /// </summary>
+        [SerializeField]
+        private LayerMask _groundLayer;
+
+        /// <summary>
         /// 角色绑定的刚体
         /// </summary>
         [SerializeField]
@@ -49,7 +55,7 @@ namespace NPC
         /// 角色绑定的动画器
         /// </summary>
         [SerializeField]
-        public Animator Anim
+        public Animator Animator
         {
             get
             {
@@ -68,11 +74,13 @@ namespace NPC
         /// <remarks>
         /// 0-左 1-右
         /// </remarks>
-        public bool FaceDir
+        public float FaceDir
         {
-            get;
-            internal set;
+            get { return _faceDir; }
+            internal set { _faceDir = value; }
         }
+        [SerializeField]
+        private float _faceDir;
 
         /// <summary>
         /// 角色的属性
@@ -191,6 +199,19 @@ namespace NPC
         }
 
         /// <summary>
+        /// 角色是否站在地面上
+        /// </summary>
+        public bool IsOnGround
+        {
+            get
+            {
+                return _isOnGround;
+            }
+        }
+        [SerializeField]
+        private bool _isOnGround;
+
+        /// <summary>
         /// 角色装备
         /// </summary>
         public NPC_Equip Equip
@@ -207,13 +228,21 @@ namespace NPC
         [SerializeField]
         private NPC_Equip _equip = new NPC_Equip();
 
+        private void Update()
+        {
+            var hit = Physics2D.OverlapCircle(transform.position, 0.1f, _groundLayer);
+            if (hit != null) { _isOnGround = true; }
+            else { _isOnGround = false; }
+            Animator.SetFloat("FaceDirection", FaceDir);
+        }
+
         public event Action<string, object> NotifyEvent;
 
         public void Init(Breed breed, NPC_Equip equip, float blood = -1, float energy = -1)
         {
             _breed = breed;
             Equip = equip;
-            FaceDir = true;
+            FaceDir = 1;
             Blood = blood == -1 ? breed.BaseBlood : blood;
             Energy = energy == -1 ? breed.BaseEnergy : energy;
         }

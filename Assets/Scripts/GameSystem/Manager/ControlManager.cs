@@ -49,11 +49,9 @@ public class ControlManager : SerializedMonoBehaviour
         {
             {KeyType.Interact, KeyCode.E },
             {KeyType.Skip, KeyCode.LeftControl },
-            {KeyType.Up, KeyCode.W },
-            {KeyType.Down, KeyCode.S },
+            {KeyType.Jump, KeyCode.W },
             {KeyType.Left, KeyCode.A },
             {KeyType.Right, KeyCode.D },
-            {KeyType.Rool, KeyCode.Space },
             {KeyType.Run, KeyCode.LeftShift },
         };
     }

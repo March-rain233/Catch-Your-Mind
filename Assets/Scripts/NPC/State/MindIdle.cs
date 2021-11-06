@@ -10,14 +10,15 @@ namespace NPC
         public override void OnEnter(BehaviorStateMachine user)
         {
             base.OnEnter(user);
-            user.Model.Anim.SetBool("IsIdle", true);
+            user.Model.Animator.SetBool("IsIdle", true);
             user.Model.RigidBody.velocity = Vector2.zero;
         }
 
         public override void OnExit(BehaviorStateMachine user)
         {
             base.OnExit(user);
-            user.Model.Anim.SetBool("IsIdle", false);
+            user.Model.Animator.SetBool("IsIdle", false);
+
         }
 
         public override void OnUpdate(BehaviorStateMachine user)

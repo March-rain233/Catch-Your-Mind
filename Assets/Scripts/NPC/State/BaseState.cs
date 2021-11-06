@@ -25,7 +25,6 @@ namespace NPC
         public virtual void OnEnter(BehaviorStateMachine user)
         {
             Debug.Log($"½øÈë{this.name}×´Ì¬");
-            user.Animator.SetBool("FaceDirection", user.Model.FaceDir);
         }
 
         /// <summary>

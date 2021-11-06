@@ -21,5 +21,5 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  PathConfig: {fileID: 0}
-  SceneInfoConfig: {fileID: 0}
+  PathConfig: {fileID: 11400000, guid: 459f5c66a9d4d9d4899d0c54784811b3, type: 2}
+  SceneInfoConfig: {fileID: 11400000, guid: 8eda24f02f5cdd24f8ceb9b0ac25981c, type: 2}
