@@ -22,7 +22,7 @@ public class PanelManager
         {
             if (_canvasTransform == null)
             {
-                _canvasTransform = GameObject.Find("Canvas").transform;
+                _canvasTransform = GameObject.Find("UIroot").transform;
                 GameObject.DontDestroyOnLoad(_canvasTransform);
             }
             return _canvasTransform;
@@ -38,7 +38,7 @@ public class PanelManager
     /// <summary>
     /// 最顶层窗口的窗口类型
     /// </summary>
-    public WindowType TopType
+    public PanelType TopType
     {
         get
         {
@@ -57,7 +57,7 @@ public class PanelManager
     /// <param name="windowType">窗口类型</param>
     /// <param name="window">窗口实例</param>
     /// <returns>是否存在该窗口的预制体</returns>
-    private bool TryGetWindow(WindowType windowType, out BasePanel window)
+    private bool TryGetWindow(PanelType windowType, out BasePanel window)
     {
         bool val = _factory.TryGetWindow(windowType, out window);
         if (val)
@@ -73,10 +73,10 @@ public class PanelManager
     /// 将UI压入栈
     /// </summary>
     /// <param name="windowType">窗口类型</param>
-    public void Push(WindowType windowType)
+    public void Push(PanelType windowType)
     {
         //判断栈是否生成，并检查栈顶UI是否存在
-        if(_windowsStack == null)
+        if (_windowsStack == null)
         {
             _windowsStack = new Stack<BasePanel>();
         }
@@ -126,7 +126,7 @@ public class PanelManager
     /// <returns>最顶部UI</returns>
     public BasePanel Peek()
     {
-        if(_windowsStack.Count == 0)
+        if (_windowsStack.Count == 0)
         {
             return null;
         }
@@ -136,7 +136,7 @@ public class PanelManager
     /// <summary>
     /// 移除窗口
     /// </summary>
-    public void Remove(WindowType type)
+    public void Remove(PanelType type)
     {
         if (!Contain(type))
         {
@@ -144,7 +144,7 @@ public class PanelManager
             return;
         }
 
-        if(type == TopType)
+        if (type == TopType)
         {
             Pop();
             return;
@@ -152,10 +152,10 @@ public class PanelManager
 
         Stack<BasePanel> above = new Stack<BasePanel>();
         int len = _windowsStack.Count;
-        for(int ctr = 0; ctr < len; ++ctr)
+        for (int ctr = 0; ctr < len; ++ctr)
         {
             //查找指定窗口并关闭，把其他窗口转入临时的栈
-            if(TopType == type)
+            if (TopType == type)
             {
                 var window = _windowsStack.Pop();
                 window.SendExit((BaseView view) =>
@@ -175,7 +175,7 @@ public class PanelManager
     /// <summary>
     /// 将窗口置顶
     /// </summary>
-    public void SetTop(WindowType type)
+    public void SetTop(PanelType type)
     {
         if (!Contain(type))
         {
@@ -184,7 +184,7 @@ public class PanelManager
         }
 
         //当当前窗口已为最顶则直接返回
-        if(type == TopType)
+        if (type == TopType)
         {
             return;
         }
@@ -218,11 +218,11 @@ public class PanelManager
     /// </summary>
     /// <param name="type"></param>
     /// <returns></returns>
-    public bool Contain(WindowType type)
+    public bool Contain(PanelType type)
     {
-        foreach(var i in _windowsStack)
+        foreach (var i in _windowsStack)
         {
-            if(i.Type == type)
+            if (i.Type == type)
             {
                 return true;
             }
@@ -237,7 +237,7 @@ public class PanelManager
     {
         while (_windowsStack.Count != 0)
         {
-            if(_windowsStack.Peek() == null)
+            if (_windowsStack.Peek() == null)
             {
                 _windowsStack.Pop();
             }

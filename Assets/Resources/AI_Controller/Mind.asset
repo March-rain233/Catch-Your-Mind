@@ -23,14 +23,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 7496cbc90dbb0ca4da4507553590cfa0, type: 2}
     - {fileID: 11400000, guid: 871c96297f750314795a8d9dbd3c2b4f, type: 2}
     - {fileID: 11400000, guid: ecacf35a640e4174ebd8efb3e8351061, type: 2}
-    - {fileID: 11400000, guid: b4639c8e789fc6448aa791e14cdfa682, type: 2}
-    - {fileID: 11400000, guid: 1de74398dc47eca4294920a676b662e9, type: 2}
-    - {fileID: 11400000, guid: 692a3e53a8e8d2a4584fbecf817eb133, type: 2}
-    - {fileID: 11400000, guid: c5e6fd898beb919428eb8f42aa7fbcdd, type: 2}
-    - {fileID: 11400000, guid: 72efac73655f1704b80e00d33045edbb, type: 2}
-    - {fileID: 11400000, guid: 1e3d9688bb17b034496027d99338c1ae, type: 2}
     - {fileID: 11400000, guid: 7869357966be2cd4d80d12dcce99e368, type: 2}
-    - {fileID: 11400000, guid: 376768267f9503e44979b12b19533d7f, type: 2}
+    - {fileID: 11400000, guid: c5e6fd898beb919428eb8f42aa7fbcdd, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -39,7 +33,7 @@ MonoBehaviour:
     - Name: _states
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[NPC.BaseState,
-        NPC]], mscorlib
+        Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -143,7 +137,7 @@ MonoBehaviour:
     - Name: _graph
       Entry: 7
       Data: 2|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[NPC.AI_Controller+TransitionInfo[],
-        NPC]], mscorlib
+        Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
       Data: 3|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
@@ -159,55 +153,52 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: IDLE
+      Data: WALK
     - Name: $v
       Entry: 7
-      Data: 4|NPC.AI_Controller+TransitionInfo[], NPC
+      Data: 4|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 1
     - Name: 
       Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
+      Data: NPC.AI_Controller+TransitionInfo, Assembly-CSharp
     - Name: Transition
       Entry: 10
       Data: 7
     - Name: Target
       Entry: 1
-      Data: FALL
+      Data: IDLE
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: IDLE
+    - Name: $v
+      Entry: 7
+      Data: 5|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: NPC.AI_Controller+TransitionInfo, Assembly-CSharp
     - Name: Transition
       Entry: 10
       Data: 8
-    - Name: Target
-      Entry: 1
-      Data: HOLD
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 9
-    - Name: Target
-      Entry: 1
-      Data: RUN
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 10
     - Name: Target
       Entry: 1
       Data: WALK
@@ -231,22 +222,10 @@ MonoBehaviour:
       Data: FALL
     - Name: $v
       Entry: 7
-      Data: 5|NPC.AI_Controller+TransitionInfo[], NPC
+      Data: 6|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 11
-    - Name: Target
-      Entry: 1
-      Data: LANDING
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -264,22 +243,10 @@ MonoBehaviour:
       Data: HOLD
     - Name: $v
       Entry: 7
-      Data: 6|NPC.AI_Controller+TransitionInfo[], NPC
+      Data: 7|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 12
-    - Name: Target
-      Entry: 1
-      Data: RISE
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -297,22 +264,10 @@ MonoBehaviour:
       Data: LANDING
     - Name: $v
       Entry: 7
-      Data: 7|NPC.AI_Controller+TransitionInfo[], NPC
+      Data: 8|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 13
-    - Name: Target
-      Entry: 1
-      Data: IDLE
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -330,22 +285,10 @@ MonoBehaviour:
       Data: RISE
     - Name: $v
       Entry: 7
-      Data: 8|NPC.AI_Controller+TransitionInfo[], NPC
+      Data: 9|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 14
-    - Name: Target
-      Entry: 1
-      Data: FALL
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -363,127 +306,10 @@ MonoBehaviour:
       Data: RUN
     - Name: $v
       Entry: 7
-      Data: 9|NPC.AI_Controller+TransitionInfo[], NPC
+      Data: 10|NPC.AI_Controller+TransitionInfo[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 7
-    - Name: Target
-      Entry: 1
-      Data: FALL
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 8
-    - Name: Target
-      Entry: 1
-      Data: HOLD
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 10
-    - Name: Target
-      Entry: 1
-      Data: WALK
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 13
-    - Name: Target
-      Entry: 1
-      Data: IDLE
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: WALK
-    - Name: $v
-      Entry: 7
-      Data: 10|NPC.AI_Controller+TransitionInfo[], NPC
-    - Name: 
-      Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 7
-    - Name: Target
-      Entry: 1
-      Data: FALL
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 8
-    - Name: Target
-      Entry: 1
-      Data: HOLD
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 9
-    - Name: Target
-      Entry: 1
-      Data: RUN
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: NPC.AI_Controller+TransitionInfo, NPC
-    - Name: Transition
-      Entry: 10
-      Data: 13
-    - Name: Target
-      Entry: 1
-      Data: IDLE
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -500,4 +326,4 @@ MonoBehaviour:
       Entry: 8
       Data: 
   _anyState: []
-  _enterState: WALK
+  _enterState: IDLE

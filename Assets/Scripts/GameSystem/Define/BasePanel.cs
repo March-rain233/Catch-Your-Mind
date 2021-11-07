@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public abstract class BasePanel : BaseView
 {
-    public abstract WindowType Type
+    public abstract PanelType Type
     {
         get;
     }
@@ -18,13 +18,7 @@ public abstract class BasePanel : BaseView
 /// ¥∞ø⁄¿‡–Õ
 /// </summary>
 [System.Serializable]
-public enum WindowType
+public enum PanelType
 {
-    Menu,
-    Setting,
-    StartMenu,
-    introduction,
-    loading,
-    StatusUI,
-    Dialog
+    StatusPanel,
 }

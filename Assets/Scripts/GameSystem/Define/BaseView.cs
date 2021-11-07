@@ -100,14 +100,14 @@ public abstract class BaseView : MonoBehaviour
     protected internal virtual void SendExit(System.Action<BaseView> resourceRecoveryHandler)
     {
         if (_animator != null)
-        {    
+        {
             StartCoroutine(ObserveAnimProgress("Exit", 1, () =>
             {
                 resourceRecoveryHandler.Invoke(this);
             }));
         }
         OnExit();
-        if(_animator == null)
+        if (_animator == null)
         {
             resourceRecoveryHandler.Invoke(this);
         }
@@ -132,7 +132,7 @@ public abstract class BaseView : MonoBehaviour
         }
 
         //监视动画运行状态
-        while(stateInfo.normalizedTime < time)
+        while (stateInfo.normalizedTime < time)
         {
             //Debug.Log($"动画{stateInfo.fullPathHash} 运行进程：{stateInfo.normalizedTime}");
             yield return 0;

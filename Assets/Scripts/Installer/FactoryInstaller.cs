@@ -5,9 +5,9 @@ using UnityEngine;
 /// <summary>
 /// 工厂管理类装配器
 /// </summary>
-public class FactoryInstaller
+public class FactoryInstaller : IFactoryInstaller
 {
-    public static void Install(FactoryManager manager)
+    public void Install(FactoryManager manager)
     {
         manager.AddFactory(ObjectType.Sprite, new ObjectFactoryWithPool((string name) =>
         {

@@ -22,7 +22,7 @@ public class PanelFactory
         {
             if (_root == null)
             {
-                _root = GameObject.Find("UIroot").transform;
+                _root = GameObject.Find("PoolRoot").transform;
             }
             return _root;
         }
@@ -31,7 +31,7 @@ public class PanelFactory
     /// <summary>
     /// 窗口池
     /// </summary>
-    private Dictionary<WindowType, BasePanel> _pool = new Dictionary<WindowType, BasePanel>();
+    private Dictionary<PanelType, BasePanel> _pool = new Dictionary<PanelType, BasePanel>();
 
     /// <summary>
     /// 生成窗口
@@ -42,7 +42,7 @@ public class PanelFactory
     /// <remarks>
     /// 该方法负责处理窗口的初始化
     /// </remarks>
-    public bool TryGetWindow(WindowType windowType, out BasePanel window)
+    public bool TryGetWindow(PanelType windowType, out BasePanel window)
     {
         //如果对象池已有窗口，则直接提取
         if (_pool.TryGetValue(windowType, out window))
@@ -54,7 +54,7 @@ public class PanelFactory
         {
             //获取预制体并生成
             var temp = GameObject.Instantiate(
-                Resources.Load<GameObject>(GameSystem.Instance.
+                Resources.Load<GameObject>(GameManager.Instance.
                 GameConfig.PathConfig.Paths[ObjectType.UI].
                 PathDic[windowType.ToString()]));
             temp.name = temp.name.Replace("(Clone)", "");

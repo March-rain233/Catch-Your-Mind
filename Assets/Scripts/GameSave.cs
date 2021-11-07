@@ -21,7 +21,7 @@ namespace Save
             save.Story.MessagePath = new Dictionary<string, EventCenter.EventArgs>();
             save.Player = new Dictionary<string, NPC_Info>();
             save.Player.Add("Shury", Resources.Load<NPC_Info>(GameManager.
-                Instance.GameSystem.GameConfig.PathConfig.
+                Instance.GameConfig.PathConfig.
                 Paths[ObjectType.NPC_Info].PathDic["OriShury"]));
             save.Position.Scene = "初始场景";
             save.Position.Point = "最初的地点";

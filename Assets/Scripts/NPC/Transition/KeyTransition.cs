@@ -35,11 +35,11 @@ namespace NPC
             switch (_pressType)
             {
                 case PressType.Down:
-                    return Input.GetKeyDown(GameSystem.Instance.ControlManager.KeyDic[_keyType]);
+                    return Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[_keyType]);
                 case PressType.Pressing:
-                    return Input.GetKey(GameSystem.Instance.ControlManager.KeyDic[_keyType]);
+                    return Input.GetKey(GameManager.Instance.ControlManager.KeyDic[_keyType]);
                 case PressType.Up:
-                    return Input.GetKeyUp(GameSystem.Instance.ControlManager.KeyDic[_keyType]);
+                    return Input.GetKeyUp(GameManager.Instance.ControlManager.KeyDic[_keyType]);
                 default:
                     return true;
             }

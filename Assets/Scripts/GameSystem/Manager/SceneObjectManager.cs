@@ -15,7 +15,7 @@ public class SceneObjectManager : MonoBehaviour
     {
         get
         {
-            return GameSystem.Instance.GameManager.CurrentScene.Objects;
+            return GameManager.Instance.CurrentScene.Objects;
         }
     }
 
@@ -37,11 +37,11 @@ public class SceneObjectManager : MonoBehaviour
 
     public void Init()
     {
-        GameSystem.Instance.OnLoadingPosition += (Map.MapPosition t) =>
+        GameManager.Instance.OnLoadingPosition += (Map.MapPosition t) =>
         {
             CheckReasons();
         };
-        GameSystem.Instance.EventCenter.EventChange += (string eventName, EventCenter.EventArgs eventArgs) =>
+        GameManager.Instance.EventCenter.EventChange += (string eventName, EventCenter.EventArgs eventArgs) =>
         {
             CheckReasons();
         };
@@ -69,7 +69,7 @@ public class SceneObjectManager : MonoBehaviour
     {
         MySceneObject res = new MySceneObject();
 
-        res.Object = (GameSystem.Instance.FactoryManager.
+        res.Object = (GameManager.Instance.FactoryManager.
         Create(info.Type, info.ResourceName) as ISceneObject).
         GetObject();
         res.Object.transform.position = res.Info.Position;

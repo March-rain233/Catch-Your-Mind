@@ -241,7 +241,7 @@ public class AudioManager : SerializedMonoBehaviour
     {
         SoundEffectVolume = Volume;
         _save.Effect = ((int)(_soundEffectVolume * Mathf.Pow(10, 5))) / Mathf.Pow(10, 5);
-        GameSystem.Instance.FactoryManager.Save(_save, "/Setting/setting.sav");
+        GameManager.Instance.FactoryManager.Save(_save, "/Setting/setting.sav");
     }
 
     /// <summary>
@@ -252,6 +252,6 @@ public class AudioManager : SerializedMonoBehaviour
     {
         MusicVolume = Volume;
         _save.Music = ((int)(_musicVolume * Mathf.Pow(10,5))) / Mathf.Pow(10, 5);
-        GameSystem.Instance.FactoryManager.Save(_save, "/Setting/setting.sav");
+        GameManager.Instance.FactoryManager.Save(_save, "/Setting/setting.sav");
     }
 }

@@ -6,7 +6,7 @@ namespace NPC
 {
     [CreateAssetMenu(fileName = "ÂóµÂ´ý»ú×´Ì¬", menuName = "½ÇÉ«/×´Ì¬/ÂóµÂ´ý»ú")]
     public class MindIdle : BaseState
-    {
+    {   
         public override void OnEnter(BehaviorStateMachine user)
         {
             base.OnEnter(user);

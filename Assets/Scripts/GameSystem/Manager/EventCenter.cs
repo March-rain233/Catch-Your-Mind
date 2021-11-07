@@ -19,6 +19,7 @@ public class EventCenter : SerializedMonoBehaviour
         public float Float;
         public int Int;
         public bool Boolean;
+        public string String;
         public object Object;
     }
 

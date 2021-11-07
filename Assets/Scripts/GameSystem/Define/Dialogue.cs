@@ -5,11 +5,31 @@ using UnityEngine;
 
 namespace GameAsset
 {
+    /// <summary>
+    /// 对话文件
+    /// </summary>
     public class Dialogue : SerializedScriptableObject
     {
-        [SerializeField]
-        public Dictionary<string, BaseAssertion> Assertions;
+        [System.Serializable]
+        private class DialogueCell
+        {
+            /// <summary>
+            /// 对话框内显示的名字
+            /// </summary>
+            public string Name;
 
-        public TextAsset Text;
+            /// <summary>
+            /// 对话框内的文本
+            /// </summary>
+            [TextArea]
+            public string Text;
+
+            /// <summary>
+            /// 对话框所对应的游戏物体的名字
+            /// </summary>
+            public string ObjectName;
+        }
+
+
     }
 }

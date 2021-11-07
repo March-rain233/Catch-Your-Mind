@@ -17,7 +17,7 @@ public class FactoryManager
     public T LoadResource<T>(ObjectType type, string name) where T : Object
     {
         Debug.Log($"’˝‘⁄‘ÿ»Î{type} : {name}");
-        return Resources.Load<T>(GameSystem.Instance.GameConfig.
+        return Resources.Load<T>(GameManager.Instance.GameConfig.
             PathConfig.Paths[type].PathDic[name]);
     }
 

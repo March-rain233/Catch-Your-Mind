@@ -25,7 +25,7 @@ namespace NPC
 
         public override void OnUpdate(BehaviorStateMachine user)
         {
-            var pair = GameSystem.Instance.ControlManager.KeyDic;
+            var pair = GameManager.Instance.ControlManager.KeyDic;
             //×ó-1 ÖÐ0 ÓÒ1
             int horizontal =
                 System.Convert.ToInt32(Input.GetKey(pair[KeyType.Right]))

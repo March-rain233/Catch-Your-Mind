@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// 窗口的Control层基类，全为单例模式
 /// </summary>
-public abstract class BaseControl<T> where T:new ()
+public abstract class BaseControl<T> where T : new()
 {
     private static T _instance;
     /// <summary>
@@ -23,19 +23,6 @@ public abstract class BaseControl<T> where T:new ()
         }
     }
 
-    /// <summary>
-    /// UI运行入口
-    /// </summary>
-    /// <remarks>
-    /// 用于订阅view的OnEnter事件，将把view和model绑定
-    /// </remarks>
-    public abstract void OnEnter(BaseView view);
-
-    /// <summary>
-    /// UI运行出口
-    /// </summary>
-    /// <remarks>
-    /// 用于订阅view的OnExit事件，将解绑view和model
-    /// </remarks>
-    public abstract void OnExit(BaseView view);
+    public abstract void Rigister(BaseView view);
+    public abstract void UnRigister(BaseView view);
 }
