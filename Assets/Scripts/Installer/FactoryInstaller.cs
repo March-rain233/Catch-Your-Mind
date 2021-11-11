@@ -29,7 +29,7 @@ public class FactoryInstaller : IFactoryInstaller
         }, 20));
         manager.AddFactory(ObjectType.AI_Controller, new ObjectFactoryWithPool((string name) =>
         {
-            return manager.LoadResource<NPC.AI_Controller>(ObjectType.AI_Controller, name);
+            return manager.LoadResource<NPC.StateMachineController>(ObjectType.AI_Controller, name);
         }, 20));
         manager.AddFactory(ObjectType.Item, new ObjectFactoryWithPool((string name) =>
         {
@@ -67,7 +67,7 @@ public class FactoryInstaller : IFactoryInstaller
             var model = prefabs.GetComponent<NPC.NPC_Model>();
             model.Init(breed as NPC.Breed, equip);
             var ai = prefabs.GetComponent<NPC.BehaviorStateMachine>();
-            ai.Init(controller as NPC.AI_Controller);
+            ai.Init(controller as NPC.StateMachineController);
             NPC.PNPC p = new NPC.PNPC();
             p.Model = model;
             p.StateMachine = ai;
