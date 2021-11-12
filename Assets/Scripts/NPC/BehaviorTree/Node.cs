@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Node : ScriptableObject, INodeModel
+public abstract class Node : ScriptableObject, INode
 {
     /// <summary>
     /// ½Úµã×´Ì¬
@@ -25,6 +25,14 @@ public abstract class Node : ScriptableObject, INodeModel
     public string Name => name;
 
     public Vector2 ViewPosition { get; set; }
+
+    public abstract UnityEditor.Experimental.GraphView.Port.Capacity Output { get; }
+
+    public virtual bool IsRoot => false;
+
+    public virtual bool IsLeaf => false;
+
+    public UnityEditor.Experimental.GraphView.Port.Capacity Input => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
 
     private NodeStatus _status;
 
@@ -95,4 +103,6 @@ public abstract class Node : ScriptableObject, INodeModel
     protected abstract NodeStatus OnUpdate(BehaviorTreeRunner runner);
 
     public abstract Node Clone();
+
+    public abstract INode[] GetChildren();
 }

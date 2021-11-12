@@ -28,8 +28,8 @@ namespace NPC
             var pair = GameManager.Instance.ControlManager.KeyDic;
             //×ó-1 ÖÐ0 ÓÒ1
             int horizontal =
-                System.Convert.ToInt32(Input.GetKey(pair[KeyType.Right]))
-                - System.Convert.ToInt32(Input.GetKey(pair[KeyType.Left]));
+                System.Convert.ToInt32(UnityEngine.Input.GetKey(pair[KeyType.Right]))
+                - System.Convert.ToInt32(UnityEngine.Input.GetKey(pair[KeyType.Left]));
 
             if (horizontal == 0) { return; }
             if (horizontal == 1)

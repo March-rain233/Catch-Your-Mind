@@ -7,6 +7,7 @@ using UnityEngine;
 /// </summary>
 public class RootNode : DecoratorNode
 {
+    public override bool IsRoot => true;
 
     protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
     {

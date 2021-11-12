@@ -1,6 +1,7 @@
 using Item;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace NPC
@@ -11,7 +12,7 @@ namespace NPC
     /// <remarks>
     /// 请将所有字段设为外界可读以便过渡类可以监视
     /// </remarks>
-    public abstract class BaseState : ScriptableObject, INodeModel
+    public abstract class BaseState : ScriptableObject, INode
     {
         /// <summary>
         /// 视图的位置
@@ -27,6 +28,14 @@ namespace NPC
         /// 名称
         /// </summary>
         public string Name { get => name; }
+
+        public bool IsRoot => false;
+
+        public bool IsLeaf => false;
+
+        public Port.Capacity Output => Port.Capacity.Multi;
+
+        public Port.Capacity Input => Port.Capacity.Multi;
 
         /// <summary>
         /// 过渡
@@ -81,6 +90,11 @@ namespace NPC
         /// <param name="status">附加状态</param>
         public virtual void Hurt(BehaviorStateMachine user, float hurt, Status status)
         {
+        }
+
+        public INode[] GetChildren()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

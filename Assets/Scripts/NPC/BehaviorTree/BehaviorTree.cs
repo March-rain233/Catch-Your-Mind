@@ -2,21 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using System;
 
 /// <summary>
 /// 行为树
 /// </summary>
-public class BehaviorTree : ScriptableObject
+[CreateAssetMenu(fileName ="行为树控制器", menuName = "角色/行为树控制器")]
+public class BehaviorTree : ScriptableObject, ITree
 {
     /// <summary>
     /// 根节点
     /// </summary>
-    public RootNode RootNode;
+    [SerializeField]
+    private RootNode _rootNode;
 
     /// <summary>
     /// 节点列表
     /// </summary>
-    public List<Node> Nodes = new List<Node>();
+    [SerializeField]
+    private List<Node> _nodes = new List<Node>();
+
+    public INode RootNode => _rootNode;
+
+    public Type NodeParentType => typeof(Node);
 
     /// <summary>
     /// 更新
@@ -25,11 +33,11 @@ public class BehaviorTree : ScriptableObject
     /// <returns></returns>
     public Node.NodeStatus Tick(BehaviorTreeRunner runner)
     {
-        if(RootNode.Status == Node.NodeStatus.Running)
+        if(_rootNode.Status == Node.NodeStatus.Running)
         {
-            RootNode.Tick(runner);
+            _rootNode.Tick(runner);
         }
-        return RootNode.Status;
+        return _rootNode.Status;
     }
 
     /// <summary>
@@ -37,12 +45,12 @@ public class BehaviorTree : ScriptableObject
     /// </summary>
     /// <param name="type"></param>
     /// <returns></returns>
-    public Node AddNode(System.Type type)
+    public Node AddNode(Type type)
     {
-        Node node = CreateInstance(type) as Node;
+        var node = CreateInstance(type) as Node;
         node.name = type.Name;
         node.Guid = GUID.Generate().ToString();
-        Nodes.Add(node);
+        _nodes.Add(node);
 
         AssetDatabase.AddObjectToAsset(node, this);
         AssetDatabase.SaveAssets();
@@ -55,23 +63,11 @@ public class BehaviorTree : ScriptableObject
     /// <param name="node"></param>
     public void RemoveNode(Node node)
     {
-        Nodes.Remove(node);
+        _nodes.Remove(node);
 
         //移除与父节点的连接
-        Node parent = FindParent(node, RootNode);
-        var composite = parent as CompositeNode;
-        if (composite)
-        {
-            composite.Childrens.Remove(node);
-        }
-        else
-        {
-            var decorator = parent as DecoratorNode;
-            if (decorator)
-            {
-                decorator.Child = null;
-            }
-        }
+        Node parent = FindParent(node, _rootNode);
+        DisconnectNode(parent, node);
 
         AssetDatabase.RemoveObjectFromAsset(node);
         AssetDatabase.SaveAssets();
@@ -115,7 +111,71 @@ public class BehaviorTree : ScriptableObject
     public BehaviorTree Clone()
     {
         var tree = Instantiate(this);
-        tree.RootNode = RootNode.Clone() as RootNode;
+        tree._rootNode = _rootNode.Clone() as RootNode;
         return tree;
+    }
+
+    public INode[] GetNodes()
+    {
+        return _nodes.ToArray();
+    }
+
+    public INode CreateNode(Type type)
+    {
+        return AddNode(type);
+    }
+
+    public void RemoveNode(INode node)
+    {
+        RemoveNode(node as Node);
+    }
+
+    public void ConnectNode(INode parent, INode child)
+    {
+        {
+            var node = parent as CompositeNode;
+            if(node != null)
+            {
+                node.Childrens.Add(child as Node);
+                return;
+            }
+        }
+        {
+            var node = parent as DecoratorNode;
+            if (node != null)
+            {
+                node.Child = child as Node;
+                return;
+            }
+        }
+
+        Debug.LogError("非法将叶子节点当作父节点");
+    }
+
+    public void DisconnectNode(INode parent, INode child)
+    {
+        {
+            var node = parent as CompositeNode;
+            if (node != null)
+            {
+                node.Childrens.Remove(child as Node);
+                return;
+            }
+        }
+        {
+            var node = parent as DecoratorNode;
+            if (node != null)
+            {
+                node.Child = null;
+                return;
+            }
+        }
+
+        Debug.LogError("非法将叶子节点当作父节点");
+    }
+
+    public void SetRoot()
+    {
+        _rootNode = AddNode(typeof(RootNode)) as RootNode;
     }
 }

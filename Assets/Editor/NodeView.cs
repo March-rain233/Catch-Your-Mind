@@ -14,7 +14,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     /// <summary>
     /// 节点实例
     /// </summary>
-    public INodeModel Node;
+    public INode Node;
 
     /// <summary>
     /// 输入端口
@@ -26,10 +26,10 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     /// </summary>
     public Port Output;
 
-    public NodeView(INodeModel node)
+    public NodeView(INode node)
     {
         Node = node;
-        this.title = node.Name;
+        title = node.Name;
         viewDataKey = node.Guid;
 
         style.left = node.ViewPosition.x;
@@ -44,7 +44,8 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     /// </summary>
     private void CreateOutputPorts()
     {
-        Output = InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Multi, typeof(bool));
+        if (Node.IsLeaf) { return; }
+        Output = InstantiatePort(Orientation.Horizontal, Direction.Output, Node.Output, null);
         Output.portName = "";
         outputContainer.Add(Output);
     }
@@ -54,7 +55,8 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     /// </summary>
     private void CreateInputPorts()
     {
-        Input = InstantiatePort(Orientation.Horizontal, Direction.Input, Port.Capacity.Multi, typeof(bool));
+        if (Node.IsRoot) { return; }
+        Input = InstantiatePort(Orientation.Horizontal, Direction.Input, Node.Input, null);
         Input.name = "";
         inputContainer.Add(Input);
     }
@@ -74,6 +76,9 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
     {
         base.BuildContextualMenu(evt);
-        evt.menu.AppendAction("删除", (a) => OnDeleted?.Invoke(this));
+        if (!Node.IsRoot)
+        {
+            evt.menu.AppendAction("删除", (a) => OnDeleted?.Invoke(this));
+        }
     }
 }

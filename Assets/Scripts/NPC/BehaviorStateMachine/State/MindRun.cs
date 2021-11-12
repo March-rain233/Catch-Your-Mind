@@ -30,11 +30,11 @@ namespace NPC
             var pair = GameManager.Instance.ControlManager.KeyDic;
             //左-1 中0 右1
             int horizontal =
-                System.Convert.ToInt32(Input.GetKey(pair[KeyType.Right]))
-                - System.Convert.ToInt32(Input.GetKey(pair[KeyType.Left]));
+                System.Convert.ToInt32(UnityEngine.Input.GetKey(pair[KeyType.Right]))
+                - System.Convert.ToInt32(UnityEngine.Input.GetKey(pair[KeyType.Left]));
 
             //下-1 中0 上1
-            bool jump = Input.GetKeyDown(pair[KeyType.Jump]);
+            bool jump = UnityEngine.Input.GetKeyDown(pair[KeyType.Jump]);
             //左-1 中0 右1
 
             if (horizontal == 0) { return; }

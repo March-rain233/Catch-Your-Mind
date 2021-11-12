@@ -16,9 +16,16 @@ public abstract class CompositeNode : Node
 
     public List<Node> Childrens = new List<Node>();
 
+    public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Multi;
+
     protected override void OnAbort(BehaviorTreeRunner runner)
     {
         Childrens.ForEach(child => { if (child.Status == NodeStatus.Running) child.Abort(runner); });
+    }
+
+    public override INode[] GetChildren()
+    {
+        return Childrens.ToArray();
     }
 
     public override Node Clone()

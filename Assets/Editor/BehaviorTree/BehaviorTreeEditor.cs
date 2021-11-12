@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
-
+using UnityEditor.Experimental.GraphView;
 
 public class BehaviorTreeEditor : EditorWindow
 {
@@ -32,22 +32,23 @@ public class BehaviorTreeEditor : EditorWindow
 
         _treeView = root.Q<TreeView>();
         _inspectorView = root.Q<InspectorView>();
-        //_treeView.OnNodeSelected = OnSelectionChanged;
-        //OnSelectionChange();
+        _treeView.OnElementSelected = OnSelectionChanged;
+        OnSelectionChange();
     }
 
-    //private void OnSelectionChange()
-    //{
-    //    StateMachineController controller = Selection.activeObject as StateMachineController;
-    //    if (controller)
-    //    {
-    //        _treeView.PopulateView(controller);
-    //        _inspectorView.Clear();
-    //    }
-    //}
+    private void OnSelectionChange()
+    {
+        ITree tree = Selection.activeObject as ITree;
+        if (tree != null)
+        {
+            _treeView.PopulateView(tree);
+            _inspectorView.Clear();
+        }
+    }
 
-    //private void OnSelectionChanged(GraphElement element)
-    //{
-    //    _inspectorView.UpdateSelection(element);
-    //}
+    private void OnSelectionChanged(GraphElement element)
+    {
+        _inspectorView.UpdateSelection(element);
+    }
+
 }
