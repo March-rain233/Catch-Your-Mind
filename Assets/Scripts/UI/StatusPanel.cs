@@ -25,7 +25,6 @@ public class StatusPanel : BasePanel
     private void InteractionExit(EventCenter.EventArgs eventArgs)
     {
         _animator.SetTrigger("InteractionExit");
-        Debug.Log(1);
     }
 
     public override void NotifyHandler(string name, object value)

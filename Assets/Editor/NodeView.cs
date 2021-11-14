@@ -24,7 +24,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     /// <summary>
     /// 输出端口
     /// </summary>
-    public Port Output;
+    public List<Port> Output = new List<Port>();
 
     public NodeView(INode node)
     {
@@ -36,7 +36,43 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
         style.top = node.ViewPosition.y;
 
         CreateInputPorts();
-        CreateOutputPorts();
+        //CreateOutputPorts();
+        if (node.Output == Port.Capacity.Single)
+        {
+            CreateOutputPorts();
+        }
+        else
+        {
+            Button btn = new Button(() => { AddOutputPort(); });
+            btn.text = "添加输出端口";
+            titleButtonContainer.Add(btn);
+            var n = node.GetChildren().Length;
+            for(int i = 0; i < n; ++i)
+            {
+                AddOutputPort();
+            }
+        }
+
+        node.OnStatusChanged += status =>
+        {
+            Debug.Log(status);
+            switch (status)
+            {
+                case NPC.Node.NodeStatus.Success:
+                    style.backgroundColor = Color.green;
+                    break;
+                case NPC.Node.NodeStatus.Failure:
+                    style.backgroundColor = Color.red;
+                    break;
+                case NPC.Node.NodeStatus.Running:
+                    style.backgroundColor = Color.blue;
+                    break;
+                case NPC.Node.NodeStatus.Aborting:
+                    style.backgroundColor = Color.yellow;
+                    break;
+            }
+        };
+        node.OnNameChanged += newName => title = newName;
     }
 
     /// <summary>
@@ -45,9 +81,19 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     private void CreateOutputPorts()
     {
         if (Node.IsLeaf) { return; }
-        Output = InstantiatePort(Orientation.Horizontal, Direction.Output, Node.Output, null);
-        Output.portName = "";
-        outputContainer.Add(Output);
+        Output.Add(InstantiatePort(Orientation.Horizontal, Direction.Output, Node.Output, null));
+        Output[Output.Count - 1].portName = "";
+        outputContainer.Add(Output[Output.Count - 1]);
+    }
+
+    /// <summary>
+    /// 添加输出端口
+    /// </summary>
+    private void AddOutputPort()
+    {
+        Output.Add(InstantiatePort(Orientation.Horizontal, Direction.Output, Port.Capacity.Single, null));
+        Output[Output.Count - 1].portName = outputContainer.childCount.ToString();
+        outputContainer.Add(Output[Output.Count - 1]);
     }
 
     /// <summary>
@@ -57,6 +103,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     {
         if (Node.IsRoot) { return; }
         Input = InstantiatePort(Orientation.Horizontal, Direction.Input, Node.Input, null);
+        //Debug.Log(title + (Input==null).ToString());
         Input.name = "";
         inputContainer.Add(Input);
     }
@@ -81,4 +128,5 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
             evt.menu.AppendAction("删除", (a) => OnDeleted?.Invoke(this));
         }
     }
+
 }

@@ -4,11 +4,11 @@
     </uie:Toolbar>
     <SplitView fixed-pane-initial-dimension="300">
         <ui:VisualElement name="left-panel" style="flex-shrink: 1; flex-grow: 1;">
-            <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgb(40, 40, 40);" />
+            <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgb(56, 56, 56); height: 20px; -unity-font-style: bold-and-italic; font-size: 10px; -unity-text-align: middle-left; white-space: nowrap;" />
             <InspectorView />
         </ui:VisualElement>
         <ui:VisualElement name="right-panel" style="flex-shrink: 1;">
-            <ui:Label text="View" display-tooltip-when-elided="true" />
+            <ui:Label text="View" display-tooltip-when-elided="true" name="name" style="-unity-background-image-tint-color: rgb(40, 40, 40); background-color: rgb(40, 40, 40); height: 20px; -unity-font-style: bold-and-italic; font-size: 15px; -unity-text-align: middle-left;" />
             <TreeView focusable="true" style="flex-grow: 1;" />
         </ui:VisualElement>
     </SplitView>

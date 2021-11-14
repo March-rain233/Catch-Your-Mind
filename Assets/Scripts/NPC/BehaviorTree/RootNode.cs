@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 根节点
-/// </summary>
-public class RootNode : DecoratorNode
+namespace NPC
 {
-    public override bool IsRoot => true;
-
-    protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
+    /// <summary>
+    /// 根节点
+    /// </summary>
+    public class RootNode : DecoratorNode
     {
-        return Child.Tick(runner);
+        public override bool IsRoot => true;
+
+        protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
+        {
+            return Child.Tick(runner);
+        }
     }
 }

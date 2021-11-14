@@ -1,18 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
-public class BehaviorTreeRunner : MonoBehaviour
+namespace NPC
 {
-    public BehaviorTree BehaviorTree;
-
-    private void Awake()
+    public class BehaviorTreeRunner : SerializedMonoBehaviour
     {
-        BehaviorTree = BehaviorTree.Clone();
-    }
+        public BehaviorTree BehaviorTree;
 
-    private void Update()
-    {
-        BehaviorTree.Tick(this);
+        /// <summary>
+        /// ╠Да©©Б
+        /// </summary>
+        public Dictionary<string, object> Variables;
+
+        private void Awake()
+        {
+            BehaviorTree = BehaviorTree.Clone();
+        }
+
+        private void Update()
+        {
+            BehaviorTree.Tick(this);
+        }
     }
 }

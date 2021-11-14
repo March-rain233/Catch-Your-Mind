@@ -64,13 +64,15 @@ public class TreeView : GraphView
             var children = n.GetChildren();
             if(children == null || children.Length == 0) { return; }
             NodeView parentView = FindNodeView(n);
-            Array.ForEach(children, child =>
+            for(int i = 0; i < children.Length; ++i)
             {
-                NodeView childView = FindNodeView(child);
+                if (children[i] == null) { return; }
+                NodeView childView = FindNodeView(children[i]);
+                //Debug.Log($"{children[i].Name} {childView.Node.Name}");
 
-                Edge edge = parentView.Output.ConnectTo(childView.Input);
+                Edge edge = parentView.Output[i].ConnectTo(childView.Input);
                 AddElement(edge);
-            });
+            }
         });
     }
 
@@ -81,6 +83,14 @@ public class TreeView : GraphView
     private void DeleteNodeView(NodeView node)
     {
         RemoveElement(node);
+        var es = edges.ToList();
+        for(int i = es.Count-1; i >= 0 ; --i)
+        {
+            if(es[i].input.node == node || es[i].output.node == node)
+            {
+                RemoveElement(es[i]);
+            }
+        }
         _tree.RemoveNode(node.Node);
     }
 
@@ -88,22 +98,23 @@ public class TreeView : GraphView
     /// 根据传入节点创建节点视图
     /// </summary>
     /// <param name="node"></param>
-    private void CreateNodeView(INode node)
+    private NodeView CreateNodeView(INode node)
     {
         NodeView nodeView = new NodeView(node);
         nodeView.OnNodeSelected = OnElementSelected;
         nodeView.OnDeleted = DeleteNodeView;
         AddElement(nodeView);
+        return nodeView;
     }
 
     /// <summary>
     /// 创建节点
     /// </summary>
     /// <param name="type"></param>
-    private void CreateNode(Type type)
+    private NodeView CreateNode(Type type)
     {
         INode node = _tree.CreateNode(type);
-        CreateNodeView(node);
+        return CreateNodeView(node);
     }
 
     /// <summary>
@@ -166,15 +177,21 @@ public class TreeView : GraphView
         foreach (var type in types)
         {
             if (type.IsAbstract) { continue; }
+            if (type == _tree.RootType) { continue; }
             Type parent = type;
             StringBuilder sb = new StringBuilder();
-            while(parent != _tree.NodeParentType)
+            while (parent != _tree.NodeParentType)
             {
                 sb.Insert(0, '/' + parent.Name);
                 parent = parent.BaseType;
             }
             sb.Remove(0, 1);
-            evt.menu.AppendAction(sb.ToString(), (a) => CreateNode(type));
+            evt.menu.AppendAction(sb.ToString(), (a) =>
+            {
+                MouseMoveEvent m = new MouseMoveEvent();
+                Debug.Log(m.mousePosition);
+                CreateNode(type);
+            });
         }
     }
 }

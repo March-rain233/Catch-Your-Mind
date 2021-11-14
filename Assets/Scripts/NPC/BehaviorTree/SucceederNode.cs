@@ -2,14 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 成功器
-/// </summary>
-public class SucceederNode : DecoratorNode
+namespace NPC
 {
-    protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
+    /// <summary>
+    /// 成功器
+    /// </summary>
+    public class SucceederNode : DecoratorNode
     {
-        Child.Tick(runner);
-        return NodeStatus.Success;
+        protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
+        {
+            Child.Tick(runner);
+            return NodeStatus.Success;
+        }
     }
 }

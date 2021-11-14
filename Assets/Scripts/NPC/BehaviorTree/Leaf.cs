@@ -2,13 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Leaf : Node
-{
-    public override bool IsLeaf => true;
 
-    public override INode[] GetChildren()
+namespace NPC
+{
+    public abstract class Leaf : Node
     {
-        //返回空数组
-        return new INode[] { };
+        public override bool IsLeaf => true;
+
+        public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
+
+        public override INode[] GetChildren()
+        {
+            //返回空数组
+            return new INode[] { };
+        }
     }
 }

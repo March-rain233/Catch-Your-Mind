@@ -2,23 +2,26 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/// <summary>
-/// 取反器
-/// </summary>
-public class InverterNode : DecoratorNode
+namespace NPC
 {
-    protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
+    /// <summary>
+    /// 取反器
+    /// </summary>
+    public class InverterNode : DecoratorNode
     {
-        switch (Child.Tick(runner))
+        protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
-            case NodeStatus.Success:
-                return NodeStatus.Failure;
-            case NodeStatus.Failure:
-                return NodeStatus.Success;
-            case NodeStatus.Running:
-                break;
-        }
+            switch (Child.Tick(runner))
+            {
+                case NodeStatus.Success:
+                    return NodeStatus.Failure;
+                case NodeStatus.Failure:
+                    return NodeStatus.Success;
+                case NodeStatus.Running:
+                    break;
+            }
 
-        throw new System.Exception("发生了未知的错误");
+            throw new System.Exception("发生了未知的错误");
+        }
     }
 }

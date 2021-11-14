@@ -5,30 +5,46 @@ using UnityEngine;
 /// <summary>
 /// 修饰节点
 /// </summary>
-public abstract class DecoratorNode : Node
+namespace NPC
 {
-    /// <summary>
-    /// 子节点
-    /// </summary>
-    public Node Child;
-
-    public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
-
-    protected override void OnAbort(BehaviorTreeRunner runner)
+    public abstract class DecoratorNode : Node
     {
-        if(Child.Status == NodeStatus.Running) { Child.Abort(runner); }
-    }
+        /// <summary>
+        /// 子节点
+        /// </summary>
+        public Node Child;
 
-    public override INode[] GetChildren()
-    {
-        if (Child) return new INode[] { Child };
-        else return new INode[] { };
-    }
+        public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
 
-    public override Node Clone()
-    {
-        var node = Instantiate(this);
-        Child = Child.Clone();
-        return node;
+        protected override void OnEnter(BehaviorTreeRunner runner)
+        {
+
+        }
+
+        protected override void OnExit(BehaviorTreeRunner runner)
+        {
+        }
+
+        protected override void OnResume(BehaviorTreeRunner runner)
+        {
+        }
+
+        protected override void OnAbort(BehaviorTreeRunner runner)
+        {
+            if (Child.Status == NodeStatus.Running) { Child.Abort(runner); }
+        }
+
+        public override INode[] GetChildren()
+        {
+            if (Child) return new INode[] { Child };
+            else return new INode[] { };
+        }
+
+        public override Node Clone()
+        {
+            var node = base.Clone() as DecoratorNode;
+            node.Child = Child.Clone();
+            return node;
+        }
     }
 }

@@ -55,11 +55,12 @@ public class BehaviorStateMachineView : GraphView
         {
             var transitions = n.Transitions;
             NodeView start = FindNodeView(n);
+            int i = 0;
             transitions.ForEach(t =>
             {
                 NodeView end = FindNodeView(t.EndState);
 
-                Edge edge = start.Output.ConnectTo(end.Input);
+                Edge edge = start.Output[i++].ConnectTo(end.Input);
                 AddElement(edge);
             });
         });

@@ -40,6 +40,10 @@ public interface INode
     /// </summary>
     Port.Capacity Output { get; }
 
+    public event System.Action<string> OnNameChanged;
+
+    public event System.Action<NPC.Node.NodeStatus> OnStatusChanged;
+
     /// <summary>
     /// 获取子节点
     /// </summary>

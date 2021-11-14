@@ -2,37 +2,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RepeaterNode : DecoratorNode
+namespace NPC
 {
-    /// <summary>
-    /// 运行次数
-    /// </summary>
-    public int Times;
-
-    /// <summary>
-    /// 累计次数
-    /// </summary>
-    private int _add;
-
-    /// <summary>
-    /// 是否无限运行
-    /// </summary>
-    public bool IsForever;
-
-    protected override void OnEnter(BehaviorTreeRunner runner)
+    public class RepeaterNode : DecoratorNode
     {
-        base.OnEnter(runner);
-        _add = 0;
-    }
+        /// <summary>
+        /// 运行次数
+        /// </summary>
+        public int Times;
 
-    protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
-    {
-        Child.Tick(runner);
-        ++_add;
-        if (IsForever || _add < Times)
+        /// <summary>
+        /// 累计次数
+        /// </summary>
+        private int _add;
+
+        /// <summary>
+        /// 是否无限运行
+        /// </summary>
+        public bool IsForever;
+
+        protected override void OnEnter(BehaviorTreeRunner runner)
         {
-            return NodeStatus.Running;
+            base.OnEnter(runner);
+            _add = 0;
         }
-        return NodeStatus.Success;
+
+        protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
+        {
+            Child.Tick(runner);
+            ++_add;
+            if (IsForever || _add < Times)
+            {
+                return NodeStatus.Running;
+            }
+            return NodeStatus.Success;
+        }
     }
 }

@@ -1987,10 +1987,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1837019776}
+  - component: {fileID: 1837019772}
   - component: {fileID: 1837019775}
   - component: {fileID: 1837019774}
   - component: {fileID: 1837019773}
   - component: {fileID: 1837019778}
+  - component: {fileID: 1837019777}
   m_Layer: 0
   m_Name: Mind
   m_TagString: Player
@@ -1998,6 +2000,87 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1837019772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837019771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c284ee5ee9587fb4da7269a7a604447a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 1837019778}
+    - {fileID: 1837019773}
+    - {fileID: 1837019777}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Variables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object,
+        mscorlib]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Animator
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Rigidbody
+    - Name: $v
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Model
+    - Name: $v
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  BehaviorTree: {fileID: 11400000, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
 --- !u!50 &1837019773
 Rigidbody2D:
   serializedVersion: 4
@@ -2110,6 +2193,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837019777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1837019771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ae19a2e7c4b3c43a977c30dbcc8efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  _faceDir: 0
+  _breed: {fileID: 11400000, guid: 9364042e1bd67f54b97769a816a4da19, type: 2}
+  _isOnGround: 0
+  _equip:
+    LeftHand: {fileID: 0}
+    RightHand: {fileID: 0}
+    Head: {fileID: 0}
+    Body: {fileID: 0}
+    Pants: {fileID: 0}
+    Feet: {fileID: 0}
 --- !u!95 &1837019778
 Animator:
   serializedVersion: 3

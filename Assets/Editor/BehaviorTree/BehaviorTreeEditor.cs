@@ -8,6 +8,7 @@ public class BehaviorTreeEditor : EditorWindow
 {
     private TreeView _treeView;
     private InspectorView _inspectorView;
+    private Label _label;
 
     [MenuItem("Ç³²ÖÓê¤Î¹¤¾ß/ÐÐÎªÊ÷±à¼­Æ÷")]
     public static void ShowExample()
@@ -32,6 +33,7 @@ public class BehaviorTreeEditor : EditorWindow
 
         _treeView = root.Q<TreeView>();
         _inspectorView = root.Q<InspectorView>();
+        _label = root.Q<Label>("name");
         _treeView.OnElementSelected = OnSelectionChanged;
         OnSelectionChange();
     }
@@ -39,8 +41,15 @@ public class BehaviorTreeEditor : EditorWindow
     private void OnSelectionChange()
     {
         ITree tree = Selection.activeObject as ITree;
+        if(tree == null && Selection.activeObject is GameObject)
+        {
+            tree = Selection.activeGameObject.GetComponent<NPC.BehaviorTreeRunner>()?.BehaviorTree;
+        }
+
         if (tree != null)
         {
+            //if (!AssetDatabase.IsMainAsset(tree as UnityEngine.Object)) { return; }
+            _label.text = Selection.activeObject .name + " View";
             _treeView.PopulateView(tree);
             _inspectorView.Clear();
         }

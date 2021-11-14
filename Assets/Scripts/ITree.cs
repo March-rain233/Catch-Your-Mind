@@ -18,6 +18,11 @@ public interface ITree
     System.Type NodeParentType { get; }
 
     /// <summary>
+    /// 根节点类型
+    /// </summary>
+    System.Type RootType { get; }
+
+    /// <summary>
     /// 设置根节点
     /// </summary>
     void SetRoot();
