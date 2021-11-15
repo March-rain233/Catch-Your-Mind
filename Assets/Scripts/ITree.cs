@@ -40,6 +40,12 @@ public interface ITree
     INode CreateNode(System.Type type);
 
     /// <summary>
+    /// 添加节点
+    /// </summary>
+    /// <param name="node"></param>
+    void AddNode(INode node);
+
+    /// <summary>
     /// 从节点列表中移除指定节点
     /// </summary>
     /// <param name="node"></param>

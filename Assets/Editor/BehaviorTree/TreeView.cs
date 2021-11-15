@@ -118,6 +118,46 @@ public class TreeView : GraphView
     }
 
     /// <summary>
+    /// 添加子树
+    /// </summary>
+    /// <param name="subnode"></param>
+    public void AddSubtree(INode subnode)
+    {
+        List<INode> nodes = new List<INode>();
+        Stack<INode> stack = new Stack<INode>();
+        stack.Push(subnode);
+        while (stack.Count > 0)
+        {
+            var node = stack.Pop();
+            Array.ForEach(node.GetChildren(), child => { if (!nodes.Contains(child)) { stack.Push(child); } });
+            nodes.Add(node);
+        }
+
+
+        nodes.ForEach(n =>
+        {
+            _tree.AddNode(n);
+            CreateNodeView(n);
+        });
+
+        nodes.ForEach(n =>
+        {
+            var children = n.GetChildren();
+            if (children == null || children.Length == 0) { return; }
+            NodeView parentView = FindNodeView(n);
+            for (int i = 0; i < children.Length; ++i)
+            {
+                if (children[i] == null) { return; }
+                NodeView childView = FindNodeView(children[i]);
+                //Debug.Log($"{children[i].Name} {childView.Node.Name}");
+
+                Edge edge = parentView.Output[i].ConnectTo(childView.Input);
+                AddElement(edge);
+            }
+        });
+    }
+
+    /// <summary>
     /// 当图发生变化时
     /// </summary>
     /// <param name="graphViewChange"></param>
@@ -177,7 +217,7 @@ public class TreeView : GraphView
         foreach (var type in types)
         {
             if (type.IsAbstract) { continue; }
-            if (type == _tree.RootType) { continue; }
+            //if (type == _tree.RootType) { continue; }
             Type parent = type;
             StringBuilder sb = new StringBuilder();
             while (parent != _tree.NodeParentType)
@@ -186,10 +226,9 @@ public class TreeView : GraphView
                 parent = parent.BaseType;
             }
             sb.Remove(0, 1);
+            if(type == _tree.RootType) { sb.Append("（为了防止特殊情况而保留。看清楚了，这是根节点，不要乱加）"); }
             evt.menu.AppendAction(sb.ToString(), (a) =>
             {
-                MouseMoveEvent m = new MouseMoveEvent();
-                Debug.Log(m.mousePosition);
                 CreateNode(type);
             });
         }

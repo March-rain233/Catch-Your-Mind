@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class StatusPanel : BasePanel
 {
     public override PanelType Type => PanelType.StatusPanel;
 
-    public Text InteractionText;
+    public TextMeshProUGUI InteractionText;
+
+    public FillSlider Time;
+
+    public FillSlider Blood;
 
     private void Start()
     {
@@ -18,7 +23,7 @@ public class StatusPanel : BasePanel
     private void InteractionEnter(EventCenter.EventArgs eventArgs)
     {
         _animator.SetTrigger("InteractionEnter");
-        InteractionText.text = "按下" + (eventArgs.Object as InteractionTrigger).InteractKey
+        InteractionText.text = "按下" + eventArgs.Object.ToString()
             + "来" + eventArgs.String;
     }
 

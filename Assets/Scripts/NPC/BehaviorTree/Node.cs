@@ -51,7 +51,7 @@ namespace NPC
 
         public UnityEditor.Experimental.GraphView.Port.Capacity Input => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
 
-        [SerializeField, HideInInspector, SetProperty("Status")]
+        [SerializeField, SetProperty("Status")]
         private NodeStatus _status = NodeStatus.Success;
 
         public event Action<string> OnNameChanged;
@@ -128,6 +128,7 @@ namespace NPC
         {
             var node = Instantiate(this);
             node.ViewPosition = ViewPosition;
+            node.Guid = GUID.Generate().ToString();
             return node;
         }
 
@@ -144,6 +145,26 @@ namespace NPC
         public void ChangeGuid()
         {
             Guid = GUID.Generate().ToString();
+        }
+
+        [Button("保存到")]
+        private void SaveAs()
+        {
+            string path = EditorUtility.SaveFilePanelInProject("保存为", name, "asset", "一切我没想到的错误操作，我拒不负责！");
+            Node clone = Clone();
+            AssetDatabase.CreateAsset(clone, path);
+            Stack<Node> stack = new Stack<Node>();
+            stack.Push(clone);
+            while (stack.Count > 0)
+            {
+                var node = stack.Pop();
+                Array.ForEach(node.GetChildren(), child => stack.Push(child as Node));
+                node.name = node.name.Replace("(Clone)", "");
+                if(node != clone)
+                {
+                    AssetDatabase.AddObjectToAsset(node, clone);
+                }
+            }
         }
     }
 }

@@ -1,5 +1,38 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8490781068247432899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -8400805882546581545}
+--- !u!114 &-8400805882546581545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -3455279868925617810}
+  _paragraphs:
+  - Name: Mind
+    Body: 123456
+    ObjectName: Mind
+    Skip: 1
 --- !u!114 &-8086139713986704244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78,7 +111,74 @@ MonoBehaviour:
       Entry: 1
       Data: 566430a41ccb0e54ead2c14f95d27fc3
   _status: 2
-  Child: {fileID: 1690412095893302982}
+  Child: {fileID: -1611184348306521197}
+--- !u!114 &-3455279868925617810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  _paragraphs:
+  - Name: 
+    Body: 7891011
+    ObjectName: 
+    Skip: 0
+  - Name: 
+    Body: 121314
+    ObjectName: 
+    Skip: 0
+--- !u!114 &-1961320064685109441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -8400805882546581545}
+--- !u!114 &-1611184348306521197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: DialogueTree
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 636603695017e7c40a8a91a50c71ea8f
+  _status: 0
+  _rootNode: {fileID: -1961320064685109441}
+  _nodes:
+  - {fileID: -1961320064685109441}
+  - {fileID: -8400805882546581545}
+  - {fileID: -3455279868925617810}
 --- !u!114 &-890242105586259356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +264,7 @@ MonoBehaviour:
   - {fileID: -7010685259309552258}
   - {fileID: 4018934184979382756}
   - {fileID: -8086139713986704244}
+  - {fileID: -1611184348306521197}
 --- !u!114 &1690412095893302982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,7 +371,7 @@ MonoBehaviour:
       Entry: 1
       Data: 414055dafa927c44fab148d69380e494
   _status: 0
-  _abortType: 1
+  _abortType: 3
   Childrens:
   - {fileID: -8086139713986704244}
   - {fileID: -7010685259309552258}

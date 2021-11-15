@@ -127,6 +127,10 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
         {
             evt.menu.AppendAction("删除", (a) => OnDeleted?.Invoke(this));
         }
+        else
+        {
+            evt.menu.AppendAction("删除(为了一些特殊情况才留着的，这可是根节点，不要手贱！)", (a) => OnDeleted?.Invoke(this));
+        }
     }
 
 }

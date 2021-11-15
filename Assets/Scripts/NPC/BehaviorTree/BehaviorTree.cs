@@ -198,7 +198,12 @@ namespace NPC
         public void SetRoot()
         {
             _rootNode = AddNode(typeof(RootNode)) as RootNode;
-            RootNode.GetType().GetField("_status").SetValue(_rootNode, Node.NodeStatus.Success);
+            RootNode.GetType().GetField("_status").SetValue(_rootNode, Node.NodeStatus.Running);
+        }
+
+        public void AddNode(INode node)
+        {
+            _nodes.Add(node as Node);
         }
     }
 }

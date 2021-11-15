@@ -1,0 +1,458 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8843117337978313866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: DialogueTree
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: e1251aa4086bba54e9873d7312bb9f2b
+  _status: 0
+  _rootNode: {fileID: -1967016123125123129}
+  _nodes:
+  - {fileID: -1967016123125123129}
+  - {fileID: -4041917256710820246}
+  - {fileID: -5552426918615944159}
+  - {fileID: -2118651028465063067}
+--- !u!114 &-7430690484899662963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: e117558149fdbc240bb868ecc236e355
+  _status: 0
+  _abortType: 0
+  Childrens: []
+--- !u!114 &-6900237581510581726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9e5958bbb00784e9df119f4ff58fc1, type: 3}
+  m_Name: SucceederNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 2f27ead888b71814bb31957a5bb0af93
+  _status: 0
+  Child: {fileID: 0}
+--- !u!114 &-5552426918615944159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u8FD9\u91CC\u6709\u4E2A\u5783\u573E\u6876\u6B38"
+    ObjectName: Mind
+    Skip: 0
+--- !u!114 &-4738180348386026091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82143fc676c76604f9e7fc92de05a4d7, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 1f5688066f6e3144595497947dcca201
+  _status: 0
+  Child: {fileID: -3158525223033142988}
+  Times: 0
+  IsForever: 1
+--- !u!114 &-4041917256710820246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7a3c03d89bbf6459247fba194a0552, type: 3}
+  m_Name: RandomSelectorNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Childrens:
+  - {fileID: -5552426918615944159}
+  - {fileID: -2118651028465063067}
+--- !u!114 &-3158525223033142988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 17ca79c18985c1f4abe5fad64160e52c
+  _status: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: -2770930474199314250}
+  - {fileID: 4075250158913295757}
+--- !u!114 &-2770930474199314250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 9a284a4d328ab8a49b82b3c93e0a982d
+  _status: 0
+  _abortType: 1
+  Childrens:
+  - {fileID: 8062287263390846126}
+  - {fileID: -2697373105942922360}
+  - {fileID: -6900237581510581726}
+--- !u!114 &-2697373105942922360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7902cfbb8c63340b8688bff7196d54, type: 3}
+  m_Name: EventSenderNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 623d2ce1cdded574fbf4db6052983a0a
+    - Name: EventArg
+      Entry: 7
+      Data: EventCenter+EventArgs, Assembly-CSharp
+    - Name: Float
+      Entry: 4
+      Data: 0
+    - Name: Int
+      Entry: 3
+      Data: 0
+    - Name: Boolean
+      Entry: 5
+      Data: false
+    - Name: String
+      Entry: 1
+      Data: "\u6253\u5F00\u5783\u573E\u7BB1"
+    - Name: Object
+      Entry: 7
+      Data: 0|KeyType, Assembly-CSharp
+    - Name: 
+      Entry: 3
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _status: 0
+  EventName: InteractionEnter
+  EventArg:
+    Float: 0
+    Int: 0
+    Boolean: 0
+    String: "\u6253\u5F00\u5783\u573E\u7BB1"
+--- !u!114 &-2118651028465063067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u6D4B\u8BD5\u5BF9\u8BDD"
+    ObjectName: Mind
+    Skip: 0
+--- !u!114 &-1967016123125123129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -4041917256710820246}
+--- !u!114 &-1518738554147569632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2349accf1846c9144a16afbcaedb1145, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 4d15bfaa96de3054d9a96a311b001cab
+  _status: 2
+  Child: {fileID: -4738180348386026091}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a9a9a11c315184b8abf03b52af6a12, type: 3}
+  m_Name: Test
+  m_EditorClassIdentifier: 
+  _rootNode: {fileID: -1518738554147569632}
+  _nodes:
+  - {fileID: -1518738554147569632}
+  - {fileID: -4738180348386026091}
+  - {fileID: -3158525223033142988}
+  - {fileID: -2770930474199314250}
+  - {fileID: 8062287263390846126}
+  - {fileID: -2697373105942922360}
+  - {fileID: 4075250158913295757}
+  - {fileID: 9069742383789934537}
+  - {fileID: -8843117337978313866}
+  - {fileID: -6900237581510581726}
+  - {fileID: -7430690484899662963}
+--- !u!114 &4075250158913295757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7902cfbb8c63340b8688bff7196d54, type: 3}
+  m_Name: EventSenderNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 3e21a9b37634c8c4b9933fad5aacaad1
+    - Name: EventArg
+      Entry: 7
+      Data: EventCenter+EventArgs, Assembly-CSharp
+    - Name: Float
+      Entry: 4
+      Data: 0
+    - Name: Int
+      Entry: 3
+      Data: 0
+    - Name: Boolean
+      Entry: 5
+      Data: false
+    - Name: String
+      Entry: 1
+      Data: 
+    - Name: Object
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _status: 0
+  EventName: InteractionExit
+  EventArg:
+    Float: 0
+    Int: 0
+    Boolean: 0
+    String: 
+--- !u!114 &8062287263390846126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd71be940105e474ab84453298ff0667, type: 3}
+  m_Name: OverlapCircleNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 8d026111bbffb094a8d55ca88596e7de
+  _status: 0
+  Radius: 1
+  CheckLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &9069742383789934537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: KeyNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 69387e6350943a446b8343c24d92022d
+  _status: 0
+  _keyType: 4
+  _pressType: 0

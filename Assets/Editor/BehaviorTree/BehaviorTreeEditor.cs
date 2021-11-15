@@ -34,8 +34,44 @@ public class BehaviorTreeEditor : EditorWindow
         _treeView = root.Q<TreeView>();
         _inspectorView = root.Q<InspectorView>();
         _label = root.Q<Label>("name");
+        root.Q<ToolbarButton>("load").clicked += LoadAsset;
+        root.Q<ToolbarButton>("loadNode").clicked += LoadNode;
         _treeView.OnElementSelected = OnSelectionChanged;
         OnSelectionChange();
+    }
+
+    private void LoadNode()
+    {
+        string path = EditorUtility.OpenFilePanel("选择节点", Application.dataPath, "asset");
+        path = path.Replace(Application.dataPath, "Assets");
+        NPC.Node node = AssetDatabase.LoadAssetAtPath<NPC.Node>(path);
+        if (node == null)
+        {
+            Debug.Log("文件违规");
+            return;
+        }
+        _treeView.AddSubtree(node);
+    }
+
+    private void LoadAsset()
+    {
+        string path = EditorUtility.OpenFilePanel("选择行为树", Application.dataPath, "asset");
+        path = path.Replace(Application.dataPath, "Assets");
+        ITree tree = AssetDatabase.LoadAssetAtPath<NPC.BehaviorTree>(path);
+        if(tree == null)
+        {
+            Debug.Log("文件违规");
+            return;
+        }
+        LoadTree(tree);
+    }
+
+    private void LoadTree(ITree tree)
+    {
+        //if (!AssetDatabase.IsMainAsset(tree as UnityEngine.Object)) { return; }
+        _label.text = (tree as Object).name + " View";
+        _treeView.PopulateView(tree);
+        _inspectorView.Clear();
     }
 
     private void OnSelectionChange()
@@ -48,10 +84,7 @@ public class BehaviorTreeEditor : EditorWindow
 
         if (tree != null)
         {
-            //if (!AssetDatabase.IsMainAsset(tree as UnityEngine.Object)) { return; }
-            _label.text = Selection.activeObject .name + " View";
-            _treeView.PopulateView(tree);
-            _inspectorView.Clear();
+            LoadTree(tree);
         }
     }
 
