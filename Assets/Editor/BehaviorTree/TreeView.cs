@@ -158,6 +158,67 @@ public class TreeView : GraphView
     }
 
     /// <summary>
+    /// 整理图表
+    /// </summary>
+    public void Sort_1()
+    {
+        Vector2 ori = Vector2.zero;
+        float yDifference = 150;
+        float xDifference = 250;
+        int lenth = 1;
+        int ylenth = 0;
+        
+        List<INode> sorted = new List<INode>();
+
+        Queue<INode> queue = new Queue<INode>();
+        Queue<INode> next = new Queue<INode>();
+        queue.Enqueue(_tree.RootNode);
+        while (queue.Count > 0)
+        {
+            var node = queue.Dequeue();
+            Array.ForEach(node.GetChildren(), child => { if (!sorted.Contains(child)) { next.Enqueue(child); } });
+            sorted.Add(node);
+            FindNodeView(node).SetPosition(new Rect(ori.x + xDifference * lenth, ori.y + yDifference * ylenth++, 0, 0));
+            if(queue.Count <= 0)
+            {
+                queue = next;
+                next = new Queue<INode>();
+                ylenth = 0;
+                ++lenth;
+            }
+        }
+    }
+
+    public void Sort_2()
+    {
+        Vector2 ori = Vector2.zero;
+        float yDifference = 150;
+        float xDifference = 250;
+        int lenth = 1;
+        int ylenth = 0;
+
+        List<INode> sorted = new List<INode>();
+
+        Queue<INode> queue = new Queue<INode>();
+        Queue<INode> next = new Queue<INode>();
+        queue.Enqueue(_tree.RootNode);
+        while (queue.Count > 0)
+        {
+            var node = queue.Dequeue();
+            Array.ForEach(node.GetChildren(), child => { if (!sorted.Contains(child)) { next.Enqueue(child); } });
+            sorted.Add(node);
+            FindNodeView(node).SetPosition(new Rect(ori.x + xDifference * lenth, ori.y + yDifference * ylenth++, 0, 0));
+            if (queue.Count <= 0)
+            {
+                queue = next;
+                next = new Queue<INode>();
+                ylenth = -(queue.Count / 2);
+                ++lenth;
+            }
+        }
+    }
+
+    /// <summary>
     /// 当图发生变化时
     /// </summary>
     /// <param name="graphViewChange"></param>

@@ -12,58 +12,23 @@ namespace NPC
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
-            bool isRunning = false;
-            bool isAllFalse = true;
-
-            if (Status == NodeStatus.Running)
+            bool hasRunning = false;
+            bool hasSuccess = false;
+            foreach(var child in Childrens)
             {
-                Childrens.ForEach(child =>
+                switch (child.Tick(runner))
                 {
-                    if (child.Status == NodeStatus.Running || child.Status == NodeStatus.Aborting)
-                    {
-                        var status = child.Tick(runner);
-                        switch (status)
-                        {
-                            case NodeStatus.Success:
-                                isAllFalse = false;
-                                break;
-                            case NodeStatus.Failure:
-                                break;
-                            case NodeStatus.Running:
-                                isRunning = true;
-                                break;
-                            case NodeStatus.Aborting:
-                                Debug.Log("What happened???");
-                                break;
-                        }
-                    }
-                });
+                    case NodeStatus.Success:
+                        hasSuccess = true;
+                        break;
+                    case NodeStatus.Running:
+                        hasRunning = true;
+                        break;
+                }
             }
-            else
-            {
-                Childrens.ForEach(child =>
-                {
-                    var status = child.Tick(runner);
-                    switch (status)
-                    {
-                        case NodeStatus.Success:
-                            isAllFalse = false;
-                            break;
-                        case NodeStatus.Failure:
-                            break;
-                        case NodeStatus.Running:
-                            isRunning = true;
-                            break;
-                        case NodeStatus.Aborting:
-                            Debug.Log("What happened???");
-                            break;
-                    }
-                });
-            }
-
-            if (isRunning) { return NodeStatus.Running; }
-            else if (isAllFalse) { return NodeStatus.Failure; }
-            else { return NodeStatus.Success; }
+            if (hasSuccess) return NodeStatus.Success;
+            if (hasRunning) return NodeStatus.Running;
+            return NodeStatus.Failure;
         }
     }
 }

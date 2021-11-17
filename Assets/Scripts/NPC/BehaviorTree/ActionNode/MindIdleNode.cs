@@ -5,37 +5,17 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class MindIdleNode : ActionNode
+    public class MindIdleNode : MindNode
     {
-        private Animator _animator;
-        private Rigidbody2D _rg;
-
         protected override void OnEnter(BehaviorTreeRunner runner)
         {
-            _animator = runner.Variables["Animator"] as Animator;
-            _rg = runner.Variables["Rigidbody"] as Rigidbody2D;
-            _animator.SetBool("IsIdle", true);
+            base.OnEnter(runner);
             _rg.velocity = Vector2.zero;
-        }
-
-        protected override void OnExit(BehaviorTreeRunner runner)
-        {
-            _animator.SetBool("IsIdle", false);
-        }
-
-        protected override void OnAbort(BehaviorTreeRunner runner)
-        {
-            OnExit(runner);
-        }
-
-        protected override void OnResume(BehaviorTreeRunner runner)
-        {
-            OnEnter(runner);
         }
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
-            _rg.velocity = Vector2.zero;
+            _rg.velocity = new Vector2(0, _rg.velocity.y);
             return NodeStatus.Running;
         }
     }

@@ -4,40 +4,13 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class WalkNode : ActionNode
+    public class WalkNode : MindNode
     {
         /// <summary>
         /// ÒÆ¶¯±¶ÂÊ
         /// </summary>
         [SerializeField]
         private float _moveScale;
-
-        private Animator _animator;
-        private Rigidbody2D _rg;
-        private NPC_Model _model;
-
-        protected override void OnAbort(BehaviorTreeRunner runner)
-        {
-            OnExit(runner);
-        }
-
-        protected override void OnEnter(BehaviorTreeRunner runner)
-        {
-            _animator = runner.Variables["Animator"] as Animator;
-            _rg = runner.Variables["Rigidbody"] as Rigidbody2D;
-            _model = runner.Variables["Model"] as NPC_Model;
-            _animator.SetBool("IsWalk", true);
-        }
-
-        protected override void OnExit(BehaviorTreeRunner runner)
-        {
-            _animator.SetBool("IsWalk", false);
-        }
-
-        protected override void OnResume(BehaviorTreeRunner runner)
-        {
-            OnEnter(runner);
-        }
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {

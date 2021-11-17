@@ -55,7 +55,6 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
 
         node.OnStatusChanged += status =>
         {
-            Debug.Log(status);
             switch (status)
             {
                 case NPC.Node.NodeStatus.Success:

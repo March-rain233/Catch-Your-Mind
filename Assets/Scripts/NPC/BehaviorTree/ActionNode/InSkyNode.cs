@@ -4,39 +4,16 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class RunNode : ActionNode
+    public class InSkyNode : MindNode
     {
-        /// <summary>
-        /// ÒÆ¶¯±¶ÂÊ
-        /// </summary>
         [SerializeField]
         private float _moveScale;
 
-        private Animator _animator;
-        private Rigidbody2D _rg;
-        private NPC_Model _model;
-
-        protected override void OnAbort(BehaviorTreeRunner runner)
-        {
-            OnExit(runner);
-        }
-
         protected override void OnEnter(BehaviorTreeRunner runner)
         {
-            _animator = runner.Variables["Animator"] as Animator;
-            _rg = runner.Variables["Rigidbody"] as Rigidbody2D;
-            _model = runner.Variables["Model"] as NPC_Model;
-            _animator.SetBool("IsRun", true);
-        }
-
-        protected override void OnExit(BehaviorTreeRunner runner)
-        {
-            _animator.SetBool("IsRun", false);
-        }
-
-        protected override void OnResume(BehaviorTreeRunner runner)
-        {
-            OnEnter(runner);
+            _animator = runner.Variables["Animator"].Object as Animator;
+            _rg = runner.Variables["Rigidbody"].Object as Rigidbody2D;
+            _model = runner.Variables["Model"].Object as NPC_Model;
         }
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
@@ -60,7 +37,7 @@ namespace NPC
             {
                 _model.FaceDir = -1;
             }
-            _rg.velocity = new Vector2(horizontal * _moveScale * _model.Speed, 0);
+            _rg.AddForce(new Vector2(horizontal * _moveScale * _model.Speed, 0));
             return NodeStatus.Running;
         }
     }

@@ -37,13 +37,13 @@ namespace NPC
             switch (_pressType)
             {
                 case PressType.Down:
-                    if (UnityEngine.Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[_keyType])) { return NodeStatus.Success; }
+                    if (Invert ^ UnityEngine.Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[_keyType])) { return NodeStatus.Success; }
                     return NodeStatus.Failure;
                 case PressType.Pressing:
-                    if (UnityEngine.Input.GetKey(GameManager.Instance.ControlManager.KeyDic[_keyType])) { return NodeStatus.Success; }
+                    if (Invert ^ UnityEngine.Input.GetKey(GameManager.Instance.ControlManager.KeyDic[_keyType])) { return NodeStatus.Success; }
                     return NodeStatus.Failure;
                 case PressType.Up:
-                    if (UnityEngine.Input.GetKeyUp(GameManager.Instance.ControlManager.KeyDic[_keyType])) { return NodeStatus.Success; }
+                    if (Invert ^ UnityEngine.Input.GetKeyUp(GameManager.Instance.ControlManager.KeyDic[_keyType])) { return NodeStatus.Success; }
                     return NodeStatus.Failure;
             }
             throw new System.Exception("It should never hapeen?");

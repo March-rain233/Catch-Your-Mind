@@ -6,6 +6,8 @@ namespace NPC
 {
     public abstract class ConditionNode : Leaf
     {
+        public bool Invert = false;
+
         protected override void OnEnter(BehaviorTreeRunner runner)
         {
         }

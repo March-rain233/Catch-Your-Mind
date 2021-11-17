@@ -38,7 +38,7 @@ namespace NPC
 
         protected override void OnExit(BehaviorTreeRunner runner)
         {
-
+            OnAbort(runner);
         }
 
         protected override void OnResume(BehaviorTreeRunner runner)

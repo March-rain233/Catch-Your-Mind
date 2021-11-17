@@ -23,7 +23,7 @@ MonoBehaviour:
     SerializationNodes: []
   Prototype: {fileID: 0}
   Name: Mind
-  _baseSpeed: 5
+  _baseSpeed: 3
   _jumpHeight: 300
   _baseBlood: 10
   _baseAttack: 10

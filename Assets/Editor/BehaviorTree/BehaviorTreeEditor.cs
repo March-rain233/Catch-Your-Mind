@@ -36,8 +36,20 @@ public class BehaviorTreeEditor : EditorWindow
         _label = root.Q<Label>("name");
         root.Q<ToolbarButton>("load").clicked += LoadAsset;
         root.Q<ToolbarButton>("loadNode").clicked += LoadNode;
+        root.Q<ToolbarButton>("sort1").clicked += SortNode_1;
+        root.Q<ToolbarButton>("sort2").clicked += SortNode_2;
         _treeView.OnElementSelected = OnSelectionChanged;
         OnSelectionChange();
+    }
+
+    private void SortNode_2()
+    {
+        _treeView.Sort_2();
+    }
+
+    private void SortNode_1()
+    {
+        _treeView.Sort_1();
     }
 
     private void LoadNode()

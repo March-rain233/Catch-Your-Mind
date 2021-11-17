@@ -12,7 +12,7 @@ namespace NPC
         /// <summary>
         /// ╠Да©©Б
         /// </summary>
-        public Dictionary<string, object> Variables;
+        public Dictionary<string, EventCenter.EventArgs> Variables;
 
         private void Awake()
         {
