@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca90ab593d87e4949a096ea0239c3e69, type: 3}
-  m_Name: DoubleKeyNode
+  m_Name: "\u53F3\u952E\u53CC\u51FB"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -38,7 +38,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 764ae735f16fa72409c2e4e32c2bc69d, type: 3}
-  m_Name: RushNode
+  m_Name: "\u51B2\u523A\u8282\u70B9"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -53,9 +53,9 @@ MonoBehaviour:
       Entry: 1
       Data: 43b65611a07dbd045932fb9fbc000040
   _status: 0
-  _triggerName: Rush-Sky
-  _holdTime: 0.25
-  _rushScale: 5
+  _triggerName: Rush
+  _holdTime: 0.2
+  _rushScale: 9
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83,11 +83,10 @@ MonoBehaviour:
   _status: 0
   _abortType: 1
   Childrens:
+  - {fileID: -6510895872585659422, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
   - {fileID: 4514604041911679124}
-  - {fileID: 6522612503687771577, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
-  - {fileID: -2714752107395683496, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
-  - {fileID: -5000857588811667069, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
   - {fileID: -3477802363937088277}
+  - {fileID: 7070039903244902444, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
 --- !u!114 &3619797584787646762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -98,7 +97,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca90ab593d87e4949a096ea0239c3e69, type: 3}
-  m_Name: DoubleKeyNode
+  m_Name: "\u5DE6\u952E\u53CC\u51FB"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -126,7 +125,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: SelectorNode
+  m_Name: "\u5224\u65AD\u662F\u5426\u53CC\u51FB"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2

@@ -4,17 +4,13 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class InSkyNode : MindNode
+    public class WalkNode : MindNode
     {
+        /// <summary>
+        /// ÒÆ¶¯±¶ÂÊ
+        /// </summary>
         [SerializeField]
         private float _moveScale;
-
-        protected override void OnEnter(BehaviorTreeRunner runner)
-        {
-            _animator = runner.Variables["Animator"].Object as Animator;
-            _rg = runner.Variables["Rigidbody"].Object as Rigidbody2D;
-            _model = runner.Variables["Model"].Object as NPC_Model;
-        }
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
@@ -28,7 +24,7 @@ namespace NPC
             bool jump = UnityEngine.Input.GetKeyDown(pair[KeyType.Jump]);
             //×ó-1 ÖÐ0 ÓÒ1
 
-            if (horizontal == 0) { return NodeStatus.Running; }
+            if (horizontal == 0) { return NodeStatus.Success; }
             if (horizontal == 1)
             {
                 _model.FaceDir = 1;
@@ -37,7 +33,7 @@ namespace NPC
             {
                 _model.FaceDir = -1;
             }
-            _rg.AddForce(new Vector2(horizontal * _moveScale * _model.Speed, 0));
+            _rg.velocity = new Vector2(horizontal * _moveScale * _model.Speed, 0);
             return NodeStatus.Running;
         }
     }

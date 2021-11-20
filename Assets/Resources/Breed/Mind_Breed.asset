@@ -24,7 +24,7 @@ MonoBehaviour:
   Prototype: {fileID: 0}
   Name: Mind
   _baseSpeed: 3
-  _jumpHeight: 300
+  _jumpHeight: 700
   _baseBlood: 10
   _baseAttack: 10
   _baseDefense: 10

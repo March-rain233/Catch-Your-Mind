@@ -11,7 +11,7 @@ namespace NPC
         /// 要设定的trigger的名字
         /// </summary>
         [SerializeField]
-        private string _triggerName;
+        private string[] _triggerNames;
 
         protected override void OnAbort(BehaviorTreeRunner runner)
         {
@@ -35,7 +35,8 @@ namespace NPC
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
-            (runner.Variables["Animator"].Object as Animator).ResetTrigger(_triggerName);
+            var anim = runner.Variables["Animator"].Object as Animator;
+            System.Array.ForEach(_triggerNames, trigger => anim.ResetTrigger(trigger));
             return NodeStatus.Success;
         }
     }

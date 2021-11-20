@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9212674703221524321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c076afa4573faee43843175d66a72250, type: 3}
+  m_Name: "\u4E0B\u843D\u8282\u70B9"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 3cd7bc2798e8a144885291365ab92a0c
+  _status: 0
+  _triggerName: Fall
+  _moveScale: 1.5
+  _exGravity: 0
 --- !u!114 &-9095239321829302919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,7 +38,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 764ae735f16fa72409c2e4e32c2bc69d, type: 3}
-  m_Name: RushNode
+  m_Name: "\u51B2\u523A\u72B6\u6001"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -26,37 +54,8 @@ MonoBehaviour:
       Data: 33148203bdea0e64fa520e7421d76c29
   _status: 0
   _triggerName: Rush
-  _holdTime: 0.25
-  _rushScale: 5
---- !u!114 &-8639756264998943305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: SelectorNode
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 0651d762c2988e14787e53bb22dfe85b
-  _status: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: 795291137293494500}
-  - {fileID: -890242105586259356}
+  _holdTime: 0.2
+  _rushScale: 9
 --- !u!114 &-8490781068247432899
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,6 +70,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
   Child: {fileID: 0}
+--- !u!114 &-8454656805310948786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: "\u53F3"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: d1cfab6ea8ef73a48970936269260969
+  _status: 0
+  Invert: 0
+  _keyType: 1
+  _pressType: 1
 --- !u!114 &-8297436787582640264
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +108,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: Rush
+  m_Name: "\u5730\u9762\u51B2\u523A"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -99,7 +126,114 @@ MonoBehaviour:
   _abortType: 1
   Childrens:
   - {fileID: -5731200616703209510}
+  - {fileID: -4825348243170304894}
   - {fileID: -9095239321829302919}
+  - {fileID: -7048925254679810739}
+--- !u!114 &-8134507596968621807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
+  m_Name: "\u8BBE\u7F6E\u7A7A\u4E2D\u6807\u5FD7"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 8cae093786f548f49b10ff0b14d289a7
+    - Name: Variables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Flying
+    - Name: $v
+      Entry: 7
+      Data: EventCenter+EventArgs, Assembly-CSharp
+    - Name: Float
+      Entry: 4
+      Data: 0
+    - Name: Int
+      Entry: 3
+      Data: 0
+    - Name: Boolean
+      Entry: 5
+      Data: true
+    - Name: String
+      Entry: 6
+      Data: 
+    - Name: Object
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: HasSkyRush
+    - Name: $v
+      Entry: 7
+      Data: EventCenter+EventArgs, Assembly-CSharp
+    - Name: Float
+      Entry: 4
+      Data: 0
+    - Name: Int
+      Entry: 3
+      Data: 0
+    - Name: Boolean
+      Entry: 5
+      Data: false
+    - Name: String
+      Entry: 6
+      Data: 
+    - Name: Object
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _status: 0
 --- !u!114 &-8086139713986704244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,7 +244,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: RunCheck
+  m_Name: "\u5224\u65AD\u662F\u5426\u6309\u4F4F\u884C\u8D70"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -138,7 +272,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e7b13ceee7a0fe4eb8337cd6bec2160, type: 3}
-  m_Name: InSkyNode
+  m_Name: "\u4E0A\u5347\u8282\u70B9"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -153,35 +287,8 @@ MonoBehaviour:
       Entry: 1
       Data: 3a6a78278caebd14a8bf3bd490f90512
   _status: 0
-  _triggerName: 
-  _moveScale: 0.2
---- !u!114 &-7863759267502881396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: CheckNode
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 44a89e6a15eef2b41834f470a4caf1d9
-  _status: 0
-  Invert: 1
-  _valueName: Fall
+  _triggerName: Rise
+  _moveScale: 1.5
 --- !u!114 &-7857688841206109166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,7 +330,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: InTheSky
+  m_Name: "\u5728\u7A7A\u4E2D\u65F6"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -241,7 +348,7 @@ MonoBehaviour:
   _abortType: 3
   Childrens:
   - {fileID: -6148071662531431959}
-  - {fileID: -503781964159744297}
+  - {fileID: 6288737514456519022}
 --- !u!114 &-7283872686839671085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +359,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca90ab593d87e4949a096ea0239c3e69, type: 3}
-  m_Name: DoubleKeyNode
+  m_Name: "\u53F3\u952E\u53CC\u51FB"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -270,6 +377,86 @@ MonoBehaviour:
   Invert: 0
   _keyType: 1
   _judgeInterval: 0.2
+--- !u!114 &-7048925254679810739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d85d8885895d84abc95d3773af45f7, type: 3}
+  m_Name: SetTimeNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: ea69ae23f570b594fa941fcd458511af
+  _status: 0
+  _valueName: RushCD
+--- !u!114 &-6510895872585659422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
+  m_Name: "\u5224\u65AD\u662F\u5426\u5DF2\u7ECF\u51B2\u8FC7\u4E86"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: c95f1a13604a4514f955925a7c1de0d6
+  _status: 0
+  Invert: 1
+  _valueName: HasSkyRush
+--- !u!114 &-6408853585026385061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
+  m_Name: "\u68C0\u67E5\u662F\u5426\u5F00\u59CB\u84C4\u529B"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: d4a2e72f0cb84d440adca6b8e952101a
+  _status: 0
+  Invert: 0
+  _valueName: IsHolding
 --- !u!114 &-6373378823969974346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,7 +467,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: KeyNode
+  m_Name: "\u68C0\u6D4B\u8DF3\u8DC3\u6309\u952E"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -308,7 +495,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd71be940105e474ab84453298ff0667, type: 3}
-  m_Name: OverlapCircleNode
+  m_Name: "\u68C0\u6D4B\u662F\u5426\u5728\u5730\u9762\u4E0A"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -338,7 +525,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff89ecd32a266304ab91e2ed91612578, type: 3}
-  m_Name: RunNode
+  m_Name: "\u8DD1\u52A8\u72B6\u6001"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -383,7 +570,7 @@ MonoBehaviour:
   _abortType: 0
   Childrens:
   - {fileID: -7700767260660593254}
-  - {fileID: -8639756264998943305}
+  - {fileID: -890242105586259356}
 --- !u!114 &-5731200616703209510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -394,7 +581,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: SelectorNode
+  m_Name: "\u5224\u65AD\u662F\u5426\u53CC\u51FB"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -413,7 +600,7 @@ MonoBehaviour:
   Childrens:
   - {fileID: -7283872686839671085}
   - {fileID: 2935294271574923102}
---- !u!114 &-5000857588811667069
+--- !u!114 &-4825348243170304894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -422,8 +609,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ba11dc16d0a2c4c98d8d7ad59c4ffc, type: 3}
-  m_Name: ResetTriggerNode
+  m_Script: {fileID: 11500000, guid: ca604db19c68c734bbe093dcfcc61f9a, type: 3}
+  m_Name: "\u51B2\u523ACD"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -436,9 +623,11 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 455c45d1b5908d44b974695584a6e013
+      Data: 8bb0c8e6479654b499ef172dc7e20639
   _status: 0
-  _triggerName: KickWall
+  Invert: 0
+  _intervalTime: 2
+  _CDName: RushCD
 --- !u!114 &-4742793150740937372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -449,7 +638,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71cccf170c27f2c45918e75701bccd07, type: 3}
-  m_Name: TimerNode
+  m_Name: "\u5EF6\u8FDF"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -465,7 +654,7 @@ MonoBehaviour:
       Data: bb7815c843ad1ca4ba0ae45166964b54
   _status: 0
   _intervalTime: 0.2
---- !u!114 &-4338506392864763746
+--- !u!114 &-4003445543768671752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,8 +663,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0bb8789362f7e4bb40f0ee82556d50, type: 3}
-  m_Name: TriggerSetterNode
+  m_Script: {fileID: 11500000, guid: 6f96092ac3138454b8f601de4701b4a9, type: 3}
+  m_Name: "\u6293\u5899\u8282\u70B9"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -488,9 +677,10 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: f239d3a909a517147a99676a2aa46d07
+      Data: d42d7a6e171e0874e99d87aa58f4dc70
   _status: 0
-  _triggerName: Fall
+  _triggerName: DragWall
+  DownVector: 2
 --- !u!114 &-3795712860749705197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -501,7 +691,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2329d8d813c94054e96a57f4e7ccc528, type: 3}
-  m_Name: CheckWallNode
+  m_Name: "\u68C0\u6D4B\u811A\u8FB9\u662F\u5426\u6709\u5899"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -548,7 +738,7 @@ MonoBehaviour:
       Data: 566430a41ccb0e54ead2c14f95d27fc3
   _status: 2
   Child: {fileID: 1690412095893302982}
---- !u!114 &-2714752107395683496
+--- !u!114 &-2670861358993378464
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -557,8 +747,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ba11dc16d0a2c4c98d8d7ad59c4ffc, type: 3}
-  m_Name: ResetTriggerNode
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u9632\u6B62\u5DE6\u53F3\u4E00\u8D77\u6309"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -571,9 +761,12 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: daeac90747a81954ea494531a184d044
+      Data: 85af2a396aef6c441a1bdf440e554e45
   _status: 0
-  _triggerName: Fall
+  _abortType: 1
+  Childrens:
+  - {fileID: -8454656805310948786}
+  - {fileID: 3870558898583405015}
 --- !u!114 &-1813944413780601215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -584,7 +777,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c4e7384c92fa5744c928950ab09c2eb0, type: 3}
-  m_Name: Jump
+  m_Name: "\u8DF3\u8DC3"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -603,7 +796,7 @@ MonoBehaviour:
   Childrens:
   - {fileID: 11123576004170375}
   - {fileID: -7857688841206109166}
---- !u!114 &-1436551810087879722
+--- !u!114 &-1554118643129567684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -612,8 +805,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: SetFall
+  m_Script: {fileID: 11500000, guid: 07ba375ed8ea0504bb7fa3bad9a481cc, type: 3}
+  m_Name: "\u68C0\u6D4B\u662F\u5426\u4E3A\u4E0B\u843D\u72B6\u6001"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -626,58 +819,38 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 0e44c899b8126994eacf35f981dd061a
-    - Name: Variables
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
-        Assembly-CSharp]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Fall
-    - Name: $v
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: true
-    - Name: String
-      Entry: 6
-      Data: 
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: ab8c9abda3dca75459be202e1a39f8b1
   _status: 0
+  Invert: 1
+  _maxVelocity: {x: 0, y: 0.1}
+  _ignoreX: 1
+  _ignoreY: 0
+--- !u!114 &-1460685734078465051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12797f825f1db3f4ba714d8fd85ac31f, type: 3}
+  m_Name: "\u84C4\u529B\u8282\u70B9"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: d7b3e84883cb17741bf3644caa75b937
+  _status: 0
+  _triggerName: Hold
 --- !u!114 &-890242105586259356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -688,7 +861,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: SelectorNode
+  m_Name: "\u5728\u5730\u9762\u65F6"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -705,11 +878,12 @@ MonoBehaviour:
   _status: 0
   _abortType: 0
   Childrens:
+  - {fileID: 795291137293494500}
   - {fileID: -8297436787582640264}
   - {fileID: -1813944413780601215}
   - {fileID: 5196611249294291278}
   - {fileID: 8439646436218490877}
---- !u!114 &-503781964159744297
+--- !u!114 &-502697426248022488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -718,8 +892,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4e7384c92fa5744c928950ab09c2eb0, type: 3}
-  m_Name: ParallelSelectorNode
+  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
+  m_Name: CheckNode
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -732,12 +906,10 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: ec5180a20a30e9e4bb77716863633d5a
+      Data: 1e313ed6fa3f2404a92f6361038998d8
   _status: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: 7505591810263670541}
-  - {fileID: 101081696336429510}
+  Invert: 1
+  _valueName: Flying
 --- !u!114 &-192559918391552545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,7 +920,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: WalkCheck
+  m_Name: "\u68C0\u6D4B\u662F\u5426\u6309\u4E0B\u5DE6\u53F3\u952E"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -809,39 +981,51 @@ MonoBehaviour:
   - {fileID: -7945042931234900814}
   - {fileID: 4926053580428437972}
   - {fileID: 101081696336429510}
-  - {fileID: -4338506392864763746}
   - {fileID: -7700767260660593254}
   - {fileID: -6148071662531431959}
   - {fileID: 9146092232737549130}
-  - {fileID: -8639756264998943305}
   - {fileID: 795291137293494500}
   - {fileID: 2996448670992230187}
   - {fileID: 5998230083859983078}
   - {fileID: 429891594684845873}
   - {fileID: -4742793150740937372}
-  - {fileID: -503781964159744297}
   - {fileID: -1813944413780601215}
   - {fileID: 3884247443048039555}
   - {fileID: 7990598386301690721}
   - {fileID: 2146064807895571177}
-  - {fileID: -1436551810087879722}
-  - {fileID: -7863759267502881396}
   - {fileID: 2927010767099050348}
   - {fileID: 8185152900216571507}
   - {fileID: -3795712860749705197}
-  - {fileID: 7793811555178609536}
   - {fileID: 3703939343475466850}
   - {fileID: 2659884681690678684}
   - {fileID: 7505591810263670541}
-  - {fileID: 8797943621964124862}
   - {fileID: 11400000, guid: 2272b13b2e70d734da69a7c94864ab42, type: 2}
   - {fileID: -3477802363937088277, guid: 2272b13b2e70d734da69a7c94864ab42, type: 2}
   - {fileID: 4514604041911679124, guid: 2272b13b2e70d734da69a7c94864ab42, type: 2}
   - {fileID: 3619797584787646762, guid: 2272b13b2e70d734da69a7c94864ab42, type: 2}
   - {fileID: -5334405252662889870, guid: 2272b13b2e70d734da69a7c94864ab42, type: 2}
-  - {fileID: -5000857588811667069}
-  - {fileID: -2714752107395683496}
-  - {fileID: 6522612503687771577}
+  - {fileID: -9212674703221524321}
+  - {fileID: 7847815423640038683}
+  - {fileID: -1554118643129567684}
+  - {fileID: -8134507596968621807}
+  - {fileID: 6913762983452305242}
+  - {fileID: 3191426618814994367}
+  - {fileID: -4003445543768671752}
+  - {fileID: 7070039903244902444}
+  - {fileID: -6510895872585659422}
+  - {fileID: -502697426248022488}
+  - {fileID: 6288737514456519022}
+  - {fileID: 87441344099478529}
+  - {fileID: -1460685734078465051}
+  - {fileID: 277831317510815989}
+  - {fileID: -6408853585026385061}
+  - {fileID: -4825348243170304894}
+  - {fileID: -7048925254679810739}
+  - {fileID: 764855887826732137}
+  - {fileID: -2670861358993378464}
+  - {fileID: 3870558898583405015}
+  - {fileID: -8454656805310948786}
+  - {fileID: 503794320562844722}
 --- !u!114 &11123576004170375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -873,7 +1057,7 @@ MonoBehaviour:
   - {fileID: -6373378823969974346}
   - {fileID: 6696321000486697210}
   - {fileID: 3884247443048039555}
---- !u!114 &101081696336429510
+--- !u!114 &87441344099478529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -896,14 +1080,70 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 0400a2a1730bb0a41819ae917320fdfc
+      Data: 6ec2928a0d707494ea61e8e0c37affbd
   _status: 0
   _abortType: 0
   Childrens:
-  - {fileID: -7863759267502881396}
+  - {fileID: -502697426248022488}
+  - {fileID: -8134507596968621807}
+--- !u!114 &101081696336429510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u4E0B\u843D"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 0400a2a1730bb0a41819ae917320fdfc
+  _status: 0
+  _abortType: 3
+  Childrens:
   - {fileID: 4926053580428437972}
-  - {fileID: -4338506392864763746}
-  - {fileID: -1436551810087879722}
+  - {fileID: -9212674703221524321}
+--- !u!114 &277831317510815989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u84C4\u529B"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 9fb31b16f65ecaa40a927ea5aafc9cee
+  _status: 0
+  _abortType: 3
+  Childrens:
+  - {fileID: -6408853585026385061}
+  - {fileID: -1460685734078465051}
 --- !u!114 &429891594684845873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -914,7 +1154,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe0bb8789362f7e4bb40f0ee82556d50, type: 3}
-  m_Name: TriggerSetterNode
+  m_Name: "\u8BBE\u7F6E\u843D\u5730\u52A8\u753B"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -930,7 +1170,33 @@ MonoBehaviour:
       Data: d36d068f4c8e6d24d8149cfb0258684c
   _status: 0
   _triggerName: Landing
---- !u!114 &795291137293494500
+--- !u!114 &503794320562844722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b01525a1d9cfc47972add52e2cd977, type: 3}
+  m_Name: InverterNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: ff543fb3fe168784f9c2ce0365d9431b
+  _status: 0
+  Child: {fileID: -2670861358993378464}
+--- !u!114 &764855887826732137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -953,15 +1219,42 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
+      Data: aebd6451151a4ae42a62354a848b9e89
+  _status: 0
+  _abortType: 0
+  Childrens: []
+--- !u!114 &795291137293494500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u843D\u5730"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
       Data: 17ee61aaa79d58d4a97d0792f4cc9b4f
   _status: 0
-  _abortType: 1
+  _abortType: 3
   Childrens:
   - {fileID: 5998230083859983078}
-  - {fileID: 2996448670992230187}
   - {fileID: 2927010767099050348}
   - {fileID: 429891594684845873}
   - {fileID: -4742793150740937372}
+  - {fileID: 2996448670992230187}
 --- !u!114 &1061505019226269823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -972,7 +1265,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b075e9f750f3b344aacecbe804e251f5, type: 3}
-  m_Name: JumpNode
+  m_Name: "\u8DF3\u8DC3\u72B6\u6001"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -990,7 +1283,7 @@ MonoBehaviour:
   _triggerName: Jump
   _maxJumpScale: 1.5
   _minJumpScale: 1
-  _holdingTime: 1
+  _holdingTime: 0.5
 --- !u!114 &1569465939441697129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1001,7 +1294,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: KeyNode
+  m_Name: "\u5224\u65AD\u8DF3\u8DC3\u662F\u5426\u5F39\u8D77"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1057,7 +1350,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: CheckNode
+  m_Name: "\u5224\u65AD\u8DF3\u8DC3\u539F\u5148\u662F\u5426\u6309\u4E0B"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1084,7 +1377,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca3ea4e3f4ac2194b8659bc29f615b89, type: 3}
-  m_Name: KickWallNode
+  m_Name: "\u8E6C\u5899\u8DF3\u8282\u70B9"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1100,7 +1393,7 @@ MonoBehaviour:
       Data: 4908ffc5293922c4ab63a0a3affd3fff
   _status: 0
   _triggerName: KickWall
-  Force: {x: 5, y: 5}
+  Velocity: {x: 10, y: 16}
 --- !u!114 &2927010767099050348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1111,7 +1404,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01ba11dc16d0a2c4c98d8d7ad59c4ffc, type: 3}
-  m_Name: ResetTriggerNode
+  m_Name: "\u6E05\u9664\u52A8\u753B"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1126,7 +1419,9 @@ MonoBehaviour:
       Entry: 1
       Data: 9af457b3e09574f45bd414b10ba70239
   _status: 0
-  _triggerName: Fall
+  _triggerNames:
+  - Fall
+  - Jump
 --- !u!114 &2935294271574923102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1137,7 +1432,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca90ab593d87e4949a096ea0239c3e69, type: 3}
-  m_Name: DoubleKeyNode
+  m_Name: "\u5DE6\u952E\u53CC\u51FB"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1165,7 +1460,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: SetterNode
+  m_Name: "\u6E05\u9664\u6807\u5FD7"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1192,43 +1487,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: Jump
-    - Name: $v
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: false
-    - Name: String
-      Entry: 6
-      Data: 
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Fall
+      Data: Flying
     - Name: $v
       Entry: 7
       Data: EventCenter+EventArgs, Assembly-CSharp
@@ -1270,7 +1535,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: RightCheck
+  m_Name: "\u6309\u4E0B\u53F3\u952E"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1288,6 +1553,35 @@ MonoBehaviour:
   Invert: 0
   _keyType: 1
   _pressType: 1
+--- !u!114 &3191426618814994367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u8E6C\u5899\u8DF3"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: ff80d407a0d030548b4879967b0a8cf0
+  _status: 0
+  _abortType: 1
+  Childrens:
+  - {fileID: 3703939343475466850}
+  - {fileID: 2659884681690678684}
 --- !u!114 &3703939343475466850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,7 +1592,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: KeyNode
+  m_Name: "\u68C0\u6D4B\u662F\u5426\u6309\u4E0B\u8DF3\u8DC3"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1315,6 +1609,34 @@ MonoBehaviour:
   _status: 0
   Invert: 0
   _keyType: 0
+  _pressType: 0
+--- !u!114 &3870558898583405015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: "\u5DE6"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 706af5707bc2f56468e54bff66090fef
+  _status: 0
+  Invert: 0
+  _keyType: 2
   _pressType: 1
 --- !u!114 &3884247443048039555
 MonoBehaviour:
@@ -1326,7 +1648,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: SetterNode
+  m_Name: "\u8BBE\u7F6E\u5DF2\u6309\u4E0B"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1401,7 +1723,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ff89ecd32a266304ab91e2ed91612578, type: 3}
-  m_Name: WalkNode
+  m_Name: "\u884C\u8D70\u72B6\u6001"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1428,7 +1750,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: Walk
+  m_Name: "\u884C\u8D70"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1457,7 +1779,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07ba375ed8ea0504bb7fa3bad9a481cc, type: 3}
-  m_Name: VelocityCheckNode
+  m_Name: "\u68C0\u67E5\u4E0B\u843D\u901F\u5EA6"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1486,7 +1808,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: Walk
+  m_Name: "\u884C\u8D70"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1504,6 +1826,7 @@ MonoBehaviour:
   _abortType: 1
   Childrens:
   - {fileID: -192559918391552545}
+  - {fileID: 503794320562844722}
   - {fileID: 8233036664093174415}
 --- !u!114 &5998230083859983078
 MonoBehaviour:
@@ -1515,7 +1838,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: CheckNode
+  m_Name: "\u5224\u65AD\u4E4B\u524D\u662F\u5426\u5728\u7A7A\u4E2D"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1531,8 +1854,8 @@ MonoBehaviour:
       Data: 1f20d3d6a19cb904792440390ba1760c
   _status: 0
   Invert: 0
-  _valueName: Jump
---- !u!114 &6522612503687771577
+  _valueName: Flying
+--- !u!114 &6288737514456519022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1541,8 +1864,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: SetterNode
+  m_Script: {fileID: 11500000, guid: c4e7384c92fa5744c928950ab09c2eb0, type: 3}
+  m_Name: ParallelSelectorNode
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1555,7 +1878,91 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 42e5cd34f1edf36448c5bdbc694c3983
+      Data: e307e487fc6f2cc43ae404a163c95fcd
+  _status: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 87441344099478529}
+  - {fileID: 7505591810263670541}
+--- !u!114 &6696321000486697210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43d85d8885895d84abc95d3773af45f7, type: 3}
+  m_Name: "\u8BB0\u5F55\u6309\u952E\u6309\u4E0B\u65F6\u95F4"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 02411b6752fbb96458d06887e8cc15bd
+  _status: 0
+  _valueName: JumpHoldingTime
+--- !u!114 &6913762983452305242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
+  m_Name: "\u5899\u8FB9\u72B6\u6001\u9009\u62E9"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: d3b760ac3d0d0a146adb494791ececcb
+  _status: 0
+  _abortType: 1
+  Childrens:
+  - {fileID: 3191426618814994367}
+  - {fileID: 7847815423640038683}
+--- !u!114 &7070039903244902444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
+  m_Name: "\u8BBE\u7F6E\u51B2\u8FC7\u4E86"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: c51cf5de5d35bb842966a0d2b33c01cc
     - Name: Variables
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
@@ -1575,7 +1982,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: Fall
+      Data: HasSkyRush
     - Name: $v
       Entry: 7
       Data: EventCenter+EventArgs, Assembly-CSharp
@@ -1587,7 +1994,7 @@ MonoBehaviour:
       Data: 0
     - Name: Boolean
       Entry: 5
-      Data: false
+      Data: true
     - Name: String
       Entry: 6
       Data: 
@@ -1607,32 +2014,6 @@ MonoBehaviour:
       Entry: 8
       Data: 
   _status: 0
---- !u!114 &6696321000486697210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d85d8885895d84abc95d3773af45f7, type: 3}
-  m_Name: SetTimeNode
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 02411b6752fbb96458d06887e8cc15bd
-  _status: 0
-  _valueName: JumpHoldingTime
 --- !u!114 &7505591810263670541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1643,7 +2024,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: SelectorNode
+  m_Name: "\u7A7A\u4E2D\u72B6\u6001\u9009\u62E9"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1660,36 +2041,10 @@ MonoBehaviour:
   _status: 0
   _abortType: 0
   Childrens:
-  - {fileID: 8185152900216571507}
   - {fileID: 11400000, guid: 2272b13b2e70d734da69a7c94864ab42, type: 2}
+  - {fileID: 8185152900216571507}
+  - {fileID: 101081696336429510}
   - {fileID: -7945042931234900814}
---- !u!114 &7793811555178609536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: CheckNode
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 225d7daf658bc83428b8eb60fcafa18f
-  _status: 0
-  Invert: 0
-  _valueName: Jump
 --- !u!114 &7836679713859515849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1700,7 +2055,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: LeftCheck
+  m_Name: "\u6309\u4E0B\u5DE6\u952E"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1718,6 +2073,35 @@ MonoBehaviour:
   Invert: 0
   _keyType: 2
   _pressType: 1
+--- !u!114 &7847815423640038683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u6293\u5899"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 2a4aaacb7420eb146b39040316a331f8
+  _status: 0
+  _abortType: 3
+  Childrens:
+  - {fileID: -1554118643129567684}
+  - {fileID: -4003445543768671752}
 --- !u!114 &7990598386301690721
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1728,7 +2112,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: CheckNode
+  m_Name: "\u5224\u65AD\u662F\u5426\u6309\u4E0B\u8FC7"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1755,7 +2139,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: SequenceNode
+  m_Name: "\u5899\u8FB9\u72B6\u6001"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1772,11 +2156,8 @@ MonoBehaviour:
   _status: 0
   _abortType: 1
   Childrens:
-  - {fileID: 7793811555178609536}
   - {fileID: -3795712860749705197}
-  - {fileID: 3703939343475466850}
-  - {fileID: 2659884681690678684}
-  - {fileID: 8797943621964124862}
+  - {fileID: 6913762983452305242}
 --- !u!114 &8233036664093174415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1787,7 +2168,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: WalkOrRun
+  m_Name: "\u5224\u65AD\u884C\u8D70\u8FD8\u662F\u8DD1\u52A8"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1816,7 +2197,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8f3294d0dcddaa443827c7bd89258ea2, type: 3}
-  m_Name: MindIdleNode
+  m_Name: "\u5F85\u673A"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1832,81 +2213,6 @@ MonoBehaviour:
       Data: c5158732bd081424bb721d4f407e3eab
   _status: 0
   _triggerName: Idle
---- !u!114 &8797943621964124862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: SetterNode
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: bf134d0c4b76c8d4d8bb68149c4ba202
-    - Name: Variables
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
-        Assembly-CSharp]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Fall
-    - Name: $v
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: false
-    - Name: String
-      Entry: 6
-      Data: 
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  _status: 0
 --- !u!114 &9146092232737549130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1917,7 +2223,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: SetterNode
+  m_Name: "\u8BBE\u7F6E\u8DF3\u8DC3\u5C5E\u6027"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2

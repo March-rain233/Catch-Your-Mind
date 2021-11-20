@@ -16,8 +16,9 @@ namespace NPC
 
         protected override void OnEnter(BehaviorTreeRunner runner)
         {
-            _current = Childrens.FindIndex(child => child.Status == NodeStatus.Aborting);
-            if (_current == -1) { _current = 0; }
+            _current = 0;
+            //_current = Childrens.FindIndex(child => child.Status == NodeStatus.Aborting);
+            //if (_current == -1) { _current = 0; }
         }
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)

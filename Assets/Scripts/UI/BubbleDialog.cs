@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 /// <summary>
@@ -7,6 +8,13 @@ using UnityEngine;
 /// </summary>
 public class BubbleDialog : Dialog
 {
+
+    /// <summary>
+    /// 角色名控件
+    /// </summary>
+    [SerializeField]
+    private TextMeshProUGUI _name;
+
     /// <summary>
     /// 跟随目标
     /// </summary>
@@ -32,5 +40,10 @@ public class BubbleDialog : Dialog
             position.y += _offsetY;
             _rectTransform.anchoredPosition = position;
         }
+    }
+
+    public void SetName(string newName)
+    {
+        _name.text = newName + ":";
     }
 }

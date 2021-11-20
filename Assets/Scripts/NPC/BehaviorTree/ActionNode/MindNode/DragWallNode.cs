@@ -4,36 +4,28 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class WalkNode : MindNode
+
+    public class DragWallNode : MindNode
     {
         /// <summary>
-        /// 移动倍率
+        /// 下落速度
         /// </summary>
-        [SerializeField]
-        private float _moveScale;
+        public float DownVector;
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
+            _rg.velocity = Vector2.down * DownVector;
             var pair = GameManager.Instance.ControlManager.KeyDic;
             //左-1 中0 右1
             int horizontal =
                 System.Convert.ToInt32(UnityEngine.Input.GetKey(pair[KeyType.Right]))
                 - System.Convert.ToInt32(UnityEngine.Input.GetKey(pair[KeyType.Left]));
 
-            //下-1 中0 上1
-            bool jump = UnityEngine.Input.GetKeyDown(pair[KeyType.Jump]);
-            //左-1 中0 右1
-
-            if (horizontal == 0) { return NodeStatus.Running; }
-            if (horizontal == 1)
+            if(horizontal == -_model.FaceDir)
             {
-                _model.FaceDir = 1;
+                _model.FaceDir = horizontal;
+                return NodeStatus.Success;
             }
-            else
-            {
-                _model.FaceDir = -1;
-            }
-            _rg.velocity = new Vector2(horizontal * _moveScale * _model.Speed, 0);
             return NodeStatus.Running;
         }
     }

@@ -101,7 +101,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     private void CreateInputPorts()
     {
         if (Node.IsRoot) { return; }
-        Input = InstantiatePort(Orientation.Horizontal, Direction.Input, Node.Input, null);
+        Input = InstantiatePort(Orientation.Horizontal, Direction.Input, Node.Input, Node.GetType());
         //Debug.Log(title + (Input==null).ToString());
         Input.name = "";
         inputContainer.Add(Input);

@@ -7,37 +7,31 @@ using Sirenix.Serialization;
 using Sirenix.OdinInspector;
 using System.Text.RegularExpressions;
 
-public class Dialog : SerializedMonoBehaviour
+public abstract class Dialog : SerializedMonoBehaviour
 {
-    /// <summary>
-    /// 角色名控件
-    /// </summary>
-    [SerializeField]
-    private TextMeshProUGUI _name;
-
     /// <summary>
     /// 正文控件
     /// </summary>
     [SerializeField]
-    private TextMeshProUGUI _textLable;
+    protected TextMeshProUGUI _textLable;
 
     /// <summary>
     /// 当前输出的文本
     /// </summary>
     [SerializeField, TextArea]
-    private string _outPutText;
+    protected string _outPutText;
 
     /// <summary>
     /// 当前文本速率
     /// </summary>
     [SerializeField]
-    private float _textSpeed;
+    protected float _textSpeed;
 
     /// <summary>
     /// 默认输出速率
     /// </summary>
     [SerializeField]
-    private float _defaultSpeed;
+    protected float _defaultSpeed;
 
     /// <summary>
     /// 当前是否在输出
@@ -50,20 +44,16 @@ public class Dialog : SerializedMonoBehaviour
     }
 
     //判断是否为标签
-    private static Regex _open = new Regex(@"^<[^/]+?>");
-    private static Regex _close = new Regex(@"^</[^/]+?>");
+    protected static Regex _open = new Regex(@"^<[^/]+?>");
+    protected static Regex _close = new Regex(@"^</[^/]+?>");
 
     /// <summary>
     /// 当前支持的自定义标签
     /// </summary>
+    [OdinSerialize]
     protected static List<string> UserTag = new List<string>();
 
     public System.Action ShowEnd;
-
-    public void SetName(string newName)
-    {
-        _name.text = newName + ":";
-    }
 
     /// <summary>
     /// 逐字输出
