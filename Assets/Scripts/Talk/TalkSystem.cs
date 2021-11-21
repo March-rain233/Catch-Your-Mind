@@ -3,20 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using System.Linq;
+using System;
 
 public class TalkSystem : MonoBehaviour
 {
-    public static TalkSystem Instance
-    {
-        get;
-        private set;
-    }
     /// <summary>
     /// 段落
     /// </summary>
     [System.Serializable]
     public struct TextBody
     {
+        [System.Serializable]
+        public enum DialogType
+        {
+            Bubble,
+            Queue,
+        }
+        [System.Serializable]
+        public enum ControlType
+        {
+            KeyBoard,
+            Mouse,
+            Both
+        }
         [LabelText("角色名")]
         public string Name;
         [LabelText("正文"), Multiline]
@@ -25,31 +34,41 @@ public class TalkSystem : MonoBehaviour
         public string ObjectName;
         [LabelText("是否播放完立即跳转至下一对话")]
         public bool Skip;
+        [LabelText("对话框类型"), EnumToggleButtons]
+        public DialogType Dialog;
+        [LabelText("操作类型"), EnumToggleButtons]
+        public ControlType Control;
+
     }
 
-    public GameObject DialogPrefabs;
+    public static TalkSystem Instance
+    {
+        get;
+        private set;
+    }
+
+    public GameObject BubbleDialogPrefabs;
 
     private Queue<TextBody> _textBodies = new Queue<TextBody>();
 
     private bool _skip = false;
 
-    private BubbleDialog Dialog
+    private BubbleDialog BubbleDialog
     {
         get
         {
             if (_dialog == null)
             {
-                _dialog = Instantiate(DialogPrefabs, GameObject.Find("UIroot").transform).GetComponent<BubbleDialog>();
-                _dialog.ShowEnd += () =>
-                {
-                    if (_skip) { NextStep(); }
-                };
+                _dialog = Instantiate(BubbleDialogPrefabs, GameObject.Find("UIroot").transform).GetComponent<BubbleDialog>();
+                _dialog.ShowEnd += TextEnd;
             }
             return _dialog;
         }
     }
     [SerializeField]
     private BubbleDialog _dialog;
+
+    public Dialogue.DialogueTree DialogueTree;
 
     private void Start()
     {
@@ -66,9 +85,37 @@ public class TalkSystem : MonoBehaviour
         GameManager.Instance.EventCenter.AddListener("ReadBodies", e => PushBodies(e.Object as TextBody[]));
     }
 
+    private void Update()
+    {
+        bool interact = Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[KeyType.Interact]);
+        bool skip = Input.GetKey(GameManager.Instance.ControlManager.KeyDic[KeyType.Skip]);
+        bool mouse = Input.GetMouseButtonDown(0);
+        bool next = false;
+        switch (_textBodies.Peek().Control)
+        {
+            case TextBody.ControlType.KeyBoard:
+                next = skip | interact;
+                break;
+            case TextBody.ControlType.Mouse:
+                next = mouse;
+                break;
+            case TextBody.ControlType.Both:
+                next = mouse | interact | skip;
+                break;
+        }
+        if (next) { NextStep(); }
+        if (DialogueTree)
+        {
+            if(DialogueTree.Tick(null) == NodeStatus.Success)
+            {
+                DialogueTree = null;
+            }
+        }
+    }
+
     public void PushBodies(TextBody[] textBodies)
     {
-        System.Array.ForEach(textBodies, body => _textBodies.Enqueue(body));
+        Array.ForEach(textBodies, body => _textBodies.Enqueue(body));
         NextStep();
     }
 
@@ -76,40 +123,83 @@ public class TalkSystem : MonoBehaviour
     {
         if (_textBodies.Count <= 0) 
         { 
-            GameManager.Instance.EventCenter.SendEvent("DialogEnd", new EventCenter.EventArgs());
+            GameManager.Instance.EventCenter.SendEvent("DIALOG_END", new EventCenter.EventArgs());
             return;
         }
-        if (!Dialog.isActiveAndEnabled) { Dialog.gameObject.SetActive(true); }
-        if (Dialog.Typing)
+        var body = _textBodies.Peek();
+        switch (body.Dialog)
         {
-            Dialog.OutputImmediately();
-        }
-        else
-        {
-            SolveBody(_textBodies.Dequeue());
+            case TextBody.DialogType.Bubble:
+                BubbleDialogHandler(body);
+                break;
+            case TextBody.DialogType.Queue:
+                QueueDialogHandler(body);
+                break;
         }
     }
 
-    private void SolveBody(TextBody body)
+    private void TextEnd()
     {
-        if (!string.IsNullOrEmpty(body.Name))
+        _textBodies.Dequeue();
+        if (_skip) { NextStep(); }
+    }
+
+    private void QueueDialogHandler(TextBody body)
+    {
+        var queue = Transform.FindObjectOfType<MakerPanel>();
+        var dialog = queue.GetCurrentDialog();
+        if(dialog && dialog.Typing)
         {
-            Dialog.SetName(body.Name);
-            if (string.IsNullOrEmpty(body.ObjectName))
+            dialog.OutputImmediately();
+        }
+        else
+        {
+            _skip = body.Skip;
+            dialog = queue.EnqueueDialog(body);
+            dialog.ShowEnd += TextEnd;
+            switch (body.Name)
             {
-                SetDialogFollow(GameObject.Find(body.Name).transform);
+                case "Mind":
+                    dialog.HeadIcon = StaticDialog.Person.Mind;
+                    break;
+                case "Emo":
+                    dialog.HeadIcon = StaticDialog.Person.Emo;
+                    break;
+                default:
+                    dialog.HeadIcon = StaticDialog.Person.None;
+                    break;
             }
         }
-        if (!string.IsNullOrEmpty(body.ObjectName))
+    }
+
+    private void BubbleDialogHandler(TextBody body)
+    {
+        if (!BubbleDialog.isActiveAndEnabled) { BubbleDialog.gameObject.SetActive(true); }
+        if (BubbleDialog.Typing)
         {
-            SetDialogFollow(GameObject.Find(body.ObjectName).transform);
+            BubbleDialog.OutputImmediately();
         }
-        _skip = body.Skip;
-        Dialog.BeginRead(body.Body);
+        else
+        {
+            if (!string.IsNullOrEmpty(body.Name))
+            {
+                BubbleDialog.SetName(body.Name);
+                if (string.IsNullOrEmpty(body.ObjectName))
+                {
+                    SetDialogFollow(GameObject.Find(body.Name).transform);
+                }
+            }
+            if (!string.IsNullOrEmpty(body.ObjectName))
+            {
+                SetDialogFollow(GameObject.Find(body.ObjectName).transform);
+            }
+            _skip = body.Skip;
+            BubbleDialog.BeginRead(body.Body);
+        }
     }
 
     private void SetDialogFollow(Transform follow)
     {
-        Dialog.Follow = follow;
+        BubbleDialog.Follow = follow;
     }
 }

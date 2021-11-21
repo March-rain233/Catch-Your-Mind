@@ -35,9 +35,9 @@ namespace NPC
         /// </summary>
         /// <param name="runner"></param>
         /// <returns></returns>
-        public Node.NodeStatus Tick(BehaviorTreeRunner runner)
+        public NodeStatus Tick(BehaviorTreeRunner runner)
         {
-            if (_rootNode.Status == Node.NodeStatus.Running)
+            if (_rootNode.Status == NodeStatus.Running)
             {
                 _rootNode.Tick(runner);
             }
@@ -198,7 +198,7 @@ namespace NPC
         public void SetRoot()
         {
             _rootNode = AddNode(typeof(RootNode)) as RootNode;
-            RootNode.GetType().GetField("_status").SetValue(_rootNode, Node.NodeStatus.Running);
+            RootNode.GetType().GetField("_status").SetValue(_rootNode, NodeStatus.Running);
         }
 
         public void AddNode(INode node)

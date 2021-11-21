@@ -26,16 +26,10 @@ namespace Dialogue
             GameManager.Instance.EventCenter.SendEvent("ReadBodies", new EventCenter.EventArgs() { Object = _paragraphs });
         }
 
-        protected override NPC.Node.NodeStatus OnUpdate(DialogueTree tree)
+        protected override NodeStatus OnUpdate(DialogueTree tree)
         {
-            if (_readEnd) { return NPC.Node.NodeStatus.Success; }
-            bool next = UnityEngine.Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[KeyType.Interact]);
-            bool skip = UnityEngine.Input.GetKey(GameManager.Instance.ControlManager.KeyDic[KeyType.Skip]);
-            if(next || skip)
-            {
-                GameManager.Instance.EventCenter.SendEvent("NextDialog", new EventCenter.EventArgs());
-            }
-            return NPC.Node.NodeStatus.Running;
+            if (_readEnd) { return NodeStatus.Success; }
+            return NodeStatus.Running;
         }
 
         private void DialogEndHandler(EventCenter.EventArgs e) { _readEnd = true; }

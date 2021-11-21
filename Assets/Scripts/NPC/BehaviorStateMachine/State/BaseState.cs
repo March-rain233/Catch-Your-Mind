@@ -44,7 +44,7 @@ namespace NPC
         public List<Transition> Transitions = new List<Transition>();
 
         public event Action<string> OnNameChanged;
-        public event Action<Node.NodeStatus> OnStatusChanged;
+        public event Action<NodeStatus> OnStatusChanged;
 
         /// <summary>
         /// 获取下一个状态

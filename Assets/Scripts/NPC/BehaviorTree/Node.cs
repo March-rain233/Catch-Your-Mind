@@ -15,18 +15,6 @@ namespace NPC
         public string Guid { get; set; }
 
         /// <summary>
-        /// 节点状态
-        /// </summary>
-        [System.Serializable]
-        public enum NodeStatus
-        {
-            Success,
-            Failure,
-            Running,
-            Aborting,
-        }
-
-        /// <summary>
         /// 当前状态
         /// </summary>
         public NodeStatus Status

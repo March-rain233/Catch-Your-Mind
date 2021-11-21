@@ -19,10 +19,11 @@ namespace Save
             GameSave save = new GameSave();
             save.Inventory.Items = new Dictionary<string, int>();
             save.Story.MessagePath = new Dictionary<string, EventCenter.EventArgs>();
-            save.Player = new Dictionary<string, NPC_Info>();
-            save.Player.Add("Shury", Resources.Load<NPC_Info>(GameManager.
-                Instance.GameConfig.PathConfig.
-                Paths[ObjectType.NPC_Info].PathDic["OriShury"]));
+            save.Story.HaveTriggered = new List<string>();
+            //save.Player = new Dictionary<string, NPC_Info>();
+            //save.Player.Add("Shury", Resources.Load<NPC_Info>(GameManager.
+            //    Instance.GameConfig.PathConfig.
+            //    Paths[ObjectType.NPC_Info].PathDic["OriShury"]));
             save.Position.Scene = "初始场景";
             save.Position.Point = "最初的地点";
             return save;
@@ -31,7 +32,7 @@ namespace Save
         /// <summary>
         /// 玩家角色存档
         /// </summary>
-        public Dictionary<string, NPC_Info> Player;
+        //public Dictionary<string, NPC_Info> Player;
 
         /// <summary>
         /// 故事进度存档

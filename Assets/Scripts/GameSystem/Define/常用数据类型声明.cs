@@ -889,10 +889,10 @@ namespace Save
         /// </summary>
         public Dictionary<string, EventCenter.EventArgs> MessagePath;
 
-        public ProgressSave(ProgressSave save)
-        {
-            MessagePath = new Dictionary<string, EventCenter.EventArgs>(save.MessagePath);
-        }
+        /// <summary>
+        /// 已触发事件
+        /// </summary>
+        public List<string> HaveTriggered;
     }
 
     /// <summary>

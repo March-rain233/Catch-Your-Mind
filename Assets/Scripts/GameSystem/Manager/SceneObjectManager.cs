@@ -41,7 +41,7 @@ public class SceneObjectManager : MonoBehaviour
         {
             CheckReasons();
         };
-        GameManager.Instance.EventCenter.EventChange += (string eventName, EventCenter.EventArgs eventArgs) =>
+        GameManager.Instance.EventCenter.EventChanged += (string eventName, EventCenter.EventArgs eventArgs) =>
         {
             CheckReasons();
         };

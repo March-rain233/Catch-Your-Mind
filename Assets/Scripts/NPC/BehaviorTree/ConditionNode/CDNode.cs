@@ -29,7 +29,7 @@ namespace NPC
                 _firstTime = false;
                 return NodeStatus.Success;
             }
-            return Node.NodeStatus.Failure;
+            return NodeStatus.Failure;
         }
     }
 }

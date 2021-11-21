@@ -8,9 +8,9 @@ namespace Dialogue
     {
         public override bool IsRoot => true;
 
-        protected override NPC.Node.NodeStatus OnUpdate(DialogueTree tree)
+        protected override NodeStatus OnUpdate(DialogueTree tree)
         {
-            return NPC.Node.NodeStatus.Success;
+            return NodeStatus.Success;
         }
     }
 }

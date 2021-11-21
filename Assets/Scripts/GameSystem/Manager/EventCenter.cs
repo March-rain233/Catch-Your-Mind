@@ -32,7 +32,7 @@ public class EventCenter : SerializedMonoBehaviour
     /// <summary>
     /// 消息更新
     /// </summary>
-    public event System.Action<string, EventArgs> EventChange;
+    public event System.Action<string, EventArgs> EventChanged;
 
     /// <summary>
     /// 监听者列表
@@ -48,7 +48,7 @@ public class EventCenter : SerializedMonoBehaviour
     /// 获取事件的参数
     /// </summary>
     /// <param name="eventName"></param>
-    public bool GetEventArgs(string eventName, out EventArgs eventArgs)
+    public bool TeyGetEventArgs(string eventName, out EventArgs eventArgs)
     {
         if(_events.ContainsKey(eventName))
         {
@@ -75,6 +75,7 @@ public class EventCenter : SerializedMonoBehaviour
             _events[eventName] = eventArgs;
         }
 
+        EventChanged?.Invoke(eventName, eventArgs);
         if (!_listeners.ContainsKey(eventName)) { return; }
 
         foreach(var h in _listeners[eventName])

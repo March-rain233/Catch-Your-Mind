@@ -34,7 +34,7 @@ namespace Dialogue
         private Condition _condition;
 
         public event Action<string> OnNameChanged;
-        public event Action<NPC.Node.NodeStatus> OnStatusChanged;
+        public event Action<NodeStatus> OnStatusChanged;
 
         public abstract INode[] GetChildren();
 
@@ -57,7 +57,7 @@ namespace Dialogue
                 OnEnter(tree);
             }
             var status = OnUpdate(tree);
-            if (status == NPC.Node.NodeStatus.Running)
+            if (status == NodeStatus.Running)
             {
                 return this;
             }
@@ -71,7 +71,7 @@ namespace Dialogue
 
         protected virtual void OnExit(DialogueTree tree) { }
 
-        protected abstract NPC.Node.NodeStatus OnUpdate(DialogueTree tree);
+        protected abstract NodeStatus OnUpdate(DialogueTree tree);
 
         protected abstract Node SelectChild(DialogueTree tree);
 

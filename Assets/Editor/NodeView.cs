@@ -57,16 +57,16 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
         {
             switch (status)
             {
-                case NPC.Node.NodeStatus.Success:
+                case NodeStatus.Success:
                     style.backgroundColor = Color.green;
                     break;
-                case NPC.Node.NodeStatus.Failure:
+                case NodeStatus.Failure:
                     style.backgroundColor = Color.red;
                     break;
-                case NPC.Node.NodeStatus.Running:
+                case NodeStatus.Running:
                     style.backgroundColor = Color.blue;
                     break;
-                case NPC.Node.NodeStatus.Aborting:
+                case NodeStatus.Aborting:
                     style.backgroundColor = Color.yellow;
                     break;
             }

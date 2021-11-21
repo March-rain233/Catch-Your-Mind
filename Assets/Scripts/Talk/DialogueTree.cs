@@ -11,6 +11,7 @@ namespace Dialogue
     /// <summary>
     /// 对话树
     /// </summary>
+    [CreateAssetMenu(fileName = "对话树", menuName = "对话/对话树")]
     public class DialogueTree : NPC.ActionNode, ITree
     {
         public INode RootNode => _rootNode;
@@ -171,7 +172,7 @@ namespace Dialogue
         public void SetRoot()
         {
             _rootNode = CreateNode(typeof(RootNode)) as RootNode;
-            //RootNode.GetType().GetField("_status").SetValue(_rootNode, Node.NodeStatus.Success);
+            //RootNode.GetType().GetField("_status").SetValue(_rootNode, NodeStatus.Success);
         }
 
         protected override void OnAbort(BehaviorTreeRunner runner)

@@ -42,11 +42,23 @@ public interface INode
 
     public event System.Action<string> OnNameChanged;
 
-    public event System.Action<NPC.Node.NodeStatus> OnStatusChanged;
+    public event System.Action<NodeStatus> OnStatusChanged;
 
     /// <summary>
     /// 获取子节点
     /// </summary>
     /// <returns></returns>
     INode[] GetChildren();
+}
+
+/// <summary>
+/// 节点状态
+/// </summary>
+[System.Serializable]
+public enum NodeStatus
+{
+    Success,
+    Failure,
+    Running,
+    Aborting,
 }

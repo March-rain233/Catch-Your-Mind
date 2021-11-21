@@ -72,6 +72,11 @@ public class MakerPanel : MonoBehaviour
     /// </summary>
     [SerializeField]
     private VerticalQueue _dialogQueue;
+    /// <summary>
+    /// 对话框的预制体
+    /// </summary>
+    [SerializeField]
+    private GameObject _dialogPrefabs;
 
     private void Awake()
     {
@@ -91,12 +96,30 @@ public class MakerPanel : MonoBehaviour
         });
     }
 
-    private void Update()
+    /// <summary>
+    /// 朝对话序列加入文本框
+    /// </summary>
+    /// <param name="body"></param>
+    /// <returns></returns>
+    public StaticDialog EnqueueDialog(TalkSystem.TextBody body)
     {
-        if (_dialogQueue.Count > 0 && Input.GetMouseButtonDown(0))
-        {
+        var dialog = Instantiate(_dialogPrefabs, _dialogQueue.transform).GetComponent<StaticDialog>();
+        _dialogQueue.Enqueue(dialog.GetComponent<RectTransform>());
+        return dialog;
+    }
 
+    /// <summary>
+    /// 查看当前运行文本框
+    /// </summary>
+    /// <returns></returns>
+    public StaticDialog GetCurrentDialog()
+    {
+        var last = _dialogQueue.Last();
+        if (last)
+        {
+            return last.GetComponent<StaticDialog>();
         }
+        return null;
     }
 
     private void OnCardViewDragged(CardView cardView, PointerEventData data)
