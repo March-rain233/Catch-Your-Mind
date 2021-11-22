@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4334705086860336570
+--- !u!114 &-8653919429757494435
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,23 +9,62 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd1cad19a16ae504782cf8c824ee2cac, type: 3}
-  m_Name: ActionRoot
+  m_Script: {fileID: 11500000, guid: 3e7469ee37144ac4d8ef7283af4f0833, type: 3}
+  m_Name: SendDialogNode
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 97518e1db60bc494697d159c29a5b6f4, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _dialogs
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventTree.SendDialogNode+Dialog,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: Test
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 0
+    - Name: JustOnce
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   Nodes: []
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6251d074b08ad6c4d9b41334728bfc96, type: 3}
-  m_Name: "\u4E8B\u4EF6\u54CD\u5E94\u6811"
-  m_EditorClassIdentifier: 
---- !u!114 &708230704867624547
+--- !u!114 &-3704834783593526339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,7 +77,27 @@ MonoBehaviour:
   m_Name: ExecutorNode
   m_EditorClassIdentifier: 
   Nodes: []
---- !u!114 &8404244553473853128
+  _actionNodes:
+  - {fileID: 3523224241438094548}
+  - {fileID: -8653919429757494435}
+  _root: {fileID: 3523224241438094548}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6251d074b08ad6c4d9b41334728bfc96, type: 3}
+  m_Name: "\u4E8B\u4EF6\u54CD\u5E94\u6811"
+  m_EditorClassIdentifier: 
+  _root: {fileID: 1503656681906922750}
+  _nodes:
+  - {fileID: -3704834783593526339}
+  - {fileID: 1503656681906922750}
+--- !u!114 &1503656681906922750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,4 +110,27 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   Nodes:
-  - {fileID: 708230704867624547}
+  - {fileID: -3704834783593526339}
+--- !u!114 &3523224241438094548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd1cad19a16ae504782cf8c824ee2cac, type: 3}
+  m_Name: ActionRoot
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  Nodes:
+  - {fileID: -8653919429757494435}

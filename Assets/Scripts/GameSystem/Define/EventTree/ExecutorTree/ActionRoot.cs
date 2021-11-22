@@ -11,7 +11,7 @@ namespace EventTree
 
         protected override void EventHandler(string eventName, EventCenter.EventArgs eventArgs)
         {
-            
+
         }
     }
 }

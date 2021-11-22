@@ -53,6 +53,7 @@ public class ControlManager : SerializedMonoBehaviour
             {KeyType.Left, KeyCode.A },
             {KeyType.Right, KeyCode.D },
             {KeyType.Run, KeyCode.LeftShift },
+            {KeyType.Esc, KeyCode.Escape }
         };
     }
 

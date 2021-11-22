@@ -3,11 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 namespace EventTree
 {
 
-    public abstract class ActionNode : ScriptableObject, INode
+    public abstract class ActionNode : SerializedScriptableObject, INode
     {
         public string Guid { get; set; }
 
@@ -24,7 +25,7 @@ namespace EventTree
         public virtual Port.Capacity Output => Port.Capacity.Multi;
 
         public event Action<string> OnNameChanged;
-        public event Action<NodeStatus> OnStatusChanged;
+        public event Action<Color> OnStatusChanged;
 
         public List<ActionNode> Nodes = new List<ActionNode>();
 
@@ -38,6 +39,7 @@ namespace EventTree
 
         private void SendChildrens(string eventName, EventCenter.EventArgs eventArgs)
         {
+            if (Nodes == null || Nodes.Count <= 0) { return; }
             Nodes.ForEach(node => node.Tick(eventName, eventArgs));
         }
 

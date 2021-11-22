@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cda03514e8e5c1c45a4188d16aa006c2, type: 3}
+  m_Name: "\u804A\u5929\u8BB0\u5F55"
+  m_EditorClassIdentifier: 
+  CardName: "\u7F6E\u9876\u7684\u804A\u5929\u8BB0\u5F55"
+  CardSprite: {fileID: -5343103470380756979, guid: b2bab8e06a9a89b4795ddb151abd95b3, type: 3}
+  PressSprite: {fileID: -2456085920408436699, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
+  PressSpriteFloat: {fileID: -855654985025123166, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
+  Inspector: {fileID: 3514100340443007637, guid: 5adc632e8214f234b9f77911f389e30e, type: 3}

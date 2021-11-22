@@ -85,7 +85,16 @@ public class LineDrawer : MonoBehaviour
     /// <summary>
     /// 曲线闭合事件
     /// </summary>
-    public System.Action<Vector2[]> LineClosed;
+    public event System.Action<Vector2[]> LineClosed;
+    /// <summary>
+    /// 画线被打断事件
+    /// </summary>
+    public event System.Action DrawInterput;
+
+    /// <summary>
+    /// 是否正在画线
+    /// </summary>
+    private bool _drawing = false;
 
     private void Awake()
     {
@@ -101,7 +110,7 @@ public class LineDrawer : MonoBehaviour
         {
             BeginToDraw();
         }
-        else if (Input.GetMouseButton(0))
+        else if (_drawing && Input.GetMouseButton(0))
         {
             Draw();
         }
@@ -117,6 +126,8 @@ public class LineDrawer : MonoBehaviour
     private void BeginToDraw()
     {
         AddPoint(_camera.ScreenToWorldPoint(Input.mousePosition));
+        _edgeCollider.isTrigger = true;
+        _drawing = true;
     }
 
     /// <summary>
@@ -125,7 +136,7 @@ public class LineDrawer : MonoBehaviour
     private void Draw()
     {
         var pos = _camera.ScreenToWorldPoint(Input.mousePosition);
-        if((Vector2)pos == _vertexs[_vertexs.Count - 1]) { return; }
+        if(_vertexs.Count > 0 && (Vector2)pos == _vertexs[_vertexs.Count - 1]) { return; }
 
         ////判断是否形成封闭回路
         //var hit = Physics2D.OverlapCircle(pos, _vertexDistance * 2f);
@@ -154,6 +165,7 @@ public class LineDrawer : MonoBehaviour
     private void EndDraw()
     {
         RemoveRange(0, _vertexs.Count);
+        _drawing = false;
     }
 
     /// <summary>
@@ -179,13 +191,14 @@ public class LineDrawer : MonoBehaviour
         if(saveIndex == -1) { return false; }
 
         Vector2 node = GetNode(_vertexs[saveIndex], _vertexs[saveIndex + 1], start, end);
-        Debug.Log(node);
+
         var closeLine = _vertexs.GetRange(saveIndex + 1, _vertexs.Count - saveIndex - 1);
         closeLine.Insert(0, node);
 
         RemoveRange(saveIndex + 1, _vertexs.Count);
         AddPoint(node);
 
+        _edgeCollider.isTrigger = true;
         LineClosed?.Invoke(closeLine.ToArray());
         return true;
     }
@@ -271,5 +284,19 @@ public class LineDrawer : MonoBehaviour
         }
         _edgeCollider.Reset();
         _edgeCollider.SetPoints(_vertexs);
+    }
+
+    /// <summary>
+    /// 打断画线
+    /// </summary>
+    public void Interrupt()
+    {
+        EndDraw();
+        DrawInterput?.Invoke();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Interrupt();
     }
 }

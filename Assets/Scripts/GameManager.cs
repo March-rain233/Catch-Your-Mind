@@ -32,11 +32,66 @@ public class GameManager : BaseGameManager<GameManager>
         }
     }
 
+    public EventTree.EventTree EventTree;
+
+    /// <summary>
+    /// 剩余时间
+    /// </summary>
+    public float RemainTime
+    {
+        get => _remainTime;
+        set
+        {
+            _remainTime = value;
+            TimeChanged?.Invoke(_remainTime);
+        }
+    }
+    private float _remainTime;
+
+    /// <summary>
+    /// 最大时间
+    /// </summary>
+    public float MaxTime;
+
+    /// <summary>
+    /// 每秒流逝时间
+    /// </summary>
+    public float DeltaTime;
+
+    /// <summary>
+    /// 时间是否在流逝
+    /// </summary>
+    public bool Passing;
+
+    /// <summary>
+    /// 时间变化
+    /// </summary>
+    public System.Action<float> TimeChanged;
+
     protected override void Awake()
     {
         base.Awake();
         InitManager<FactoryInstaller>();
+        EventTree.Init();
+
+        LoadGameSave();
+
         InitGameStatus();
+    }
+
+    protected override void InitGameStatus()
+    {
+        base.InitGameStatus();
+        Passing = false;
+        RemainTime = MaxTime;
+    }
+
+    private void Update()
+    {
+        if (Passing && RemainTime > 0)
+        {
+            RemainTime -= DeltaTime * Time.deltaTime;
+        }
     }
 
     /// <summary>
@@ -117,5 +172,11 @@ public class GameManager : BaseGameManager<GameManager>
         var p = GameManager.Instance.FactoryManager.Create(ObjectType.NPC, "Shury") as PNPC;
         p.StateMachine.gameObject.transform.position = CurrentScene.Positions[position.Point];
         GameObject.Find("CM vcam1").GetComponent<Cinemachine.CinemachineVirtualCamera>().Follow = p.StateMachine.transform;
+    }
+
+    [Button("发送事件（仅供测试）")]
+    private void SendEvent(string name, EventCenter.EventArgs eventArgs)
+    {
+        EventCenter.SendEvent(name, eventArgs);
     }
 }

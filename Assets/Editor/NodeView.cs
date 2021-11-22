@@ -53,24 +53,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
             }
         }
 
-        node.OnStatusChanged += status =>
-        {
-            switch (status)
-            {
-                case NodeStatus.Success:
-                    style.backgroundColor = Color.green;
-                    break;
-                case NodeStatus.Failure:
-                    style.backgroundColor = Color.red;
-                    break;
-                case NodeStatus.Running:
-                    style.backgroundColor = Color.blue;
-                    break;
-                case NodeStatus.Aborting:
-                    style.backgroundColor = Color.yellow;
-                    break;
-            }
-        };
+        node.OnStatusChanged += color => style.backgroundColor = color;
         node.OnNameChanged += newName => title = newName;
     }
 

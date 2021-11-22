@@ -42,7 +42,7 @@ public interface INode
 
     public event System.Action<string> OnNameChanged;
 
-    public event System.Action<NodeStatus> OnStatusChanged;
+    public event System.Action<Color> OnStatusChanged;
 
     /// <summary>
     /// 获取子节点

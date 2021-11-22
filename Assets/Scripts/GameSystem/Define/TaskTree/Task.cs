@@ -24,7 +24,7 @@ namespace TaskTree
         public Port.Capacity Output => throw new NotImplementedException();
 
         public event Action<string> OnNameChanged;
-        public event Action<NodeStatus> OnStatusChanged;
+        public event Action<Color> OnStatusChanged;
 
         public INode[] GetChildren()
         {

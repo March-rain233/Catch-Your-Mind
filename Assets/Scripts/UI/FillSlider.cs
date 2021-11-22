@@ -7,7 +7,7 @@ using Sirenix.Serialization;
 
 public class FillSlider : SerializedMonoBehaviour
 {
-    [OdinSerialize, PropertyRange(0, 1)]
+    [PropertyRange(0, 1)]
     public float Value
     {
         get => _value;
@@ -17,7 +17,7 @@ public class FillSlider : SerializedMonoBehaviour
             _fillImage.fillAmount = _value;
         }
     }
-
+    [SerializeField, SetProperty("Value")]
     private float _value;
 
     /// <summary>

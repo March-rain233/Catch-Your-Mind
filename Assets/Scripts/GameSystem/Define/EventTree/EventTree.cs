@@ -21,8 +21,10 @@ namespace EventTree
 
         public Type RootType => typeof(RootNode);
 
+        [SerializeField]
         private RootNode _root;
 
+        [SerializeField]
         private List<Node> _nodes = new List<Node>();
 
         /// <summary>
@@ -79,7 +81,7 @@ namespace EventTree
             _nodes.Remove(toRemove);
             _nodes.ForEach(node =>
             {
-                node.Nodes.Remove(node);
+                node.Nodes.Remove(toRemove);
             });
             if (AssetDatabase.Contains(this))
             {
@@ -90,7 +92,7 @@ namespace EventTree
 
         public void SetRoot()
         {
-            _root = CreateNode(RootType) as RootNode;
+            _root = CreateNode(typeof(RootNode)) as RootNode;
         }
     }
 }

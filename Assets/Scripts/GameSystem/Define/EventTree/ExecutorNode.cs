@@ -17,9 +17,17 @@ namespace EventTree
 
         public Type RootType => typeof(ActionRoot);
 
+        [SerializeField]
         private List<ActionNode> _actionNodes = new List<ActionNode>();
 
+        [SerializeField]
         private ActionRoot _root;
+
+        protected override void EventHandler(string eventName, EventCenter.EventArgs eventArgs)
+        {
+            base.EventHandler(eventName, eventArgs);
+            _root.Tick(eventName, eventArgs);
+        }
 
         public void AddNode(INode node)
         {
@@ -62,7 +70,7 @@ namespace EventTree
             _actionNodes.Remove(toRemove);
             _actionNodes.ForEach(node =>
             {
-                node.Nodes.Remove(node);
+                node.Nodes.Remove(toRemove);
             });
             if (AssetDatabase.Contains(this))
             {

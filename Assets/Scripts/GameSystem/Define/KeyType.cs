@@ -12,5 +12,6 @@ public enum KeyType
     Left,
     Run,
     Interact,
-    Skip
+    Skip,
+    Esc,
 }

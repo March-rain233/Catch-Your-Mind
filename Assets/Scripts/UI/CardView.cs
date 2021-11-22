@@ -27,6 +27,11 @@ public class CardView : MonoBehaviour, IDragHandler, IPointerClickHandler
     public System.Action<CardView, PointerEventData> OnDragged;
     public System.Action<CardView, PointerEventData> OnClicked;
 
+    private void Awake()
+    {
+        GetComponent<Image>().sprite = Card.CardSprite;
+    }
+
     public void OnDrag(PointerEventData eventData)
     {
         OnDragged?.Invoke(this, eventData);

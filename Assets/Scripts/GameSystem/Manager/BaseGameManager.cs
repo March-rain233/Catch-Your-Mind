@@ -27,7 +27,7 @@ public abstract class BaseGameManager<T> : SerializedMonoBehaviour
         { 
             if(_instance == null)
             {
-                Debug.LogError("违规调用");
+                //Debug.LogError("违规调用");
             }
             return _instance;
         }

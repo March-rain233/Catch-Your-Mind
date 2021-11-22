@@ -6,7 +6,7 @@ using System.Linq;
 
 public class VerticalQueue : MonoBehaviour
 {
-    private Queue<RectTransform> _rectTransforms = new Queue<RectTransform>();
+    private Queue<Transform> _transforms = new Queue<Transform>();
     private VerticalLayoutGroup _layoutGroup;
 
     public int MaxCount
@@ -17,38 +17,43 @@ public class VerticalQueue : MonoBehaviour
             _maxCount = value;
             while (Count > MaxCount)
             {
-                Destroy(Dequeue(null));
+                Destroy(Dequeue(null).gameObject);
             }
         }
     }
+    [SetProperty("MaxCount"), SerializeField]
     private int _maxCount;
 
-    public int Count => _rectTransforms.Count;
+    public int Count => _transforms.Count;
 
-    public void Enqueue(RectTransform rect)
+    public void Enqueue(Transform rect)
     {
-        rect.SetParent(transform);
-        _rectTransforms.Enqueue(rect);
+        if (rect.parent != transform)
+        {
+            rect.SetParent(transform);
+        }
+        _transforms.Enqueue(rect);
         while (Count > MaxCount)
         {
-            Destroy(Dequeue(null));
+            Destroy(Dequeue(null).gameObject);
         }
     }
 
-    public RectTransform Dequeue(Transform pool)
+    public Transform Dequeue(Transform pool)
     {
-        var rect = _rectTransforms.Dequeue();
+        var rect = _transforms.Dequeue();
         rect.SetParent(pool);
         return rect;
     }
 
-    public RectTransform Peek()
+    public Transform Peek()
     {
-        return _rectTransforms.Peek();
+        return _transforms.Peek();
     }
 
-    public RectTransform Last()
+    public Transform Last()
     {
-        return _rectTransforms.Last();
+        if (_transforms.Count <= 0) { return null; }
+        return _transforms.Last();
     }
 }

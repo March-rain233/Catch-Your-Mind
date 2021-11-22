@@ -22,8 +22,8 @@ namespace Dialogue
         {
             base.OnEnter(tree);
             _readEnd = false;
-            GameManager.Instance.EventCenter.AddListener("DialogEnd", DialogEndHandler);
-            GameManager.Instance.EventCenter.SendEvent("ReadBodies", new EventCenter.EventArgs() { Object = _paragraphs });
+            GameManager.Instance.EventCenter.AddListener("DIALOG_END", DialogEndHandler);
+            GameManager.Instance.EventCenter.SendEvent("DIALOG_PUSH", new EventCenter.EventArgs() { Object = _paragraphs });
         }
 
         protected override NodeStatus OnUpdate(DialogueTree tree)
@@ -37,7 +37,7 @@ namespace Dialogue
         protected override void OnExit(DialogueTree tree)
         {
             base.OnExit(tree);
-            GameManager.Instance.EventCenter.RemoveListener("DialogEnd", DialogEndHandler);
+            GameManager.Instance.EventCenter.RemoveListener("DIALOG_END", DialogEndHandler);
         }
     }
 }

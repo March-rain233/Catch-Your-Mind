@@ -25,6 +25,7 @@ namespace Dialogue
 
         public virtual Port.Capacity Output => Port.Capacity.Single;
 
+        [SerializeField]
         private bool _isStarted = false;
 
         /// <summary>
@@ -34,7 +35,7 @@ namespace Dialogue
         private Condition _condition;
 
         public event Action<string> OnNameChanged;
-        public event Action<NodeStatus> OnStatusChanged;
+        public event Action<Color> OnStatusChanged;
 
         public abstract INode[] GetChildren();
 
@@ -59,9 +60,10 @@ namespace Dialogue
             var status = OnUpdate(tree);
             if (status == NodeStatus.Running)
             {
+                OnStatusChanged?.Invoke(Color.blue);
                 return this;
             }
-
+            OnStatusChanged?.Invoke(Color.green);
             _isStarted = false;
             OnExit(tree);
             return SelectChild(tree);
@@ -79,6 +81,7 @@ namespace Dialogue
         {
             var node = Instantiate(this);
             node.ViewPosition = ViewPosition;
+            node._isStarted = false;
             node.Guid = GUID.Generate().ToString();
             return node;
         }

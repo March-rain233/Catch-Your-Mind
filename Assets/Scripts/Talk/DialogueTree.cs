@@ -29,6 +29,7 @@ namespace Dialogue
         /// <summary>
         /// 当前运行节点
         /// </summary>
+        [SerializeField]
         private Node _currentNode;
 
         [SerializeField]
@@ -41,7 +42,7 @@ namespace Dialogue
             {
                 return NodeStatus.Running;
             }
-            GameManager.Instance.EventCenter.SendEvent("CloseDialog", new EventCenter.EventArgs());
+            GameManager.Instance.EventCenter.SendEvent("DIALOG_CLOSE", new EventCenter.EventArgs());
             return NodeStatus.Success;
         }
 

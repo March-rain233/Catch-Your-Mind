@@ -23,7 +23,21 @@ namespace NPC
             private set
             {
                 _status = value;
-                OnStatusChanged?.Invoke(_status);
+                switch (_status)
+                {
+                    case NodeStatus.Success:
+                        OnStatusChanged?.Invoke(Color.green);
+                        break;
+                    case NodeStatus.Failure:
+                        OnStatusChanged?.Invoke(Color.red);
+                        break;
+                    case NodeStatus.Running:
+                        OnStatusChanged?.Invoke(Color.blue);
+                        break;
+                    case NodeStatus.Aborting:
+                        OnStatusChanged?.Invoke(Color.yellow);
+                        break;
+                }
             }
         }
 
@@ -43,7 +57,7 @@ namespace NPC
         private NodeStatus _status = NodeStatus.Success;
 
         public event Action<string> OnNameChanged;
-        public event Action<NodeStatus> OnStatusChanged;
+        public event Action<Color> OnStatusChanged;
 
         private bool _isStart = false;
 

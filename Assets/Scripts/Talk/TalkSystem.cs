@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 using System.Linq;
 using System;
 
-public class TalkSystem : MonoBehaviour
+public class TalkSystem : SerializedMonoBehaviour
 {
     /// <summary>
     /// ¶ÎÂä
@@ -49,8 +49,10 @@ public class TalkSystem : MonoBehaviour
 
     public GameObject BubbleDialogPrefabs;
 
+    [SerializeField]
     private Queue<TextBody> _textBodies = new Queue<TextBody>();
 
+    [SerializeField]
     private bool _skip = false;
 
     private BubbleDialog BubbleDialog
@@ -68,7 +70,23 @@ public class TalkSystem : MonoBehaviour
     [SerializeField]
     private BubbleDialog _dialog;
 
-    public Dialogue.DialogueTree DialogueTree;
+    [SerializeField]
+    public Dialogue.DialogueTree DialogueTree
+    {
+        get => _dialogueTree;
+        set
+        {
+            if (value)
+            {
+                _dialogueTree = value.Clone() as Dialogue.DialogueTree;
+            }
+            else
+            {
+                _dialogueTree = null;
+            }
+        }
+    }
+    private Dialogue.DialogueTree _dialogueTree;
 
     private void Start()
     {
@@ -80,34 +98,37 @@ public class TalkSystem : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        GameManager.Instance.EventCenter.AddListener("NextDialog", e => NextStep());
-        GameManager.Instance.EventCenter.AddListener("CloseDialog", e => _dialog.gameObject.SetActive(false));
-        GameManager.Instance.EventCenter.AddListener("ReadBodies", e => PushBodies(e.Object as TextBody[]));
+        GameManager.Instance.EventCenter.AddListener("DIALOG_CLOSE", e => _dialog.gameObject.SetActive(false));
+        GameManager.Instance.EventCenter.AddListener("DIALOG_PUSH", e => PushBodies(e.Object as TextBody[]));
     }
 
     private void Update()
     {
-        bool interact = Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[KeyType.Interact]);
-        bool skip = Input.GetKey(GameManager.Instance.ControlManager.KeyDic[KeyType.Skip]);
-        bool mouse = Input.GetMouseButtonDown(0);
-        bool next = false;
-        switch (_textBodies.Peek().Control)
+        if (_textBodies.Count > 0)
         {
-            case TextBody.ControlType.KeyBoard:
-                next = skip | interact;
-                break;
-            case TextBody.ControlType.Mouse:
-                next = mouse;
-                break;
-            case TextBody.ControlType.Both:
-                next = mouse | interact | skip;
-                break;
+            bool interact = Input.GetKeyDown(GameManager.Instance.ControlManager.KeyDic[KeyType.Interact]);
+            bool skip = Input.GetKey(GameManager.Instance.ControlManager.KeyDic[KeyType.Skip]);
+            bool mouse = Input.GetMouseButtonDown(0);
+            bool next = false;
+            switch (_textBodies.Peek().Control)
+            {
+                case TextBody.ControlType.KeyBoard:
+                    next = skip | interact;
+                    break;
+                case TextBody.ControlType.Mouse:
+                    next = mouse;
+                    break;
+                case TextBody.ControlType.Both:
+                    next = mouse | interact | skip;
+                    break;
+            }
+            if (next) { NextStep(); }
         }
-        if (next) { NextStep(); }
         if (DialogueTree)
         {
             if(DialogueTree.Tick(null) == NodeStatus.Success)
             {
+                Debug.Log(2);
                 DialogueTree = null;
             }
         }
@@ -169,6 +190,7 @@ public class TalkSystem : MonoBehaviour
                     dialog.HeadIcon = StaticDialog.Person.None;
                     break;
             }
+            dialog.BeginRead(body.Body);
         }
     }
 

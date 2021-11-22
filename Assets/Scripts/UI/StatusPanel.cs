@@ -3,62 +3,33 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using DG.Tweening;
 
-public class StatusPanel : BasePanel
+public class StatusPanel :MonoBehaviour
 {
-    public override PanelType Type => PanelType.StatusPanel;
-
     public TextMeshProUGUI InteractionText;
 
-    public FillSlider Time;
-
-    public FillSlider Blood;
+    public FillSlider TimeView;
 
     private void Start()
     {
         GameManager.Instance.EventCenter.AddListener("InteractionEnter", InteractionEnter);
         GameManager.Instance.EventCenter.AddListener("InteractionExit", InteractionExit);
+        GameManager.Instance.TimeChanged += time =>
+        {
+            TimeView.Value = time / GameManager.Instance.MaxTime;
+        };
     }
 
     private void InteractionEnter(EventCenter.EventArgs eventArgs)
     {
-        _animator.SetTrigger("InteractionEnter");
+        InteractionText.DOFade(1, 0.5f);
         InteractionText.text = "°´ÏÂ" + eventArgs.Object.ToString()
             + "À´" + eventArgs.String;
     }
 
     private void InteractionExit(EventCenter.EventArgs eventArgs)
     {
-        _animator.SetTrigger("InteractionExit");
-    }
-
-    public override void NotifyHandler(string name, object value)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override void OnExit()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override void OnPause()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected override void OnResume()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    protected internal override void Init()
-    {
-
-    }
-
-    protected internal override void OnEnter()
-    {
-        throw new System.NotImplementedException();
+        InteractionText.DOFade(0, 0.5f);
     }
 }

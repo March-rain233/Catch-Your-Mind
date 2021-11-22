@@ -24,7 +24,7 @@ namespace EventTree
         public virtual Port.Capacity Output => Port.Capacity.Multi;
 
         public event Action<string> OnNameChanged;
-        public event Action<NodeStatus> OnStatusChanged;
+        public event Action<Color> OnStatusChanged;
 
         public List<Node> Nodes = new List<Node>();
 
@@ -38,6 +38,7 @@ namespace EventTree
 
         protected virtual void SendChildrens(string eventName, EventCenter.EventArgs eventArgs)
         {
+            if (Nodes == null || Nodes.Count <= 0) { return; }
             Nodes.ForEach(node => node.Tick(eventName, eventArgs));
         }
 
