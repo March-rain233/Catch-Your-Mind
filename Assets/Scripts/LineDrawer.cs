@@ -5,6 +5,21 @@ using UnityEngine;
 public class LineDrawer : MonoBehaviour
 {
     /// <summary>
+    /// 鼠标
+    /// </summary>
+    [SerializeField]
+    private Transform _cursor;
+    /// <summary>
+    /// 鼠标角度的偏移量
+    /// </summary>
+    private float _zOffset;
+    /// <summary>
+    /// 忽略改变的鼠标位移距离
+    /// </summary>
+    [SerializeField]
+    private float _ignoreDistance;
+
+    /// <summary>
     /// 线渲染器
     /// </summary>
     [SerializeField]
@@ -96,16 +111,34 @@ public class LineDrawer : MonoBehaviour
     /// </summary>
     private bool _drawing = false;
 
+    /// <summary>
+    /// 鼠标上一帧的位置
+    /// </summary>
+    private Vector2 _lastPoint;
+
     private void Awake()
     {
         _lineRenderer = GetComponent<LineRenderer>();
         _edgeCollider = GetComponent<EdgeCollider2D>();
         _vertexs = new List<Vector2>();
+
+        Cursor.visible = false;
+        _lastPoint = Vector2.zero;
     }
 
     // Update is called once per frame
     private void Update()
     {
+        //改变鼠标朝向
+        Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 dir = mouse - _lastPoint;
+        _cursor.position = mouse;
+        if (dir.magnitude >= _ignoreDistance)
+        {
+            _cursor.eulerAngles = new Vector3(0, 0, Vector2.SignedAngle(Vector2.up, dir));
+            _lastPoint = mouse;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             BeginToDraw();

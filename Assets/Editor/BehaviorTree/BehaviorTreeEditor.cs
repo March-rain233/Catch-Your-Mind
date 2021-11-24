@@ -62,7 +62,7 @@ public class BehaviorTreeEditor : EditorWindow
             Debug.Log("ÎÄ¼þÎ¥¹æ");
             return;
         }
-        _treeView.AddSubtree(node);
+        _treeView.AddSubtree(node.Clone());
     }
 
     private void LoadAsset()

@@ -17,6 +17,7 @@ namespace NPC
         /// <summary>
         /// µ±Ç°×´Ì¬
         /// </summary>
+        [OdinSerialize]
         public NodeStatus Status
         {
             get => _status;
@@ -53,7 +54,6 @@ namespace NPC
 
         public UnityEditor.Experimental.GraphView.Port.Capacity Input => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
 
-        [SerializeField, SetProperty("Status")]
         private NodeStatus _status = NodeStatus.Success;
 
         public event Action<string> OnNameChanged;

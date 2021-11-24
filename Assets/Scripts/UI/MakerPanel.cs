@@ -232,10 +232,10 @@ public class MakerPanel : MonoBehaviour
         cardView.gameObject.SetActive(false);
 
         var content = Instantiate(cardView.Card.Inspector, _infoContent).GetComponent<RectTransform>();
-        //content.anchorMin = Vector2.zero;
-        //content.anchorMax = Vector2.one;
-        //content.offsetMin = Vector2.zero;
-        //content.offsetMax = Vector2.zero;
+        content.anchorMin = Vector2.zero;
+        content.anchorMax = Vector2.one;
+        content.offsetMin = Vector2.zero;
+        content.offsetMax = Vector2.zero;
 
         _infoCard.GetComponent<Image>().sprite = cardView.Card.CardSprite;
         _infoCard.position = _select.RectTransform.position;

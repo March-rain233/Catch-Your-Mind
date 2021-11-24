@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using DG.Tweening;
 
 
 public class CapturePanel : MonoBehaviour
@@ -17,7 +18,7 @@ public class CapturePanel : MonoBehaviour
     public float MaxBlood;
 
     /// <summary>
-    /// 每次上升的血量
+    /// 每次上升的基础血量
     /// </summary>
     public float UpBlood;
     /// <summary>
@@ -34,6 +35,35 @@ public class CapturePanel : MonoBehaviour
     /// </summary>
     private float _lastClose;
 
+    /// <summary>
+    /// 被打断的惩罚
+    /// </summary>
+    /// <remarks>
+    /// 即扣除的时间数值
+    /// </remarks>
+    public float InterruptPunish;
+
+    /// <summary>
+    /// 当前连击数
+    /// </summary>
+    [SerializeField]
+    private int _combo;
+    /// <summary>
+    /// 最大有效连击数
+    /// </summary>
+    public int MaxEffectiveCombo;
+    /// <summary>
+    /// 最小有效连击数
+    /// </summary>
+    /// <remarks>
+    /// 即最小的开始增长倍率的连击数
+    /// </remarks>
+    public int MinEffectiveCombo;
+    /// <summary>
+    /// 最大连击倍率
+    /// </summary>
+    public float MaxComboRate;
+
     public float Blood
     {
         get => _blood;
@@ -48,9 +78,16 @@ public class CapturePanel : MonoBehaviour
     public Transform Target;
     public PolygonCollider2D PolygonCollider2D;
 
+    [SerializeField]
+    private List<FadeLine> _lines;
+    [SerializeField]
+    private GameObject _fadeLinePrefabs;
+
     private void Awake()
     {
         LineDrawer.LineClosed += JudgeLineClose;
+        LineDrawer.DrawInterput += InterruptHandler;
+
         GameManager.Instance.TimeChanged += time =>
         {
             TimeView.Value = time / GameManager.Instance.MaxTime;
@@ -67,6 +104,12 @@ public class CapturePanel : MonoBehaviour
         }
     }
 
+    private void InterruptHandler()
+    {
+        GameManager.Instance.RemainTime -= InterruptPunish;
+        _combo = 0;
+    }
+
     private void JudgeLineClose(Vector2[] obj)
     {
         PolygonCollider2D.points = obj;
@@ -74,8 +117,21 @@ public class CapturePanel : MonoBehaviour
         //System.Array.ForEach(obj, node => bounds.Encapsulate(node));
         if (bounds.Contains(Target.position))
         {
-            Blood += UpBlood;
+            CreateFadeLine(obj);
+            Blood += UpBlood * Mathf.Lerp(1, MaxComboRate, Mathf.Clamp(_combo, MinEffectiveCombo, MaxEffectiveCombo) - MinEffectiveCombo);
             _lastClose = Time.time;
+            ++_combo;
         }
+    }
+
+    private void CreateFadeLine(Vector2[] vertexs)
+    {
+        var line = _lines.Find(line => { return !line.IsRemain; });
+        if (!line)
+        {
+            line = Instantiate(_fadeLinePrefabs).GetComponent<FadeLine>();
+            _lines.Add(line);
+        }
+        line.DoFade(vertexs);
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1363487229619599655
+--- !u!114 &-6948725084711171094
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,9 +23,42 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: c05994f56050f7745bf1d715dcf96555
-  _status: 0
-  Child: {fileID: 0}
+      Data: 692359e18c46c514f87788ae72d46200
+    - Name: Status
+      Entry: 3
+      Data: 2
+  Child: {fileID: 1337140257895852338}
+--- !u!114 &-6449973010970328881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3b1b58f6c040414e9b3794896e81c0a, type: 3}
+  m_Name: MelaIdle
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 46945d1339c632e46afbb7edb8b53c39
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: Happy
+  StayTime: 0
+  MaxStayTime: 5
+  MinStayTime: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,6 +71,113 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a9a9a11c315184b8abf03b52af6a12, type: 3}
   m_Name: Mela
   m_EditorClassIdentifier: 
-  _rootNode: {fileID: 0}
+  _rootNode: {fileID: -6948725084711171094}
   _nodes:
-  - {fileID: -1363487229619599655}
+  - {fileID: -6948725084711171094}
+  - {fileID: 1337140257895852338}
+  - {fileID: 1227765011300509827}
+  - {fileID: -6449973010970328881}
+  - {fileID: 5486556639523215105}
+--- !u!114 &1227765011300509827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf1c42f1b2f63d9429cf0af8f75bf414, type: 3}
+  m_Name: RandomSelector
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 6d9c179858a8ab743bb75f51b8150b34
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 5486556639523215105}
+  - {fileID: -6449973010970328881}
+  _weights:
+  - Weight: 10
+    BaseWeight: 10
+    DeltaWeight: 1
+    IsReset: 0
+  - Weight: 10
+    BaseWeight: 10
+    DeltaWeight: 1
+    IsReset: 0
+--- !u!114 &1337140257895852338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82143fc676c76604f9e7fc92de05a4d7, type: 3}
+  m_Name: RepeaterNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 4be809edb7538ae44ab56a645c5ff0aa
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Child: {fileID: 1227765011300509827}
+  Times: 0
+  IsForever: 1
+--- !u!114 &5486556639523215105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d498cbe20dfb6f47ad0ef09e067b803, type: 3}
+  m_Name: MelaMoveToNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 2f14615cdc82f244b8271e6f3f2803a9
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: MoveOnWall
+  _target: {x: 0, y: 0}
+  MinPos: {x: -7, y: -4}
+  MaxPos: {x: 7, y: 4}
+  VelocityRate: 1
+  MinDistance: 0.5
