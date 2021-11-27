@@ -10,7 +10,7 @@ namespace NPC {
     public class MelaMoveToNode : StateNode
     {
         [SerializeField]
-        private Vector2 _target;
+        private Queue<Vector2> _targets = new Queue<Vector2>();
 
         /// <summary>
         /// 移动范围的左下角
@@ -20,6 +20,9 @@ namespace NPC {
         /// 移动范围的右上角
         /// </summary>
         public Vector2 MaxPos;
+
+        public int MaxCount;
+        public int MinCount = 1;
 
         /// <summary>
         /// 移动速度倍率
@@ -34,18 +37,32 @@ namespace NPC {
         /// </remarks>
         public float MinDistance;
 
+        private Vector2 RandomTarget()
+        {
+            return new Vector2(Random.Range(MinPos.x, MaxPos.x), Random.Range(MinPos.y, MaxPos.y));
+        }
+
         protected override void OnEnter(BehaviorTreeRunner runner)
         {
             base.OnEnter(runner);
-            _target = new Vector2(Random.Range(MinPos.x, MaxPos.x), Random.Range(MinPos.y, MaxPos.y));
+            _targets.Clear();
+            int count = Random.Range(MinCount, MaxCount + 1);
+            while (--count > 0)
+            {
+                _targets.Enqueue(RandomTarget());
+            }
         }
 
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
-            var dir = _target - (Vector2)runner.transform.position;
-            if(dir.magnitude <= MinDistance)
+            if (_targets.Count <= 0)
             {
                 return NodeStatus.Success;
+            }
+            var dir = _targets.Peek() - (Vector2)runner.transform.position;
+            if(dir.magnitude <= MinDistance)
+            {
+                _targets.Dequeue();
             }
 
             dir = dir.normalized;

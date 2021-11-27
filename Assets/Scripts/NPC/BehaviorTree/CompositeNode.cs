@@ -46,15 +46,29 @@ namespace NPC
 
         }
 
-        public override Node Clone()
+        protected void AbortAllRunningNode(BehaviorTreeRunner runner, List<Node> except)
+        {
+            Childrens.ForEach(child =>
+            {
+                if (child.Status == NodeStatus.Running && !except.Contains(child))
+                {
+                    child.Abort(runner);
+                }
+            });
+        }
+
+        public override Node Clone(bool self = false)
         {
             var node = base.Clone() as CompositeNode;
+            node.Childrens = new List<Node>(Childrens);
+            if (self) { return node; }
             for (int i = Childrens.Count - 1; i >= 0; --i)
             {
                 if (!Childrens[i])
                 {
                     Childrens.RemoveAt(i);
                     node.Childrens.RemoveAt(i);
+                    continue;
                 }
                 node.Childrens[i] = Childrens[i].Clone();
             }

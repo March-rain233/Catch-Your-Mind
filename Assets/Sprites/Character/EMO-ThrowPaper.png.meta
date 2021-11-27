@@ -68,6 +68,72 @@ TextureImporter:
   - first:
       213: -7075946039928405373
     second: Emo-ThrowPaper_21
+  - first:
+      213: -5349701607972508966
+    second: EMO-ThrowPaper_0
+  - first:
+      213: -5154230210572888149
+    second: EMO-ThrowPaper_1
+  - first:
+      213: -4718309588127455571
+    second: EMO-ThrowPaper_2
+  - first:
+      213: -6168182216112772736
+    second: EMO-ThrowPaper_3
+  - first:
+      213: 9158158966142183910
+    second: EMO-ThrowPaper_4
+  - first:
+      213: 8861939222870985583
+    second: EMO-ThrowPaper_5
+  - first:
+      213: 853796489252357232
+    second: EMO-ThrowPaper_6
+  - first:
+      213: -3918757528079234195
+    second: EMO-ThrowPaper_7
+  - first:
+      213: -701865444125655440
+    second: EMO-ThrowPaper_8
+  - first:
+      213: 578232122023278106
+    second: EMO-ThrowPaper_9
+  - first:
+      213: -4733612620636821865
+    second: EMO-ThrowPaper_10
+  - first:
+      213: -6414406990101641759
+    second: EMO-ThrowPaper_11
+  - first:
+      213: -5162196057397279635
+    second: EMO-ThrowPaper_12
+  - first:
+      213: 1392248319222561131
+    second: EMO-ThrowPaper_13
+  - first:
+      213: -649965887095787079
+    second: EMO-ThrowPaper_14
+  - first:
+      213: -4102230362255311920
+    second: EMO-ThrowPaper_15
+  - first:
+      213: -4011234389242000459
+    second: EMO-ThrowPaper_16
+  - first:
+      213: -78649181100930935
+    second: EMO-ThrowPaper_17
+  - first:
+      213: -3010828630557320105
+    second: EMO-ThrowPaper_18
+  - first:
+      213: -6359808020496703676
+    second: EMO-ThrowPaper_19
+  - first:
+      213: -4459830298513675382
+    second: EMO-ThrowPaper_20
+  - first:
+      213: 2734773803274776970
+    second: EMO-ThrowPaper_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,463 +235,463 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Emo-ThrowPaper_0
+      name: EMO-ThrowPaper_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 181dc4b5fe36aecd0800000000000000
-      internalID: -2528098361135017599
+      spriteID: ada66724bba02c5b0800000000000000
+      internalID: -5349701607972508966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_1
+      name: EMO-ThrowPaper_1
       rect:
         serializedVersion: 2
         x: 53
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47ae90b865da11ea0800000000000000
-      internalID: -5903747049294534028
+      spriteID: ba757388eee7878b0800000000000000
+      internalID: -5154230210572888149
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_2
+      name: EMO-ThrowPaper_2
       rect:
         serializedVersion: 2
         x: 106
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51369af70760c25c0800000000000000
-      internalID: -4239006069014568171
+      spriteID: da6e753ad62358eb0800000000000000
+      internalID: -4718309588127455571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_3
+      name: EMO-ThrowPaper_3
       rect:
         serializedVersion: 2
         x: 159
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af0c7c386bc0cd550800000000000000
-      internalID: 6186833966134706426
+      spriteID: 08967b274f6366aa0800000000000000
+      internalID: -6168182216112772736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_4
+      name: EMO-ThrowPaper_4
       rect:
         serializedVersion: 2
         x: 212
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f80477a632e95700800000000000000
-      internalID: 529703155558254840
+      spriteID: 6e9a675ce01581f70800000000000000
+      internalID: 9158158966142183910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_5
+      name: EMO-ThrowPaper_5
       rect:
         serializedVersion: 2
         x: 265
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dff1c59b3e8872c0800000000000000
-      internalID: -4433637446579519535
+      spriteID: f6b835845ceebfa70800000000000000
+      internalID: 8861939222870985583
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_6
+      name: EMO-ThrowPaper_6
       rect:
         serializedVersion: 2
         x: 318
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28a0ef1f5ee9585e0800000000000000
-      internalID: -1907944156676879742
+      spriteID: 074cc54226b49db00800000000000000
+      internalID: 853796489252357232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_7
+      name: EMO-ThrowPaper_7
       rect:
         serializedVersion: 2
         x: 371
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c78381904c5600810800000000000000
-      internalID: 1729494149550848124
+      spriteID: d6b03f96ac6cd99c0800000000000000
+      internalID: -3918757528079234195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_8
+      name: EMO-ThrowPaper_8
       rect:
         serializedVersion: 2
         x: 424
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dab027af9044b170800000000000000
-      internalID: 8193244676541692625
+      spriteID: 07eb4c2e8197246f0800000000000000
+      internalID: -701865444125655440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_9
+      name: EMO-ThrowPaper_9
       rect:
         serializedVersion: 2
         x: 477
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ae6971cf8594c70800000000000000
-      internalID: 8955787173753711207
+      spriteID: a16fae62d0b460800800000000000000
+      internalID: 578232122023278106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_10
+      name: EMO-ThrowPaper_10
       rect:
         serializedVersion: 2
         x: 530
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5793c4ee6b958ce10800000000000000
-      internalID: 2218121458696862069
+      spriteID: 796e2aab664de4eb0800000000000000
+      internalID: -4733612620636821865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_11
+      name: EMO-ThrowPaper_11
       rect:
         serializedVersion: 2
         x: 583
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aad882adfa74f24a0800000000000000
-      internalID: -6615990506979029590
+      spriteID: 1e58536d3d27bf6a0800000000000000
+      internalID: -6414406990101641759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_12
+      name: EMO-ThrowPaper_12
       rect:
         serializedVersion: 2
         x: 636
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb54e25b5a6dbb3e0800000000000000
-      internalID: -2036798399257360965
+      spriteID: d64c9e949023c58b0800000000000000
+      internalID: -5162196057397279635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_13
+      name: EMO-ThrowPaper_13
       rect:
         serializedVersion: 2
         x: 689
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5e2938513ee850c0800000000000000
-      internalID: -4586654324775899558
+      spriteID: b69356a4872425310800000000000000
+      internalID: 1392248319222561131
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_14
+      name: EMO-ThrowPaper_14
       rect:
         serializedVersion: 2
         x: 742
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e54d7b720a9d36d0800000000000000
-      internalID: -3009079640561203741
+      spriteID: 9b1b887287bdaf6f0800000000000000
+      internalID: -649965887095787079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_15
+      name: EMO-ThrowPaper_15
       rect:
         serializedVersion: 2
         x: 795
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e611f3cb353561770800000000000000
-      internalID: 8581137759106699630
+      spriteID: 0db33f65833f117c0800000000000000
+      internalID: -4102230362255311920
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_16
+      name: EMO-ThrowPaper_16
       rect:
         serializedVersion: 2
         x: 848
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f890d82ab669b1c60800000000000000
-      internalID: 7789985369500223887
+      spriteID: 5bb466e439b3558c0800000000000000
+      internalID: -4011234389242000459
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_17
+      name: EMO-ThrowPaper_17
       rect:
         serializedVersion: 2
         x: 901
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2139e550439fc9750800000000000000
-      internalID: 6313194779490292498
+      spriteID: 9888a9a8cf498eef0800000000000000
+      internalID: -78649181100930935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_18
+      name: EMO-ThrowPaper_18
       rect:
         serializedVersion: 2
         x: 954
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c27c44084c8ce670800000000000000
-      internalID: 8569378431916864195
+      spriteID: 75c1e0400536736d0800000000000000
+      internalID: -3010828630557320105
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_19
+      name: EMO-ThrowPaper_19
       rect:
         serializedVersion: 2
         x: 1007
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cdd6bc85fcb1e720800000000000000
-      internalID: 2873785800052891080
+      spriteID: 44f1d921d4c6db7a0800000000000000
+      internalID: -6359808020496703676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_20
+      name: EMO-ThrowPaper_20
       rect:
         serializedVersion: 2
         x: 1060
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6feb635d82ca3b3e0800000000000000
-      internalID: -2039096914892898570
+      spriteID: a8b619209ff7b12c0800000000000000
+      internalID: -4459830298513675382
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Emo-ThrowPaper_21
+      name: EMO-ThrowPaper_21
       rect:
         serializedVersion: 2
         x: 1113
         y: 0
         width: 53
         height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3824c3011903dcd90800000000000000
-      internalID: -7075946039928405373
+      spriteID: a81bc3dd84ed3f520800000000000000
+      internalID: 2734773803274776970
       vertices: []
       indices: 
       edges: []

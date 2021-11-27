@@ -38,8 +38,15 @@ public class BehaviorTreeEditor : EditorWindow
         root.Q<ToolbarButton>("loadNode").clicked += LoadNode;
         root.Q<ToolbarButton>("sort1").clicked += SortNode_1;
         root.Q<ToolbarButton>("sort2").clicked += SortNode_2;
+        root.Q<ToolbarButton>("guid").clicked += ChangeGuid;
+        root.Q<ScrollView>().Add(_inspectorView);
         _treeView.OnElementSelected = OnSelectionChanged;
         OnSelectionChange();
+    }
+
+    private void ChangeGuid()
+    {
+        _treeView.ChangeGuid();
     }
 
     private void SortNode_2()
@@ -91,7 +98,15 @@ public class BehaviorTreeEditor : EditorWindow
         ITree tree = Selection.activeObject as ITree;
         if(tree == null && Selection.activeObject is GameObject)
         {
-            tree = Selection.activeGameObject.GetComponent<NPC.BehaviorTreeRunner>()?.BehaviorTree;
+            tree = Selection.activeGameObject.GetComponent<NPC.BehaviorTreeRunner>()?.BehaviorTree as NPC.BehaviorTree;
+            if(tree == null)
+            {
+                tree = (Selection.activeGameObject.GetComponent<NPC.BehaviorTreeRunner>()?.BehaviorTree as NPC.BehaviorTreeOverride)?.Prototype;
+            }
+        }
+        if (tree == null && Selection.activeObject is GameObject)
+        {
+            tree = Selection.activeGameObject.GetComponent<TalkSystem>()?.DialogueTree;
         }
 
         if (tree != null)

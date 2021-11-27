@@ -68,6 +68,72 @@ TextureImporter:
   - first:
       213: -1606285841585227266
     second: EMO-Yeah(1)_21
+  - first:
+      213: 5024982665429024507
+    second: EMO-Yeah_0
+  - first:
+      213: 4540355334224704650
+    second: EMO-Yeah_1
+  - first:
+      213: 4955618820352952366
+    second: EMO-Yeah_2
+  - first:
+      213: 5059732919501991990
+    second: EMO-Yeah_3
+  - first:
+      213: 7326598378811388137
+    second: EMO-Yeah_4
+  - first:
+      213: -7541179683602620959
+    second: EMO-Yeah_5
+  - first:
+      213: 2613648079028325399
+    second: EMO-Yeah_6
+  - first:
+      213: -5844317075758492774
+    second: EMO-Yeah_7
+  - first:
+      213: 8574791657830727471
+    second: EMO-Yeah_8
+  - first:
+      213: 2160663122399816075
+    second: EMO-Yeah_9
+  - first:
+      213: -4157442143440744158
+    second: EMO-Yeah_10
+  - first:
+      213: -7421299709572964788
+    second: EMO-Yeah_11
+  - first:
+      213: 4118694490254817937
+    second: EMO-Yeah_12
+  - first:
+      213: -1907941909987374566
+    second: EMO-Yeah_13
+  - first:
+      213: -3382722875858672305
+    second: EMO-Yeah_14
+  - first:
+      213: -6395871844311338107
+    second: EMO-Yeah_15
+  - first:
+      213: 1348655550095177075
+    second: EMO-Yeah_16
+  - first:
+      213: -8524632715992259769
+    second: EMO-Yeah_17
+  - first:
+      213: -6850837937508048896
+    second: EMO-Yeah_18
+  - first:
+      213: 2221115158023667856
+    second: EMO-Yeah_19
+  - first:
+      213: -551418546091062830
+    second: EMO-Yeah_20
+  - first:
+      213: 8971901541031927651
+    second: EMO-Yeah_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -169,463 +235,463 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EMO-Yeah(1)_0
+      name: EMO-Yeah_0
       rect:
         serializedVersion: 2
         x: 0
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8d10212828c6ad90800000000000000
-      internalID: -7086756888940896886
+      spriteID: bfe74675c135cb540800000000000000
+      internalID: 5024982665429024507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_1
+      name: EMO-Yeah_1
       rect:
         serializedVersion: 2
         x: 50
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd66c3a162c5f320800000000000000
-      internalID: 2591190885236895185
+      spriteID: a847382ee15920f30800000000000000
+      internalID: 4540355334224704650
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_2
+      name: EMO-Yeah_2
       rect:
         serializedVersion: 2
         x: 100
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dcd6591627e4a92d0800000000000000
-      internalID: -3271215926160822835
+      spriteID: e28c065af05e5c440800000000000000
+      internalID: 4955618820352952366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_3
+      name: EMO-Yeah_3
       rect:
         serializedVersion: 2
         x: 150
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e8d3bb51bc39c0b0800000000000000
-      internalID: -5707964320270001944
+      spriteID: 630344d5848c73640800000000000000
+      internalID: 5059732919501991990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_4
+      name: EMO-Yeah_4
       rect:
         serializedVersion: 2
         x: 200
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27f81366a2af393d0800000000000000
-      internalID: -3200939850120196238
+      spriteID: 9e07105586e4da560800000000000000
+      internalID: 7326598378811388137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_5
+      name: EMO-Yeah_5
       rect:
         serializedVersion: 2
         x: 250
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05271082229d67b70800000000000000
-      internalID: 8896536854640292432
+      spriteID: 1ed197b5809585790800000000000000
+      internalID: -7541179683602620959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_6
+      name: EMO-Yeah_6
       rect:
         serializedVersion: 2
         x: 300
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 622f5293bd27e3790800000000000000
-      internalID: -7548469639544180186
+      spriteID: 71c8d56841b854420800000000000000
+      internalID: 2613648079028325399
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_7
+      name: EMO-Yeah_7
       rect:
         serializedVersion: 2
         x: 350
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e4fc64b81804b020800000000000000
-      internalID: 2356517407220888806
+      spriteID: a935aa88590d4eea0800000000000000
+      internalID: -5844317075758492774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_8
+      name: EMO-Yeah_8
       rect:
         serializedVersion: 2
         x: 400
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f85facedc32495c0800000000000000
-      internalID: -4209700384338388752
+      spriteID: f2fbbf3e497cff670800000000000000
+      internalID: 8574791657830727471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_9
+      name: EMO-Yeah_9
       rect:
         serializedVersion: 2
         x: 450
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1191c9aca3ecda700800000000000000
-      internalID: 553325081139091729
+      spriteID: b896de189a73cfd10800000000000000
+      internalID: 2160663122399816075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_10
+      name: EMO-Yeah_10
       rect:
         serializedVersion: 2
         x: 0
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee3367102e76caf0800000000000000
-      internalID: -376474842542424349
+      spriteID: 221d9f9c56ccd46c0800000000000000
+      internalID: -4157442143440744158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_11
+      name: EMO-Yeah_11
       rect:
         serializedVersion: 2
         x: 50
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b5f1537bfe570b30800000000000000
-      internalID: 4253472807139276217
+      spriteID: c4e913fdb3f320990800000000000000
+      internalID: -7421299709572964788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_12
+      name: EMO-Yeah_12
       rect:
         serializedVersion: 2
         x: 100
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebe5185d7c4898b10800000000000000
-      internalID: 1984263104648797886
+      spriteID: 19a3ffd21da882930800000000000000
+      internalID: 4118694490254817937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_13
+      name: EMO-Yeah_13
       rect:
         serializedVersion: 2
         x: 150
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cb7daca5877ee210800000000000000
-      internalID: 1364159153151245249
+      spriteID: a1a4f1b01f0a585e0800000000000000
+      internalID: -1907941909987374566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_14
+      name: EMO-Yeah_14
       rect:
         serializedVersion: 2
         x: 200
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 726e928f8b5242fc0800000000000000
-      internalID: -3520647532329179609
+      spriteID: f452bd287772e01d0800000000000000
+      internalID: -3382722875858672305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_15
+      name: EMO-Yeah_15
       rect:
         serializedVersion: 2
         x: 250
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac3ce33ffbb8aba0800000000000000
-      internalID: -6077400992374309719
+      spriteID: 58376e2c17c4d37a0800000000000000
+      internalID: -6395871844311338107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_16
+      name: EMO-Yeah_16
       rect:
         serializedVersion: 2
         x: 300
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4823c116392d29df0800000000000000
-      internalID: -174845905082764668
+      spriteID: 37538cbc31367b210800000000000000
+      internalID: 1348655550095177075
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_17
+      name: EMO-Yeah_17
       rect:
         serializedVersion: 2
         x: 350
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 21114b1b840e30bd0800000000000000
-      internalID: -2665039951649566446
+      spriteID: 743ab92d5bb62b980800000000000000
+      internalID: -8524632715992259769
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_18
+      name: EMO-Yeah_18
       rect:
         serializedVersion: 2
         x: 400
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d2781d49f1b32fd0800000000000000
-      internalID: -2367853294768327976
+      spriteID: 0002011713fece0a0800000000000000
+      internalID: -6850837937508048896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_19
+      name: EMO-Yeah_19
       rect:
         serializedVersion: 2
         x: 450
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8fd4c74e83013e10800000000000000
-      internalID: 2175524004620984204
+      spriteID: 0908c3fd77cf2de10800000000000000
+      internalID: 2221115158023667856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_20
+      name: EMO-Yeah_20
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24cdbc6b22aae8630800000000000000
-      internalID: 3931266590813445186
+      spriteID: 2d90eadf0c7f858f0800000000000000
+      internalID: -551418546091062830
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Yeah(1)_21
+      name: EMO-Yeah_21
       rect:
         serializedVersion: 2
         x: 50
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef9b29c998355b9e0800000000000000
-      internalID: -1606285841585227266
+      spriteID: 36fdcf89ae8928c70800000000000000
+      internalID: 8971901541031927651
       vertices: []
       indices: 
       edges: []

@@ -126,7 +126,7 @@ namespace NPC
         /// </summary>
         protected abstract NodeStatus OnUpdate(BehaviorTreeRunner runner);
 
-        public virtual Node Clone()
+        public virtual Node Clone(bool self = false)
         {
             var node = Instantiate(this);
             node.ViewPosition = ViewPosition;

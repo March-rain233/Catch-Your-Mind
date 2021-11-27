@@ -76,6 +76,11 @@ public class TreeView : GraphView
         });
     }
 
+    internal void ChangeGuid()
+    {
+        Array.ForEach(_tree.GetNodes(), node => node.Guid = GUID.Generate().ToString());
+    }
+
     /// <summary>
     /// 删除指定节点
     /// </summary>

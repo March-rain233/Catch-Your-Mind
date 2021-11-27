@@ -35,6 +35,8 @@ namespace Dialogue
         [SerializeField]
         private List<Node> _nodes = new List<Node>();
 
+        public Dictionary<string, EventCenter.EventArgs> Variables;
+
         protected override NodeStatus OnUpdate(BehaviorTreeRunner runner)
         {
             _currentNode = _currentNode.Tick(this);
@@ -42,13 +44,14 @@ namespace Dialogue
             {
                 return NodeStatus.Running;
             }
-            GameManager.Instance.EventCenter.SendEvent("DIALOG_CLOSE", new EventCenter.EventArgs());
+            GameManager.Instance.EventCenter.SendEvent("DIALOG_EXIT", new EventCenter.EventArgs());
             return NodeStatus.Success;
         }
 
-        public override NPC.Node Clone()
+        public override NPC.Node Clone(bool self = false)
         {
             var tree = Instantiate(this);
+            tree.name = tree.name.Replace("(Clone)", "") + "(Clone)";
             tree._rootNode = _rootNode.Clone() as RootNode;
             Stack<Node> stack = new Stack<Node>(_nodes.Count);
             stack.Push(tree._rootNode);
@@ -58,6 +61,10 @@ namespace Dialogue
                 var node = stack.Pop();
                 Array.ForEach(node.GetChildren(), child => stack.Push(child as Node));
                 tree._nodes.Add(node);
+            }
+            if(tree.Variables == null)
+            {
+                tree.Variables = new Dictionary<string, EventCenter.EventArgs>();
             }
             return tree;
         }
@@ -184,6 +191,7 @@ namespace Dialogue
         protected override void OnEnter(BehaviorTreeRunner runner)
         {
             _currentNode = _rootNode;
+            GameManager.Instance.EventCenter.SendEvent("DIALOG_ENTER", new EventCenter.EventArgs());
         }
 
         protected override void OnExit(BehaviorTreeRunner runner)

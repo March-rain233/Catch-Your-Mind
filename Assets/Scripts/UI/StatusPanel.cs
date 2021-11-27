@@ -13,6 +13,8 @@ public class StatusPanel :MonoBehaviour
 
     private void Start()
     {
+        InteractionText.text = "";
+        InteractionText.DOFade(0, 0);
         GameManager.Instance.EventCenter.AddListener("InteractionEnter", InteractionEnter);
         GameManager.Instance.EventCenter.AddListener("InteractionExit", InteractionExit);
         GameManager.Instance.TimeChanged += time =>
@@ -24,8 +26,7 @@ public class StatusPanel :MonoBehaviour
     private void InteractionEnter(EventCenter.EventArgs eventArgs)
     {
         InteractionText.DOFade(1, 0.5f);
-        InteractionText.text = "°´ÏÂ" + eventArgs.Object.ToString()
-            + "À´" + eventArgs.String;
+        InteractionText.text = eventArgs.String;
     }
 
     private void InteractionExit(EventCenter.EventArgs eventArgs)

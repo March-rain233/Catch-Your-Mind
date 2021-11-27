@@ -78,7 +78,10 @@ public class TalkSystem : SerializedMonoBehaviour
         {
             if (value)
             {
-                _dialogueTree = value.Clone() as Dialogue.DialogueTree;
+                if(value != _dialogueTree)
+                {
+                    _dialogueTree = value.Clone() as Dialogue.DialogueTree; 
+                }
             }
             else
             {
@@ -87,6 +90,8 @@ public class TalkSystem : SerializedMonoBehaviour
         }
     }
     private Dialogue.DialogueTree _dialogueTree;
+
+    private bool _dialogEnd;
 
     private void Start()
     {
@@ -98,8 +103,10 @@ public class TalkSystem : SerializedMonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        GameManager.Instance.EventCenter.AddListener("DIALOG_CLOSE", e => _dialog.gameObject.SetActive(false));
+        GameManager.Instance.EventCenter.AddListener("DIALOG_EXIT", e => _dialog.gameObject.SetActive(false));
         GameManager.Instance.EventCenter.AddListener("DIALOG_PUSH", e => PushBodies(e.Object as TextBody[]));
+        GameManager.Instance.EventCenter.AddListener("DIALOG_HIDE", e => BubbleDialog.Hide());
+        GameManager.Instance.EventCenter.AddListener("DIALOG_SHOW", e => BubbleDialog.Show());
     }
 
     private void Update()
@@ -128,7 +135,6 @@ public class TalkSystem : SerializedMonoBehaviour
         {
             if(DialogueTree.Tick(null) == NodeStatus.Success)
             {
-                Debug.Log(2);
                 DialogueTree = null;
             }
         }
@@ -137,11 +143,17 @@ public class TalkSystem : SerializedMonoBehaviour
     public void PushBodies(TextBody[] textBodies)
     {
         Array.ForEach(textBodies, body => _textBodies.Enqueue(body));
+        _dialogEnd = false;
         NextStep();
     }
 
     public void NextStep()
     {
+        if (_dialogEnd)
+        {
+            _dialogEnd = false;
+            _textBodies.Dequeue();
+        }
         if (_textBodies.Count <= 0) 
         { 
             GameManager.Instance.EventCenter.SendEvent("DIALOG_END", new EventCenter.EventArgs());
@@ -161,8 +173,14 @@ public class TalkSystem : SerializedMonoBehaviour
 
     private void TextEnd()
     {
-        _textBodies.Dequeue();
+        //_textBodies.Dequeue();
+        _dialogEnd = true;
         if (_skip) { NextStep(); }
+        if (_textBodies.Count <= 0)
+        {
+            GameManager.Instance.EventCenter.SendEvent("DIALOG_END", new EventCenter.EventArgs());
+            return;
+        }
     }
 
     private void QueueDialogHandler(TextBody body)
@@ -208,16 +226,45 @@ public class TalkSystem : SerializedMonoBehaviour
                 BubbleDialog.SetName(body.Name);
                 if (string.IsNullOrEmpty(body.ObjectName))
                 {
-                    SetDialogFollow(GameObject.Find(body.Name).transform);
+                    Transform t = null;
+                    t = GetTalker(body.Name);
+                    SetDialogFollow(t);
                 }
             }
             if (!string.IsNullOrEmpty(body.ObjectName))
             {
-                SetDialogFollow(GameObject.Find(body.ObjectName).transform);
+                Transform t = null;
+                t = GetTalker(body.ObjectName);
+                SetDialogFollow(t);
             }
             _skip = body.Skip;
             BubbleDialog.BeginRead(body.Body);
         }
+    }
+
+    private Transform GetTalker(string name)
+    {
+        Transform t = null;
+        if (DialogueTree.Variables.ContainsKey(name))
+        {
+            var temp = DialogueTree.Variables[name].Object;
+            if (temp is GameObject)
+            {
+                t = (temp as GameObject).transform.Find("TalkPoint");
+                if (!t) { t = (temp as GameObject).transform; }
+            }
+            if (temp is Component)
+            {
+                t = (temp as Component).transform.Find("TalkPoint");
+                if (!t) { t = (temp as Component).transform; }
+            }
+        }
+        else
+        {
+            t = GameObject.Find(name).transform.Find("TalkPoint");
+            if (!t) { t = GameObject.Find(name).transform; }
+        }
+        return t;
     }
 
     private void SetDialogFollow(Transform follow)

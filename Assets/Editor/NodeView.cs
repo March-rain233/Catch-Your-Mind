@@ -35,6 +35,8 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
         style.left = node.ViewPosition.x;
         style.top = node.ViewPosition.y;
 
+        //Debug.Log(node.Name + "" + node.ViewPosition);
+
         CreateInputPorts();
         //CreateOutputPorts();
         if (node.Output == Port.Capacity.Single)

@@ -24,7 +24,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 3cd7bc2798e8a144885291365ab92a0c
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: Fall
   _moveScale: 1.5
   _exGravity: 0
@@ -52,7 +54,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 33148203bdea0e64fa520e7421d76c29
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: Rush
   _holdTime: 0.2
   _rushScale: 9
@@ -68,7 +72,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
   m_Name: RootNode
   m_EditorClassIdentifier: 
-  _isStarted: 0
   _condition: {fileID: 0}
   Child: {fileID: 0}
 --- !u!114 &-8454656805310948786
@@ -95,7 +98,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: d1cfab6ea8ef73a48970936269260969
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 1
   _pressType: 1
@@ -123,13 +128,16 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: abc5f2f06adb25e4eab51ba232963c63
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: -5731200616703209510}
   - {fileID: -4825348243170304894}
   - {fileID: -9095239321829302919}
   - {fileID: -7048925254679810739}
+  _current: 0
 --- !u!114 &-8134507596968621807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,6 +162,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 8cae093786f548f49b10ff0b14d289a7
+    - Name: Status
+      Entry: 3
+      Data: 0
     - Name: Variables
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
@@ -234,7 +245,37 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _status: 0
+--- !u!114 &-8095093952510781311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 3ec31ff7d951a81418eec6abd8954e0a
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 6500399187624512142}
+  - {fileID: 4229514245500786707}
 --- !u!114 &-8086139713986704244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -259,7 +300,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: a005c9fd187ff0d428d279c487b6251f
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 3
   _pressType: 1
@@ -287,7 +330,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 3a6a78278caebd14a8bf3bd490f90512
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: Rise
   _moveScale: 1.5
 --- !u!114 &-7857688841206109166
@@ -300,7 +345,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u5F53\u952E\u76D8\u5F39\u8D77\u65F6\u8DF3\u8DC3"
+  m_Name: "\u8DF3\u8DC3"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -314,13 +359,13 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 99310babb795f0c4db9f0cc400a6cafd
-  _status: 0
-  _abortType: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 1
   Childrens:
-  - {fileID: 7990598386301690721}
-  - {fileID: 1569465939441697129}
   - {fileID: 1061505019226269823}
-  - {fileID: 9146092232737549130}
+  _current: 0
 --- !u!114 &-7700767260660593254
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,11 +390,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: f2a3a75d8b59f0348b159d202e551f6a
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 3
   Childrens:
   - {fileID: -6148071662531431959}
   - {fileID: 6288737514456519022}
+  _current: 0
 --- !u!114 &-7283872686839671085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -374,7 +422,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 869ee020beb0c4e419d8627b3412e43f
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 1
   _judgeInterval: 0.2
@@ -402,7 +452,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: ea69ae23f570b594fa941fcd458511af
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _valueName: RushCD
 --- !u!114 &-6510895872585659422
 MonoBehaviour:
@@ -428,37 +480,11 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: c95f1a13604a4514f955925a7c1de0d6
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 1
   _valueName: HasSkyRush
---- !u!114 &-6373378823969974346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: "\u68C0\u6D4B\u8DF3\u8DC3\u6309\u952E"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 799b621b9fc7de84caed9fcc4c34fd7a
-  _status: 0
-  Invert: 0
-  _keyType: 0
-  _pressType: 1
 --- !u!114 &-6148071662531431959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +509,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 8f5135d920b1fc745bb159d215d86d84
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 1
   Radius: 0.01
   CheckLayer:
@@ -513,7 +541,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: d9bf6173e101dc7418d782c047528c4a
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: Run
   _moveScale: 2.5
 --- !u!114 &-5956953215209762553
@@ -540,7 +570,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 2444f62d6d29bc54483d70307bf25914
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 2
   _judgeInterval: 0.2
@@ -568,7 +600,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: c436e2097091bd641aecd6eb3e8d7d67
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: -7700767260660593254}
@@ -597,7 +631,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: f3f044ac138bb7c4ebbfbe854eb74948
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: -7283872686839671085}
@@ -626,7 +662,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: e317d69ffc37d4542a86488a2dc2e68b
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: -5956953215209762553}
@@ -655,36 +693,12 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 8bb0c8e6479654b499ef172dc7e20639
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _intervalTime: 2
   _CDName: RushCD
---- !u!114 &-4742793150740937372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71cccf170c27f2c45918e75701bccd07, type: 3}
-  m_Name: "\u5EF6\u8FDF"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: bb7815c843ad1ca4ba0ae45166964b54
-  _status: 0
-  _intervalTime: 0.2
 --- !u!114 &-4003445543768671752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -709,7 +723,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: d42d7a6e171e0874e99d87aa58f4dc70
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: DragWall
   DownVector: 2
 --- !u!114 &-3795712860749705197
@@ -736,7 +752,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 94ebdc0ec04daeb42b7c0236a757df1c
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   Offset: {x: 0, y: 1}
   Lenth: 0.6
@@ -767,7 +785,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 566430a41ccb0e54ead2c14f95d27fc3
-  _status: 2
+    - Name: Status
+      Entry: 3
+      Data: 2
   Child: {fileID: 1690412095893302982}
 --- !u!114 &-2670861358993378464
 MonoBehaviour:
@@ -793,40 +813,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 85af2a396aef6c441a1bdf440e554e45
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: -8454656805310948786}
   - {fileID: 3870558898583405015}
---- !u!114 &-1813944413780601215
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4e7384c92fa5744c928950ab09c2eb0, type: 3}
-  m_Name: "\u8DF3\u8DC3"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 002e538e2a3963849808b2e71654437c
-  _status: 0
-  _abortType: 1
-  Childrens:
-  - {fileID: 11123576004170375}
-  - {fileID: -7857688841206109166}
+  _current: 0
 --- !u!114 &-1554118643129567684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,7 +845,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: ab8c9abda3dca75459be202e1a39f8b1
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 1
   _maxVelocity: {x: 0, y: 0.1}
   _ignoreX: 1
@@ -880,12 +876,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 818de169f00e88a4b9c0f3cbaa763653
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: 795291137293494500}
   - {fileID: -8297436787582640264}
-  - {fileID: -1813944413780601215}
+  - {fileID: -7857688841206109166}
   - {fileID: 5196611249294291278}
   - {fileID: 8439646436218490877}
 --- !u!114 &-502697426248022488
@@ -912,7 +910,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 1e313ed6fa3f2404a92f6361038998d8
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 1
   _valueName: Flying
 --- !u!114 &-192559918391552545
@@ -939,7 +939,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: c594df99e9bde174ba2059d600ecd9df
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: 3156878789634229073}
@@ -968,7 +970,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 47f982b80824ed24f90cbeb35a8a0977
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 1
   _judgeInterval: 0.2
@@ -985,107 +989,71 @@ MonoBehaviour:
   m_Name: Mind
   m_EditorClassIdentifier: 
   _rootNode: {fileID: -3652552099502323850}
-  _nodes:
-  - {fileID: -3652552099502323850}
+  Nodes:
+  - {fileID: -502697426248022488}
+  - {fileID: -5956953215209762553}
+  - {fileID: -57419350757124191}
+  - {fileID: 503794320562844722}
+  - {fileID: 9012961266717572601}
+  - {fileID: 5851681287011182433}
+  - {fileID: 2028898750596048385}
+  - {fileID: 4229514245500786707}
+  - {fileID: 6288737514456519022}
   - {fileID: 1690412095893302982}
+  - {fileID: -3652552099502323850}
+  - {fileID: 6015078010154855015}
+  - {fileID: -8095093952510781311}
+  - {fileID: -5769511853873972713}
+  - {fileID: 6500399187624512142}
+  - {fileID: 87441344099478529}
+  - {fileID: 7648518714225038659}
+  - {fileID: -7048925254679810739}
+  - {fileID: -7945042931234900814}
+  - {fileID: 101081696336429510}
+  - {fileID: -9212674703221524321}
+  - {fileID: 764855887826732137}
+  - {fileID: -4825348243170304894}
+  - {fileID: -9095239321829302919}
+  - {fileID: 3399636371333267094}
+  - {fileID: 5998230083859983078}
+  - {fileID: -5731200616703209510}
+  - {fileID: -6510895872585659422}
+  - {fileID: -8086139713986704244}
+  - {fileID: 8233036664093174415}
+  - {fileID: -5424753289383746889}
+  - {fileID: -8454656805310948786}
+  - {fileID: -7283872686839671085}
   - {fileID: -890242105586259356}
+  - {fileID: -7700767260660593254}
+  - {fileID: -8297436787582640264}
+  - {fileID: 8185152900216571507}
+  - {fileID: 6913762983452305242}
+  - {fileID: 3870558898583405015}
+  - {fileID: 2935294271574923102}
   - {fileID: 8439646436218490877}
-  - {fileID: 5196611249294291278}
-  - {fileID: -192559918391552545}
+  - {fileID: 7847815423640038683}
+  - {fileID: -4003445543768671752}
   - {fileID: 3156878789634229073}
   - {fileID: 7836679713859515849}
-  - {fileID: 8233036664093174415}
-  - {fileID: 4487969617958360014}
-  - {fileID: 4018934184979382756}
-  - {fileID: -8086139713986704244}
-  - {fileID: -6079707881084051042}
-  - {fileID: -7283872686839671085}
-  - {fileID: 2935294271574923102}
-  - {fileID: -5731200616703209510}
-  - {fileID: -9095239321829302919}
-  - {fileID: -8297436787582640264}
-  - {fileID: 11123576004170375}
-  - {fileID: -6373378823969974346}
-  - {fileID: 6696321000486697210}
-  - {fileID: -7857688841206109166}
-  - {fileID: 1569465939441697129}
-  - {fileID: 1061505019226269823}
-  - {fileID: -5769511853873972713}
-  - {fileID: -7945042931234900814}
   - {fileID: 4926053580428437972}
-  - {fileID: 101081696336429510}
-  - {fileID: -7700767260660593254}
-  - {fileID: -6148071662531431959}
-  - {fileID: 9146092232737549130}
-  - {fileID: 795291137293494500}
-  - {fileID: 2996448670992230187}
-  - {fileID: 5998230083859983078}
-  - {fileID: 429891594684845873}
-  - {fileID: -4742793150740937372}
-  - {fileID: -1813944413780601215}
-  - {fileID: 3884247443048039555}
-  - {fileID: 7990598386301690721}
-  - {fileID: 2146064807895571177}
-  - {fileID: 2927010767099050348}
-  - {fileID: 8185152900216571507}
-  - {fileID: -3795712860749705197}
-  - {fileID: 3703939343475466850}
-  - {fileID: 2659884681690678684}
-  - {fileID: 7505591810263670541}
-  - {fileID: -9212674703221524321}
-  - {fileID: 7847815423640038683}
   - {fileID: -1554118643129567684}
-  - {fileID: -8134507596968621807}
-  - {fileID: 6913762983452305242}
-  - {fileID: 3191426618814994367}
-  - {fileID: -4003445543768671752}
+  - {fileID: -6148071662531431959}
+  - {fileID: -192559918391552545}
+  - {fileID: 3703939343475466850}
+  - {fileID: -3795712860749705197}
+  - {fileID: 7505591810263670541}
+  - {fileID: 795291137293494500}
+  - {fileID: 4487969617958360014}
+  - {fileID: 5196611249294291278}
+  - {fileID: 4018934184979382756}
   - {fileID: 7070039903244902444}
-  - {fileID: -6510895872585659422}
-  - {fileID: -502697426248022488}
-  - {fileID: 6288737514456519022}
-  - {fileID: 87441344099478529}
-  - {fileID: -4825348243170304894}
-  - {fileID: -7048925254679810739}
-  - {fileID: 764855887826732137}
+  - {fileID: -8134507596968621807}
+  - {fileID: -6079707881084051042}
+  - {fileID: -7857688841206109166}
+  - {fileID: 1061505019226269823}
+  - {fileID: 3191426618814994367}
+  - {fileID: 2659884681690678684}
   - {fileID: -2670861358993378464}
-  - {fileID: 3870558898583405015}
-  - {fileID: -8454656805310948786}
-  - {fileID: 503794320562844722}
-  - {fileID: 3399636371333267094}
-  - {fileID: -5424753289383746889}
-  - {fileID: -57419350757124191}
-  - {fileID: -5956953215209762553}
---- !u!114 &11123576004170375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u68C0\u67E5\u662F\u5426\u5F00\u59CB\u84C4\u529B"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: dc356e0629750d44396f2289ef808871
-  _status: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: 2146064807895571177}
-  - {fileID: -6373378823969974346}
-  - {fileID: 6696321000486697210}
-  - {fileID: 3884247443048039555}
 --- !u!114 &87441344099478529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1110,11 +1078,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 6ec2928a0d707494ea61e8e0c37affbd
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: -502697426248022488}
   - {fileID: -8134507596968621807}
+  _current: 0
 --- !u!114 &101081696336429510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1139,37 +1110,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 0400a2a1730bb0a41819ae917320fdfc
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 3
   Childrens:
   - {fileID: 4926053580428437972}
   - {fileID: -9212674703221524321}
---- !u!114 &429891594684845873
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe0bb8789362f7e4bb40f0ee82556d50, type: 3}
-  m_Name: "\u8BBE\u7F6E\u843D\u5730\u52A8\u753B"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: d36d068f4c8e6d24d8149cfb0258684c
-  _status: 0
-  _triggerName: Landing
+  _current: 0
 --- !u!114 &503794320562844722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1194,7 +1142,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: ff543fb3fe168784f9c2ce0365d9431b
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Child: {fileID: -2670861358993378464}
 --- !u!114 &764855887826732137
 MonoBehaviour:
@@ -1220,13 +1170,16 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: aebd6451151a4ae42a62354a848b9e89
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: -6510895872585659422}
   - {fileID: -5424753289383746889}
   - {fileID: 3399636371333267094}
   - {fileID: 7070039903244902444}
+  _current: 0
 --- !u!114 &795291137293494500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1251,14 +1204,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 17ee61aaa79d58d4a97d0792f4cc9b4f
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 3
   Childrens:
   - {fileID: 5998230083859983078}
-  - {fileID: 2927010767099050348}
-  - {fileID: 429891594684845873}
-  - {fileID: -4742793150740937372}
-  - {fileID: 2996448670992230187}
+  - {fileID: -8095093952510781311}
+  _current: 0
 --- !u!114 &1061505019226269823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1283,39 +1236,13 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: fdeda062afc73f8469cbab9cec125989
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: Jump
   _maxJumpScale: 1.5
   _minJumpScale: 1
-  _holdingTime: 0.5
---- !u!114 &1569465939441697129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: "\u5224\u65AD\u8DF3\u8DC3\u662F\u5426\u5F39\u8D77"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 050830c73904f85419ac5a0a1756f729
-  _status: 0
-  Invert: 0
-  _keyType: 0
-  _pressType: 2
+  _holdingTime: 0.15
 --- !u!114 &1690412095893302982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1340,11 +1267,13 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: ec5e9aefbb6ecbd45a7545af33b6595b
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Child: {fileID: -5769511853873972713}
   Times: 0
   IsForever: 1
---- !u!114 &2146064807895571177
+--- !u!114 &2028898750596048385
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1353,8 +1282,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: "\u5224\u65AD\u8DF3\u8DC3\u539F\u5148\u662F\u5426\u6309\u4E0B"
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: KeyNode
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1367,10 +1296,13 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 1d3db0840ae6ebe43b11385c416a8816
-  _status: 0
-  Invert: 1
-  _valueName: IsHolding
+      Data: 45fb9ae904d15564f805a32b24ab3435
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 0
+  _keyType: 1
+  _pressType: 1
 --- !u!114 &2659884681690678684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1395,37 +1327,11 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 4908ffc5293922c4ab63a0a3affd3fff
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: KickWall
   Velocity: {x: 10, y: 16}
---- !u!114 &2927010767099050348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01ba11dc16d0a2c4c98d8d7ad59c4ffc, type: 3}
-  m_Name: "\u6E05\u9664\u52A8\u753B"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 9af457b3e09574f45bd414b10ba70239
-  _status: 0
-  _triggerNames:
-  - Fall
-  - Jump
 --- !u!114 &2935294271574923102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1450,85 +1356,12 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: bb7c5c229b83d174cb4d04acf1d5abe3
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 2
   _judgeInterval: 0.2
---- !u!114 &2996448670992230187
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: "\u6E05\u9664\u6807\u5FD7"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 1e8fecb36263d684c94d123670855f92
-    - Name: Variables
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
-        Assembly-CSharp]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: Flying
-    - Name: $v
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: false
-    - Name: String
-      Entry: 6
-      Data: 
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  _status: 0
 --- !u!114 &3156878789634229073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,7 +1386,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: b378f381c84ffe14a9a541c9300f0c78
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 1
   _pressType: 1
@@ -1581,11 +1416,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: ff80d407a0d030548b4879967b0a8cf0
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: 3703939343475466850}
   - {fileID: 2659884681690678684}
+  _current: 0
 --- !u!114 &3399636371333267094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1596,7 +1434,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 764ae735f16fa72409c2e4e32c2bc69d, type: 3}
-  m_Name: RushNode
+  m_Name: "\u51B2\u523A\u8282\u70B9"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1610,10 +1448,12 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 6ee62f31762ae3a4a8f0fe9f35252da4
-  _status: 0
-  _triggerName: 
-  _holdTime: 0
-  _rushScale: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: Rush
+  _holdTime: 0.2
+  _rushScale: 9
 --- !u!114 &3703939343475466850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1638,7 +1478,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 2a86f06a364aaf642bf043f89dd31d43
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 0
   _pressType: 0
@@ -1666,85 +1508,12 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 706af5707bc2f56468e54bff66090fef
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _keyType: 2
   _pressType: 1
---- !u!114 &3884247443048039555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: "\u8BBE\u7F6E\u5DF2\u6309\u4E0B"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 65a70cd44b94e594bb42e51d0c486585
-    - Name: Variables
-      Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
-        Assembly-CSharp]], mscorlib
-    - Name: comparer
-      Entry: 7
-      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
-        mscorlib]], mscorlib
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: IsHolding
-    - Name: $v
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: true
-    - Name: String
-      Entry: 6
-      Data: 
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  _status: 0
 --- !u!114 &4018934184979382756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1769,9 +1538,39 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: ba87c73bb8b2f274d8b57fb70f1ede09
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _triggerName: Walk
   _moveScale: 1
+--- !u!114 &4229514245500786707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9612cb9d7edfcfb4e81c3c05a4e71591, type: 3}
+  m_Name: LandingNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 6febcef7cee813541879d9717493e01a
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: Landing
 --- !u!114 &4487969617958360014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1796,11 +1595,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 414055dafa927c44fab148d69380e494
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 3
   Childrens:
   - {fileID: -8086139713986704244}
   - {fileID: 4018934184979382756}
+  _current: 0
 --- !u!114 &4926053580428437972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,7 +1627,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: a393dcb632ec35b439b0dfae67293b2b
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _maxVelocity: {x: 0, y: -1}
   _ignoreX: 1
@@ -1854,12 +1658,45 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: a22c41f8a184e114ba403d206d33fa3f
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: -192559918391552545}
   - {fileID: 503794320562844722}
   - {fileID: 8233036664093174415}
+  _current: 0
+--- !u!114 &5851681287011182433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: KeyNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: f02945287874226419d9d6b08a973c78
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 0
+  _keyType: 2
+  _pressType: 1
 --- !u!114 &5998230083859983078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1884,9 +1721,43 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 1f20d3d6a19cb904792440390ba1760c
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   Invert: 0
   _valueName: Flying
+--- !u!114 &6015078010154855015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
+  m_Name: SelectorNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: a836694f7351de944a7704c2ab7a9c65
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 5851681287011182433}
+  - {fileID: 2028898750596048385}
+  - {fileID: 9012961266717572601}
 --- !u!114 &6288737514456519022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,12 +1782,14 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: e307e487fc6f2cc43ae404a163c95fcd
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: 87441344099478529}
   - {fileID: 7505591810263670541}
---- !u!114 &6696321000486697210
+--- !u!114 &6500399187624512142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1925,8 +1798,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43d85d8885895d84abc95d3773af45f7, type: 3}
-  m_Name: "\u8BB0\u5F55\u6309\u952E\u6309\u4E0B\u65F6\u95F4"
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: SequenceNode
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -1939,9 +1812,15 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 02411b6752fbb96458d06887e8cc15bd
-  _status: 0
-  _valueName: JumpHoldingTime
+      Data: a5a9309a6b9012745a1136889bdbf597
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 1
+  Childrens:
+  - {fileID: 6015078010154855015}
+  - {fileID: 7648518714225038659}
+  _current: 0
 --- !u!114 &6913762983452305242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1966,7 +1845,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: d3b760ac3d0d0a146adb494791ececcb
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 1
   Childrens:
   - {fileID: 3191426618814994367}
@@ -1995,6 +1876,9 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: c51cf5de5d35bb842966a0d2b33c01cc
+    - Name: Status
+      Entry: 3
+      Data: 0
     - Name: Variables
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
@@ -2045,7 +1929,6 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _status: 0
 --- !u!114 &7505591810263670541
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2070,182 +1953,16 @@ MonoBehaviour:
     - Name: Guid
       Entry: 1
       Data: 01e433706f92faf41b3a2679f0420b1f
-  _status: 0
+    - Name: Status
+      Entry: 3
+      Data: 0
   _abortType: 0
   Childrens:
   - {fileID: 764855887826732137}
   - {fileID: 8185152900216571507}
   - {fileID: 101081696336429510}
   - {fileID: -7945042931234900814}
---- !u!114 &7836679713859515849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: "\u6309\u4E0B\u5DE6\u952E"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 1b17ecc68c354c8498813684fdc216df
-  _status: 0
-  Invert: 0
-  _keyType: 2
-  _pressType: 1
---- !u!114 &7847815423640038683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u6293\u5899"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 2a4aaacb7420eb146b39040316a331f8
-  _status: 0
-  _abortType: 3
-  Childrens:
-  - {fileID: -1554118643129567684}
-  - {fileID: -4003445543768671752}
---- !u!114 &7990598386301690721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: "\u5224\u65AD\u662F\u5426\u6309\u4E0B\u8FC7"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: ea146ce75c4c2a44eb1d40e7d904ec86
-  _status: 0
-  Invert: 0
-  _valueName: IsHolding
---- !u!114 &8185152900216571507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u5899\u8FB9\u72B6\u6001"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 96a0b2ffb1fd9b744add31e3f1f8edbf
-  _status: 0
-  _abortType: 1
-  Childrens:
-  - {fileID: -3795712860749705197}
-  - {fileID: 6913762983452305242}
---- !u!114 &8233036664093174415
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: "\u5224\u65AD\u884C\u8D70\u8FD8\u662F\u8DD1\u52A8"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: dd8b70d3d55827343a8dec12a923b3f9
-  _status: 0
-  _abortType: 1
-  Childrens:
-  - {fileID: 4487969617958360014}
-  - {fileID: -6079707881084051042}
---- !u!114 &8439646436218490877
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f3294d0dcddaa443827c7bd89258ea2, type: 3}
-  m_Name: "\u5F85\u673A"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: c5158732bd081424bb721d4f407e3eab
-  _status: 0
-  _triggerName: Idle
---- !u!114 &9146092232737549130
+--- !u!114 &7648518714225038659
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2255,7 +1972,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acf83697f326f3544906e173cdc95e90, type: 3}
-  m_Name: "\u8BBE\u7F6E\u8DF3\u8DC3\u5C5E\u6027"
+  m_Name: SetterNode
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -2268,7 +1985,10 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 0822af32608ab9e4a8af3f92446588dc
+      Data: d76c1dbfcd483154880298184e7081a5
+    - Name: Status
+      Entry: 3
+      Data: 0
     - Name: Variables
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
@@ -2282,43 +2002,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 1
-      Data: Jump
-    - Name: $v
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: true
-    - Name: String
-      Entry: 6
-      Data: 
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: IsHolding
+      Data: Flying
     - Name: $v
       Entry: 7
       Data: EventCenter+EventArgs, Assembly-CSharp
@@ -2349,4 +2039,186 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  _status: 0
+--- !u!114 &7836679713859515849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: "\u6309\u4E0B\u5DE6\u952E"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 1b17ecc68c354c8498813684fdc216df
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 0
+  _keyType: 2
+  _pressType: 1
+--- !u!114 &7847815423640038683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u6293\u5899"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 2a4aaacb7420eb146b39040316a331f8
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 3
+  Childrens:
+  - {fileID: -1554118643129567684}
+  - {fileID: -4003445543768671752}
+  _current: 0
+--- !u!114 &8185152900216571507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u5899\u8FB9\u72B6\u6001"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 96a0b2ffb1fd9b744add31e3f1f8edbf
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 1
+  Childrens:
+  - {fileID: -3795712860749705197}
+  - {fileID: 6913762983452305242}
+  _current: 0
+--- !u!114 &8233036664093174415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
+  m_Name: "\u5224\u65AD\u884C\u8D70\u8FD8\u662F\u8DD1\u52A8"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: dd8b70d3d55827343a8dec12a923b3f9
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 1
+  Childrens:
+  - {fileID: 4487969617958360014}
+  - {fileID: -6079707881084051042}
+--- !u!114 &8439646436218490877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3294d0dcddaa443827c7bd89258ea2, type: 3}
+  m_Name: "\u5F85\u673A"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: c5158732bd081424bb721d4f407e3eab
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: Idle
+--- !u!114 &9012961266717572601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: KeyNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 95b306779f3bb1245900109cd828edc3
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 0
+  _keyType: 0
+  _pressType: 1

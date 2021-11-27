@@ -101,6 +101,7 @@ MonoBehaviour:
   CanvasGroup: {fileID: 4747197412041659759}
   Blur: {fileID: 8344463551462470520}
   IsShow: 0
+  IsPause: 0
 --- !u!225 &4747197412041659759
 CanvasGroup:
   m_ObjectHideFlags: 0

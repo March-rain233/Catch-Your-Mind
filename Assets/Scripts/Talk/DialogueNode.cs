@@ -13,7 +13,7 @@ namespace Dialogue
         /// <summary>
         /// ¶ÎÂä×é
         /// </summary>
-        [SerializeField]
+        [SerializeField, ListDrawerSettings(CustomAddFunction = "AddHandler")]
         private TalkSystem.TextBody[] _paragraphs;
 
         private bool _readEnd;
@@ -38,6 +38,15 @@ namespace Dialogue
         {
             base.OnExit(tree);
             GameManager.Instance.EventCenter.RemoveListener("DIALOG_END", DialogEndHandler);
+        }
+
+        private TalkSystem.TextBody AddHandler()
+        {
+            if (_paragraphs.Length > 0)
+            {
+                return _paragraphs[_paragraphs.Length - 1];
+            }
+            return new TalkSystem.TextBody();
         }
     }
 }

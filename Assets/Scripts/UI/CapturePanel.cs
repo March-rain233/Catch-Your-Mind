@@ -75,7 +75,7 @@ public class CapturePanel : MonoBehaviour
     }
     private float _blood;
 
-    public Transform Target;
+    public NPC.BehaviorTreeRunner Target;
     public PolygonCollider2D PolygonCollider2D;
 
     [SerializeField]
@@ -115,7 +115,7 @@ public class CapturePanel : MonoBehaviour
         PolygonCollider2D.points = obj;
         Bounds bounds = PolygonCollider2D.bounds;
         //System.Array.ForEach(obj, node => bounds.Encapsulate(node));
-        if (bounds.Contains(Target.position))
+        if (bounds.Contains(Target.transform.position) && Target.Variables["IsCatchable"].Boolean)
         {
             CreateFadeLine(obj);
             Blood += UpBlood * Mathf.Lerp(1, MaxComboRate, Mathf.Clamp(_combo, MinEffectiveCombo, MaxEffectiveCombo) - MinEffectiveCombo);

@@ -1,7 +1,79 @@
 fileFormatVersion: 2
 guid: 3dd01d18a30fdb841a45448d85e57f90
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 2028044917745968440
+    second: Mind-InRoom_0
+  - first:
+      213: 1653970127443138644
+    second: Mind-InRoom_1
+  - first:
+      213: -8334259473477566082
+    second: Mind-InRoom_2
+  - first:
+      213: -322688530101496034
+    second: Mind-InRoom_3
+  - first:
+      213: -1163200642282644223
+    second: Mind-InRoom_4
+  - first:
+      213: -1300195319265603925
+    second: Mind-InRoom_5
+  - first:
+      213: -8200464498512132001
+    second: Mind-InRoom_6
+  - first:
+      213: -8073192605995051729
+    second: Mind-InRoom_7
+  - first:
+      213: -5334268471648110876
+    second: Mind-InRoom_8
+  - first:
+      213: -3215622462370270073
+    second: Mind-InRoom_9
+  - first:
+      213: -95493367638955031
+    second: Mind-InRoom_10
+  - first:
+      213: -5284829269066627042
+    second: Mind-InRoom_11
+  - first:
+      213: -7192147570703840315
+    second: Mind-InRoom_12
+  - first:
+      213: 6512473314316750034
+    second: Mind-InRoom_13
+  - first:
+      213: 8053140935141279088
+    second: Mind-InRoom_14
+  - first:
+      213: 1437073369867267608
+    second: Mind-InRoom_15
+  - first:
+      213: 3398639970471025632
+    second: Mind-InRoom_16
+  - first:
+      213: -5041781669624134745
+    second: Mind-InRoom_17
+  - first:
+      213: -2039187158268707004
+    second: Mind-InRoom_18
+  - first:
+      213: 7366086166164060898
+    second: Mind-InRoom_19
+  - first:
+      213: 3543089812898151777
+    second: Mind-InRoom_20
+  - first:
+      213: -6189640797518507254
+    second: Mind-InRoom_21
+  - first:
+      213: -2552817534369877385
+    second: Mind-InRoom_22
+  - first:
+      213: 8153267429842390853
+    second: Mind-InRoom_23
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,7 +173,511 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mind-InRoom_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 153
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e8ce8b10152c10800000000000000
+      internalID: 2028044917745968440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 153
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4581b5b511514f610800000000000000
+      internalID: 1653970127443138644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 153
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e718f696a23c65c80800000000000000
+      internalID: -8334259473477566082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 153
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e171536dd74958bf0800000000000000
+      internalID: -322688530101496034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 153
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d9c32cd2b7bdfe0800000000000000
+      internalID: -1163200642282644223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 153
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae4c80fe37c4fde0800000000000000
+      internalID: -1300195319265603925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 103
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f588bfc8cf8123e80800000000000000
+      internalID: -8200464498512132001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_7
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 103
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25da54391246ff80800000000000000
+      internalID: -8073192605995051729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 103
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e639d2561fd8f5b0800000000000000
+      internalID: -5334268471648110876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 103
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78437a65860df53d0800000000000000
+      internalID: -3215622462370270073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 103
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb697fb94dbcaef0800000000000000
+      internalID: -95493367638955031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_11
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 103
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1842bea7c388a6b0800000000000000
+      internalID: -5284829269066627042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb420cd3eb503c90800000000000000
+      internalID: -7192147570703840315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc8f0d89f3f06a50800000000000000
+      internalID: 6512473314316750034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_14
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075c04d530182cf60800000000000000
+      internalID: 8053140935141279088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81eac1fad9281f310800000000000000
+      internalID: 1437073369867267608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb9e5fdb056a2f20800000000000000
+      internalID: 3398639970471025632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_17
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 50
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a34af2b84ef70ab0800000000000000
+      internalID: -5041781669624134745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ffad8651a53b3e0800000000000000
+      internalID: -2039187158268707004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eab0274758993660800000000000000
+      internalID: 7366086166164060898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16d7919a9659b2130800000000000000
+      internalID: 3543089812898151777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_21
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03d4a02d7af91aa0800000000000000
+      internalID: -6189640797518507254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_22
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 772be775af1929cd0800000000000000
+      internalID: -2552817534369877385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mind-InRoom_23
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f84829789362170800000000000000
+      internalID: 8153267429842390853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

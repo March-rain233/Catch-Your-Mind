@@ -136,7 +136,7 @@ public abstract class BaseGameManager<T> : SerializedMonoBehaviour
         ControlManager = GetComponent<ControlManager>();
         EventCenter = GetComponent<EventCenter>();
         MapManager = new MapManager();
-        PanelManager = new PanelManager();
+        //PanelManager = new PanelManager();
         SceneObjectManager = GetComponent<SceneObjectManager>();
 
         //初始化管理器类

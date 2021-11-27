@@ -4,10 +4,12 @@
         <uie:ToolbarButton text="载入节点" display-tooltip-when-elided="true" name="loadNode" />
         <uie:ToolbarButton text="整理图表①" display-tooltip-when-elided="true" name="sort1" />
         <uie:ToolbarButton text="整理图表②" display-tooltip-when-elided="true" name="sort2" />
+        <uie:ToolbarButton text="更改所有节点GUID" display-tooltip-when-elided="true" name="guid" />
     </uie:Toolbar>
     <SplitView fixed-pane-initial-dimension="300">
         <ui:VisualElement name="left-panel" style="flex-shrink: 1; flex-grow: 1;">
             <ui:Label text="Inspector" display-tooltip-when-elided="true" style="background-color: rgb(56, 56, 56); height: 20px; -unity-font-style: bold-and-italic; font-size: 10px; -unity-text-align: middle-left; white-space: nowrap;" />
+            <ui:ScrollView name="ScrollView" />
             <InspectorView />
         </ui:VisualElement>
         <ui:VisualElement name="right-panel" style="flex-shrink: 1;">

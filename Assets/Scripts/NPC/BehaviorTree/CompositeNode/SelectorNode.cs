@@ -32,7 +32,7 @@ namespace NPC
                     var condition = Childrens[i] as ConditionNode;
                     if (condition && condition.Tick(runner) == NodeStatus.Success)
                     {
-                        Childrens[_current].Abort(runner);
+                        AbortAllRunningNode(runner, new List<Node>() { Childrens[i] });
                         return NodeStatus.Success;
                     }
                 }
@@ -44,7 +44,7 @@ namespace NPC
                     var s = composite.Tick(runner);
                     if (s == NodeStatus.Running || s == NodeStatus.Success)
                     {
-                        Childrens[_current].Abort(runner);
+                        AbortAllRunningNode(runner, new List<Node>() { Childrens[i] });
                         return s;
                     }
                 }

@@ -124,6 +124,8 @@ public class LineDrawer : MonoBehaviour
 
         Cursor.visible = false;
         _lastPoint = Vector2.zero;
+        _edgeCollider.enabled = false;
+        _lineRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -161,6 +163,8 @@ public class LineDrawer : MonoBehaviour
         AddPoint(_camera.ScreenToWorldPoint(Input.mousePosition));
         _edgeCollider.isTrigger = true;
         _drawing = true;
+        _edgeCollider.enabled = true;
+        _lineRenderer.enabled = true;
     }
 
     /// <summary>
@@ -199,6 +203,8 @@ public class LineDrawer : MonoBehaviour
     {
         RemoveRange(0, _vertexs.Count);
         _drawing = false;
+        _edgeCollider.enabled = false;
+        _lineRenderer.enabled = false;
     }
 
     /// <summary>
@@ -298,6 +304,7 @@ public class LineDrawer : MonoBehaviour
         _lineRenderer.positionCount = _vertexs.Count;
         _lineRenderer.SetPosition(_vertexs.Count - 1, point);
         _edgeCollider.SetPoints(_vertexs);
+        _edgeCollider.isTrigger = true;
     }
 
     /// <summary>
@@ -330,6 +337,8 @@ public class LineDrawer : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!_drawing) { return; }
+        if (!collision.GetComponent<NPC.BehaviorTreeRunner>().Variables["IsCatchable"].Boolean) { return; }
         Interrupt();
     }
 }

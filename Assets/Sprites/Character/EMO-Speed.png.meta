@@ -62,6 +62,66 @@ TextureImporter:
   - first:
       213: -9136272358326938491
     second: EMO-Speed(2)_19
+  - first:
+      213: 8241287888094345902
+    second: EMO-Speed_0
+  - first:
+      213: 6082952341019649085
+    second: EMO-Speed_1
+  - first:
+      213: -8825878586463438237
+    second: EMO-Speed_2
+  - first:
+      213: -1317338697008513403
+    second: EMO-Speed_3
+  - first:
+      213: 479519416732185568
+    second: EMO-Speed_4
+  - first:
+      213: 2257976750038176556
+    second: EMO-Speed_5
+  - first:
+      213: -6635239765183719636
+    second: EMO-Speed_6
+  - first:
+      213: 5173234358760211292
+    second: EMO-Speed_7
+  - first:
+      213: 4757730944456547699
+    second: EMO-Speed_8
+  - first:
+      213: 2119523084162933245
+    second: EMO-Speed_9
+  - first:
+      213: -4072424623899557052
+    second: EMO-Speed_10
+  - first:
+      213: 2128758921655263972
+    second: EMO-Speed_11
+  - first:
+      213: -7226428108438697889
+    second: EMO-Speed_12
+  - first:
+      213: 6116181046573763582
+    second: EMO-Speed_13
+  - first:
+      213: -6960524957748692639
+    second: EMO-Speed_14
+  - first:
+      213: -7974884647194284421
+    second: EMO-Speed_15
+  - first:
+      213: 7489591173792710606
+    second: EMO-Speed_16
+  - first:
+      213: -427241566060369253
+    second: EMO-Speed_17
+  - first:
+      213: -8690129574044349910
+    second: EMO-Speed_18
+  - first:
+      213: -3649562350432820139
+    second: EMO-Speed_19
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -163,421 +223,421 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EMO-Speed(2)_0
+      name: EMO-Speed_0
       rect:
         serializedVersion: 2
         x: 0
         y: 150
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2f58b560479fef70800000000000000
-      internalID: 9218753265090977583
+      spriteID: eaab7958bafee5270800000000000000
+      internalID: 8241287888094345902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_1
+      name: EMO-Speed_1
       rect:
         serializedVersion: 2
         x: 50
         y: 150
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e04c02a256a94f0800000000000000
-      internalID: -821232750428942749
+      spriteID: d346b10ececfa6450800000000000000
+      internalID: 6082952341019649085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_2
+      name: EMO-Speed_2
       rect:
         serializedVersion: 2
         x: 100
         y: 150
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1968a6b1fad0f7b0800000000000000
-      internalID: -5192409638671718117
+      spriteID: 36abe17ef2e248580800000000000000
+      internalID: -8825878586463438237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_3
+      name: EMO-Speed_3
       rect:
         serializedVersion: 2
         x: 150
         y: 150
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 148c0222cc7c246f0800000000000000
-      internalID: -701778912356546495
+      spriteID: 58e7ee34f6fd7bde0800000000000000
+      internalID: -1317338697008513403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_4
+      name: EMO-Speed_4
       rect:
         serializedVersion: 2
         x: 200
         y: 150
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ff076cc7789ef2d0800000000000000
-      internalID: -3242987041362341897
+      spriteID: 0e379317e5897a600800000000000000
+      internalID: 479519416732185568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_5
+      name: EMO-Speed_5
       rect:
         serializedVersion: 2
         x: 0
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d924f941ec5bdbee0800000000000000
-      internalID: -1243638025370516835
+      spriteID: c23dd1114e1f55f10800000000000000
+      internalID: 2257976750038176556
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_6
+      name: EMO-Speed_6
       rect:
         serializedVersion: 2
         x: 50
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d167df886a5782a30800000000000000
-      internalID: 4190728811391579677
+      spriteID: c279daca694eae3a0800000000000000
+      internalID: -6635239765183719636
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_7
+      name: EMO-Speed_7
       rect:
         serializedVersion: 2
         x: 100
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 575aebdd37c6e1ee0800000000000000
-      internalID: -1288473198484085387
+      spriteID: c538fb58d350bc740800000000000000
+      internalID: 5173234358760211292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_8
+      name: EMO-Speed_8
       rect:
         serializedVersion: 2
         x: 150
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 226e31d7bc758d500800000000000000
-      internalID: 421183096647575074
+      spriteID: 37d5731261bd60240800000000000000
+      internalID: 4757730944456547699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_9
+      name: EMO-Speed_9
       rect:
         serializedVersion: 2
         x: 200
         y: 100
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da5d44f932f549990800000000000000
-      internalID: -7380169282752817747
+      spriteID: df1a5cce30f0a6d10800000000000000
+      internalID: 2119523084162933245
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_10
+      name: EMO-Speed_10
       rect:
         serializedVersion: 2
         x: 0
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdd6faa03abf61e50800000000000000
-      internalID: 6779882966730370523
+      spriteID: 443c9e59167db77c0800000000000000
+      internalID: -4072424623899557052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_11
+      name: EMO-Speed_11
       rect:
         serializedVersion: 2
         x: 50
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13661db68100f6600800000000000000
-      internalID: 463589391530550833
+      spriteID: 4e2a4b9e5feda8d10800000000000000
+      internalID: 2128758921655263972
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_12
+      name: EMO-Speed_12
       rect:
         serializedVersion: 2
         x: 100
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e0c1e5bbe34c1840800000000000000
-      internalID: 5196102749726556385
+      spriteID: f580d913ce196bb90800000000000000
+      internalID: -7226428108438697889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_13
+      name: EMO-Speed_13
       rect:
         serializedVersion: 2
         x: 150
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d33131746328f2900800000000000000
-      internalID: 661890839879029565
+      spriteID: efb8107c14a01e450800000000000000
+      internalID: 6116181046573763582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_14
+      name: EMO-Speed_14
       rect:
         serializedVersion: 2
         x: 200
         y: 50
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bcce3c57be213610800000000000000
-      internalID: 1599110707754749110
+      spriteID: 169f52bed6f376f90800000000000000
+      internalID: -6960524957748692639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_15
+      name: EMO-Speed_15
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c63a17e2a468e010800000000000000
-      internalID: 1218334350028453572
+      spriteID: b7ea4478aa4835190800000000000000
+      internalID: -7974884647194284421
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_16
+      name: EMO-Speed_16
       rect:
         serializedVersion: 2
         x: 50
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 617a2d0e8e753e000800000000000000
-      internalID: 63991477429249814
+      spriteID: ecfb0d2bd7f50f760800000000000000
+      internalID: 7489591173792710606
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_17
+      name: EMO-Speed_17
       rect:
         serializedVersion: 2
         x: 100
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee7b8df416f5808d0800000000000000
-      internalID: -2879947090147362834
+      spriteID: b9aa0bd2f02221af0800000000000000
+      internalID: -427241566060369253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_18
+      name: EMO-Speed_18
       rect:
         serializedVersion: 2
         x: 150
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc2a6a5a21485d870800000000000000
-      internalID: 8707010670214161100
+      spriteID: a2a48f6d135766780800000000000000
+      internalID: -8690129574044349910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: EMO-Speed(2)_19
+      name: EMO-Speed_19
       rect:
         serializedVersion: 2
         x: 200
         y: 0
         width: 50
         height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 584d3b632b0753180800000000000000
-      internalID: -9136272358326938491
+      spriteID: 554efc4e0662a5dc0800000000000000
+      internalID: -3649562350432820139
       vertices: []
       indices: 
       edges: []

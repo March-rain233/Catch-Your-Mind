@@ -10,7 +10,7 @@ namespace NPC
     /// 行为树
     /// </summary>
     [CreateAssetMenu(fileName = "行为树控制器", menuName = "角色/行为树控制器")]
-    public class BehaviorTree : ScriptableObject, ITree
+    public class BehaviorTree : ScriptableObject, ITree, IRunable
     {
         /// <summary>
         /// 根节点
@@ -22,7 +22,7 @@ namespace NPC
         /// 节点列表
         /// </summary>
         [SerializeField]
-        private List<Node> _nodes = new List<Node>();
+        public List<Node> Nodes = new List<Node>();
 
         public INode RootNode => _rootNode;
 
@@ -52,9 +52,17 @@ namespace NPC
         public Node AddNode(Type type)
         {
             var node = CreateInstance(type) as Node;
-            node.name = type.Name;
+
+            int count = Nodes.FindAll(node => node.Name == type.Name).Count;
+            string newName = type.Name;
+            if (count > 0)
+            {
+                newName = newName + $"({count})";
+            }
+            node.name = newName;
+
             node.Guid = GUID.Generate().ToString();
-            _nodes.Add(node);
+            Nodes.Add(node);
 
             if (AssetDatabase.Contains(this))
             {
@@ -70,14 +78,14 @@ namespace NPC
         /// <param name="node"></param>
         public void RemoveNode(Node node)
         {
-            _nodes.Remove(node);
+            Nodes.Remove(node);
 
             //移除与父节点的连接
             Node parent = null;
-            for(int i = 0; i < _nodes.Count; ++i)
+            for(int i = 0; i < Nodes.Count; ++i)
             {
-                if(_nodes[i] == node) { continue; }
-                parent = FindParent(node, _nodes[i]);
+                if(Nodes[i] == node) { continue; }
+                parent = FindParent(node, Nodes[i]);
                 if(parent != null) { break; }
             }
             DisconnectNode(parent, node);
@@ -119,25 +127,25 @@ namespace NPC
         /// 克隆
         /// </summary>
         /// <returns></returns>
-        public BehaviorTree Clone()
+        public IRunable Clone()
         {
             var tree = Instantiate(this);
             tree._rootNode = _rootNode.Clone() as RootNode;
-            Stack<Node> stack = new Stack<Node>(_nodes.Count);
+            Stack<Node> stack = new Stack<Node>(Nodes.Count);
             stack.Push(tree._rootNode);
-            tree._nodes.Clear();
+            tree.Nodes.Clear();
             while (stack.Count > 0)
             {
                 var node = stack.Pop();
                 Array.ForEach(node.GetChildren(), child => stack.Push(child as Node));
-                tree._nodes.Add(node);
+                tree.Nodes.Add(node);
             }
             return tree;
         }
 
         public INode[] GetNodes()
         {
-            return _nodes.ToArray();
+            return Nodes.ToArray();
         }
 
         public INode CreateNode(Type type)
@@ -203,7 +211,7 @@ namespace NPC
 
         public void AddNode(INode node)
         {
-            _nodes.Add(node as Node);
+            Nodes.Add(node as Node);
         }
     }
 }

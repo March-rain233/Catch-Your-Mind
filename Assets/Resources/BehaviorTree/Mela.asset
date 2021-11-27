@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9038098706722994032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0005847f178fe64ca1615f290f11ae9, type: 3}
+  m_Name: MelaAfterJumpOnWallNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 2da49d7b646c16d4596b264d2c5d5522
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: AfterJumpOnWall
 --- !u!114 &-6948725084711171094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,6 +56,53 @@ MonoBehaviour:
       Entry: 3
       Data: 2
   Child: {fileID: 1337140257895852338}
+--- !u!114 &-6679104618376766280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d498cbe20dfb6f47ad0ef09e067b803, type: 3}
+  m_Name: MelaMoveToNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: fb04dc4658ceaaa4285bc5ac63a14e30
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: _targets
+      Entry: 7
+      Data: 0|System.Collections.Generic.Queue`1[[UnityEngine.Vector2, UnityEngine.CoreModule]],
+        System
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _triggerName: UnderGround
+  MinPos: {x: -7, y: -4}
+  MaxPos: {x: 7, y: 4}
+  MaxCount: 5
+  MinCount: 2
+  VelocityRate: 2
+  MinDistance: 0.5
 --- !u!114 &-6449973010970328881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59,6 +134,68 @@ MonoBehaviour:
   StayTime: 0
   MaxStayTime: 5
   MinStayTime: 1
+--- !u!114 &-1540862660354245082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: SequenceNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: f112a207d56fbad4aad7cbab0a5ef545
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 4982935540491819493}
+  - {fileID: -6679104618376766280}
+  - {fileID: -1496282925499197109}
+  - {fileID: -9038098706722994032}
+  _current: 0
+--- !u!114 &-1496282925499197109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cc06b229c146d448b88d38de0c936dc, type: 3}
+  m_Name: MelaJumpOnWallNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 1d1e6d77939fea14a97897a495f4904a
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: JumpOnWall
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,12 +209,17 @@ MonoBehaviour:
   m_Name: Mela
   m_EditorClassIdentifier: 
   _rootNode: {fileID: -6948725084711171094}
-  _nodes:
-  - {fileID: -6948725084711171094}
-  - {fileID: 1337140257895852338}
-  - {fileID: 1227765011300509827}
+  Nodes:
+  - {fileID: -9038098706722994032}
   - {fileID: -6449973010970328881}
+  - {fileID: -1496282925499197109}
+  - {fileID: 4982935540491819493}
+  - {fileID: -6679104618376766280}
   - {fileID: 5486556639523215105}
+  - {fileID: 1227765011300509827}
+  - {fileID: 1337140257895852338}
+  - {fileID: -6948725084711171094}
+  - {fileID: -1540862660354245082}
 --- !u!114 &1227765011300509827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +250,7 @@ MonoBehaviour:
   _abortType: 0
   Childrens:
   - {fileID: 5486556639523215105}
-  - {fileID: -6449973010970328881}
+  - {fileID: -1540862660354245082}
   _weights:
   - Weight: 10
     BaseWeight: 10
@@ -148,6 +290,34 @@ MonoBehaviour:
   Child: {fileID: 1227765011300509827}
   Times: 0
   IsForever: 1
+--- !u!114 &4982935540491819493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fec0c982e18d2064bbb6de26fc215f0e, type: 3}
+  m_Name: MelaMeltOnWallNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: c971b44d427c8404493b763941bf8dd4
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _triggerName: MeltOnWall
 --- !u!114 &5486556639523215105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,9 +345,23 @@ MonoBehaviour:
     - Name: Status
       Entry: 3
       Data: 0
+    - Name: _targets
+      Entry: 7
+      Data: 0|System.Collections.Generic.Queue`1[[UnityEngine.Vector2, UnityEngine.CoreModule]],
+        System
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   _triggerName: MoveOnWall
-  _target: {x: 0, y: 0}
   MinPos: {x: -7, y: -4}
   MaxPos: {x: 7, y: 4}
+  MaxCount: 2
+  MinCount: 1
   VelocityRate: 1
   MinDistance: 0.5

@@ -25,7 +25,6 @@ namespace Dialogue
 
         public virtual Port.Capacity Output => Port.Capacity.Single;
 
-        [SerializeField]
         private bool _isStarted = false;
 
         /// <summary>
@@ -80,6 +79,7 @@ namespace Dialogue
         public virtual Node Clone()
         {
             var node = Instantiate(this);
+            node.name = node.name.Replace("(Clone)", "");
             node.ViewPosition = ViewPosition;
             node._isStarted = false;
             node.Guid = GUID.Generate().ToString();

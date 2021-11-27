@@ -26,9 +26,12 @@ public class BubbleDialog : Dialog
 
     private RectTransform _rectTransform;
 
+    private Animator _animator;
+
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
+        _animator = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -45,5 +48,14 @@ public class BubbleDialog : Dialog
     public void SetName(string newName)
     {
         _name.text = newName + ":";
+    }
+
+    public void Show()
+    {
+
+    }
+    public void Hide()
+    {
+        
     }
 }

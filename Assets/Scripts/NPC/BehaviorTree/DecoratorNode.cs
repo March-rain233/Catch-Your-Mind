@@ -40,10 +40,11 @@ namespace NPC
             else return new INode[] { };
         }
 
-        public override Node Clone()
+        public override Node Clone(bool self = false)
         {
             var node = base.Clone() as DecoratorNode;
-            node.Child = Child.Clone();
+            if (self) return node;
+            node.Child = Child?.Clone();
             return node;
         }
     }
