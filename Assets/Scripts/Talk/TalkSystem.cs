@@ -103,7 +103,7 @@ public class TalkSystem : SerializedMonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        GameManager.Instance.EventCenter.AddListener("DIALOG_EXIT", e => _dialog.gameObject.SetActive(false));
+        GameManager.Instance.EventCenter.AddListener("DIALOG_EXIT", e => _dialog?.gameObject.SetActive(false));
         GameManager.Instance.EventCenter.AddListener("DIALOG_PUSH", e => PushBodies(e.Object as TextBody[]));
         GameManager.Instance.EventCenter.AddListener("DIALOG_HIDE", e => BubbleDialog.Hide());
         GameManager.Instance.EventCenter.AddListener("DIALOG_SHOW", e => BubbleDialog.Show());
@@ -201,7 +201,7 @@ public class TalkSystem : SerializedMonoBehaviour
                 case "Mind":
                     dialog.HeadIcon = StaticDialog.Person.Mind;
                     break;
-                case "Emo":
+                case "EMO":
                     dialog.HeadIcon = StaticDialog.Person.Emo;
                     break;
                 default:

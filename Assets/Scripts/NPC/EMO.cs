@@ -20,7 +20,6 @@ public class EMO : MonoBehaviour
     void Update()
     {
         var dir = Follow.position - transform.position;
-        Debug.Log(dir +"" +dir.magnitude);
         //跟随目标点，ChangeEndValue第二个参数snapStartValue不设置为true跟随物体会恢复到初始位置，snapStartValue起到从当前位置开始的作用，Restart执行
         if (dir.magnitude > Distance)
         {

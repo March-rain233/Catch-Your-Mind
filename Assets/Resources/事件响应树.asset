@@ -16,7 +16,7 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 97518e1db60bc494697d159c29a5b6f4, type: 2}
+    - {fileID: 11400000, guid: dc680d6db2002684abf5d0377ea7af5e, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -41,7 +41,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: Test
+      Data: "\u5907\u6CE8"
     - Name: $v
       Entry: 7
       Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
@@ -50,7 +50,7 @@ MonoBehaviour:
       Data: 0
     - Name: JustOnce
       Entry: 5
-      Data: false
+      Data: true
     - Name: 
       Entry: 8
       Data: 

@@ -54,6 +54,7 @@ public abstract class Dialog : SerializedMonoBehaviour
     protected static List<string> UserTag = new List<string>();
 
     public System.Action ShowEnd;
+    public System.Action BeginShow;
 
     /// <summary>
     /// 逐字输出
@@ -90,8 +91,8 @@ public abstract class Dialog : SerializedMonoBehaviour
 
                         //生成对应闭标签并插入
                         string close = Regex.Match(tag
-                            , @"<(/?[^/= ]+?)(?=(( |=)[^>]*?))").Value
-                            .Insert(1, @"/") + ">";
+                            , @"<[^/]+?>").Value
+                            .Insert(1, @"/");
                         _textLable.text = _textLable.text.Insert(offset + i, close);
                     }
                 }
@@ -188,6 +189,7 @@ public abstract class Dialog : SerializedMonoBehaviour
         _textLable.text = "";
         Typing = true;
         _outPutText = output;
+        BeginShow?.Invoke();
         StartCoroutine("ReadWord");
     }
 
@@ -195,6 +197,7 @@ public abstract class Dialog : SerializedMonoBehaviour
     {
         StopAllCoroutines();
         _textLable.text = "";
+        BeginShow?.Invoke();
         ReadFin();
     }
 
@@ -207,6 +210,7 @@ public abstract class Dialog : SerializedMonoBehaviour
         StopAllCoroutines();
         _textLable.text = "";
         _outPutText = output;
+        BeginShow?.Invoke();
         ReadFin();
     }
 

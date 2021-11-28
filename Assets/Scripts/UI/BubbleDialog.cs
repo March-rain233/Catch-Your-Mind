@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 /// <summary>
 /// 冒泡式对话框
@@ -14,6 +16,9 @@ public class BubbleDialog : Dialog
     /// </summary>
     [SerializeField]
     private TextMeshProUGUI _name;
+
+    public CanvasGroup CanvasGroup;
+    public Image Next;
 
     /// <summary>
     /// 跟随目标
@@ -32,6 +37,9 @@ public class BubbleDialog : Dialog
     {
         _rectTransform = GetComponent<RectTransform>();
         _animator = GetComponent<Animator>();
+        Next.DOFade(0, 0);
+        BeginShow += () => Next.DOFade(0, 0);
+        ShowEnd += () => Next.DOFade(1, 0.3f).SetLoops(-1, LoopType.Yoyo);
     }
 
     private void FixedUpdate()
@@ -52,10 +60,10 @@ public class BubbleDialog : Dialog
 
     public void Show()
     {
-
+        CanvasGroup.DOFade(1, 0.1f);
     }
     public void Hide()
     {
-        
+        CanvasGroup.DOFade(0, 0.1f);
     }
 }

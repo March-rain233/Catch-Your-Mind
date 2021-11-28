@@ -12,8 +12,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cda03514e8e5c1c45a4188d16aa006c2, type: 3}
   m_Name: "\u804A\u5929\u8BB0\u5F55"
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Inspectors
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Condition, Assembly-CSharp],[UnityEngine.GameObject,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.ObjectEqualityComparer`1[[Condition, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   CardName: "\u7F6E\u9876\u7684\u804A\u5929\u8BB0\u5F55"
   CardSprite: {fileID: -5343103470380756979, guid: b2bab8e06a9a89b4795ddb151abd95b3, type: 3}
   PressSprite: {fileID: -2456085920408436699, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
   PressSpriteFloat: {fileID: -855654985025123166, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
-  Inspector: {fileID: 1073472616795313089, guid: e36e1a5c65ba7804bb3dc348bde4281a, type: 3}
+  DefaultInspector: {fileID: 4009708125573586314, guid: fe2e3351dba7db245a21f833057f0334, type: 3}
+  InsertUnable: 0
+  TrueState: 0

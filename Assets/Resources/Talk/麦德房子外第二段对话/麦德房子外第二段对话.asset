@@ -617,7 +617,7 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: -1908760294868993874}
   AnimationQueue:
-  - ObjectName: EMO
+  - ObjectName: STORY
     TriggerName: YEAH
     Time: 1
     IsWatiting: 1
@@ -748,7 +748,7 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 1773425206402519190}
   ObjectInfos:
-  - Path: Story/MIND_STORY
+  - Path: MIND_STORY
     Name: Mind
-  - Path: Story/EMP_STORY
+  - Path: EMO_STORY
     Name: EMO

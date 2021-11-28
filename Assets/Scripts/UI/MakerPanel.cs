@@ -231,7 +231,7 @@ public class MakerPanel : MonoBehaviour
 
         cardView.gameObject.SetActive(false);
 
-        var content = Instantiate(cardView.Card.Inspector, _infoContent).GetComponent<RectTransform>();
+        var content = Instantiate(cardView.Card.GetInspector(), _infoContent).GetComponent<RectTransform>();
         content.anchorMin = Vector2.zero;
         content.anchorMax = Vector2.one;
         content.offsetMin = Vector2.zero;
@@ -252,7 +252,7 @@ public class MakerPanel : MonoBehaviour
     private void InitCardInfo(Card card)
     {
         _cardName.text = card.CardName;
-        var info = Instantiate(card.Inspector, _infoContent);
+        var info = Instantiate(card.DefaultInspector, _infoContent);
         //var rect = info.GetComponent<RectTransform>();
         
     }
@@ -272,13 +272,13 @@ public class MakerPanel : MonoBehaviour
         _infoPanel.DOFade(0, duration).onComplete = ()=>
         {
             _infoCard.gameObject.SetActive(true);
-            _infoPanel.transform.Find("Blur").gameObject.SetActive(true);
+            //_infoPanel.transform.Find("Blur").gameObject.SetActive(true);
             _infoPanel.blocksRaycasts = false;
             _infoPanel.interactable = false;
             DestoryCardInfo();
             _select = null;
         };
-        _infoPanel.transform.Find("Blur").gameObject.SetActive(false);
+        //_infoPanel.transform.Find("Blur").gameObject.SetActive(false);
 
         _edge.Back();
 

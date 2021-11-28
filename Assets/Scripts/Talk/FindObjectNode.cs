@@ -20,7 +20,8 @@ namespace Dialogue
         {
             ObjectInfos.ForEach(o =>
             {
-                tree.Variables[o.Name] = new EventCenter.EventArgs() { Object = GameObject.Find(o.Path) };
+                var obj = GameObject.Find(o.Path);
+                tree.Variables[o.Name] = new EventCenter.EventArgs() { Object = obj };
             });
             return NodeStatus.Success;
         }

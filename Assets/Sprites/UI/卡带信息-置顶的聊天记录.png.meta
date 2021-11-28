@@ -112,12 +112,12 @@ TextureImporter:
       name: "\u5361\u5E26\u4FE1\u606F-\u7F6E\u9876\u7684\u804A\u5929\u8BB0\u5F55_0"
       rect:
         serializedVersion: 2
-        x: 21
-        y: 21
-        width: 1134
-        height: 10582
+        x: 24
+        y: 25
+        width: 1125
+        height: 10576
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -133,12 +133,12 @@ TextureImporter:
       name: "\u5361\u5E26\u4FE1\u606F-\u7F6E\u9876\u7684\u804A\u5929\u8BB0\u5F55_1"
       rect:
         serializedVersion: 2
-        x: 1420
-        y: 8013
-        width: 1134
-        height: 2445
+        x: 1424
+        y: 8016
+        width: 1125
+        height: 2436
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -48,7 +48,7 @@ public class EventCenter : SerializedMonoBehaviour
     /// 获取事件的参数
     /// </summary>
     /// <param name="eventName"></param>
-    public bool TeyGetEventArgs(string eventName, out EventArgs eventArgs)
+    public bool TryGetEventArgs(string eventName, out EventArgs eventArgs)
     {
         if(_events.ContainsKey(eventName))
         {
