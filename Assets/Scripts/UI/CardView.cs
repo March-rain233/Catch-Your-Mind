@@ -30,6 +30,8 @@ public class CardView : MonoBehaviour, IDragHandler, IPointerClickHandler
     private void Awake()
     {
         GetComponent<Image>().sprite = Card.CardSprite;
+        //Card = Instantiate(Card);
+        //Card.name = Card.name.Replace("(Clone)", "");
     }
 
     public void OnDrag(PointerEventData eventData)

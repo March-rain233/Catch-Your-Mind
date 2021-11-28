@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2227856044844390781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u4EC0\u4E48\uFF1F\uFF1F\u4ECA\u5929\u662F\u60C5\u4EBA\u8282\uFF1F\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u5BF9\u5440\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u5982\u679C\u4ECA\u5929\u5BBF\u4E3B\u80FD\u8868\u767D\u6210\u529F...\u7EAA\u5FF5\u65E5\u90FD\u4F1A\u53D8\u5F97\u8FD9\u4E48\u6D6A\u6F2B\uFF01\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u5982\u679C\u5931\u8D25\u7684\u8BDD\u5C31\u53D8\u6210\u641E\u7B11\u7684\u5931\u8D25\u7EAA\u5FF5\u65E5\u4E86\u5427\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF01\u8FD9\u4E48\u8BF4\u592A\u4E0D\u5409\u5229\u4E86\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: "\u65E5\u5386"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 6
+      Data: 
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: Variables
+      Entry: 6
+      Data: 
+  _rootNode: {fileID: 0}
+  _currentNode: {fileID: 0}
+  _nodes:
+  - {fileID: 0}
+  - {fileID: -2227856044844390781}

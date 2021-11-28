@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: "\u6797\u51AC\u6863\u6848"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 6
+      Data: 
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: Variables
+      Entry: 6
+      Data: 
+  _rootNode: {fileID: 0}
+  _currentNode: {fileID: 0}
+  _nodes:
+  - {fileID: 0}
+  - {fileID: 5638287542084094195}
+--- !u!114 &5638287542084094195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u54C7\uFF0C\u771F\u662F\u4E2A\u5947\u4EBA\u3002\u5BBF\u4E3B\u548C\u8FD9\u6837\u7684\u4EBA\u505A\u670B\u53CB\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u5514...\u4F3C\u4E4E\u662F\u5173\u7CFB\u6700\u597D\u7684\u670B\u53CB\u4E86\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u641E\u4E0D\u61C2\u539F\u56E0\u5462\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1

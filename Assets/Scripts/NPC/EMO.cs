@@ -6,10 +6,13 @@ using DG.Tweening;
 public class EMO : MonoBehaviour
 {
     public Transform Follow;
+    public Animator Animator;
     public float Distance;
+    public float OffsetY;
 
     //接收操作动画
     private Tweener tweener;
+    private Vector2 _lastPosition;
 
     void Start()
     {
@@ -19,8 +22,22 @@ public class EMO : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var dir = Follow.position - transform.position;
-        //跟随目标点，ChangeEndValue第二个参数snapStartValue不设置为true跟随物体会恢复到初始位置，snapStartValue起到从当前位置开始的作用，Restart执行
+        var follow = Follow.position;
+        follow.y += OffsetY;
+
+        var dir = follow - transform.position;
+        float degree = 0.01f;
+        float pos = transform.position.x - _lastPosition.x;
+        if (pos < -degree)
+        {
+            Animator.SetFloat("FaceDirection", -1);
+        }
+        else if (pos > degree)
+        {
+            Animator.SetFloat("FaceDirection", 1);
+        }
+        _lastPosition = transform.position;
+
         if (dir.magnitude > Distance)
         {
             tweener.ChangeEndValue(transform.position + dir.normalized * (dir.magnitude - Distance), true).Restart();

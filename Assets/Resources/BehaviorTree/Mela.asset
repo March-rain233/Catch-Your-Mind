@@ -101,7 +101,7 @@ MonoBehaviour:
   MaxPos: {x: 7, y: 4}
   MaxCount: 5
   MinCount: 2
-  VelocityRate: 2
+  VelocityRate: 4
   MinDistance: 0.5
 --- !u!114 &-6449973010970328881
 MonoBehaviour:

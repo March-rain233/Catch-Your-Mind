@@ -68,6 +68,8 @@ namespace Dialogue
                 }
                 SetAnimator(tree);
             }
+            Debug.Log(AnimationQueue[_current].TriggerName + _animator.gameObject.name);
+
             return NodeStatus.Running;
         }
     }

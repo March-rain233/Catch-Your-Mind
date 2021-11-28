@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: "\u4F24\u75D5\u7D2F\u7D2F\u7684\u661F\u7403\u8868\u9762"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 6
+      Data: 
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: Variables
+      Entry: 6
+      Data: 
+  _rootNode: {fileID: 0}
+  _currentNode: {fileID: 0}
+  _nodes:
+  - {fileID: 0}
+  - {fileID: 5651993127059594443}
+--- !u!114 &5651993127059594443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u661F\u7403\uFF1F\u751F\u75C5\uFF1F\u662F\u8BF4\u6211\u4EEC\u7684\u5BBF\u4E3B\u5417\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u662F\u7684\uFF0C\u90A3\u4E2A\u65F6\u4EE3\u7684EGO\u662F\u8FD9\u4E48\u8BA4\u77E5\u5BBF\u4E3B\u7684\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u56E0\u4E3A\u6211\u4EEC\u5C45\u4F4F\u5728\u5BBF\u4E3B\u7684\u8111\u5185\uFF0C\u4ED6\u7684\u5927\u8111\u5C31\u662F\u4F9B\u6211\u4EEC\u751F\u6D3B\u7684\u661F\u7403\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u6211\u4EEC\u5BF9\u5BBF\u4E3B\u7684\u8BA4\u77E5\u4E5F\u662F\u4ECE\u65E0\u5230\u6709\u7684\u8FC7\u7A0B\uFF0C\u8FD9\u4E5F\u662F\u6211\u4EEC\u6587\u660E\u53D1\u5C55\u7684\u4E00\u90E8\u5206\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u4F60\u770B\uFF0C\u8FD9\u6BB5\u6587\u5B57\u91CC\u6240\u63CF\u7ED8\u7684\u90A3\u4E2A\u65F6\u4EE3\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u5BBF\u4E3B\u5728\u90A3\u65F6\u906D\u53D7\u4E86\u5F88\u6C89\u91CD\u7684\u6253\u51FB\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u4ED6\u628A\u5FC3\u4EA4\u7ED9\u4E86\u53E6\u4E00\u4E2A\u4E16\u754C\u7684\u5BBF\u4E3B\u3002\u56E0\u4E3A\u4ED6\u60F3\u90A3\u4E48\u505A\uFF0C\u6211\u4EEC\u5C31\u63A8\u4E86\u4ED6\u4E00\u628A\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u518D\u5230\u540E\u6765\uFF0C\u5F53\u4ED6\u518D\u62FF\u56DE\u90A3\u9897\u5FC3\u7684\u65F6\u5019\uFF0C\u5DF2\u7ECF\u5343\u75AE\u767E\u5B54\uFF0C\u53D8\u6210\u4E86\u5783\u573E\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u5783\u573E\u662F\u4E0D\u80FD\u518D\u7528\u7684\uFF0C\u6240\u4EE5\u6700\u540E\u4E5F\u88AB\u5BBF\u4E3B\u81EA\u5DF1\u4EB2\u624B\u4E22\u6389\u4E86\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u6885\u62C9\u63A5\u8E35\u800C\u6765\uFF0C\u6211\u4EEC\u521B\u9020\u7684\u4E00\u5207\u5F88\u5FEB\u5C31\u6491\u4E0D\u4F4F\u4E86\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u6211\u4EEC\u5728\u88AB\u3010\u5B64\u72EC\u3011\u7B3C\u7F69\u7684\u4E16\u754C\u91CC\u53CD\u590D\u5730\u6B7B\u53BB\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u53EF\u662F\u6211\u4EEC\u4E00\u76F4\u6D3B\u7740\u3002\u6B7B\u53BB\uFF1F\u4E3A\u4EC0\u4E48\u8FD9\u4E9B\u4E8B\u60C5\u6211\u4E00\u70B9\u90FD\u4E0D\u8BB0\u5F97\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\r\u90A3\u662F\u597D\u4E8B\u3002\u6211\u4EEC\u4E0D\u7528\u523B\u610F\u8BB0\u4F4F\u90A3\u4E9B\u75DB\u82E6\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u60B2\u4F24\u3001\u618E\u6068\u3001\u61CA\u6094\u3001\u4E0D\u7518............\u592A\u591A\u4E86\u3002\u6211\u4EEC\u8981\u5F88\u4E45\u624D\u80FD\u91CD\u65B0\u7AD9\u8D77\u6765\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF0C\u6211\u4EEC\u5F88\u6E3A\u5C0F\u3002\u6211\u4EEC\u7684\u4E16\u754C\u91CC\u53EA\u6709\u5BBF\u4E3B\u773C\u524D\u7684\u5239\u90A3\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u6885\u62C9\u4F1A\u8BA9\u6211\u4EEC\u5012\u5730\u4E0D\u8D77\uFF0C\u4F46\u662F\u5982\u679C\u4E0D\u7AD9\u8D77\u6765\uFF0C\u4FBF\u4E0D\u80FD\u79F0\u4E4B\u4E3A\u6D3B\u7740\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u53EF\u4F24\u75D5\u8FD8\u5728\u3002\u5BBF\u4E3B\u8FD8\u672A\u8FCE\u6765\u4ECE\u75DB\u82E6\u4E2D\u89E3\u8131\u7684\u5239\u90A3\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u800C\u4E14\u5982\u679C\u662F\u6211\u7684\u8BDD\uFF0C\u7EDD\u5BF9\u4E0D\u4F1A\u628A\u5BBF\u4E3B\u7684\u5FC3\u4EA4\u7ED9\u4E00\u4E2A\u4E0D\u4F1A\u597D\u597D\u73CD\u60DC\u7684\u5BB6\u4F19\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u563F\uFF0C\u9EA6\u5FB7\uFF0C\u4F60\u4E0D\u53EF\u80FD\u672A\u535C\u5148\u77E5\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u800C\u4E14\uFF0C\u5982\u679C\u5BBF\u4E3B\u8FD8\u6CA1\u6709\u89E3\u8131\u7684\u8BDD\uFF0C\u73B0\u5728\u53C8\u662F\u60F3\u5411\u8C01\u3010\u4ED8\u4E4B\u5FC3\u610F\u3011\u5462\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u559C\u6B22\u7684\u8BDD\uFF0C\u5C31\u4F1A\u4ED8\u51FA\u3002\u56E0\u4E3A\u662F\u559C\u6B22\u554A\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u6211\u4E0D\u77E5\u9053\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u5BBF\u4E3B\u7684\u8111\u5B50\u91CC\u7684\u5783\u573E\u5806\u79EF\u5982\u5C71\u3002\u661F\u7403\u7684\u80CC\u9762\u4ECD\u6709\u4F24\u75D5\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u6211\u4EEC\u8FD8\u6765\u4E0D\u53CA\u586B\u8865\u8FC7\u53BB\u7684\u7F3A\u53E3\uFF0C\u5374\u5C31\u8981\u5FD9\u7740\u770B\u5411\u5F53\u4E0B\u7684\u8FD9\u4E00\u523B\u4E86\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u6211\u8BA8\u538C\u8FD9\u6837\u7684\u9003\u907F\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u54C8\u54C8\uFF0C\u9EA6\u5FB7\u3002\u4F60\u7684\u60F3\u6CD5\u771F\u7684\u5F88\u72EC\u7279\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u6211\u662F\u8BF4\uFF0C\u653E\u8F7B\u677E\u70B9\u5566\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u4F60\u73B0\u5728\u7684\u8138\u8272\u5C31\u597D\u50CF\u5728\u8BF4\uFF1A\u201C\u6885\u62C9\u5C31\u662F\u6211\u62DB\u6765\u7684\uFF01\u201D"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u5443\uFF01......\u5F00\u4EC0\u4E48\u73A9\u7B11\uFF01\u6211\u8BA8\u538C\u6B7B\u90A3\u79CD\u9ECF\u7CCA\u7CCA\u7684\u4E1C\u897F\u4E86\u3002\u6211\u4EEC\u6293\u7D27\u65F6\u95F4\u901F\u6218\u901F\u51B3\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1

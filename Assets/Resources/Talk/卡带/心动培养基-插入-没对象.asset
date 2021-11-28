@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: "\u5FC3\u52A8\u57F9\u517B\u57FA-\u63D2\u5165-\u6CA1\u5BF9\u8C61"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 6
+      Data: 
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: Variables
+      Entry: 6
+      Data: 
+  _rootNode: {fileID: 0}
+  _currentNode: {fileID: 0}
+  _nodes:
+  - {fileID: 0}
+  - {fileID: 2358301655628455290}
+  - {fileID: 8293498969184394044}
+--- !u!114 &2358301655628455290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 8293498969184394044}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF01\u4F60\u5728\u5E72\u4EC0\u4E48\uFF01\u4E0D\u53EF\u4EE5\u7528\u8FD9\u4E2A<font
+      color=E82372><b>\u8FDD\u7981\u54C1</b></color>\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\u563F\uFF0C\u8FD9\u6709\u4EC0\u4E48\u5173\u7CFB\uFF1F\u6211\u4EEC\u53EF\u4EE5\u59D1\u4E14\u8BD5\u8BD5\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF0C\u6211\u4EEC\u751A\u81F3\u4E0D\u77E5\u9053\u8FD9\u91CC\u9762\u57F9\u517B\u4E86\u8C01\u7684\u5FC3\u52A8\u611F\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u5982\u679C\u8FD9\u662F\u5BF9\u5BBF\u4E3B\u5988\u5988\u7684\u57F9\u517B\u57FA\uFF0C\u90A3\u8BE5\u600E\u4E48\u529E\uFF1F\u4F1A\u51FA\u5927\u5C94\u5B50\u7684\u5440\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: Mind
+    Body: "\uFF1F\uFF1F\uFF1F\u5BBF\u4E3B\u4E3A\u4EC0\u4E48\u4F1A\u5BF9\u5988\u5988\u5FC3\u52A8\u554A\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+  - Name: EMO
+    Body: "\u603B\u4E4B\u8FD9\u662F\u8FDD\u7981\u54C1\u5566\uFF01\uFF01<font color=E82372><b>\u8FDD\u7981\u54C1\u5C31\u662F\u7981\u6B62\u4F7F\u7528</b></color>\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 1
+    Control: 1
+--- !u!114 &8293498969184394044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92cfc2e1aa9943419cfc9dc6016c95f, type: 3}
+  m_Name: SendEventNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  EventArgs:
+  - EventName: "\u7981\u7528\u5FC3\u52A8\u57F9\u517B\u57FA"
+    EventArg:
+      Float: 0
+      Int: 0
+      Boolean: 1
+      String: 

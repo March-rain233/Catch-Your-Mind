@@ -45,6 +45,7 @@ MonoBehaviour:
   CardSprite: {fileID: -5343103470380756979, guid: b2bab8e06a9a89b4795ddb151abd95b3, type: 3}
   PressSprite: {fileID: -2456085920408436699, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
   PressSpriteFloat: {fileID: -855654985025123166, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
-  DefaultInspector: {fileID: 4009708125573586314, guid: fe2e3351dba7db245a21f833057f0334, type: 3}
+  DefaultInspector: {fileID: 3514100340443007637, guid: 5adc632e8214f234b9f77911f389e30e, type: 3}
   InsertUnable: 0
-  TrueState: 0
+  TruthUnable: 0
+  TrueState: 1
