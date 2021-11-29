@@ -9,6 +9,8 @@ public class MakerPanel : MonoBehaviour
 {
     private RectTransform _rectTransform;
 
+    public float DeltaTime;
+
     /// <summary>
     /// 移动区域
     /// </summary>
@@ -109,6 +111,10 @@ public class MakerPanel : MonoBehaviour
     [SerializeField]
     private List<Toggle> _slotGroup;
 
+    public CanvasGroup Start;
+    public CanvasGroup Fail;
+    public MovieGuider MovieGuider;
+
     /// <summary>
     /// 选择插入的槽
     /// </summary>
@@ -136,13 +142,13 @@ public class MakerPanel : MonoBehaviour
             {
                 if (v)
                 {
-                    Debug.Log(temp);
                     _selectedSlot = temp;
                 }
             });
         }
+        _slotGroup[3].interactable = false;
 
-        _selectedCardList = new CardView[4];
+        _selectedCardList = new CardView[3];
 
         for(int i = 0; i < _edgeCard.Count; ++i)
         {
@@ -154,6 +160,8 @@ public class MakerPanel : MonoBehaviour
         {
             PutCard(card);
         });
+
+        ShowState(Start, ()=>MovieGuider.StartPlay());
     }
 
     private void PutCard(CardView card)
@@ -206,6 +214,14 @@ public class MakerPanel : MonoBehaviour
         return null;
     }
 
+    private void Update()
+    {
+        if (_select)
+        {
+            _insert.interactable = !_select.Card.InsertUnable;
+        }
+    }
+
     private void OnCardViewDragged(CardView cardView, PointerEventData data)
     {
         Vector2 temp = new Vector2();
@@ -231,11 +247,7 @@ public class MakerPanel : MonoBehaviour
 
         cardView.gameObject.SetActive(false);
 
-        var content = Instantiate(cardView.Card.GetInspector(), _infoContent).GetComponent<RectTransform>();
-        content.anchorMin = Vector2.zero;
-        content.anchorMax = Vector2.one;
-        content.offsetMin = Vector2.zero;
-        content.offsetMax = Vector2.zero;
+        InitCardInfo(_select.Card);
 
         _infoCard.GetComponent<Image>().sprite = cardView.Card.CardSprite;
         _infoCard.position = _select.RectTransform.position;
@@ -243,17 +255,28 @@ public class MakerPanel : MonoBehaviour
         _infoCard.DOLocalMove(_oriPosition, duration);
         _infoCard.DOLocalRotate(new Vector3(0, 0, 0), duration);
 
-        _cardName.text = _select.Card.CardName;
-
         _edge.Move();
 
+        for(int i = 0; i < _slotGroup.Count; ++i)
+        {
+            if (_slotGroup[i].interactable)
+            {
+                _selectedSlot = i;
+                _slotGroup[i].isOn = true;
+                break;
+            }
+        }
     }
 
     private void InitCardInfo(Card card)
     {
+        card.Open();
         _cardName.text = card.CardName;
-        var info = Instantiate(card.DefaultInspector, _infoContent);
-        //var rect = info.GetComponent<RectTransform>();
+        var content = Instantiate(card.GetInspector(), _infoContent).GetComponent<RectTransform>();
+        content.anchorMin = Vector2.zero;
+        content.anchorMax = Vector2.one;
+        content.offsetMin = Vector2.zero;
+        content.offsetMax = Vector2.zero;
         
     }
 
@@ -297,6 +320,10 @@ public class MakerPanel : MonoBehaviour
 
     private void Insert()
     {
+        if (!_select.Card.Insert() || _selectedSlot == -1)
+        {
+            return;
+        }
         _edgeCard[_selectedSlot].image.sprite = _select.Card.PressSprite;
         _edgeCard[_selectedSlot].spriteState = new SpriteState() { highlightedSprite = _select.Card.PressSpriteFloat };
         var color = _edgeCard[_selectedSlot].image.color;
@@ -347,7 +374,7 @@ public class MakerPanel : MonoBehaviour
         }
         for(int i = _correctCardList.Count - 1; i >= 0; --i)
         {
-            if(_correctCardList[i] != _selectedCardList[i].Card)
+            if(_selectedCardList[i]==null || _correctCardList[i] != _selectedCardList[i].Card || !_selectedCardList[i].Card.TrueState)
             {
                 CreateFail();
                 return;
@@ -359,10 +386,44 @@ public class MakerPanel : MonoBehaviour
     private void CreateSuccess()
     {
         //todo:胜利效果
+        Debug.Log("Success");
     }
 
     private void CreateFail()
     {
         //todo:失败效果
+        ShowState(Fail, ()=> { });
+        GameManager.Instance.RemainTime -= DeltaTime;
+    }
+
+    private void ShowState(CanvasGroup canvasGroup, System.Action callback)
+    {
+        canvasGroup.blocksRaycasts = false;
+
+        var bar = canvasGroup.transform.Find("Bar").transform;
+        var zi = canvasGroup.transform.Find("Text").transform;
+        var background = canvasGroup.transform.Find("Background").GetComponent<Image>();
+
+        background.color = new Color(1, 1, 1, 0);
+        float duration = 0.3f;
+
+        background.DOFade(0.7f, duration);
+
+        bar.localPosition = new Vector3(-1920, 0, 0);
+        bar.DOLocalMoveX(0, duration).onComplete = () =>
+        {
+            zi.DOLocalMoveX(0, duration).onComplete = () =>
+            {
+                bar.DOLocalMoveX(1920, duration).SetDelay(1.5f);
+                zi.DOLocalMoveX(1920, duration).SetDelay(1.5f+duration);
+                background.DOFade(0, duration).SetDelay(1.5f + duration).onComplete = () =>
+                {
+                    canvasGroup.blocksRaycasts = false;
+                    callback?.Invoke();
+                };
+            };
+        };
+
+
     }
 }

@@ -30,12 +30,12 @@ MonoBehaviour:
     - Name: Variables
       Entry: 6
       Data: 
-  _rootNode: {fileID: 0}
+  _rootNode: {fileID: 3237627997886604726}
   _currentNode: {fileID: 0}
   _nodes:
-  - {fileID: 0}
   - {fileID: 2358301655628455290}
   - {fileID: 8293498969184394044}
+  - {fileID: 3237627997886604726}
 --- !u!114 &2358301655628455290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88,6 +88,20 @@ MonoBehaviour:
     Skip: 0
     Dialog: 1
     Control: 1
+--- !u!114 &3237627997886604726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
 --- !u!114 &8293498969184394044
 MonoBehaviour:
   m_ObjectHideFlags: 0

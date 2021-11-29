@@ -48,4 +48,4 @@ MonoBehaviour:
   DefaultInspector: {fileID: 3514100340443007637, guid: 5adc632e8214f234b9f77911f389e30e, type: 3}
   InsertUnable: 0
   TruthUnable: 0
-  TrueState: 1
+  TrueState: 0

@@ -47,5 +47,5 @@ MonoBehaviour:
   PressSpriteFloat: {fileID: 2321377208931754039, guid: 16d590a07a79db2498c6a547e103b224, type: 3}
   DefaultInspector: {fileID: 2458873073300474518, guid: 341c12a1426d1f044bf7fe9bf17d664f, type: 3}
   InsertUnable: 0
-  TruthUnable: 1
+  TruthUnable: 0
   TrueState: 1

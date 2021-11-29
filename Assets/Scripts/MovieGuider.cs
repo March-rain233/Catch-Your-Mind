@@ -31,7 +31,7 @@ public class MovieGuider : MonoBehaviour,IPointerClickHandler
         }
     }
 
-    private void Awake()
+    public void StartPlay()
     {
         _current = 0;
         VideoPlayer.clip = VideoClips[_current];

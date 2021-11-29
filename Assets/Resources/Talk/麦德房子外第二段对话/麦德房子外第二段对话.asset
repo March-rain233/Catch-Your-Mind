@@ -163,6 +163,23 @@ MonoBehaviour:
     TriggerName: POP
     Time: 1
     IsWatiting: 1
+--- !u!114 &-2988380559269981058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83f0aed86a1b9140968dad6f1e8a180, type: 3}
+  m_Name: AnimatorEnableNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 726755113551770788}
+  Animators:
+  - Name: Mind
+    Enable: 0
 --- !u!114 &-2738519714609927570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -418,6 +435,8 @@ MonoBehaviour:
   - {fileID: -1743575763448095294}
   - {fileID: -1709108155240922160}
   - {fileID: 5157035409401561760}
+  - {fileID: -2988380559269981058}
+  - {fileID: 726755113551770788}
 --- !u!114 &478614575338437826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,6 +481,23 @@ MonoBehaviour:
     TriggerName: ARROW
     Time: 1
     IsWatiting: 1
+--- !u!114 &726755113551770788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83f0aed86a1b9140968dad6f1e8a180, type: 3}
+  m_Name: AnimatorEnableNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1773425206402519190}
+  Animators:
+  - Name: Mind
+    Enable: 1
 --- !u!114 &1208650450430649152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,7 +872,7 @@ MonoBehaviour:
   m_Name: FindObjectNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 1773425206402519190}
+  Child: {fileID: -2988380559269981058}
   ObjectInfos:
   - Path: MIND_STORY
     Name: Mind

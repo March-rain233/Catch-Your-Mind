@@ -70,6 +70,19 @@ public class TalkSystem : SerializedMonoBehaviour
     [SerializeField]
     private BubbleDialog _dialog;
 
+    private CanvasGroup Mask
+    {
+        get
+        {
+            if(_mask == null)
+            {
+                _mask = GameObject.Find("MASK")?.GetComponent<CanvasGroup>();
+            }
+            return _mask;
+        }
+    }
+    private CanvasGroup _mask;
+
     [SerializeField]
     public Dialogue.DialogueTree DialogueTree
     {
@@ -103,8 +116,18 @@ public class TalkSystem : SerializedMonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        GameManager.Instance.EventCenter.AddListener("DIALOG_EXIT", e => _dialog?.gameObject.SetActive(false));
-        GameManager.Instance.EventCenter.AddListener("DIALOG_PUSH", e => PushBodies(e.Object as TextBody[]));
+        if (Mask) Mask.blocksRaycasts = false;
+
+        GameManager.Instance.EventCenter.AddListener("DIALOG_EXIT", e =>
+        {
+            _dialog?.Hide();
+            if (Mask) Mask.blocksRaycasts = false;
+        });
+        GameManager.Instance.EventCenter.AddListener("DIALOG_PUSH", e =>
+        {
+            PushBodies(e.Object as TextBody[]);
+            if (Mask) Mask.blocksRaycasts = true;
+        });
         GameManager.Instance.EventCenter.AddListener("DIALOG_HIDE", e => BubbleDialog.Hide());
         GameManager.Instance.EventCenter.AddListener("DIALOG_SHOW", e => BubbleDialog.Show());
     }

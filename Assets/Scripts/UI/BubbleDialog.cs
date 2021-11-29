@@ -60,10 +60,10 @@ public class BubbleDialog : Dialog
 
     public void Show()
     {
-        CanvasGroup.DOFade(1, 0.1f);
+        _animator.SetTrigger("SHOW");
     }
     public void Hide()
     {
-        CanvasGroup.DOFade(0, 0.1f);
+        _animator.SetTrigger("HIDE");
     }
 }

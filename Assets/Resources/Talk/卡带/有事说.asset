@@ -1,5 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4430714110470928147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
 --- !u!114 &-2724580533770949398
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,8 +119,8 @@ MonoBehaviour:
     - Name: Variables
       Entry: 6
       Data: 
-  _rootNode: {fileID: 0}
+  _rootNode: {fileID: -4430714110470928147}
   _currentNode: {fileID: 0}
   _nodes:
-  - {fileID: 0}
   - {fileID: -2724580533770949398}
+  - {fileID: -4430714110470928147}
