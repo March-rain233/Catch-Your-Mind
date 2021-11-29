@@ -36,7 +36,7 @@ MonoBehaviour:
   m_Name: DestoryNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 1260532067616636641}
+  Child: {fileID: 2324934490822273644}
   Objects:
   - Name: EMO
     Remain: 0.8
@@ -253,7 +253,6 @@ MonoBehaviour:
   - {fileID: -1309680452414646031}
   - {fileID: -7743725768091596150}
   - {fileID: -3093152043128995481}
-  - {fileID: 1260532067616636641}
 --- !u!114 &761493253663133996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,27 +291,6 @@ MonoBehaviour:
   ObjectList:
   - Name: Mind
     TargetValue: 0
---- !u!114 &1260532067616636641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f92cfc2e1aa9943419cfc9dc6016c95f, type: 3}
-  m_Name: SendEventNode
-  m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
-  Child: {fileID: 2324934490822273644}
-  EventArgs:
-  - EventName: DIALOG_HIDE
-    EventArg:
-      Float: 0
-      Int: 0
-      Boolean: 0
-      String: 
 --- !u!114 &1710426386251552171
 MonoBehaviour:
   m_ObjectHideFlags: 0

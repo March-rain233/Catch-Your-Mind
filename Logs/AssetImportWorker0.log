@@ -15,11 +15,11 @@ C:/Users/14621/Desktop/Program/unity/Catch-Your-Mind
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50596
+51986
 Successfully changed project path to: C:/Users/14621/Desktop/Program/unity/Catch-Your-Mind
 C:/Users/14621/Desktop/Program/unity/Catch-Your-Mind
 Using Asset Import Pipeline V2.
-AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 76.47 ms, found 3 plugins.
+AS: AutoStreaming module initializing.Refreshing native plugins compatible for Editor in 77.28 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.21f1c1 (ae728190a658)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.21f1c1/Editor/Data/Resources/UnitySubsystems
@@ -35,37 +35,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1c1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.21f1c1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56744
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.21f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001468 seconds.
+Registered in 0.001526 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 78.79 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 81.23 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.021 seconds
+- Completed reload, in  1.036 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1022ms)
-		BeginReloadAssembly (45ms)
+	ReloadAssembly (1037ms)
+		BeginReloadAssembly (47ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (437ms)
-			LoadAssemblies (43ms)
+		EndReloadAssembly (447ms)
+			LoadAssemblies (45ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (127ms)
+			SetupTypeCache (133ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (194ms)
+			SetupLoadedEditorAssemblies (196ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (79ms)
+				RefreshPlugins (81ms)
 				BeforeProcessingInitializeOnLoad (15ms)
-				ProcessInitializeOnLoadAttributes (73ms)
+				ProcessInitializeOnLoadAttributes (71ms)
 				ProcessInitializeOnLoadMethodAttributes (24ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -73,51 +73,51 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009485 seconds.
+Registered in 0.009820 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 82.08 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 80.20 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
 - Completed reload, in  1.850 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1850ms)
-		BeginReloadAssembly (135ms)
+	ReloadAssembly (1851ms)
+		BeginReloadAssembly (127ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (17ms)
-		EndReloadAssembly (1661ms)
-			LoadAssemblies (95ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (1667ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (344ms)
+			SetupTypeCache (339ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (78ms)
-			SetupLoadedEditorAssemblies (997ms)
+			SetupLoadedEditorAssemblies (1008ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (82ms)
-				BeforeProcessingInitializeOnLoad (117ms)
-				ProcessInitializeOnLoadAttributes (690ms)
-				ProcessInitializeOnLoadMethodAttributes (97ms)
+				RefreshPlugins (80ms)
+				BeforeProcessingInitializeOnLoad (115ms)
+				ProcessInitializeOnLoadAttributes (693ms)
+				ProcessInitializeOnLoadMethodAttributes (110ms)
 				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (1ms)
+				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4071 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 271.4 MB.
 System memory in use after: 271.6 MB.
 
 Unloading 46 unused Assets to reduce memory usage. Loaded Objects now: 4591.
-Total: 28.596900 ms (FindLiveObjects: 0.335100 ms CreateObjectMapping: 0.203900 ms MarkObjects: 27.840000 ms  DeleteObjects: 0.216900 ms)
+Total: 27.869400 ms (FindLiveObjects: 0.373100 ms CreateObjectMapping: 0.215600 ms MarkObjects: 27.153800 ms  DeleteObjects: 0.125700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -131,393 +131,16 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Resources/Talk/模板.asset
-  artifactKey: Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/模板.asset using Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22eba9bc04f868b25598c2771abac05') in 0.087883 seconds 
-  Import took 0.094212 seconds .
+  path: Assets/Resources/模板.asset
+  artifactKey: Guid(3e76c2eb93e284d4ab381ea4cc2038e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/模板.asset using Guid(3e76c2eb93e284d4ab381ea4cc2038e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a637296e8dbd3a026079b5da3ca7092b') in 0.079421 seconds 
+  Import took 0.085423 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 49.333478 seconds.
-  path: Assets/Resources/Talk/互动物品/莱博/莱博.asset
-  artifactKey: Guid(e418f0dbd4f5f37429091e04edc39143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/莱博/莱博.asset using Guid(e418f0dbd4f5f37429091e04edc39143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1e806d2c96b13f52be6283ea24e932') in 0.006207 seconds 
-  Import took 0.013727 seconds .
+  Time since last request: 54.617142 seconds.
+  path: Assets/Scenes/HomeOutside.unity
+  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HomeOutside.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '623f35b0ab54629896ca03dcd6dae7eb') in 0.007591 seconds 
+  Import took 0.014287 seconds .
 
-========================================================================
-Received Import Request.
-  Time since last request: 163.447602 seconds.
-  path: Assets/Resources/Talk/互动物品/莱博/Story.prefab
-  artifactKey: Guid(e456e4bfe27fc3848a8c87030ad8f0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/莱博/Story.prefab using Guid(e456e4bfe27fc3848a8c87030ad8f0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2346786d0557a4a64f7de1194bfa82f6') in 0.019714 seconds 
-  Import took 0.026104 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.936004 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯
-  artifactKey: Guid(31f68102fc2911e48970cb18b8e532b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯 using Guid(31f68102fc2911e48970cb18b8e532b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d37a00677eec1974087af906e5916f7') in 0.006440 seconds 
-  Import took 0.012480 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.322584 seconds.
-  path: Assets/Resources/Talk/模板.asset
-  artifactKey: Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/模板.asset using Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce22050d3ce30dcf03143e3942e38c4f') in 0.005605 seconds 
-  Import took 0.011935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 32.371994 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯/博克斯.asset
-  artifactKey: Guid(19924ecbf9ba1ff48b0f10475bb46db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯/博克斯.asset using Guid(19924ecbf9ba1ff48b0f10475bb46db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b8b87c62d476747d9561e59a27a5c8') in 0.003230 seconds 
-  Import took 0.009961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 131.980907 seconds.
-  path: Assets/Resources/Talk/模板.asset
-  artifactKey: Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/模板.asset using Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09882ee74ab86fb9d9bea81593bbe0b5') in 0.005066 seconds 
-  Import took 0.011482 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.733146 seconds.
-  path: Assets/Resources/Talk/模板.asset
-  artifactKey: Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/模板.asset using Guid(f2841eec5a7fc6244b3c09fb13d2a2bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '574cc844aa76496f4b8eeaa6afd8af64') in 0.004453 seconds 
-  Import took 0.010503 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.473441 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯/博克斯.asset
-  artifactKey: Guid(19924ecbf9ba1ff48b0f10475bb46db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯/博克斯.asset using Guid(19924ecbf9ba1ff48b0f10475bb46db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81495f21c76360ae3b9ba769ad1a36b6') in 0.004320 seconds 
-  Import took 0.010418 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.966514 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯/莱博.asset
-  artifactKey: Guid(19924ecbf9ba1ff48b0f10475bb46db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯/莱博.asset using Guid(19924ecbf9ba1ff48b0f10475bb46db6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7618107937d1fa4ad2e4f18a799adebd') in 0.004969 seconds 
-  Import took 0.010915 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.901977 seconds.
-  path: Assets/Resources/Talk/互动物品/莱博/莱博.asset
-  artifactKey: Guid(e418f0dbd4f5f37429091e04edc39143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/莱博/莱博.asset using Guid(e418f0dbd4f5f37429091e04edc39143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7aee6a9c0cf617c3d3d733c1a0dd7d3') in 0.004070 seconds 
-  Import took 0.009974 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.859292 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯/博克斯.asset
-  artifactKey: Guid(08859894c85f1494e863aeb0d2ac49e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯/博克斯.asset using Guid(08859894c85f1494e863aeb0d2ac49e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e669733f353dcc835e5ab5a6fe8c8ffc') in 0.003637 seconds 
-  Import took 0.010543 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.190694 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯/Story.prefab
-  artifactKey: Guid(e4209a6eaa6721a4d8a5c8b3e1bde1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯/Story.prefab using Guid(e4209a6eaa6721a4d8a5c8b3e1bde1f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '654328d12d267f8163eff6c0f57fec02') in 0.005400 seconds 
-  Import took 0.012044 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.001065 seconds.
-  path: Assets/Resources/Talk/互动物品/博克斯/博克斯.asset
-  artifactKey: Guid(08859894c85f1494e863aeb0d2ac49e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/博克斯/博克斯.asset using Guid(08859894c85f1494e863aeb0d2ac49e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3cfae585e9a3d059def56578fcb05e') in 0.006619 seconds 
-  Import took 0.012691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 41.852541 seconds.
-  path: Assets/Resources/Talk/互动物品/对讲机
-  artifactKey: Guid(b044b19ff40ef224e92e8a092457c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/对讲机 using Guid(b044b19ff40ef224e92e8a092457c070) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd66e19995754cd451694fccf94ca7b6') in 0.006245 seconds 
-  Import took 0.012731 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.084326 seconds.
-  path: Assets/Resources/Talk/互动物品/对讲机/Story.prefab
-  artifactKey: Guid(9fc2d65353c74914db0eab6f004f9e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/对讲机/Story.prefab using Guid(9fc2d65353c74914db0eab6f004f9e0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67358507c0a2ff88fbb5d0595a7be82') in 0.004913 seconds 
-  Import took 0.011180 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.418557 seconds.
-  path: Assets/Resources/Talk/即将进入大厦内部和大心情对话
-  artifactKey: Guid(8eb190a38a60c484da5148278634d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/即将进入大厦内部和大心情对话 using Guid(8eb190a38a60c484da5148278634d4f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a7d256303a73a273cf8b09cb0bef06') in 0.003140 seconds 
-  Import took 0.010297 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.516480 seconds.
-  path: Assets/Resources/Talk/互动物品/对讲机/对讲机.asset
-  artifactKey: Guid(7685c1358b6ddb040b4bdfdfd29d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/对讲机/对讲机.asset using Guid(7685c1358b6ddb040b4bdfdfd29d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eab1103b3abe1060672f44f6b4f6684') in 0.002981 seconds 
-  Import took 0.008966 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.257806 seconds.
-  path: Assets/Resources/Talk/互动物品/对讲机/对讲机.asset
-  artifactKey: Guid(7685c1358b6ddb040b4bdfdfd29d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/对讲机/对讲机.asset using Guid(7685c1358b6ddb040b4bdfdfd29d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4708cc3f741b6f32045a9657280e3e1') in 0.003465 seconds 
-  Import took 0.009755 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.829955 seconds.
-  path: Assets/Resources/Talk/互动物品/对讲机/对讲机.asset
-  artifactKey: Guid(7685c1358b6ddb040b4bdfdfd29d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/对讲机/对讲机.asset using Guid(7685c1358b6ddb040b4bdfdfd29d0855) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4ffcdadf2a3efe0363c8bba72e226b7') in 0.005065 seconds 
-  Import took 0.011237 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 87.639752 seconds.
-  path: Assets/Resources/Talk/互动物品/鸽子
-  artifactKey: Guid(2ac9c467e413e3247bc5aee77419af7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/鸽子 using Guid(2ac9c467e413e3247bc5aee77419af7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72520a17c0fa2450cd5226793588158a') in 0.005983 seconds 
-  Import took 0.011896 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.292929 seconds.
-  path: Assets/Resources/Talk/互动物品/鸽子/鸽子.asset
-  artifactKey: Guid(21497b084eb98174d89f3ab3d4a982ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/鸽子/鸽子.asset using Guid(21497b084eb98174d89f3ab3d4a982ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4ec30cb4215793a838bdc1c3bd1629') in 0.002855 seconds 
-  Import took 0.008392 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.257467 seconds.
-  path: Assets/Resources/Talk/互动物品/鸽子/Story .prefab
-  artifactKey: Guid(d2246ca8a437f814ca55dd11d827c6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/鸽子/Story .prefab using Guid(d2246ca8a437f814ca55dd11d827c6a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a703ed491e36e8bac454e8c386d1e617') in 0.009681 seconds 
-  Import took 0.015336 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.061288 seconds.
-  path: Assets/Resources/Talk/互动物品/鸽子/鸽子.asset
-  artifactKey: Guid(21497b084eb98174d89f3ab3d4a982ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/鸽子/鸽子.asset using Guid(21497b084eb98174d89f3ab3d4a982ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0efa693a30e8d297ff9396b07e479d8') in 0.004447 seconds 
-  Import took 0.010929 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.342670 seconds.
-  path: Assets/Resources/Talk/互动物品/垃圾
-  artifactKey: Guid(e42e7334bc5398c46bc9d9e286bba774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/垃圾 using Guid(e42e7334bc5398c46bc9d9e286bba774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f207f12140735aa56aed0ddf49dfc68') in 0.005888 seconds 
-  Import took 0.013616 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.117937 seconds.
-  path: Assets/Resources/Talk/互动物品/垃圾/Story .prefab
-  artifactKey: Guid(6e39de7b0ed0fcb4ab3d477efe378cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/垃圾/Story .prefab using Guid(6e39de7b0ed0fcb4ab3d477efe378cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e26ad5f30e7df4bb69e36ed93b1fa331') in 0.005132 seconds 
-  Import took 0.011535 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.754815 seconds.
-  path: Assets/Resources/Talk/互动物品/垃圾/垃圾.asset
-  artifactKey: Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/垃圾/垃圾.asset using Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd713e943dd1fafd1896ea5515aba0949') in 0.002916 seconds 
-  Import took 0.010486 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.330841 seconds.
-  path: Assets/Resources/Talk/互动物品/垃圾/垃圾.asset
-  artifactKey: Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/垃圾/垃圾.asset using Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9f9e8be00b8d15574a49b77dc37c55') in 0.003995 seconds 
-  Import took 0.010549 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 21.877205 seconds.
-  path: Assets/Resources/Talk/互动物品/垃圾/垃圾.asset
-  artifactKey: Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/垃圾/垃圾.asset using Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a2da7f0ec4e5c9cdc19df9379ed74f') in 0.004346 seconds 
-  Import took 0.010502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.299585 seconds.
-  path: Assets/Resources/Talk/互动物品/垃圾/垃圾.asset
-  artifactKey: Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/垃圾/垃圾.asset using Guid(cdf89146517cad743b56edb56082398b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4809cb1a834839ede773eb4475b82bb') in 0.004677 seconds 
-  Import took 0.011170 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.483458 seconds.
-  path: Assets/Resources/Talk/互动物品/营业牌
-  artifactKey: Guid(41f843a4c16522c42ae599ae0a0b4fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/营业牌 using Guid(41f843a4c16522c42ae599ae0a0b4fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b05438bebdff8f6cb5c732dbdea3cfad') in 0.006695 seconds 
-  Import took 0.013337 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.043725 seconds.
-  path: Assets/Resources/Talk/互动物品/营业牌/Story .prefab
-  artifactKey: Guid(f11097bb9f336a74388c2c1a66bc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/营业牌/Story .prefab using Guid(f11097bb9f336a74388c2c1a66bc4f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64cefd804d2e1f7c94e1a91434ec082') in 0.005166 seconds 
-  Import took 0.010771 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.734130 seconds.
-  path: Assets/Resources/Talk/互动物品/营业牌/营业牌.asset
-  artifactKey: Guid(4bd4000cc40d6ed4286755e9c078a13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/营业牌/营业牌.asset using Guid(4bd4000cc40d6ed4286755e9c078a13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a40885ca5b7aed9e0a125e3037657d3') in 0.003095 seconds 
-  Import took 0.008603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.404968 seconds.
-  path: Assets/Resources/Talk/互动物品/营业牌/营业牌.asset
-  artifactKey: Guid(4bd4000cc40d6ed4286755e9c078a13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/营业牌/营业牌.asset using Guid(4bd4000cc40d6ed4286755e9c078a13c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c56186727eac5a2c5ed81e4d62c373') in 0.004314 seconds 
-  Import took 0.015758 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.337084 seconds.
-  path: Assets/Resources/Talk/互动物品/海报
-  artifactKey: Guid(f91d6fd5761907347bdf033ba7b683df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/海报 using Guid(f91d6fd5761907347bdf033ba7b683df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b02e519706646edba7c557aec13da74') in 0.006864 seconds 
-  Import took 0.013680 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.269036 seconds.
-  path: Assets/Resources/Talk/互动物品/海报/Story .prefab
-  artifactKey: Guid(92a403ce918575445894dc7b88932143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/海报/Story .prefab using Guid(92a403ce918575445894dc7b88932143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bc651d5062966ca3a4c69751a87d59') in 0.004874 seconds 
-  Import took 0.010325 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 24.722228 seconds.
-  path: Assets/Resources/Talk/互动物品/海报/海报.asset
-  artifactKey: Guid(82bee6d246e52ef45a8247d52960dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/海报/海报.asset using Guid(82bee6d246e52ef45a8247d52960dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7415de98751757750c5a65d5fedb8957') in 0.002983 seconds 
-  Import took 0.009052 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.727325 seconds.
-  path: Assets/Resources/Talk/互动物品/海报/海报.asset
-  artifactKey: Guid(82bee6d246e52ef45a8247d52960dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/海报/海报.asset using Guid(82bee6d246e52ef45a8247d52960dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc401dc1a645c29a390b797524832ca8') in 0.004392 seconds 
-  Import took 0.010538 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.145581 seconds.
-  path: Assets/Resources/Talk/互动物品/海报/海报.asset
-  artifactKey: Guid(82bee6d246e52ef45a8247d52960dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/海报/海报.asset using Guid(82bee6d246e52ef45a8247d52960dd42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b50aefa3e5f57f2492eaece6c254f814') in 0.005050 seconds 
-  Import took 0.011911 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.986270 seconds.
-  path: Assets/Resources/Talk/互动物品/心情报表
-  artifactKey: Guid(44cb7a001b0bed54797876e48a780816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/心情报表 using Guid(44cb7a001b0bed54797876e48a780816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '910c40abbf5ece277fdee324bef38500') in 0.006398 seconds 
-  Import took 0.013012 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.140205 seconds.
-  path: Assets/Resources/Talk/互动物品/心情报表/Story .prefab
-  artifactKey: Guid(efae5857277e76548a4978662cc3a8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/心情报表/Story .prefab using Guid(efae5857277e76548a4978662cc3a8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8194ff0413bd3d8e66a05ee91ed9870f') in 0.005020 seconds 
-  Import took 0.010585 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.822253 seconds.
-  path: Assets/Resources/Talk/互动物品/心情报表/心情报表.asset
-  artifactKey: Guid(3e23d942c70a9564396778f384c5e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/心情报表/心情报表.asset using Guid(3e23d942c70a9564396778f384c5e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e94fe8b00a97a07d9071f7dc196445') in 0.002975 seconds 
-  Import took 0.008121 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.934150 seconds.
-  path: Assets/Resources/Talk/互动物品/心情报表/心情报表.asset
-  artifactKey: Guid(3e23d942c70a9564396778f384c5e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/心情报表/心情报表.asset using Guid(3e23d942c70a9564396778f384c5e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9962c4ccd36bb852c343bd8754d73547') in 0.004122 seconds 
-  Import took 0.010420 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.944926 seconds.
-  path: Assets/Resources/Talk/互动物品/心情报表/心情报表.asset
-  artifactKey: Guid(3e23d942c70a9564396778f384c5e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/心情报表/心情报表.asset using Guid(3e23d942c70a9564396778f384c5e552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71951a2aebf5a41826b18709a19a4b1f') in 0.004094 seconds 
-  Import took 0.010294 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.095937 seconds.
-  path: Assets/Resources/Talk/互动物品/咖啡
-  artifactKey: Guid(77011023811830647b2277fd7f661c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/咖啡 using Guid(77011023811830647b2277fd7f661c38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43461097b65e7f04f8daa6aac5e09393') in 0.006293 seconds 
-  Import took 0.012856 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.557055 seconds.
-  path: Assets/Resources/Talk/互动物品/咖啡/咖啡.asset
-  artifactKey: Guid(6d66db4da80511d4eb3c138ef6d2c45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/咖啡/咖啡.asset using Guid(6d66db4da80511d4eb3c138ef6d2c45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad2a33f91ad204ffc0dd2388ac826a50') in 0.002968 seconds 
-  Import took 0.009961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.689619 seconds.
-  path: Assets/Resources/Talk/互动物品/咖啡/Story .prefab
-  artifactKey: Guid(92827e2ef29a95247811ef2b0c81ca3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/咖啡/Story .prefab using Guid(92827e2ef29a95247811ef2b0c81ca3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed95c07efecc99cf84ee90ea4b1465ef') in 0.008212 seconds 
-  Import took 0.013858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.393192 seconds.
-  path: Assets/Resources/Talk/互动物品/咖啡/咖啡.asset
-  artifactKey: Guid(6d66db4da80511d4eb3c138ef6d2c45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/咖啡/咖啡.asset using Guid(6d66db4da80511d4eb3c138ef6d2c45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d59f30ab090c9a281eb15cf8e9ac772') in 0.004665 seconds 
-  Import took 0.011068 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.799086 seconds.
-  path: Assets/Resources/Talk/互动物品/咖啡/咖啡.asset
-  artifactKey: Guid(6d66db4da80511d4eb3c138ef6d2c45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/Talk/互动物品/咖啡/咖啡.asset using Guid(6d66db4da80511d4eb3c138ef6d2c45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a65fc40e31c58cc0f97d1cb9c2a8719f') in 0.004772 seconds 
-  Import took 0.011235 seconds .
-
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -199,9 +199,9 @@ MonoBehaviour:
   Child: {fileID: 1612176202474820511}
   AnimationQueue:
   - ObjectName: EMO
-    TriggerName: EMOIN
+    TriggerName: EMOINHEAD
     Time: 1
-    IsWatiting: 1
+    IsWatiting: 0
 --- !u!114 &-4605131837108517472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   - Name: Liber
     Body: "zzzzzzzz\u2026\u2026"
     ObjectName: 
-    Skip: 0
+    Skip: 1
     Dialog: 0
     Control: 0
   - Name: EMO
@@ -301,7 +301,7 @@ MonoBehaviour:
   Child: {fileID: 4478009693865941160}
   AnimationQueue:
   - ObjectName: Liber
-    TriggerName: CHANGESTATE
+    TriggerName: AWAKE
     Time: 1
     IsWatiting: 1
 --- !u!114 &-3225134065120395358
@@ -484,12 +484,12 @@ MonoBehaviour:
   Child: {fileID: -9200524862124417872}
   AnimationQueue:
   - ObjectName: Liber
-    TriggerName: CHANGESTATE
+    TriggerName: TURNSLEEP
     Time: 1
     IsWatiting: 1
   - ObjectName: Liber
     TriggerName: SLEEP
-    Time: 0
+    Time: 1
     IsWatiting: 0
 --- !u!114 &972376849907576050
 MonoBehaviour:
@@ -525,7 +525,7 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: -4605131837108517472}
   AnimationQueue:
-  - ObjectName: Liber
+  - ObjectName: Story
     TriggerName: LIGHT
     Time: 1
     IsWatiting: 1
@@ -547,7 +547,7 @@ MonoBehaviour:
   - Name: Mind
     Body: "\u54E6\uFF0C\u4F60\u8BF4\u7684\u672A\u514D\u592A\u8FC7\u4FDD\u5B88\u4E86\u3002"
     ObjectName: 
-    Skip: 0
+    Skip: 1
     Dialog: 0
     Control: 0
 --- !u!114 &2746660755113407337
@@ -705,7 +705,7 @@ MonoBehaviour:
     Dialog: 0
     Control: 0
   - Name: EMO
-    Body: "\u5BBF\u4E3B\u4E0D\u51FA1.08x10^5\u4E2AEGO\u5143\u5E74\u5C31\u4F1A\u53D8\u6210\u75F4\u5446\u3002"
+    Body: "\u5BBF\u4E3B\u4E0D\u51FA1.08x10^5\u4E2AEGO\u5143\u5E74\u5C31\u4F1A\u53D8\u6210\u75F4\u5446\u7684\uFF01"
     ObjectName: 
     Skip: 0
     Dialog: 0
@@ -765,8 +765,8 @@ MonoBehaviour:
   Child: {fileID: 6718787127518543113}
   AnimationQueue:
   - ObjectName: EMO
-    TriggerName: EMOOUT
-    Time: 0
+    TriggerName: EMOOUTHEAD
+    Time: 1
     IsWatiting: 0
 --- !u!114 &8324706808709722708
 MonoBehaviour:
@@ -784,6 +784,6 @@ MonoBehaviour:
   Child: {fileID: -3225134065120395358}
   AnimationQueue:
   - ObjectName: Liber
-    TriggerName: ChangeState
+    TriggerName: AWAKE
     Time: 0
     IsWatiting: 0
