@@ -10,7 +10,6 @@ public class PausePanel : MonoBehaviour
     public Button BackToMainMenuButton;
     public Button QuitButton;
     public CanvasGroup CanvasGroup;
-    public GameObject Blur;
     public bool IsShow;
     public bool IsPause;
 
@@ -46,7 +45,6 @@ public class PausePanel : MonoBehaviour
     public void ShowPanel()
     {
         float duration = 0.5f;
-        Blur.SetActive(true);
         CanvasGroup.DOFade(1, duration).onComplete = ()=>IsShow=true;
         CanvasGroup.blocksRaycasts = true;
         CanvasGroup.interactable = true;
@@ -57,7 +55,6 @@ public class PausePanel : MonoBehaviour
     public void ClosePanel()
     {
         float duration = 0.5f;
-        Blur.SetActive(false);
         CanvasGroup.DOFade(0, duration).onComplete = ()=>IsShow=false;
         CanvasGroup.blocksRaycasts = false;
         CanvasGroup.interactable = false;
@@ -73,7 +70,7 @@ public class PausePanel : MonoBehaviour
     }
     private void BackToMainMenu()
     {
-
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
     private void Quit()
     {

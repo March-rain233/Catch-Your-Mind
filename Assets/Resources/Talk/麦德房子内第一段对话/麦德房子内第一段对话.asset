@@ -15,10 +15,6 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 1025190331579674991}
   Objects:
-  - Name: Bed
-    Prefabs: {fileID: 7787457112477213899, guid: 9ad97e26f193ed54c9c5a8caebf2b1d4, type: 3}
-    Parent: 
-    Position: {x: 0, y: -3.173, z: 0}
   - Name: EMO
     Prefabs: {fileID: 319421986541472761, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
     Parent: 
@@ -39,8 +35,8 @@ MonoBehaviour:
   Child: {fileID: 2324934490822273644}
   Objects:
   - Name: EMO
-    Remain: 0.8
---- !u!114 &-5511136552488774120
+    Remain: 0
+--- !u!114 &-6394723919721109302
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,12 +49,42 @@ MonoBehaviour:
   m_Name: AnimationNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -3093152043128995481}
+  Child: {fileID: 2132496807411515736}
   AnimationQueue:
   - ObjectName: Bed
-    TriggerName: Bed-GetUp
+    TriggerName: Bed
     Time: 1
-    IsWatiting: 1
+    IsWatiting: 0
+--- !u!114 &-6009063626441734170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 4279366990641026902}
+  WaitTime: 0.8
+--- !u!114 &-5248020019496756309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 194028186462373955}
+  WaitTime: 0.8
 --- !u!114 &-3515076374857857757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,7 +259,6 @@ MonoBehaviour:
   _nodes:
   - {fileID: 1710426386251552171}
   - {fileID: 2761966667161113907}
-  - {fileID: -5511136552488774120}
   - {fileID: 761493253663133996}
   - {fileID: 6181265145603702346}
   - {fileID: -129484382478356070}
@@ -253,6 +278,32 @@ MonoBehaviour:
   - {fileID: -1309680452414646031}
   - {fileID: -7743725768091596150}
   - {fileID: -3093152043128995481}
+  - {fileID: 194028186462373955}
+  - {fileID: -5248020019496756309}
+  - {fileID: -6009063626441734170}
+  - {fileID: 4279366990641026902}
+  - {fileID: -6394723919721109302}
+--- !u!114 &194028186462373955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92cfc2e1aa9943419cfc9dc6016c95f, type: 3}
+  m_Name: SendEventNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -7743725768091596150}
+  EventArgs:
+  - EventName: DIALOG_HIDE
+    EventArg:
+      Float: 0
+      Int: 0
+      Boolean: 0
+      String: 
 --- !u!114 &761493253663133996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,8 +371,6 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 0}
   Objects:
-  - Name: Bed
-    Remain: 0
   - Name: MindPosition
     Remain: 0
 --- !u!114 &2324934490822273644
@@ -338,7 +387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp:Dialogue:WaitNode
   _condition: {fileID: 0}
   Child: {fileID: 3036837070912338476}
-  WaitTime: 3
+  WaitTime: 1.8
 --- !u!114 &2761966667161113907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -404,10 +453,29 @@ MonoBehaviour:
   m_Name: AnimationNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 8014720904907068647}
+  Child: {fileID: -6009063626441734170}
   AnimationQueue:
   - ObjectName: Bed
     TriggerName: Bed-GetUp
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &4279366990641026902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 8014720904907068647}
+  AnimationQueue:
+  - ObjectName: Bed
+    TriggerName: Bed-StandUp
     Time: 1
     IsWatiting: 1
 --- !u!114 &5545028430637900128
@@ -444,7 +512,7 @@ MonoBehaviour:
   m_Name: SetActiveNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -5511136552488774120}
+  Child: {fileID: -3093152043128995481}
   ObjectList:
   - Name: Image
     TargetValue: 0
@@ -484,7 +552,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -7743725768091596150}
+  Child: {fileID: -5248020019496756309}
   _paragraphs:
   - Name: EMO
     Body: "\u5FEB\u8D77\u6765\u5427\uFF0C\u9EA6\u5FB7\u3002"
@@ -499,7 +567,7 @@ MonoBehaviour:
     Dialog: 0
     Control: 0
   - Name: EMO
-    Body: "\u6211\u4EECEGO\u5C31\u662F\u4E3A\u4E86\u5B88\u62A4\u8FD9\u91CC\u800C\u5B58\u5728\u7684\u3002"
+    Body: "\u6211\u4EECEGO\u5C31\u662F\u4E3A\u4E86\u5B88\u62A4\u8FD9\u91CC\u800C\u5B58\u5728\u7684......\uFF01"
     ObjectName: 
     Skip: 1
     Dialog: 0
@@ -517,7 +585,7 @@ MonoBehaviour:
   m_Name: SetActiveNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 2132496807411515736}
+  Child: {fileID: -6394723919721109302}
   ObjectList:
   - Name: Mind
     TargetValue: 1

@@ -89,7 +89,7 @@ AnimationClip:
       value: {fileID: -1303503536129350595, guid: dda7dafc182bcf44db9c803fd7a555e6, type: 3}
     - time: 2.95
       value: {fileID: -8849880824108249881, guid: dda7dafc182bcf44db9c803fd7a555e6, type: 3}
-    - time: 3.05
+    - time: 3.1
       value: {fileID: -3542612433780619999, guid: dda7dafc182bcf44db9c803fd7a555e6, type: 3}
     attribute: m_Sprite
     path: MIND_STORY
@@ -142,7 +142,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 3.0666666
+    m_StopTime: 3.1166666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

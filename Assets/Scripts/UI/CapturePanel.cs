@@ -75,6 +75,10 @@ public class CapturePanel : MonoBehaviour
         {
             _blood = value;
             BloodView.Value = _blood / MaxBlood;
+            if (_blood >= MaxBlood)
+            {
+                UnityEngine.SceneManagement.SceneManager.LoadScene("Success");
+            }
         }
     }
     private float _blood;

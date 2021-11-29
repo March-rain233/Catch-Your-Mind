@@ -1,5 +1,73 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-5414520811375897798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83f0aed86a1b9140968dad6f1e8a180, type: 3}
+  m_Name: AnimatorEnableNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 5065709168827816536}
+  Animators:
+  - Name: Mind
+    Enable: 1
+--- !u!114 &-5301135289453700838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1687393212366866082}
+  _paragraphs:
+  - Name: Box
+    Body: "\u563F\uFF0C\u9EA6\u5FB7\uFF0C\u4E0D\u5982\u8FD9\u6837\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u73B0\u5728\u8857\u4E0A\u6709\u53EF\u80FD\u4F1A\u6709\u90A3\u79CD\u76D2\u86CB\u7684\u5305\u88C5\u76D2\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u4F60\u4EECEGO\u771F\u4E0D\u8BB2\u6587\u660E\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u54C8\u54C8\uFF01\u9EA6\u5FB7\uFF0C\u4F60\u770B\u4E0D\u60EF\u7684\u8BDD\uFF0C\u53EF\u4EE5\u5E2E\u6211\u628A\u90A3\u4E9B\u76D2\u5B50\u5E26\u56DE\u6765\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u4F5C\u4E3A\u56DE\u62A5\uFF0C\u6211\u7ED9\u4F60\u770B\u70B9\u65B0\u5947\u7684\u4E1C\u897F\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u62C9\u5012\uFF0C\u6211\u53EF\u4E0D\u662F\u73AF\u536B\u5DE5\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
 --- !u!114 &-2828866971821072246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13,8 +81,8 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 4764600812308157380}
---- !u!114 &-2397155302153002129
+  Child: {fileID: 2768429209176255825}
+--- !u!114 &-2108544989353505603
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -23,28 +91,79 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc12600082d21074b9510886c7d5e3db, type: 3}
-  m_Name: SetTransformNode
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 6987293033319752655}
-  TransformInfos:
-  - Target: EMO-PLAYER
-    Source: EMO
-    Posiotion: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0}
-    Scale: {x: 0, y: 0, z: 0}
-    IgnorePosition: 0
-    IgnoreRotation: 0
-    IgnoreScale: 0
-  - Target: MIND-PLAYER
-    Source: Mind
-    Posiotion: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0}
-    Scale: {x: 0, y: 0, z: 0}
-    IgnorePosition: 0
-    IgnoreRotation: 0
-    IgnoreScale: 0
+  Child: {fileID: -1968736611692249613}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u522B\u8FD9\u4E48\u70ED\u60C5\uFF0C\u641E\u5F97\u6211\u4EEC\u5F88\u719F\u4E00\u6837\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u4F60\u8FD9\u91CC\u73B0\u5728\u5728\u6446\u4EC0\u4E48\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u5BBF\u4E3B\u6700\u8FD1\u5BF9\u6B66\u58EB\u9E45\u76D2\u86CB\u4E00\u89C1\u949F\u60C5\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u8FD9\u73A9\u610F\u73B0\u5728\u5DF2\u7ECF\u5F00\u59CB\u7545\u9500\u4E86\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u8FD9\u4E48\u8001\u571F\u7684\u4E1C\u897F\u8FD8\u80FD\u7545\u9500\uFF1F"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u6211\u662F\u8BF4\uFF0C\u5728\u5BBF\u4E3B\u7684\u8111\u5B50\u91CC\u7545\u9500\u3002\u54C8\u54C8\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Box
+    Body: "\u9EA6\u5FB7\uFF0C\u4F60\u4E5F\u8981\u4E70\u5417\uFF1F\u53EF\u60DC\u6CA1\u6709\u5E93\u5B58\u54AF\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u53BB\u4F60\u7684\uFF0C\u6211\u53E3\u888B\u91CC\u4E00\u6839\u6BDB\u90FD\u6CA1\u6709\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+--- !u!114 &-1968736611692249613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -5301135289453700838}
+  AnimationQueue:
+  - ObjectName: Box
+    TriggerName: LEAN
+    Time: 1
+    IsWatiting: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,14 +215,17 @@ MonoBehaviour:
   _currentNode: {fileID: 0}
   _nodes:
   - {fileID: -2828866971821072246}
-  - {fileID: 4764600812308157380}
-  - {fileID: 7211946346090970639}
-  - {fileID: 1317320888455200877}
   - {fileID: 2768429209176255825}
-  - {fileID: 2718048577570515659}
-  - {fileID: -2397155302153002129}
-  - {fileID: 6987293033319752655}
   - {fileID: 1073957284867289687}
+  - {fileID: 5065709168827816536}
+  - {fileID: -2108544989353505603}
+  - {fileID: 3247490575758100238}
+  - {fileID: -1968736611692249613}
+  - {fileID: -5301135289453700838}
+  - {fileID: 1687393212366866082}
+  - {fileID: 6408418211694623361}
+  - {fileID: 4994839864316832087}
+  - {fileID: -5414520811375897798}
 --- !u!114 &1073957284867289687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,7 +239,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 2718048577570515659}
+  Child: {fileID: 3247490575758100238}
   _paragraphs:
   - Name: Box
     Body: "\u9EA6\u5FB7\uFF0C\u597D\u4E45\u4E0D\u89C1\u4E86\uFF01"
@@ -125,7 +247,7 @@ MonoBehaviour:
     Skip: 0
     Dialog: 0
     Control: 0
---- !u!114 &1317320888455200877
+--- !u!114 &1687393212366866082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,35 +256,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff012c534c54de5498c0766668630a65, type: 3}
-  m_Name: CopyNode
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 2768429209176255825}
-  CopyInfos:
-  - Target: EMO-PLAYER
-    Source: EMO
-  - Target: MIND-PLAYER
-    Source: MIND
---- !u!114 &2718048577570515659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
-  m_Name: SetActiveNode
-  m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
-  Child: {fileID: -2397155302153002129}
-  ObjectList:
-  - Name: MIND-PLAYER
-    TargetValue: 1
-  - Name: EMO-PLAYER
-    TargetValue: 1
+  Child: {fileID: 6408418211694623361}
+  AnimationQueue:
+  - ObjectName: Box
+    TriggerName: LEANRETURN
+    Time: 1
+    IsWatiting: 0
 --- !u!114 &2768429209176255825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,13 +279,13 @@ MonoBehaviour:
   m_Name: FindObjectNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 1073957284867289687}
+  Child: {fileID: 4994839864316832087}
   ObjectInfos:
-  - Path: EMO-STORY
-    Name: EMO
-  - Path: MIND-STORY
-    Name: MIND
---- !u!114 &4764600812308157380
+  - Path: Mind
+    Name: Mind
+  - Path: Box
+    Name: Box
+--- !u!114 &3247490575758100238
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,17 +294,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee9e60cb5cedc3b4d8e43ebb8a7591f2, type: 3}
-  m_Name: InstantiateNode
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 7211946346090970639}
-  Objects:
-  - Name: STORY
-    Prefabs: {fileID: 5659489126411463256, guid: e4209a6eaa6721a4d8a5c8b3e1bde1f1, type: 3}
-    Parent: 
-    Position: {x: 0, y: 0, z: 0}
---- !u!114 &6987293033319752655
+  Child: {fileID: -2108544989353505603}
+  AnimationQueue:
+  - ObjectName: Box
+    TriggerName: HELLORETURN
+    Time: 1
+    IsWatiting: 0
+--- !u!114 &4994839864316832087
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,30 +313,51 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aebcf47761e6a54d8a7eab47d17f9ae, type: 3}
-  m_Name: DestoryNode
+  m_Script: {fileID: 11500000, guid: f83f0aed86a1b9140968dad6f1e8a180, type: 3}
+  m_Name: AnimatorEnableNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -5414520811375897798}
+  Animators:
+  - Name: Mind
+    Enable: 0
+--- !u!114 &5065709168827816536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1073957284867289687}
+  AnimationQueue:
+  - ObjectName: Box
+    TriggerName: HELLO
+    Time: 1
+    IsWatiting: 0
+--- !u!114 &6408418211694623361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
   Child: {fileID: 0}
-  Objects:
-  - Name: STORY
-    Remain: 0
---- !u!114 &7211946346090970639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
-  m_Name: SetActiveNode
-  m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
-  Child: {fileID: 1317320888455200877}
-  ObjectList:
-  - Name: EMO
-    TargetValue: 0
-  - Name: Mind
-    TargetValue: 0
+  _paragraphs:
+  - Name: Box
+    Body: "\u4E00\u8A00\u4E3A\u5B9A\u4E86\u5662\uFF01\u6211\u4FDD\u8BC1\u662F\u4F60\u4F1A\u559C\u6B22\u7684\u4E1C\u897F\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0

@@ -53,7 +53,7 @@ MonoBehaviour:
     Dialog: 0
     Control: 0
   - Name: EMO
-    Body: "\u4F60\u8BB0\u5F97\u5361\u5E26\u4E0A\u8BF4\u7684\u90A3\u6B21<b>\u5927\u707E\u96BE</b>\u5417\uFF1F"
+    Body: "\u4F60\u8BB0\u5F97\u5361\u5E26\u4E0A\u8BF4\u7684\u90A3\u6B21\u3010\u5927\u707E\u96BE\u3011\u5417\uFF1F"
     ObjectName: 
     Skip: 0
     Dialog: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
     Dialog: 0
     Control: 0
   - Name: EMO
-    Body: "\u90A3\u65F6<b>\u7EDD\u671B</b>\u79BB\u6211\u4EEC\u90A3\u4E48\u8FD1\uFF0C\u597D\u50CF\u8FDE\u8FD9\u5EA7\u5927\u53A6\u7684\u9876\u7AEF\u90FD\u53D8\u5F97\u6BD4\u5F80\u5E38\u9065\u8FDC\u3002"
+    Body: "\u90A3\u65F6\u3010\u7EDD\u671B\u3011\u79BB\u6211\u4EEC\u90A3\u4E48\u8FD1\uFF0C\u597D\u50CF\u8FDE\u8FD9\u5EA7\u5927\u53A6\u7684\u9876\u7AEF\u90FD\u53D8\u5F97\u6BD4\u5F80\u5E38\u9065\u8FDC\u3002"
     ObjectName: 
     Skip: 0
     Dialog: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
     Dialog: 0
     Control: 0
   - Name: EMO
-    Body: "\u8FD9\u5C31\u662F\u6211\u4EEC<b>\u5B58\u5728\u7684\u610F\u4E49</b>\u3002"
+    Body: "\u8FD9\u5C31\u662F\u6211\u4EEC\u3010\u5B58\u5728\u7684\u610F\u4E49\u3011\u3002"
     ObjectName: 
     Skip: 0
     Dialog: 0
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
   Child: {fileID: 4577522163122678533}
-  WaitTime: 1
+  WaitTime: 2.5
 --- !u!114 &-4574929815377177173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
   Child: {fileID: -8381539400082592886}
-  WaitTime: 1.5
+  WaitTime: 3
 --- !u!114 &3343377785899067306
 MonoBehaviour:
   m_ObjectHideFlags: 0

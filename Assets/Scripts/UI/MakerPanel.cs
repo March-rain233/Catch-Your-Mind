@@ -161,7 +161,17 @@ public class MakerPanel : MonoBehaviour
             PutCard(card);
         });
 
-        ShowState(Start, ()=>MovieGuider.StartPlay());
+        GameManager.Instance.EventCenter.AddListener("DIALOG_EXIT", Wait);
+    }
+
+    private void Wait(EventCenter.EventArgs e)
+    {
+        GameManager.Instance.EventCenter.RemoveListener("DIALOG_EXIT", Wait);
+        ShowState(Start, () =>
+        {
+            MovieGuider.gameObject.SetActive(true);
+            MovieGuider.StartPlay();
+        });
     }
 
     private void PutCard(CardView card)
@@ -386,7 +396,8 @@ public class MakerPanel : MonoBehaviour
     private void CreateSuccess()
     {
         //todo:Ê¤ÀûÐ§¹û
-        Debug.Log("Success");
+        
+        GameManager.Instance.LoadScene("OutSide");
     }
 
     private void CreateFail()
@@ -398,27 +409,30 @@ public class MakerPanel : MonoBehaviour
 
     private void ShowState(CanvasGroup canvasGroup, System.Action callback)
     {
-        canvasGroup.blocksRaycasts = false;
+        canvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1;
 
         var bar = canvasGroup.transform.Find("Bar").transform;
         var zi = canvasGroup.transform.Find("Text").transform;
         var background = canvasGroup.transform.Find("Background").GetComponent<Image>();
 
         background.color = new Color(1, 1, 1, 0);
-        float duration = 0.3f;
+        float duration = 0.5f;
 
         background.DOFade(0.7f, duration);
 
         bar.localPosition = new Vector3(-1920, 0, 0);
+        zi.localPosition = new Vector3(-1920, 0, 0);
         bar.DOLocalMoveX(0, duration).onComplete = () =>
         {
             zi.DOLocalMoveX(0, duration).onComplete = () =>
             {
                 bar.DOLocalMoveX(1920, duration).SetDelay(1.5f);
-                zi.DOLocalMoveX(1920, duration).SetDelay(1.5f+duration);
+                zi.DOLocalMoveX(1920, duration).SetDelay(0.8f + duration);
                 background.DOFade(0, duration).SetDelay(1.5f + duration).onComplete = () =>
                 {
                     canvasGroup.blocksRaycasts = false;
+                    canvasGroup.alpha = 0;
                     callback?.Invoke();
                 };
             };

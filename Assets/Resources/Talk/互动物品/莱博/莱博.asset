@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RootNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 1551659857644228316}
+  Child: {fileID: 186359849685892082}
 --- !u!114 &-7944778703095701712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28,8 +28,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
   Child: {fileID: 6202703685704714187}
-  AnimationQueue: []
---- !u!114 &-6949455270615152657
+  AnimationQueue:
+  - ObjectName: Liber
+    TriggerName: AWAKE
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &-4287850838846733569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,17 +42,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
-  m_Name: SetActiveNode
+  m_Script: {fileID: 11500000, guid: f83f0aed86a1b9140968dad6f1e8a180, type: 3}
+  m_Name: AnimatorEnableNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 8985027537464611750}
-  ObjectList:
-  - Name: MIND-PLAYER
-    TargetValue: 1
-  - Name: EMO-PLAYER
-    TargetValue: 1
---- !u!114 &-3433811779194366417
+  Child: {fileID: -7944778703095701712}
+  Animators: []
+--- !u!114 &-2485847386194767110
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,33 +57,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4aebcf47761e6a54d8a7eab47d17f9ae, type: 3}
-  m_Name: DestoryNode
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
   Child: {fileID: 0}
-  Objects:
-  - Name: STORY
-    Remain: 0
---- !u!114 &-2464612851558472938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff012c534c54de5498c0766668630a65, type: 3}
-  m_Name: CopyNode
-  m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
-  Child: {fileID: 186359849685892082}
-  CopyInfos:
-  - Target: EMO-PLAYER
-    Source: EMO
-  - Target: MIND-PLAYER
-    Source: MIND
+  _paragraphs:
+  - Name: Liber
+    Body: zzzzzz
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,15 +120,13 @@ MonoBehaviour:
   _currentNode: {fileID: 0}
   _nodes:
   - {fileID: -8019361044671934499}
-  - {fileID: 1551659857644228316}
-  - {fileID: 2839566757271310554}
-  - {fileID: -2464612851558472938}
   - {fileID: 186359849685892082}
   - {fileID: -7944778703095701712}
   - {fileID: 6202703685704714187}
-  - {fileID: -6949455270615152657}
-  - {fileID: 8985027537464611750}
-  - {fileID: -3433811779194366417}
+  - {fileID: 2950004399407420197}
+  - {fileID: -4287850838846733569}
+  - {fileID: 7464133937950725996}
+  - {fileID: -2485847386194767110}
 --- !u!114 &186359849685892082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,13 +140,13 @@ MonoBehaviour:
   m_Name: FindObjectNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -7944778703095701712}
+  Child: {fileID: 2950004399407420197}
   ObjectInfos:
-  - Path: EMO-STORY
-    Name: EMO
-  - Path: MIND-STORY
-    Name: MIND
---- !u!114 &1551659857644228316
+  - Path: Liber
+    Name: Liber
+  - Path: Mind
+    Name: Mind
+--- !u!114 &2950004399407420197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,35 +155,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee9e60cb5cedc3b4d8e43ebb8a7591f2, type: 3}
-  m_Name: InstantiateNode
+  m_Script: {fileID: 11500000, guid: f83f0aed86a1b9140968dad6f1e8a180, type: 3}
+  m_Name: AnimatorEnableNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 2839566757271310554}
-  Objects:
-  - Name: STORY
-    Prefabs: {fileID: 4776160909150072153, guid: e456e4bfe27fc3848a8c87030ad8f0b5, type: 3}
-    Parent: 
-    Position: {x: 0, y: 0, z: 0}
---- !u!114 &2839566757271310554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
-  m_Name: SetActiveNode
-  m_EditorClassIdentifier: 
-  _condition: {fileID: 0}
-  Child: {fileID: -2464612851558472938}
-  ObjectList:
-  - Name: EMO
-    TargetValue: 0
-  - Name: Mind
-    TargetValue: 0
+  Child: {fileID: -4287850838846733569}
+  Animators: []
 --- !u!114 &6202703685704714187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,7 +174,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -6949455270615152657}
+  Child: {fileID: 7464133937950725996}
   _paragraphs:
   - Name: Liber
     Body: "\u563F\uFF0C\u9EA6\u5FB7\u3002\u4F60\u771F\u9177\u3002"
@@ -241,18 +201,12 @@ MonoBehaviour:
     Dialog: 0
     Control: 0
   - Name: Mind
-    Body: "\u5C11\u6765\uFF0C\u8C01\u7BA1\u4F60\u4EEC\u3002"
-    ObjectName: 
-    Skip: 0
-    Dialog: 0
-    Control: 0
-  - Name: Mind
     Body: "\u4F60\u4E0D\u5982\u591A\u60F3\u60F3\u81EA\u5DF1\u4ECA\u5929\u6709\u6CA1\u6709\u597D\u597D\u5DE5\u4F5C\u5427\u3002"
     ObjectName: 
     Skip: 0
     Dialog: 0
     Control: 0
---- !u!114 &8985027537464611750
+--- !u!114 &7464133937950725996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,25 +215,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc12600082d21074b9510886c7d5e3db, type: 3}
-  m_Name: SetTransformNode
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -3433811779194366417}
-  TransformInfos:
-  - Target: EMO-PLAYER
-    Source: EMO
-    Posiotion: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0}
-    Scale: {x: 0, y: 0, z: 0}
-    IgnorePosition: 0
-    IgnoreRotation: 0
-    IgnoreScale: 0
-  - Target: MIND-PLAYER
-    Source: Mind
-    Posiotion: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0}
-    Scale: {x: 0, y: 0, z: 0}
-    IgnorePosition: 0
-    IgnoreRotation: 0
-    IgnoreScale: 0
+  Child: {fileID: -2485847386194767110}
+  AnimationQueue:
+  - ObjectName: Liber
+    TriggerName: TURNSLEEP
+    Time: 1
+    IsWatiting: 1
+  - ObjectName: Liber
+    TriggerName: SLEEP
+    Time: 1
+    IsWatiting: 0

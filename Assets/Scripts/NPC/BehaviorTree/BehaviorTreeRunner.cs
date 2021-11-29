@@ -29,6 +29,12 @@ namespace NPC
             BehaviorTree.Tick(this);
         }
 
+        private void OnDestroy()
+        {
+            GameManager.Instance.EventCenter.RemoveListener("DIALOG_ENTER", EnterDialogue);
+            GameManager.Instance.EventCenter.RemoveListener("DIALOG_EXIT", ExitDialogue);
+        }
+
         private void EnterDialogue(EventCenter.EventArgs e)
         {
             _stop = true;

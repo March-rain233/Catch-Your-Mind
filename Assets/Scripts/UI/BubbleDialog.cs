@@ -33,12 +33,18 @@ public class BubbleDialog : Dialog
 
     private Animator _animator;
 
+    public bool Hiding = false;
+
     private void Awake()
     {
         _rectTransform = GetComponent<RectTransform>();
         _animator = GetComponent<Animator>();
         Next.DOFade(0, 0);
-        BeginShow += () => Next.DOFade(0, 0);
+        BeginShow += () => 
+        { 
+            if (Hiding) { Show(); }
+            Next.DOFade(0, 0); 
+        };
         ShowEnd += () => Next.DOFade(1, 0.3f).SetLoops(-1, LoopType.Yoyo);
     }
 
@@ -60,10 +66,14 @@ public class BubbleDialog : Dialog
 
     public void Show()
     {
-        _animator.SetTrigger("SHOW");
+        //_animator.SetTrigger("SHOW");
+        CanvasGroup.DOFade(1, 0.2f);
+        Hiding = false;
     }
     public void Hide()
     {
-        _animator.SetTrigger("HIDE");
+        //_animator.SetTrigger("HIDE");
+        CanvasGroup.DOFade(0, 0.2f);
+        Hiding = true;
     }
 }

@@ -14,7 +14,7 @@ public class FillSlider : SerializedMonoBehaviour
         set
         {
             _value = Mathf.Lerp(MinOffset, MaxOffset, value);
-            _fillImage.fillAmount = _value;
+            if(_fillImage) _fillImage.fillAmount = _value;
         }
     }
     [SerializeField, SetProperty("Value")]

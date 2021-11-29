@@ -71,9 +71,9 @@ AnimationClip:
       value: {fileID: 8574791657830727471, guid: f9a61231c26dd704599331d367fdfc02, type: 3}
     - time: 0.8666667
       value: {fileID: 2160663122399816075, guid: f9a61231c26dd704599331d367fdfc02, type: 3}
-    - time: 0.96666664
+    - time: 1.05
       value: {fileID: -551418546091062830, guid: f9a61231c26dd704599331d367fdfc02, type: 3}
-    - time: 1.0666667
+    - time: 1.15
       value: {fileID: 5024982665429024507, guid: f9a61231c26dd704599331d367fdfc02, type: 3}
     attribute: m_Sprite
     path: EMO_STORY
@@ -125,7 +125,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.0833334
+    m_StopTime: 1.1666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

@@ -415,6 +415,159 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  Nodes:
+  - {fileID: -3756760295064600919}
+--- !u!114 &-3756760295064600919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7469ee37144ac4d8ef7283af4f0833, type: 3}
+  m_Name: SendDialogNode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 227cee5420e00ec4ca1541d6930679df, type: 2}
+    - {fileID: 11400000, guid: a5dc0b543422e254781dd2b5d305ec0c, type: 2}
+    - {fileID: 11400000, guid: d5a3f97b2f15cd24aa1d2fe97b4ceda5, type: 2}
+    - {fileID: 11400000, guid: dfe2cb92e8ba7064eb3acf911bcec2cf, type: 2}
+    - {fileID: 11400000, guid: 2e87b63d7ed545745b27f0fe13863433, type: 2}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: _dialogs
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventTree.SendDialogNode+Dialog,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u8FDB\u5165Home"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 0
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u8FDB\u5165HomeOutside"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 1
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u521D\u5230\u6863\u6848\u5BA4"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 2
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u7535\u68AF\u4E0A\u5927\u5FC3\u60C5"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 3
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5927\u53A6\u5185\u90E8"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 4
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
   Nodes: []
 --- !u!114 &-3704834783593526339
 MonoBehaviour:
@@ -432,6 +585,7 @@ MonoBehaviour:
   _actionNodes:
   - {fileID: 3523224241438094548}
   - {fileID: -8653919429757494435}
+  - {fileID: -3756760295064600919}
   _root: {fileID: 3523224241438094548}
 --- !u!114 &11400000
 MonoBehaviour:

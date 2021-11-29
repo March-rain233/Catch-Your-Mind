@@ -9,6 +9,8 @@ using NPC;
 using Config;
 using UnityEngine.SceneManagement;
 using Newtonsoft.Json;
+using UnityEngine.UI;
+using DG.Tweening;
 
 /// <summary>
 /// 负责处理游戏运行逻辑，存储了游戏运行的相关字段
@@ -44,8 +46,13 @@ public class GameManager : BaseGameManager<GameManager>
         {
             _remainTime = value;
             TimeChanged?.Invoke(_remainTime);
+            if(_remainTime < 0)
+            {
+                GameOver();
+            }
         }
     }
+    [SerializeField]
     private float _remainTime;
 
     /// <summary>
@@ -77,6 +84,38 @@ public class GameManager : BaseGameManager<GameManager>
         LoadGameSave();
 
         InitGameStatus();
+
+        SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
+        EventCenter.AddListener("DIALOG_PUSH", (e) => { Passing = false; });
+        EventCenter.AddListener("DIALOG_EXIT", (e) => { if(SceneManager.GetActiveScene().name!="MakerScene") Passing = true; });
+    }
+
+    private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
+    {
+        if (arg1.name != "MainMenu")
+        {
+            GameSave.SceneIndex = arg1.buildIndex;
+            SaveGameSave();
+        }
+        if (arg1.name == "MakerScene") { Passing = false; }
+        else { Passing = true; }
+        if(arg1.name == "OutSide")
+        {
+            if(EventCenter.TryGetEventArgs("进入MakerScene", out EventCenter.EventArgs eventArgs) && eventArgs.Boolean)
+            {
+                GameObject.Find("Mind").transform.position = new Vector3(-16, -3.1f, 0);
+                GameObject.Find("EMO").transform.position = new Vector3(-17, -1f, 0);
+            }
+        }
+        Instance.EventCenter.SendEvent($"进入{arg1.name}", new EventCenter.EventArgs() { Boolean = true });
+        var mask = GameObject.Find("SceneMask").GetComponent<CanvasGroup>();
+        mask.blocksRaycasts = true;
+        mask.alpha = 1;
+        mask.DOFade(0, 0.5f).SetDelay(0.3f).onComplete = () =>
+        {
+            mask.blocksRaycasts = false;
+            EventCenter.SendEvent("DIALOG_EXIT", new EventCenter.EventArgs() { Boolean = true }); 
+        };
     }
 
     protected override void InitGameStatus()
@@ -103,10 +142,27 @@ public class GameManager : BaseGameManager<GameManager>
 
         //重置存档
         GameSave = GameSave.OriSave();
+        GameSave.Time = MaxTime;
+        Passing = true;
 
         //加载场景
-        Status = GameStatus.Loading;
+        //Status = GameStatus.Loading;
         //GameManager.EnterPosition(GameSave.Position);
+        SceneManager.LoadScene("Home");
+    }
+
+    public void LoadGame()
+    {
+
+    }
+
+    [Button]
+    public void LoadScene(string name)
+    {
+        EventCenter.SendEvent("DIALOG_ENTER", new EventCenter.EventArgs() { Boolean = true });
+        var mask = GameObject.Find("SceneMask").GetComponent<CanvasGroup>();
+        mask.blocksRaycasts = true;
+        mask.DOFade(1, 0.5f).onComplete = () => { SceneManager.LoadScene(name); };
     }
 
     /// <summary>
@@ -138,7 +194,7 @@ public class GameManager : BaseGameManager<GameManager>
     /// </summary>
     public void GameOver()
     {
-
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Failure");
     }
 
     private void LoadGameSave()
@@ -151,6 +207,7 @@ public class GameManager : BaseGameManager<GameManager>
         }
         StreamReader file = new StreamReader(filePath);
         string json = file.ReadToEnd();
+        file.Close();
         Debug.Log(json);
         GameSave = JsonConvert.DeserializeObject<GameSave>(json);
     }

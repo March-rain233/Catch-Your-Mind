@@ -26,6 +26,7 @@ namespace Save
             //    Paths[ObjectType.NPC_Info].PathDic["OriShury"]));
             save.Position.Scene = "初始场景";
             save.Position.Point = "最初的地点";
+            save.SceneIndex = -1;
             return save;
         }
 
@@ -45,5 +46,12 @@ namespace Save
         public InventorySave Inventory;
 
         public Map.MapPosition Position;
+
+
+        public float Time;
+
+        public int SceneIndex;
+
+        //public Vector2 PlayerPosition;
     }
 }

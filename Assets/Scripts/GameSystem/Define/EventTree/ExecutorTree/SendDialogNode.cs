@@ -19,6 +19,7 @@ namespace EventTree
 
         protected override void EventHandler(string eventName, EventCenter.EventArgs eventArgs)
         {
+            if (!TalkSystem.Instance) { return; }
             if (_dialogs.ContainsKey(eventName))
             {
                 var dialog = _dialogs[eventName];

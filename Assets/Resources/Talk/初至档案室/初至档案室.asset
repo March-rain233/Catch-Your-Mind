@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 2746660755113407337}
+  Child: {fileID: 1914722162305667928}
   _paragraphs:
   - Name: Liber
     Body: "zzzzz\u2026\u2026"
@@ -29,18 +29,6 @@ MonoBehaviour:
     Control: 0
   - Name: EMO
     Body: "\u5929\u54EA\u3002\u9EA6\u5FB7\uFF0C\u4E0D\u662F\u8FD9\u6837\u7684\uFF01"
-    ObjectName: 
-    Skip: 0
-    Dialog: 0
-    Control: 0
-  - Name: Mind
-    Body: "\u8FD9\u6709\u5565\u7684\uFF0C\u6211\u4E0D\u5728\u4E4E\u3002"
-    ObjectName: 
-    Skip: 0
-    Dialog: 0
-    Control: 0
-  - Name: Mind
-    Body: "\u6211\u4E00\u4E2A\u4EBA\u4E5F\u5B8C\u5168\u591F\u3002"
     ObjectName: 
     Skip: 0
     Dialog: 0
@@ -66,7 +54,7 @@ MonoBehaviour:
   - Name: EMO
     Body: "\u522B\u62C5\u5FC3\uFF0C\u6211\u6765\u627E\u627E\u3002"
     ObjectName: 
-    Skip: 0
+    Skip: 1
     Dialog: 0
     Control: 0
 --- !u!114 &-8214492435595722833
@@ -121,7 +109,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 4628563739358726865}
+  Child: {fileID: 5362354534130712269}
   _paragraphs:
   - Name: EMO
     Body: "\u8FD9\u4E2A\u5F88\u591A\u5417\uFF1F\u8FD8\u6709\u4E00\u4E9B\u5728\u89D2\u843D\u91CC\u6211\u73B0\u5728\u53BB"
@@ -129,24 +117,29 @@ MonoBehaviour:
     Skip: 1
     Dialog: 0
     Control: 0
-  - Name: Mind
-    Body: "\u54E6\u62DC\u6258\uFF01"
-    ObjectName: 
-    Skip: 1
-    Dialog: 0
-    Control: 0
-  - Name: Mind
-    Body: "\u8BA9\u6211\u81EA\u5DF1\u6765\u5427\uFF0C\u6211\u77E5\u9053\u54EA\u4E9B\u53EF\u80FD\u6709\u7528\u3002"
-    ObjectName: 
-    Skip: 1
-    Dialog: 0
-    Control: 0
-  - Name: EMO
-    Body: "\u9075\u547D\uFF01\u9EA6\u5FB7\u957F\u5B98\uFF01"
-    ObjectName: 
-    Skip: 1
-    Dialog: 0
-    Control: 0
+--- !u!114 &-6903643696954598787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc12600082d21074b9510886c7d5e3db, type: 3}
+  m_Name: SetTransformNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 7242336776955965390}
+  TransformInfos:
+  - Target: MIND-PLAYER
+    Source: 
+    Posiotion: {x: -22.48, y: -3.1, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    IgnorePosition: 0
+    IgnoreRotation: 0
+    IgnoreScale: 0
 --- !u!114 &-6497484165099488266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,10 +153,26 @@ MonoBehaviour:
   m_Name: DestoryNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 0}
+  Child: {fileID: 1159026359134119051}
   Objects:
   - Name: STORY
     Remain: 0
+--- !u!114 &-6362604721317789185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4092aabb7a82eff40b9cf313b2c6830f, type: 3}
+  m_Name: MoveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 972376849907576050}
+  Target: {x: -22.48, y: -3.1}
+  Time: 1
 --- !u!114 &-5766656385802690534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,9 +188,9 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: -7738686044116587276}
   AnimationQueue:
-  - ObjectName: EMO
+  - ObjectName: STORY
     TriggerName: EMOOUT
-    Time: 0
+    Time: 1
     IsWatiting: 0
 --- !u!114 &-4653527099057662000
 MonoBehaviour:
@@ -198,10 +207,10 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 1612176202474820511}
   AnimationQueue:
-  - ObjectName: EMO
+  - ObjectName: STORY
     TriggerName: EMOINHEAD
     Time: 1
-    IsWatiting: 0
+    IsWatiting: 1
 --- !u!114 &-4605131837108517472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +244,27 @@ MonoBehaviour:
     Skip: 0
     Dialog: 0
     Control: 0
+--- !u!114 &-3800053988845742060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92cfc2e1aa9943419cfc9dc6016c95f, type: 3}
+  m_Name: SendEventNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 2746660755113407337}
+  EventArgs:
+  - EventName: DIALOG_HIDE
+    EventArg:
+      Float: 0
+      Int: 0
+      Boolean: 0
+      String: 
 --- !u!114 &-3786942801457870396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,12 +280,6 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 1154770212124961025}
   _paragraphs:
-  - Name: Mind
-    Body: "\u8FD9\u5C0F\u5B50\u600E\u4E48\u8FD9\u4E48\u7231\u591A\u7BA1\u95F2\u4E8B\u3002"
-    ObjectName: 
-    Skip: 0
-    Dialog: 0
-    Control: 0
   - Name: EMO
     Body: "\u563F\uFF0C\u91CC\u8FB9\u513F\u90FD\u53D1\u9709\u4E86\u2026\u2026"
     ObjectName: 
@@ -285,6 +309,23 @@ MonoBehaviour:
   CopyInfos:
   - Target: MIND-PLAYER
     Source: Mind
+  - Target: EMO-PLAYER
+    Source: EMO
+--- !u!114 &-3582685375123312604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -3786942801457870396}
+  WaitTime: 2
 --- !u!114 &-3320716578620102373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +417,21 @@ MonoBehaviour:
     Skip: 0
     Dialog: 0
     Control: 0
+--- !u!114 &-1539948596583313075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 4628563739358726865}
+  WaitTime: 0.5
 --- !u!114 &-1244584384537561223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,7 +445,7 @@ MonoBehaviour:
   m_Name: "\u6839"
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 972376849907576050}
+  Child: {fileID: -6362604721317789185}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -468,6 +524,19 @@ MonoBehaviour:
   - {fileID: -6497484165099488266}
   - {fileID: 2818619983305751698}
   - {fileID: 4478009693865941160}
+  - {fileID: -3800053988845742060}
+  - {fileID: 1914722162305667928}
+  - {fileID: -3582685375123312604}
+  - {fileID: 8692908818331154824}
+  - {fileID: -6903643696954598787}
+  - {fileID: 2058910151435053023}
+  - {fileID: 5185164162500904489}
+  - {fileID: 5362354534130712269}
+  - {fileID: -1539948596583313075}
+  - {fileID: 8745792251878990009}
+  - {fileID: 8460610915220757491}
+  - {fileID: -6362604721317789185}
+  - {fileID: 1159026359134119051}
 --- !u!114 &310023315708016383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,10 +594,29 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: -4605131837108517472}
   AnimationQueue:
-  - ObjectName: Story
+  - ObjectName: STORY
     TriggerName: LIGHT
     Time: 1
+    IsWatiting: 0
+  - ObjectName: Light
+    TriggerName: SWITCHLIGHT
+    Time: 1
     IsWatiting: 1
+--- !u!114 &1159026359134119051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3af2cd5a1c9a93c4ca4d8524e6d9ef81, type: 3}
+  m_Name: ChangeSceneNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  Name: MakerScene
 --- !u!114 &1612176202474820511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +630,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 4995432798575812565}
+  Child: {fileID: 8745792251878990009}
   _paragraphs:
   - Name: Mind
     Body: "\u54E6\uFF0C\u4F60\u8BF4\u7684\u672A\u514D\u592A\u8FC7\u4FDD\u5B88\u4E86\u3002"
@@ -550,6 +638,36 @@ MonoBehaviour:
     Skip: 1
     Dialog: 0
     Control: 0
+--- !u!114 &1914722162305667928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -3800053988845742060}
+  WaitTime: 0.3
+--- !u!114 &2058910151435053023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 5185164162500904489}
+  WaitTime: 0.8
 --- !u!114 &2746660755113407337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,12 +681,12 @@ MonoBehaviour:
   m_Name: AnimationNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: -3786942801457870396}
+  Child: {fileID: 2058910151435053023}
   AnimationQueue:
   - ObjectName: STORY
     TriggerName: EMOIN
     Time: 1
-    IsWatiting: 1
+    IsWatiting: 0
 --- !u!114 &2818619983305751698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -628,6 +746,8 @@ MonoBehaviour:
   ObjectList:
   - Name: MIND-PLAYER
     TargetValue: 1
+  - Name: EMO-PLAYER
+    TargetValue: 1
 --- !u!114 &4853630807596963768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,7 +761,7 @@ MonoBehaviour:
   m_Name: FindObjectNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 7242336776955965390}
+  Child: {fileID: -6903643696954598787}
   ObjectInfos:
   - Path: MIND-STORY
     Name: Mind
@@ -662,10 +782,46 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: -2469888705769189522}
   AnimationQueue:
-  - ObjectName: EMO
-    TriggerName: BAG
-    Time: 0
-    IsWatiting: 0
+  - ObjectName: STORY
+    TriggerName: THROWOUT
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &5185164162500904489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92cfc2e1aa9943419cfc9dc6016c95f, type: 3}
+  m_Name: SendEventNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 8692908818331154824}
+  EventArgs:
+  - EventName: DIALOG_SHOW
+    EventArg:
+      Float: 0
+      Int: 0
+      Boolean: 0
+      String: 
+--- !u!114 &5362354534130712269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 8460610915220757491}
+  WaitTime: 0.2
 --- !u!114 &6084628114394066192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,6 +838,8 @@ MonoBehaviour:
   Child: {fileID: -3735254309357325219}
   ObjectList:
   - Name: Mind
+    TargetValue: 0
+  - Name: EMO
     TargetValue: 0
 --- !u!114 &6718787127518543113
 MonoBehaviour:
@@ -764,7 +922,7 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 6718787127518543113}
   AnimationQueue:
-  - ObjectName: EMO
+  - ObjectName: STORY
     TriggerName: EMOOUTHEAD
     Time: 1
     IsWatiting: 0
@@ -787,3 +945,72 @@ MonoBehaviour:
     TriggerName: AWAKE
     Time: 0
     IsWatiting: 0
+--- !u!114 &8460610915220757491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -1539948596583313075}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u54E6\u62DC\u6258\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u8BA9\u6211\u81EA\u5DF1\u6765\u5427\uFF0C\u6211\u77E5\u9053\u54EA\u4E9B\u53EF\u80FD\u6709\u7528\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u9075\u547D\uFF01\u9EA6\u5FB7\u957F\u5B98\uFF01"
+    ObjectName: 
+    Skip: 1
+    Dialog: 0
+    Control: 0
+--- !u!114 &8692908818331154824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -3582685375123312604}
+  _paragraphs:
+  - Name: Mind
+    Body: "\u8FD9\u5C0F\u5B50\u600E\u4E48\u8FD9\u4E48\u7231\u591A\u7BA1\u95F2\u4E8B\uFF1F"
+    ObjectName: 
+    Skip: 1
+    Dialog: 0
+    Control: 0
+--- !u!114 &8745792251878990009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 4995432798575812565}
+  WaitTime: 0.5
