@@ -123,6 +123,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &35067115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1378410339}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u5BBF\u4E3B\u7684\u60C5\u7EEA\u4EA7\u751F\u4E86\u5341\u5206\u5267\u70C8\u7684\u6CE2\u52A8\uFF0C\u6240\u4EE5\u6885\u62C9\u53C8\u51FA\u73B0\u4E86\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u5FEB\u8D77\u6765\uFF0C\u9EA6\u5FB7\uFF0C\u6211\u4EEC\u5F97\u53BB\u89E3\u51B3\u6885\u62C9\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: MIND
+    Body: "\u5927\u5FC3\u60C5\uFF0C\u4F60\u771F\u7684\u5435\u6B7B\u4E86\u3002"
+    ObjectName: Bed
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u563F\uFF0C\u522B\u8FD9\u6837\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "EGO\u4EEC\u73B0\u5728\u90FD\u9700\u8981\u4F60\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: MIND
+    Body: "\u5E72\u561B\u554A\uFF1F"
+    ObjectName: Bed
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF0C\u53EA\u6709\u4F60\u80FD\u6293\u4F4F\u6885\u62C9\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u5982\u679C\u6CA1\u6709\u4F60\uFF0C\u6211\u4EEC\u8FD9\u6B21\u90FD\u4F1A\u906D\u6B83\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: Mind
+    Body: "\u5C11\u8BF4\u8FD9\u4E9B\u6F02\u4EAE\u8BDD\u4E86\uFF0C\u6211\u624D\u4E0D\u5728\u4E4E\u8FD9\u4E9B\u3002"
+    ObjectName: Bed
+    Skip: 0
+    Dialog: 0
+    Control: 0
 --- !u!1 &48160427
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,6 +290,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2f4e64a93e6dcf46a60d28bbcd23d7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &119014087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 977556413}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u5F97\u6293\u7D27\u65F6\u95F4\u4E86\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
 --- !u!1 &257999278
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,6 +368,98 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &260010689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1334261073}
+  AnimationQueue:
+  - ObjectName: Bed
+    TriggerName: Bed-GetUp
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &298731154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: "\u9EA6\u5FB7\u623F\u5B50\u5185\u7B2C\u4E00\u6BB5\u5BF9\u8BDD(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 6
+      Data: 
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: Variables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _rootNode: {fileID: 1430230578}
+  _currentNode: {fileID: 0}
+  _nodes:
+  - {fileID: 1430230578}
+  - {fileID: 1128651996}
+  - {fileID: 2089405292}
+  - {fileID: 777708837}
+  - {fileID: 1742792670}
+  - {fileID: 1456402322}
+  - {fileID: 996272931}
+  - {fileID: 394803632}
+  - {fileID: 871669975}
+  - {fileID: 35067115}
+  - {fileID: 1378410339}
+  - {fileID: 1547698794}
+  - {fileID: 1328441973}
+  - {fileID: 882801528}
+  - {fileID: 119014087}
+  - {fileID: 977556413}
+  - {fileID: 1492503644}
+  - {fileID: 1081301659}
+  - {fileID: 1784046707}
+  - {fileID: 620932883}
+  - {fileID: 260010689}
+  - {fileID: 1334261073}
+  - {fileID: 839785896}
 --- !u!1 &342886534
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 342886534}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0038161278, y: -0.5673202, z: -10}
+  m_LocalPosition: {x: -0.003815651, y: -0.5673201, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -429,6 +611,27 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &394803632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 871669975}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF01\u4F60\u9192\u4E86\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
 --- !u!1 &432839058
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +750,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536510107}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.67, y: -1.92, z: -10}
+  m_LocalPosition: {x: -3.1, y: -1.97, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1305119511}
@@ -571,6 +774,54 @@ MonoBehaviour:
   m_BoundingShape2D: {fileID: 778908279}
   m_ConfineScreenEdges: 1
   m_Damping: 0
+--- !u!114 &620932883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitNode
+  m_EditorClassIdentifier: Assembly-CSharp:Dialogue:WaitNode
+  _condition: {fileID: 0}
+  Child: {fileID: 260010689}
+  WaitTime: 3
+--- !u!114 &777708837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1742792670}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u2026\u2026\u5582\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u5FEB\u9192\u9192\uFF0C\u9EA6\u5FB7\uFF01"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF01\u542C\u5F97\u89C1\u6211\u8BF4\u8BDD"
+    ObjectName: 
+    Skip: 1
+    Dialog: 0
+    Control: 0
 --- !u!1 &778908278
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +884,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &839785896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aebcf47761e6a54d8a7eab47d17f9ae, type: 3}
+  m_Name: DestoryNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  Objects:
+  - Name: Bed
+    Remain: 0
+  - Name: MindPosition
+    Remain: 0
 --- !u!1 &867025420
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +1004,95 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &871669975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 35067115}
+  AnimationQueue:
+  - ObjectName: Bed
+    TriggerName: Bed-SleepIn
+    Time: 0.5
+    IsWatiting: 1
+  - ObjectName: EMO
+    TriggerName: CLOSE
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &882801528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 119014087}
+  WaitTime: 0.3
+--- !u!114 &977556413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1492503644}
+  AnimationQueue:
+  - ObjectName: EMO
+    TriggerName: MOVEOUT
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &996272931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa13ec20f56b0534baa443aecdc7a769, type: 3}
+  m_Name: WaitTimeNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 394803632}
+  WaitTime: 0.5
+--- !u!114 &1081301659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aebcf47761e6a54d8a7eab47d17f9ae, type: 3}
+  m_Name: DestoryNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1784046707}
+  Objects:
+  - Name: EMO
+    Remain: 0.8
 --- !u!1 &1087952844
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +1175,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1128651996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9e60cb5cedc3b4d8e43ebb8a7591f2, type: 3}
+  m_Name: InstantiateNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 2089405292}
+  Objects:
+  - Name: Bed
+    Prefabs: {fileID: 7787457112477213899, guid: 9ad97e26f193ed54c9c5a8caebf2b1d4, type: 3}
+    Parent: 
+    Position: {x: 0, y: -3.173, z: 0}
+  - Name: EMO
+    Prefabs: {fileID: 319421986541472761, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+    Parent: 
+    Position: {x: 0, y: -10, z: 0}
 --- !u!1 &1132403150
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,11 +1277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7546447364214669688, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.67
+      value: -3.1
       objectReference: {fileID: 0}
     - target: {fileID: 7546447364214669688, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.92
+      value: -1.97
       objectReference: {fileID: 0}
     - target: {fileID: 7546447364214669688, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1073,19 +1455,23 @@ PrefabInstance:
     - target: {fileID: 1160973592, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
       propertyPath: serializationData.Prefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1160973592, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
     - target: {fileID: 1160973592, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1160973592, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
-      value: '"path":"DialogueTree","value":null'
+      value: '"path":"DialogueTree","value":$eref:0'
       objectReference: {fileID: 0}
     - target: {fileID: 1160973592, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1160973592, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
+      value: 
+      objectReference: {fileID: 298731154}
     - target: {fileID: 5060945689562755056, guid: 0e230acd17375a74d8d4e044f941ffc0, type: 3}
       propertyPath: serializationData.Prefab
       value: 
@@ -1239,6 +1625,277 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1328441973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 882801528}
+  AnimationQueue:
+  - ObjectName: EMO
+    TriggerName: LIGHT
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &1334261073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 839785896}
+  ObjectList:
+  - Name: Mind
+    TargetValue: 1
+--- !u!1 &1348757080
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1348757082}
+  - component: {fileID: 1348757081}
+  m_Layer: 0
+  m_Name: Sprite Light 2D (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1348757081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348757080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 1
+  m_BlendStyleIndex: 3
+  m_FalloffIntensity: 0.35
+  m_Color: {r: 1, g: 0.98289347, b: 0.81509435, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 000000007fab22124f6bbe5db3812f076f4ae0fe
+  m_LightCookieSprite: {fileID: 21300000, guid: 0e03209dc793db64fad423d60629b918, type: 3}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 1
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 0.55
+  m_ShapeLightFalloffOffset: {x: 0, y: -3.14}
+  m_ShapePath:
+  - {x: -0.69291306, y: 0.111016035, z: 0}
+  - {x: 1.182327, y: 0.11265135, z: 0}
+  - {x: 1.1823028, y: 0.4267068, z: 0}
+  - {x: -0.69495034, y: 0.42431116, z: 0}
+--- !u!4 &1348757082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1348757080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.31, y: 1.418, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1378410339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1547698794}
+  AnimationQueue:
+  - ObjectName: EMO
+    TriggerName: MORECLOSE
+    Time: 0
+    IsWatiting: 0
+--- !u!114 &1430230578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1128651996}
+--- !u!114 &1456402322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3252d81fbccbc4f42b4b513f1a6b7c17, type: 3}
+  m_Name: AnimationNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 996272931}
+  AnimationQueue:
+  - ObjectName: Bed
+    TriggerName: Bed-GetUp
+    Time: 1
+    IsWatiting: 1
+--- !u!114 &1492503644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1081301659}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u5FEB\u8D77\u6765\u5427\uFF0C\u9EA6\u5FB7\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u4F60\u4E5F\u597D\uFF0C\u6211\u4E5F\u597D\uFF0C\u5927\u5BB6\u4E5F\u597D\u2026\u2026"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+  - Name: EMO
+    Body: "\u6211\u4EECEGO\u5C31\u662F\u4E3A\u4E86\u5B88\u62A4\u8FD9\u91CC\u800C\u5B58\u5728\u7684\u3002"
+    ObjectName: 
+    Skip: 1
+    Dialog: 0
+    Control: 0
+--- !u!114 &1547698794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdff8c25004305439dc2f3c5d85b64c, type: 3}
+  m_Name: DialogueNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1328441973}
+  _paragraphs:
+  - Name: EMO
+    Body: "\u9EA6\u5FB7\uFF0C\u522B\u8FD9\u6837\u561B\u3002"
+    ObjectName: 
+    Skip: 0
+    Dialog: 0
+    Control: 0
+--- !u!1001 &1596684582
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 319421986541472761, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_Name
+      value: EMO
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -67.83501
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 319421986541472763, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3902a669a0fde6c4b813575eec1f0e70, type: 3}
 --- !u!1 &1633220674
 GameObject:
   m_ObjectHideFlags: 0
@@ -1442,6 +2099,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1742792670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 1456402322}
+  ObjectList:
+  - Name: Image
+    TargetValue: 0
+--- !u!114 &1784046707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f92cfc2e1aa9943419cfc9dc6016c95f, type: 3}
+  m_Name: SendEventNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 620932883}
+  EventArgs:
+  - EventName: DIALOG_HIDE
+    EventArg:
+      Float: 0
+      Int: 0
+      Boolean: 0
+      String: 
 --- !u!224 &1790546321 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2287959611824566348, guid: 14d2b5965a0a865499c3c9ef862909df, type: 3}
@@ -1497,7 +2192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1680,6 +2375,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089405292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 777708837}
+  ObjectList:
+  - Name: Mind
+    TargetValue: 0
 --- !u!1001 &2114611675
 PrefabInstance:
   m_ObjectHideFlags: 0

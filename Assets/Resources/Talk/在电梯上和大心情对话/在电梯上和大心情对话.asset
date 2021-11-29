@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9141841344315923247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc12600082d21074b9510886c7d5e3db, type: 3}
+  m_Name: SetTransformNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -7432583037325609554}
+  TransformInfos:
+  - Target: MIND-PLAYER
+    Source: Mind
+    Posiotion: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    IgnorePosition: 0
+    IgnoreRotation: 0
+    IgnoreScale: 0
+  - Target: EMO-PLAYER
+    Source: EMO
+    Posiotion: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    IgnorePosition: 0
+    IgnoreRotation: 0
+    IgnoreScale: 0
 --- !u!114 &-8381539400082592886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +136,25 @@ MonoBehaviour:
     Skip: 0
     Dialog: 0
     Control: 0
+--- !u!114 &-7645510332585298093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff012c534c54de5498c0766668630a65, type: 3}
+  m_Name: CopyNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -6157285907800443522}
+  CopyInfos:
+  - Target: MIND-PLAYER
+    Source: Mind
+  - Target: EMO-PLAYER
+    Source: EMO
 --- !u!114 &-7583713933085276231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +188,42 @@ MonoBehaviour:
     Skip: 0
     Dialog: 0
     Control: 0
+--- !u!114 &-7432583037325609554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aebcf47761e6a54d8a7eab47d17f9ae, type: 3}
+  m_Name: DestoryNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  Objects:
+  - Name: STORY
+    Remain: 0
+--- !u!114 &-6157285907800443522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4c86d5354f55449aa13a1f284e8bd1, type: 3}
+  m_Name: FindObjectNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -7583713933085276231}
+  ObjectInfos:
+  - Path: MIND-STORY
+    Name: Mind
+  - Path: EMO-PLAYER
+    Name: EMO
 --- !u!114 &-5017694748645078165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,6 +239,44 @@ MonoBehaviour:
   _condition: {fileID: 0}
   Child: {fileID: 4577522163122678533}
   WaitTime: 1
+--- !u!114 &-4574929815377177173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9e60cb5cedc3b4d8e43ebb8a7591f2, type: 3}
+  m_Name: InstantiateNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -4264654599546205252}
+  Objects:
+  - Name: STORY
+    Prefabs: {fileID: 5738453191228810690, guid: 38dc9b3caaffe5f4d90cd9d3665fa2f3, type: 3}
+    Parent: 
+    Position: {x: 0, y: 0, z: 0}
+--- !u!114 &-4264654599546205252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -7645510332585298093}
+  ObjectList:
+  - Name: Mind
+    TargetValue: 0
+  - Name: EMO
+    TargetValue: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,18 +299,17 @@ MonoBehaviour:
     PrefabModifications: []
     SerializationNodes:
     - Name: Guid
-      Entry: 6
-      Data: 
+      Entry: 1
+      Data: 22d925e400cded54090c04dedbb8e146
     - Name: Status
       Entry: 3
       Data: 0
     - Name: Variables
       Entry: 6
       Data: 
-  _rootNode: {fileID: 0}
+  _rootNode: {fileID: 4574614670338717895}
   _currentNode: {fileID: 0}
   _nodes:
-  - {fileID: 0}
   - {fileID: -7583713933085276231}
   - {fileID: 3343377785899067306}
   - {fileID: 2799201790162885583}
@@ -194,6 +317,14 @@ MonoBehaviour:
   - {fileID: 1196766874111526480}
   - {fileID: -5017694748645078165}
   - {fileID: 4577522163122678533}
+  - {fileID: 4574614670338717895}
+  - {fileID: -4574929815377177173}
+  - {fileID: -4264654599546205252}
+  - {fileID: -7645510332585298093}
+  - {fileID: -6157285907800443522}
+  - {fileID: 7219402910356575608}
+  - {fileID: -9141841344315923247}
+  - {fileID: -7432583037325609554}
 --- !u!114 &1196766874111526480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,6 +382,20 @@ MonoBehaviour:
       Int: 0
       Boolean: 0
       String: 
+--- !u!114 &4574614670338717895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -4574929815377177173}
 --- !u!114 &4577522163122678533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,7 +409,7 @@ MonoBehaviour:
   m_Name: DialogueNode
   m_EditorClassIdentifier: 
   _condition: {fileID: 0}
-  Child: {fileID: 0}
+  Child: {fileID: 7219402910356575608}
   _paragraphs:
   - Name: EMO
     Body: "\u8C22\u8C22\u4F60\uFF0C\u9EA6\u5FB7\u3002"
@@ -272,3 +417,22 @@ MonoBehaviour:
     Skip: 0
     Dialog: 0
     Control: 0
+--- !u!114 &7219402910356575608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -9141841344315923247}
+  ObjectList:
+  - Name: MIND-PLAYER
+    TargetValue: 1
+  - Name: EMO-PLAYER
+    TargetValue: 1

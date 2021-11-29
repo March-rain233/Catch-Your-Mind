@@ -1,4 +1,5 @@
 using NPC;
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -67,6 +68,12 @@ namespace Dialogue
                 tree.Variables = new Dictionary<string, EventCenter.EventArgs>();
             }
             return tree;
+        }
+
+        [Button("保存未保存的节点")]
+        private void TempSave()
+        {
+            _nodes.ForEach(node => AssetDatabase.AddObjectToAsset(node, this));
         }
 
         public void ConnectNode(INode parent, INode child)

@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6197428928589229038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aebcf47761e6a54d8a7eab47d17f9ae, type: 3}
+  m_Name: DestoryNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 0}
+  Objects:
+  - Name: STORY
+    Remain: 0
+--- !u!114 &-1910980178397203441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff012c534c54de5498c0766668630a65, type: 3}
+  m_Name: CopyNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 8098032621869511171}
+  CopyInfos:
+  - Target: EMO-PLAYER
+    Source: EMO
+  - Target: MIND-PLAYER
+    Source: MIND
+--- !u!114 &-422861863975871568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1083dc1bde5634baae2a1fb6abe2db, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 47635658240323880}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db111bdd8594cd0499f68fec33f5dbe5, type: 3}
+  m_Name: "\u6A21\u677F"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: bebfc6e8e454d684cbc5c82ff914ec79
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: Variables
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[EventCenter+EventArgs,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.GenericEqualityComparer`1[[System.String,
+        mscorlib]], mscorlib
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  _rootNode: {fileID: -422861863975871568}
+  _currentNode: {fileID: 0}
+  _nodes:
+  - {fileID: -422861863975871568}
+  - {fileID: 47635658240323880}
+  - {fileID: 2199561425118164531}
+  - {fileID: -1910980178397203441}
+  - {fileID: 8098032621869511171}
+  - {fileID: 9120029833142970406}
+  - {fileID: 2172198037855076988}
+  - {fileID: -6197428928589229038}
+--- !u!114 &47635658240323880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9e60cb5cedc3b4d8e43ebb8a7591f2, type: 3}
+  m_Name: InstantiateNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 2199561425118164531}
+  Objects:
+  - Name: STORY
+    Prefabs: {fileID: 5148013090853771365, guid: 16144970fcf583447abbdf51b7f95ee9, type: 3}
+    Parent: 
+    Position: {x: 0, y: 0, z: 0}
+--- !u!114 &2172198037855076988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc12600082d21074b9510886c7d5e3db, type: 3}
+  m_Name: SetTransformNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -6197428928589229038}
+  TransformInfos:
+  - Target: EMO-PLAYER
+    Source: EMO
+    Posiotion: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    IgnorePosition: 0
+    IgnoreRotation: 0
+    IgnoreScale: 0
+  - Target: MIND-PLAYER
+    Source: Mind
+    Posiotion: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    IgnorePosition: 0
+    IgnoreRotation: 0
+    IgnoreScale: 0
+--- !u!114 &2199561425118164531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: -1910980178397203441}
+  ObjectList:
+  - Name: EMO
+    TargetValue: 0
+  - Name: Mind
+    TargetValue: 0
+--- !u!114 &8098032621869511171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee4c86d5354f55449aa13a1f284e8bd1, type: 3}
+  m_Name: FindObjectNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 9120029833142970406}
+  ObjectInfos:
+  - Path: EMO-STORY
+    Name: EMO
+  - Path: MIND-STORY
+    Name: MIND
+--- !u!114 &9120029833142970406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f592e343ebc5a684eb7b459c36479b33, type: 3}
+  m_Name: SetActiveNode
+  m_EditorClassIdentifier: 
+  _condition: {fileID: 0}
+  Child: {fileID: 2172198037855076988}
+  ObjectList:
+  - Name: MIND-PLAYER
+    TargetValue: 1
+  - Name: EMO-PLAYER
+    TargetValue: 1
