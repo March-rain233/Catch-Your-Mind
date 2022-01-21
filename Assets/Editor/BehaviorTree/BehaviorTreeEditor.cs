@@ -77,7 +77,7 @@ public class BehaviorTreeEditor : EditorWindow
         string path = EditorUtility.OpenFilePanel("选择行为树", Application.dataPath, "asset");
         path = path.Replace(Application.dataPath, "Assets");
         ITree tree = AssetDatabase.LoadAssetAtPath<NPC.BehaviorTree>(path);
-        if(tree == null)
+        if (tree == null)
         {
             Debug.Log("文件违规");
             return;
@@ -96,10 +96,10 @@ public class BehaviorTreeEditor : EditorWindow
     private void OnSelectionChange()
     {
         ITree tree = Selection.activeObject as ITree;
-        if(tree == null && Selection.activeObject is GameObject)
+        if (tree == null && Selection.activeObject is GameObject)
         {
             tree = Selection.activeGameObject.GetComponent<NPC.BehaviorTreeRunner>()?.BehaviorTree as NPC.BehaviorTree;
-            if(tree == null)
+            if (tree == null)
             {
                 tree = (Selection.activeGameObject.GetComponent<NPC.BehaviorTreeRunner>()?.BehaviorTree as NPC.BehaviorTreeOverride)?.Prototype;
             }

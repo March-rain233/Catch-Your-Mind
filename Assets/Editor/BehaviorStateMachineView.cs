@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UIElements;
@@ -44,7 +45,7 @@ public class BehaviorStateMachineView : GraphView
 
         UnityEditor.Experimental.GraphView.Node root = new UnityEditor.Experimental.GraphView.Node();
         root.name = root.title = "Entry";
-        
+
         root.outputContainer.Add(root.InstantiatePort(Orientation.Horizontal,
             UnityEditor.Experimental.GraphView.Direction.Output, Port.Capacity.Single, typeof(bool)));
         AddElement(root);
@@ -69,16 +70,17 @@ public class BehaviorStateMachineView : GraphView
     public override List<Port> GetCompatiblePorts(Port startPort, NodeAdapter nodeAdapter)
     {
         var list = ports.ToList().Where(endPort =>
-        endPort.direction != startPort.direction 
+        endPort.direction != startPort.direction
         && endPort.node != startPort.node).ToList();
         return list;
     }
 
     private GraphViewChange OnGraphViewChanged(GraphViewChange graphViewChange)
     {
-        if(graphViewChange.elementsToRemove != null)
+        if (graphViewChange.elementsToRemove != null)
         {
-            graphViewChange.elementsToRemove.ForEach(elem => {
+            graphViewChange.elementsToRemove.ForEach(elem =>
+            {
                 NodeView nodeView = elem as NodeView;
                 if (nodeView != null)
                 {
@@ -89,7 +91,7 @@ public class BehaviorStateMachineView : GraphView
                 if (edge != null)
                 {
                     NodeView parentView = edge.output.node as NodeView;
-                    if(parentView == null)
+                    if (parentView == null)
                     {
                         _controller.EnterState = 0;
                         return;
@@ -100,7 +102,7 @@ public class BehaviorStateMachineView : GraphView
             });
         }
 
-        if(graphViewChange.edgesToCreate != null)
+        if (graphViewChange.edgesToCreate != null)
         {
             graphViewChange.edgesToCreate.ForEach(edge =>
             {
@@ -122,7 +124,7 @@ public class BehaviorStateMachineView : GraphView
     {
         //base.BuildContextualMenu(evt);
         var types = TypeCache.GetTypesDerivedFrom<BaseState>();
-        foreach(var type in types)
+        foreach (var type in types)
         {
             evt.menu.AppendAction($"[{type.BaseType.Name}]{type.Name}", (a) => CreateNode(type));
         }
@@ -150,3 +152,4 @@ public class BehaviorStateMachineView : GraphView
         _controller.DeleteState(nodeView.Node as BaseState);
     }
 }
+#endif

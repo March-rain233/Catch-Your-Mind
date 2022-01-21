@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
+using UnityEditor.Experimental.GraphView;
+#endif
 
 namespace Dialogue
 {
 
     public abstract class CompositeNode : Node
     {
-        public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Multi;
-
+#if UNITY_EDITOR
+        public override Port.Capacity Output => Port.Capacity.Multi;
+#endif
         public List<Node> Childrens;
 
         public override Node Clone()

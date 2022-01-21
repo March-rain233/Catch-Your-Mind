@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+#endif
 using UnityEngine;
+
 
 public interface INode
 {
@@ -29,7 +32,7 @@ public interface INode
     /// 是否为叶节点
     /// </summary>
     bool IsLeaf { get; }
-
+#if UNITY_EDITOR
     /// <summary>
     /// 当前节点的输入数量
     /// </summary>
@@ -39,6 +42,7 @@ public interface INode
     /// 当前节点的输出数量
     /// </summary>
     Port.Capacity Output { get; }
+#endif
 
     public event System.Action<string> OnNameChanged;
 

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8446124936196808060
+--- !u!114 &-9091284301394815159
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82143fc676c76604f9e7fc92de05a4d7, type: 3}
-  m_Name: "\u5FAA\u73AF(Clone)"
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u5F53\u68C0\u6D4B\u5230\u65F6(Clone)"
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -23,14 +23,74 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: af926cefb4eb2f841b41bd696922f3a5
+      Data: 1445ecf205d56f449995fd492e54dfd0
     - Name: Status
       Entry: 3
       Data: 0
-  Child: {fileID: -465290363268641522, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  Times: 0
-  IsForever: 1
---- !u!114 &-8157141757875191756
+  _abortType: 0
+  Childrens:
+  - {fileID: -7579056826415307474, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: -7042081194603667113, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: 8141213049373154866, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  _current: 0
+--- !u!114 &-8727050908651874020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
+  m_Name: "\u68C0\u67E5\u662F\u5426\u8FDB\u5165(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 245b0162be0c4fe4199fa1fcd02c05d2
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 1
+  _valueName: Stay
+--- !u!114 &-8665932547113948399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9e5958bbb00784e9df119f4ff58fc1, type: 3}
+  m_Name: 1(Clone)
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: af8798110375faf46937ae933ff94d06
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Child: {fileID: 4159365241882599786, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+--- !u!114 &-6347867371751589661
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,7 +113,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: d936a090394316140acf923589e5cd5a
+      Data: eaa67e59402a08c4a8b7b9c8e8bd7533
     - Name: Status
       Entry: 3
       Data: 0
@@ -107,7 +167,152 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!114 &-7286159661660709747
+--- !u!114 &-6172660194658865763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7902cfbb8c63340b8688bff7196d54, type: 3}
+  m_Name: "\u53D1\u9001\u5BF9\u8BDD(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: cc6ce905ac1d9dc4fb8a9ab44466c3e9
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: EventArg
+      Entry: 7
+      Data: EventCenter+EventArgs, Assembly-CSharp
+    - Name: Float
+      Entry: 4
+      Data: 0
+    - Name: Int
+      Entry: 3
+      Data: 0
+    - Name: Boolean
+      Entry: 5
+      Data: false
+    - Name: String
+      Entry: 1
+      Data: "\u5927\u5FC3\u60C5\u4E92\u52A8"
+    - Name: Object
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  EventName: "\u5927\u5FC3\u60C5\u4E92\u52A8"
+  EventArg:
+    Float: 0
+    Int: 0
+    Boolean: 0
+    String: "\u5927\u5FC3\u60C5\u4E92\u52A8"
+--- !u!114 &-6081050111987448494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u8FDB\u5165\u5206\u652F(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: b9301fb316007094da8a3d8aa50e8ecd
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: -2422668762551273227, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: 1423001670293613477, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: -6136915847633450055, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  _current: 0
+--- !u!114 &-4490427298688209214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db9e5958bbb00784e9df119f4ff58fc1, type: 3}
+  m_Name: 2(Clone)
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 1ca7befcf5422364abf432860913c4bd
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Child: {fileID: 2723120384656061888, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+--- !u!114 &-4442871619581910855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82143fc676c76604f9e7fc92de05a4d7, type: 3}
+  m_Name: "\u5FAA\u73AF(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: c9e68d85475d32848b69c30231ff3c5d
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Child: {fileID: -465290363268641522, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  Times: 0
+  IsForever: 1
+--- !u!114 &-3428525038845103251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,13 +335,586 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 6fa30e08471593048b5842d7fed8479a
+      Data: 5ee1c947c3a19454389583e0ab3b4bdb
     - Name: Status
       Entry: 3
       Data: 0
   Invert: 0
   _valueName: Stay
---- !u!114 &-6170766441440396906
+--- !u!114 &-3290865962299664894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
+  m_Name: "\u6309\u4E0B\u4E92\u52A8\u952E(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: ea8f7642aee0b12409b019b70fcc4d07
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 0
+  _keyType: 4
+  _pressType: 0
+--- !u!114 &-3168281899728621866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1a3c5d4c7752b14a98419cc80061c9b, type: 3}
+  m_Name: CheckTalkNode(Clone)
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 959135cba0f87c6418a720d7b5fa4917
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 1
+  Name: "\u5927\u5FC3\u60C5\u4E92\u52A8"
+--- !u!114 &-3038167319247708867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u5BF9\u8BDD(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 7cbe38735a60513468f87fd9bccb3a74
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 404788284812319307, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: -476823321517754142, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  _current: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc88d8200e99f524eb6ea97a51b74cfe, type: 3}
+  m_Name: "\u5927\u5FC3\u60C5\u4E92\u52A8"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 11400000, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+    - {fileID: -8665932547113948399}
+    - {fileID: -4490427298688209214}
+    - {fileID: -3168281899728621866}
+    - {fileID: -6172660194658865763}
+    - {fileID: 1809844573874807990}
+    - {fileID: 7157814097344586881}
+    - {fileID: -3038167319247708867}
+    - {fileID: -9091284301394815159}
+    - {fileID: 762203438541653350}
+    - {fileID: -4442871619581910855}
+    - {fileID: -3290865962299664894}
+    - {fileID: 2759628235662617327}
+    - {fileID: -8727050908651874020}
+    - {fileID: -3428525038845103251}
+    - {fileID: 4449700266885574183}
+    - {fileID: 5620090122267345116}
+    - {fileID: -6347867371751589661}
+    - {fileID: 6540470455373440114}
+    - {fileID: -6081050111987448494}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Prototype
+      Entry: 10
+      Data: 0
+    - Name: Nodes
+      Entry: 7
+      Data: 0|System.Collections.Generic.SortedList`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], System
+    - Name: 
+      Entry: 12
+      Data: 19
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 1
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: 2
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: CheckTalkNode
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u53D1\u9001\u5BF9\u8BDD"
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u53D1\u9001\u8FDB\u5165\u4E8B\u4EF6"
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u53D1\u9001\u9000\u51FA"
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u5BF9\u8BDD"
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u5F53\u68C0\u6D4B\u5230\u65F6"
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u5F53\u76EE\u6807\u79BB\u5F00\u65F6"
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u5FAA\u73AF"
+    - Name: 
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u6309\u4E0B\u4E92\u52A8\u952E"
+    - Name: 
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u6839"
+    - Name: 
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u68C0\u67E5\u662F\u5426\u8FDB\u5165"
+    - Name: 
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u68C0\u6D4B\u539F\u662F\u5426\u8FDB\u5165"
+    - Name: 
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u68C0\u6D4B\u8FDB\u5165"
+    - Name: 
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u72B6\u6001\u9009\u62E9"
+    - Name: 
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u8BBE\u7F6E\u8FDB\u5165"
+    - Name: 
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u8BBE\u7F6E\u9000\u51FA"
+    - Name: 
+      Entry: 10
+      Data: 18
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
+        Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\u8FDB\u5165\u5206\u652F"
+    - Name: 
+      Entry: 10
+      Data: 19
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+--- !u!114 &762203438541653350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
+  m_Name: "\u5F53\u76EE\u6807\u79BB\u5F00\u65F6(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 3019fe4621895424e83e9b176cc6bda5
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: -2963371688595537211, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: 2945754167742527430, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: 6249518432645180460, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  _current: 0
+--- !u!114 &1809844573874807990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb7902cfbb8c63340b8688bff7196d54, type: 3}
+  m_Name: "\u53D1\u9001\u8FDB\u5165\u4E8B\u4EF6(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: 93ea4d54e096e254a8bf9949f555be05
+    - Name: Status
+      Entry: 3
+      Data: 0
+    - Name: EventArg
+      Entry: 7
+      Data: EventCenter+EventArgs, Assembly-CSharp
+    - Name: Float
+      Entry: 4
+      Data: 0
+    - Name: Int
+      Entry: 3
+      Data: 0
+    - Name: Boolean
+      Entry: 5
+      Data: false
+    - Name: String
+      Entry: 1
+      Data: "\u6309E\u4E0E\u5927\u5FC3\u60C5\u4E92\u52A8"
+    - Name: Object
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  EventName: InteractionEnter
+  EventArg:
+    Float: 0
+    Int: 0
+    Boolean: 0
+    String: "\u6309E\u4E0E\u5927\u5FC3\u60C5\u4E92\u52A8"
+--- !u!114 &2759628235662617327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2349accf1846c9144a16afbcaedb1145, type: 3}
+  m_Name: "\u6839(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: b3392363861ac974b8b263e058b164f6
+    - Name: Status
+      Entry: 3
+      Data: 2
+  Child: {fileID: 8982345639745303684, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+--- !u!114 &4449700266885574183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd71be940105e474ab84453298ff0667, type: 3}
+  m_Name: "\u68C0\u6D4B\u8FDB\u5165(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: fc764a716f9ed6b41b40b89508652f09
+    - Name: Status
+      Entry: 3
+      Data: 0
+  Invert: 0
+  Radius: 0.1
+  CheckLayer:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &5620090122267345116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
+  m_Name: "\u72B6\u6001\u9009\u62E9(Clone)"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: Guid
+      Entry: 1
+      Data: f82ead937282e6d4a9de33f944b27154
+    - Name: Status
+      Entry: 3
+      Data: 0
+  _abortType: 0
+  Childrens:
+  - {fileID: 8278137886156290416, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+  - {fileID: -5626913097547247970, guid: 11f641910cf45114f803324d0ca377df, type: 2}
+--- !u!114 &6540470455373440114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -159,7 +937,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 4e9c3ce5ca3778c469a0ac6d8b3a492b
+      Data: 113b6a0d6a569b345932ca1f3d2976cc
     - Name: Status
       Entry: 3
       Data: 0
@@ -213,683 +991,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
---- !u!114 &-6159431092211561219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u5F53\u68C0\u6D4B\u5230\u65F6(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: f08f8e143b988dd4f9318605b2105b50
-    - Name: Status
-      Entry: 3
-      Data: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: -7579056826415307474, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: -7042081194603667113, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: 8141213049373154866, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  _current: 0
---- !u!114 &-5493480217436934542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb7902cfbb8c63340b8688bff7196d54, type: 3}
-  m_Name: "\u53D1\u9001\u8FDB\u5165\u4E8B\u4EF6(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 95ed066d3ea8f98418b45faa4facc664
-    - Name: Status
-      Entry: 3
-      Data: 0
-    - Name: EventArg
-      Entry: 7
-      Data: EventCenter+EventArgs, Assembly-CSharp
-    - Name: Float
-      Entry: 4
-      Data: 0
-    - Name: Int
-      Entry: 3
-      Data: 0
-    - Name: Boolean
-      Entry: 5
-      Data: false
-    - Name: String
-      Entry: 1
-      Data: "\u6309E\u4E0E\u5927\u5FC3\u60C5\u5BF9\u8BDD"
-    - Name: Object
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-  EventName: InteractionEnter
-  EventArg:
-    Float: 0
-    Int: 0
-    Boolean: 0
-    String: "\u6309E\u4E0E\u5927\u5FC3\u60C5\u5BF9\u8BDD"
---- !u!114 &-5376484274558703230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87bc4f04cc5810648b9ea18a2d60ebd6, type: 3}
-  m_Name: "\u68C0\u67E5\u662F\u5426\u8FDB\u5165(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: ecc8c6e9162372043bbb9d61667d9f2d
-    - Name: Status
-      Entry: 3
-      Data: 0
-  Invert: 1
-  _valueName: Stay
---- !u!114 &-3734651490608700409
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u5BF9\u8BDD(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 5e8412ea048de3e45a094a0830c2a400
-    - Name: Status
-      Entry: 3
-      Data: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: 404788284812319307, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: 495377779687299676, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  _current: 0
---- !u!114 &-3695040543555523790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd71be940105e474ab84453298ff0667, type: 3}
-  m_Name: "\u68C0\u6D4B\u8FDB\u5165(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 8527be9916f851c488a694c475d1d38a
-    - Name: Status
-      Entry: 3
-      Data: 0
-  Invert: 0
-  Radius: 0.1
-  CheckLayer:
-    serializedVersion: 2
-    m_Bits: 256
---- !u!114 &-3603623708298592368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u5F53\u76EE\u6807\u79BB\u5F00\u65F6(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 980df238408f1cc4aa841c8cae17712f
-    - Name: Status
-      Entry: 3
-      Data: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: -2963371688595537211, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: 2945754167742527430, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: 6249518432645180460, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  _current: 0
---- !u!114 &-2435795363093392198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9e5958bbb00784e9df119f4ff58fc1, type: 3}
-  m_Name: 2(Clone)
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: e4991d69460292e4ba5f122de280619d
-    - Name: Status
-      Entry: 3
-      Data: 0
-  Child: {fileID: 2723120384656061888, guid: 11f641910cf45114f803324d0ca377df, type: 2}
---- !u!114 &-2246815792947737682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9e5958bbb00784e9df119f4ff58fc1, type: 3}
-  m_Name: 1(Clone)
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: fbe5d180bbff5d74d9074e842995df65
-    - Name: Status
-      Entry: 3
-      Data: 0
-  Child: {fileID: 4159365241882599786, guid: 11f641910cf45114f803324d0ca377df, type: 2}
---- !u!114 &-252503643776867854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2349accf1846c9144a16afbcaedb1145, type: 3}
-  m_Name: "\u6839(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: fde806376e6575f4b8352a06d91c4981
-    - Name: Status
-      Entry: 3
-      Data: 2
-  Child: {fileID: 8982345639745303684, guid: 11f641910cf45114f803324d0ca377df, type: 2}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc88d8200e99f524eb6ea97a51b74cfe, type: 3}
-  m_Name: "\u5927\u5FC3\u60C5\u4E92\u52A8"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects:
-    - {fileID: 11400000, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-    - {fileID: -2246815792947737682}
-    - {fileID: -2435795363093392198}
-    - {fileID: 430938372748695534}
-    - {fileID: -5493480217436934542}
-    - {fileID: 8642900781885514176}
-    - {fileID: -3734651490608700409}
-    - {fileID: -6159431092211561219}
-    - {fileID: -3603623708298592368}
-    - {fileID: -8446124936196808060}
-    - {fileID: 4693871632447565191}
-    - {fileID: -252503643776867854}
-    - {fileID: -5376484274558703230}
-    - {fileID: -7286159661660709747}
-    - {fileID: -3695040543555523790}
-    - {fileID: 1349974834072495124}
-    - {fileID: -8157141757875191756}
-    - {fileID: -6170766441440396906}
-    - {fileID: 8785352848912528971}
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Prototype
-      Entry: 10
-      Data: 0
-    - Name: Nodes
-      Entry: 7
-      Data: 0|System.Collections.Generic.SortedList`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], System
-    - Name: 
-      Entry: 12
-      Data: 18
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 1
-    - Name: 
-      Entry: 10
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: 2
-    - Name: 
-      Entry: 10
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u53D1\u9001\u5BF9\u8BDD"
-    - Name: 
-      Entry: 10
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u53D1\u9001\u8FDB\u5165\u4E8B\u4EF6"
-    - Name: 
-      Entry: 10
-      Data: 4
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u53D1\u9001\u9000\u51FA"
-    - Name: 
-      Entry: 10
-      Data: 5
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u5BF9\u8BDD"
-    - Name: 
-      Entry: 10
-      Data: 6
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u5F53\u68C0\u6D4B\u5230\u65F6"
-    - Name: 
-      Entry: 10
-      Data: 7
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u5F53\u76EE\u6807\u79BB\u5F00\u65F6"
-    - Name: 
-      Entry: 10
-      Data: 8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u5FAA\u73AF"
-    - Name: 
-      Entry: 10
-      Data: 9
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u6309\u4E0B\u4E92\u52A8\u952E"
-    - Name: 
-      Entry: 10
-      Data: 10
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u6839"
-    - Name: 
-      Entry: 10
-      Data: 11
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u68C0\u67E5\u662F\u5426\u8FDB\u5165"
-    - Name: 
-      Entry: 10
-      Data: 12
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u68C0\u6D4B\u539F\u662F\u5426\u8FDB\u5165"
-    - Name: 
-      Entry: 10
-      Data: 13
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u68C0\u6D4B\u8FDB\u5165"
-    - Name: 
-      Entry: 10
-      Data: 14
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u72B6\u6001\u9009\u62E9"
-    - Name: 
-      Entry: 10
-      Data: 15
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u8BBE\u7F6E\u8FDB\u5165"
-    - Name: 
-      Entry: 10
-      Data: 16
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u8BBE\u7F6E\u9000\u51FA"
-    - Name: 
-      Entry: 10
-      Data: 17
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[NPC.Node,
-        Assembly-CSharp]], mscorlib
-    - Name: 
-      Entry: 1
-      Data: "\u8FDB\u5165\u5206\u652F"
-    - Name: 
-      Entry: 10
-      Data: 18
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
---- !u!114 &430938372748695534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 706afe606415c93478a252e97edf7971, type: 3}
-  m_Name: "\u53D1\u9001\u5BF9\u8BDD(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 8f87f4ef28f7b90419043e4b0ad150d9
-    - Name: Status
-      Entry: 3
-      Data: 0
-  DialogueTree: {fileID: 11400000, guid: ec7fd42257103b149b566b1e4196cabb, type: 2}
---- !u!114 &1349974834072495124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79e810b82604d6346a8f401fcfaa51e1, type: 3}
-  m_Name: "\u72B6\u6001\u9009\u62E9(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: cb7608f91addcf2498fc602159ae7b27
-    - Name: Status
-      Entry: 3
-      Data: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: 8278137886156290416, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: -5626913097547247970, guid: 11f641910cf45114f803324d0ca377df, type: 2}
---- !u!114 &4693871632447565191
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71fce1f9ea0efe74081ef277f0f5b615, type: 3}
-  m_Name: "\u6309\u4E0B\u4E92\u52A8\u952E(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: c94daf35a3ab233488ee2a7a5018f3f1
-    - Name: Status
-      Entry: 3
-      Data: 0
-  Invert: 0
-  _keyType: 4
-  _pressType: 0
---- !u!114 &8642900781885514176
+--- !u!114 &7157814097344586881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -912,7 +1014,7 @@ MonoBehaviour:
     SerializationNodes:
     - Name: Guid
       Entry: 1
-      Data: 71e782d2cf1bea34e97661f028140cb5
+      Data: 4d74cc59525e3044ea2952881450d60d
     - Name: Status
       Entry: 3
       Data: 0
@@ -943,36 +1045,3 @@ MonoBehaviour:
     Int: 0
     Boolean: 0
     String: 
---- !u!114 &8785352848912528971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca8870a2584458144bf08fd58d49f08c, type: 3}
-  m_Name: "\u8FDB\u5165\u5206\u652F(Clone)"
-  m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: Guid
-      Entry: 1
-      Data: 0e2c64801e146f547b511f12735b5c7f
-    - Name: Status
-      Entry: 3
-      Data: 0
-  _abortType: 0
-  Childrens:
-  - {fileID: -2422668762551273227, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: 1423001670293613477, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  - {fileID: -6136915847633450055, guid: 11f641910cf45114f803324d0ca377df, type: 2}
-  _current: 0

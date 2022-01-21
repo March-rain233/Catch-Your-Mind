@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 namespace NPC
 {
@@ -72,6 +74,7 @@ namespace NPC
             return tree;
         }
 
+#if UNITY_EDITOR
         [Button]
         public void RefreshList()
         {
@@ -122,5 +125,6 @@ namespace NPC
                 AssetDatabase.SaveAssets();
             });
         }
+#endif
     }
 }

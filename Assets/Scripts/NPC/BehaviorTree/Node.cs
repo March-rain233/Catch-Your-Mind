@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System;
 
 namespace NPC
@@ -46,13 +48,15 @@ namespace NPC
 
         public Vector2 ViewPosition { get; set; }
 
+#if UNITY_EDITOR
         public abstract UnityEditor.Experimental.GraphView.Port.Capacity Output { get; }
+
+        public UnityEditor.Experimental.GraphView.Port.Capacity Input => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
+#endif
 
         public virtual bool IsRoot => false;
 
         public virtual bool IsLeaf => false;
-
-        public UnityEditor.Experimental.GraphView.Port.Capacity Input => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
 
         private NodeStatus _status = NodeStatus.Success;
 
@@ -130,7 +134,9 @@ namespace NPC
         {
             var node = Instantiate(this);
             node.ViewPosition = ViewPosition;
+#if UNITY_EDITOR
             node.Guid = GUID.Generate().ToString();
+#endif
             return node;
         }
 
@@ -146,12 +152,15 @@ namespace NPC
         [Button("更改GUID")]
         public void ChangeGuid()
         {
+#if UNITY_EDITOR
             Guid = GUID.Generate().ToString();
+#endif
         }
 
         [Button("保存到")]
         private void SaveAs()
         {
+#if UNITY_EDITOR
             string path = EditorUtility.SaveFilePanelInProject("保存为", name, "asset", "一切我没想到的错误操作，我拒不负责！");
             Node clone = Clone();
             AssetDatabase.CreateAsset(clone, path);
@@ -162,11 +171,12 @@ namespace NPC
                 var node = stack.Pop();
                 Array.ForEach(node.GetChildren(), child => stack.Push(child as Node));
                 node.name = node.name.Replace("(Clone)", "");
-                if(node != clone)
+                if (node != clone)
                 {
                     AssetDatabase.AddObjectToAsset(node, clone);
                 }
             }
+#endif
         }
     }
 }

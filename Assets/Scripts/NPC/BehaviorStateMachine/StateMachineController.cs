@@ -42,7 +42,7 @@ namespace NPC
         public void DeleteState(BaseState state)
         {
             States.Remove(state);
-
+#if UNITY_EDITOR
             state.Transitions.RemoveAll(t => 
             { 
                 AssetDatabase.RemoveObjectFromAsset(t);
@@ -60,6 +60,7 @@ namespace NPC
 
             AssetDatabase.RemoveObjectFromAsset(state);
             AssetDatabase.SaveAssets();
+#endif
         }
 
         /// <summary>
@@ -71,11 +72,13 @@ namespace NPC
         {
             var state = CreateInstance(type) as BaseState;
             state.name = type.Name;
-            state.Guid = GUID.Generate().ToString();
             States.Add(state);
+#if UNITY_EDITOR
+            state.Guid = GUID.Generate().ToString();
 
             AssetDatabase.AddObjectToAsset(state, this);
             AssetDatabase.SaveAssets();
+#endif
             return state;
         }
 
@@ -91,9 +94,10 @@ namespace NPC
             transition.StartState = start;
             transition.EndState = end;
             start.Transitions.Add(transition);
-
+#if UNITY_EDITOR
             AssetDatabase.AddObjectToAsset(transition, start);
             AssetDatabase.SaveAssets();
+#endif
         }
 
         /// <summary>
@@ -106,8 +110,10 @@ namespace NPC
             Transition transition = start.Transitions.Find((t) => t.EndState == end);
             start.Transitions.Remove(transition);
 
+#if UNITY_EDITOR
             AssetDatabase.RemoveObjectFromAsset(transition);
             AssetDatabase.SaveAssets();
+#endif
         }
 
         /// <summary>

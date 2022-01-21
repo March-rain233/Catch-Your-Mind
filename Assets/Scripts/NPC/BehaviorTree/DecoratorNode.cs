@@ -13,8 +13,9 @@ namespace NPC
         /// вс╫з╣Ц
         /// </summary>
         public Node Child;
-
+#if UNITY_EDITOR
         public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
+#endif
 
         protected override void OnEnter(BehaviorTreeRunner runner)
         {

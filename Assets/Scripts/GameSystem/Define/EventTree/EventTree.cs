@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 namespace EventTree
 {
@@ -54,14 +56,15 @@ namespace EventTree
         {
             var node = CreateInstance(type) as Node;
             node.name = type.Name;
-            node.Guid = GUID.Generate().ToString();
             _nodes.Add(node);
-
+#if UNITY_EDITOR
+            node.Guid = GUID.Generate().ToString();
             if (AssetDatabase.Contains(this))
             {
                 AssetDatabase.AddObjectToAsset(node, this);
                 AssetDatabase.SaveAssets();
             }
+#endif
             return node;
         }
 
@@ -83,11 +86,13 @@ namespace EventTree
             {
                 node.Nodes.Remove(toRemove);
             });
+#if UNITY_EDITOR
             if (AssetDatabase.Contains(this))
             {
                 AssetDatabase.RemoveObjectFromAsset(toRemove);
                 AssetDatabase.SaveAssets();
             }
+#endif
         }
 
         public void SetRoot()

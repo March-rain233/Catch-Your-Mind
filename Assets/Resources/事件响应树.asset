@@ -438,6 +438,18 @@ MonoBehaviour:
     - {fileID: 11400000, guid: d5a3f97b2f15cd24aa1d2fe97b4ceda5, type: 2}
     - {fileID: 11400000, guid: dfe2cb92e8ba7064eb3acf911bcec2cf, type: 2}
     - {fileID: 11400000, guid: 2e87b63d7ed545745b27f0fe13863433, type: 2}
+    - {fileID: 11400000, guid: 08859894c85f1494e863aeb0d2ac49e5, type: 2}
+    - {fileID: 11400000, guid: 6d66db4da80511d4eb3c138ef6d2c45e, type: 2}
+    - {fileID: 11400000, guid: cdf89146517cad743b56edb56082398b, type: 2}
+    - {fileID: 11400000, guid: ec7fd42257103b149b566b1e4196cabb, type: 2}
+    - {fileID: 11400000, guid: 7685c1358b6ddb040b4bdfdfd29d0855, type: 2}
+    - {fileID: 11400000, guid: 0b81920851eae4f45a89a77f6a733d34, type: 2}
+    - {fileID: 11400000, guid: 3e23d942c70a9564396778f384c5e552, type: 2}
+    - {fileID: 11400000, guid: 82bee6d246e52ef45a8247d52960dd42, type: 2}
+    - {fileID: 11400000, guid: 151bbef4c1b277e4fa80a3d3308e0e6b, type: 2}
+    - {fileID: 11400000, guid: 19924ecbf9ba1ff48b0f10475bb46db6, type: 2}
+    - {fileID: 11400000, guid: 4bd4000cc40d6ed4286755e9c078a13c, type: 2}
+    - {fileID: 11400000, guid: 21497b084eb98174d89f3ab3d4a982ed, type: 2}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -456,7 +468,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 5
+      Data: 17
     - Name: 
       Entry: 7
       Data: 
@@ -553,6 +565,258 @@ MonoBehaviour:
     - Name: DialogueTree
       Entry: 10
       Data: 4
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u535A\u514B\u65AF"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 5
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5496\u5561"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 6
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5783\u573E\u6876"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 7
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5927\u5FC3\u60C5\u4E92\u52A8"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 8
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5BF9\u8BB2\u673A"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 9
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5E8A"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 10
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u5FC3\u60C5\u62A5\u8868"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 11
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u6D77\u62A5"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 12
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u82A6\u835F"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 13
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u83B1\u535A"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 14
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u8425\u4E1A\u724C"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 15
+    - Name: JustOnce
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: "\u9E3D\u5B50"
+    - Name: $v
+      Entry: 7
+      Data: EventTree.SendDialogNode+Dialog, Assembly-CSharp
+    - Name: DialogueTree
+      Entry: 10
+      Data: 16
     - Name: JustOnce
       Entry: 5
       Data: true

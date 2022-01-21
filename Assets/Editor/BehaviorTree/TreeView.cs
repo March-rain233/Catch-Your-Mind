@@ -52,28 +52,28 @@ public class TreeView : GraphView
         DeleteElements(graphElements.ToList());
         graphViewChanged += OnGraphViewChanged;
 
-        if(tree.RootNode == null)
+        if (tree.RootNode == null)
         {
             tree.SetRoot();
         }
 
         Array.ForEach(_tree.GetNodes(), n => CreateNodeView(n));
 
-        Array.ForEach(_tree.GetNodes(),n =>
-        {
-            var children = n.GetChildren();
-            if(children == null || children.Length == 0) { return; }
-            NodeView parentView = FindNodeView(n);
-            for(int i = 0; i < children.Length; ++i)
-            {
-                if (children[i] == null) { return; }
-                NodeView childView = FindNodeView(children[i]);
-                //Debug.Log($"{children[i].Name} {childView.Node.Name}");
+        Array.ForEach(_tree.GetNodes(), n =>
+         {
+             var children = n.GetChildren();
+             if (children == null || children.Length == 0) { return; }
+             NodeView parentView = FindNodeView(n);
+             for (int i = 0; i < children.Length; ++i)
+             {
+                 if (children[i] == null) { return; }
+                 NodeView childView = FindNodeView(children[i]);
+                 //Debug.Log($"{children[i].Name} {childView.Node.Name}");
 
-                Edge edge = parentView.Output[i].ConnectTo(childView.Input);
-                AddElement(edge);
-            }
-        });
+                 Edge edge = parentView.Output[i].ConnectTo(childView.Input);
+                 AddElement(edge);
+             }
+         });
     }
 
     internal void ChangeGuid()
@@ -89,9 +89,9 @@ public class TreeView : GraphView
     {
         RemoveElement(node);
         var es = edges.ToList();
-        for(int i = es.Count-1; i >= 0 ; --i)
+        for (int i = es.Count - 1; i >= 0; --i)
         {
-            if(es[i].input.node == node || es[i].output.node == node)
+            if (es[i].input.node == node || es[i].output.node == node)
             {
                 RemoveElement(es[i]);
             }
@@ -172,7 +172,7 @@ public class TreeView : GraphView
         float xDifference = 250;
         int lenth = 1;
         int ylenth = 0;
-        
+
         List<INode> sorted = new List<INode>();
 
         Queue<INode> queue = new Queue<INode>();
@@ -184,7 +184,7 @@ public class TreeView : GraphView
             Array.ForEach(node.GetChildren(), child => { if (!sorted.Contains(child)) { next.Enqueue(child); } });
             sorted.Add(node);
             FindNodeView(node).SetPosition(new Rect(ori.x + xDifference * lenth, ori.y + yDifference * ylenth++, 0, 0));
-            if(queue.Count <= 0)
+            if (queue.Count <= 0)
             {
                 queue = next;
                 next = new Queue<INode>();
@@ -233,7 +233,8 @@ public class TreeView : GraphView
         //当元素被移除
         if (graphViewChange.elementsToRemove != null)
         {
-            graphViewChange.elementsToRemove.ForEach(elem => {
+            graphViewChange.elementsToRemove.ForEach(elem =>
+            {
                 //移除点
                 NodeView nodeView = elem as NodeView;
                 if (nodeView != null)
@@ -277,7 +278,7 @@ public class TreeView : GraphView
     public override void BuildContextualMenu(ContextualMenuPopulateEvent evt)
     {
         //base.BuildContextualMenu(evt);
-        if(_tree == null) { return; }
+        if (_tree == null) { return; }
 
         var types = TypeCache.GetTypesDerivedFrom(_tree.NodeParentType);
         foreach (var type in types)
@@ -292,7 +293,7 @@ public class TreeView : GraphView
                 parent = parent.BaseType;
             }
             sb.Remove(0, 1);
-            if(type == _tree.RootType) { sb.Append("（为了防止特殊情况而保留。看清楚了，这是根节点，不要乱加）"); }
+            if (type == _tree.RootType) { sb.Append("（为了防止特殊情况而保留。看清楚了，这是根节点，不要乱加）"); }
             evt.menu.AppendAction(sb.ToString(), (a) =>
             {
                 CreateNode(type);

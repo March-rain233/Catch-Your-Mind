@@ -98,7 +98,6 @@ MonoBehaviour:
   BackToMainMenuButton: {fileID: 2001450471512650221}
   QuitButton: {fileID: 8077413717500103876}
   CanvasGroup: {fileID: 4747197412041659759}
-  Blur: {fileID: 0}
   IsShow: 0
   IsPause: 0
 --- !u!225 &4747197412041659759
@@ -246,19 +245,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 3829570160273875949}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!1 &4164839420085123735
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,19 +362,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 3012569539417101106}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!1 &6376840954642289895
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,19 +572,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 4179681374546322584}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!1 &8805480288865502148
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,19 +707,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 7429744391659305246}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!1 &8905082346432856134
 GameObject:
   m_ObjectHideFlags: 0
@@ -842,16 +797,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 4319248971642726141}
+  AlphaHitTestMinimumThreshold: 0.1

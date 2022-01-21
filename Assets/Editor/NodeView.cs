@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -49,7 +50,7 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
             btn.text = "Ìí¼ÓÊä³ö¶Ë¿Ú";
             titleButtonContainer.Add(btn);
             var n = node.GetChildren().Length;
-            for(int i = 0; i < n; ++i)
+            for (int i = 0; i < n; ++i)
             {
                 AddOutputPort();
             }
@@ -118,3 +119,4 @@ public class NodeView : UnityEditor.Experimental.GraphView.Node
     }
 
 }
+#endif

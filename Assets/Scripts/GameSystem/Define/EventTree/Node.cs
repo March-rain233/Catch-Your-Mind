@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+#endif
 using UnityEngine;
 
 namespace EventTree
@@ -19,9 +21,11 @@ namespace EventTree
 
         public virtual bool IsLeaf => false;
 
+#if UNITY_EDITOR
         public virtual Port.Capacity Input => Port.Capacity.Multi;
 
         public virtual Port.Capacity Output => Port.Capacity.Multi;
+#endif
 
         public event Action<string> OnNameChanged;
         public event Action<Color> OnStatusChanged;

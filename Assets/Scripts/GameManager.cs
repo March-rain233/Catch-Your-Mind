@@ -98,6 +98,11 @@ public class GameManager : BaseGameManager<GameManager>
             SaveGameSave();
         }
         if (arg1.name == "MakerScene") { Passing = false; }
+        if(arg1.name == "Home")
+        {
+            float timeCount = 0;
+            DOTween.To(() => timeCount, a => timeCount = a, 1, 0.3f).OnComplete(()=>EventCenter.SendEvent("InteractionEnter", new EventCenter.EventArgs() { String = "按E进行对话" }));
+        }
         else { Passing = true; }
         if(arg1.name == "OutSide")
         {
@@ -153,7 +158,7 @@ public class GameManager : BaseGameManager<GameManager>
 
     public void LoadGame()
     {
-
+        SceneManager.LoadScene(GameSave.SceneIndex);
     }
 
     [Button]

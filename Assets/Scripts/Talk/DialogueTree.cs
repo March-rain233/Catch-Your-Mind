@@ -4,7 +4,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+#endif
 using UnityEngine;
 
 namespace Dialogue
@@ -70,11 +72,13 @@ namespace Dialogue
             return tree;
         }
 
+#if UNITY_EDITOR
         [Button("保存未保存的节点")]
         private void TempSave()
         {
             _nodes.ForEach(node => AssetDatabase.AddObjectToAsset(node, this));
         }
+#endif
 
         public void ConnectNode(INode parent, INode child)
         {
@@ -100,14 +104,18 @@ namespace Dialogue
         {
             var node = CreateInstance(type) as Node;
             node.name = type.Name;
+#if UNITY_EDITOR
             node.Guid = GUID.Generate().ToString();
+#endif
             _nodes.Add(node);
 
+#if UNITY_EDITOR
             if (AssetDatabase.Contains(this))
             {
                 AssetDatabase.AddObjectToAsset(node, this);
                 AssetDatabase.SaveAssets();
             }
+#endif
             return node;
         }
 
@@ -151,11 +159,13 @@ namespace Dialogue
             }
             DisconnectNode(parent, node);
 
+#if UNITY_EDITOR
             if (AssetDatabase.Contains(this))
             {
                 AssetDatabase.RemoveObjectFromAsset(node);
                 AssetDatabase.SaveAssets();
             }
+#endif
         }
 
         /// <summary>

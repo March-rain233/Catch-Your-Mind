@@ -174,19 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 86021191}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!114 &86021190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,19 +675,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 1545504137}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!114 &1545504136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,19 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 1892510177}
+  AlphaHitTestMinimumThreshold: 0.1
 --- !u!114 &1892510176
 MonoBehaviour:
   m_ObjectHideFlags: 0

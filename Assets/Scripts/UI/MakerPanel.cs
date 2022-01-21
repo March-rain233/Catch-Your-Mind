@@ -115,6 +115,8 @@ public class MakerPanel : MonoBehaviour
     public CanvasGroup Fail;
     public MovieGuider MovieGuider;
 
+    public event System.Action OnSelect;
+
     /// <summary>
     /// Ñ¡Ôñ²åÈëµÄ²Û
     /// </summary>
@@ -130,6 +132,7 @@ public class MakerPanel : MonoBehaviour
         _insert.onClick.AddListener(Insert);
 
         GameManager.Instance.TimeChanged += TimeChangedHandler;
+        TimeChangedHandler(GameManager.Instance.RemainTime);
 
         _infoPanel.blocksRaycasts = false;
         _infoPanel.alpha = 0;
@@ -177,10 +180,10 @@ public class MakerPanel : MonoBehaviour
     private void PutCard(CardView card)
     {
         card.gameObject.SetActive(true);
-        card.RectTransform.localPosition = new Vector2(
-            Random.Range(_moveArea.localPosition.x - _moveArea.rect.width / 2, _moveArea.localPosition.x + _moveArea.rect.width / 2),
-            Random.Range(_moveArea.localPosition.y - _moveArea.rect.height / 2, _moveArea.localPosition.y + _moveArea.rect.height / 2));
-        card.RectTransform.localEulerAngles = new Vector3(0, 0, Random.Range(_minRotation, _maxRotation));
+        //card.RectTransform.localPosition = new Vector2(
+        //    Random.Range(_moveArea.localPosition.x - _moveArea.rect.width / 2, _moveArea.localPosition.x + _moveArea.rect.width / 2),
+        //    Random.Range(_moveArea.localPosition.y - _moveArea.rect.height / 2, _moveArea.localPosition.y + _moveArea.rect.height / 2));
+        //card.RectTransform.localEulerAngles = new Vector3(0, 0, Random.Range(_minRotation, _maxRotation));
         card.OnDragged = OnCardViewDragged;
         card.OnClicked = OpenInfoPanel;
     }
@@ -276,6 +279,8 @@ public class MakerPanel : MonoBehaviour
                 break;
             }
         }
+
+        OnSelect?.Invoke();
     }
 
     private void InitCardInfo(Card card)

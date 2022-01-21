@@ -1,10 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+using UnityEditor;
+#endif
 using UnityEngine;
 using Sirenix.OdinInspector;
-using UnityEditor;
 
 namespace Dialogue
 {
@@ -21,9 +23,11 @@ namespace Dialogue
 
         public virtual bool IsLeaf => false;
 
+#if UNITY_EDITOR
         public virtual Port.Capacity Input => Port.Capacity.Multi;
 
         public virtual Port.Capacity Output => Port.Capacity.Single;
+#endif
 
         private bool _isStarted = false;
 
@@ -82,7 +86,9 @@ namespace Dialogue
             node.name = node.name.Replace("(Clone)", "");
             node.ViewPosition = ViewPosition;
             node._isStarted = false;
+#if UNITY_EDITOR
             node.Guid = GUID.Generate().ToString();
+#endif
             return node;
         }
 
@@ -93,10 +99,12 @@ namespace Dialogue
             OnNameChanged?.Invoke(name);
         }
 
+#if UNITY_EDITOR
         [Button("¸ü¸ÄGUID")]
         public void ChangeGuid()
         {
             Guid = GUID.Generate().ToString();
         }
+#endif
     }
 }

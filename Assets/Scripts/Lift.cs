@@ -47,12 +47,14 @@ public class Lift : MonoBehaviour
         mind.GetComponent<BoxCollider2D>().isTrigger = true;
         mind.GetComponent<Rigidbody2D>().isKinematic = true;
         var emo = GameObject.Find("EMO").transform;
-        GameManager.Instance.EventCenter.SendEvent("DIALOG_ENTER", new EventCenter.EventArgs());
+        //GameManager.Instance.EventCenter.SendEvent("DIALOG_ENTER", new EventCenter.EventArgs());
+        mind.GetComponent<NPC.BehaviorTreeRunner>().enabled = false;
         var tween = transform.DOMoveY(y, Velocity).SetSpeedBased();
         emo.DOMoveY(y, Velocity).SetSpeedBased();
         mind.DOMoveY(y, Velocity).SetSpeedBased().onComplete = () =>
         {
-            GameManager.Instance.EventCenter.SendEvent("DIALOG_EXIT", new EventCenter.EventArgs());
+            //GameManager.Instance.EventCenter.SendEvent("DIALOG_EXIT", new EventCenter.EventArgs());
+            mind.GetComponent<NPC.BehaviorTreeRunner>().enabled = true;
             mind.GetComponent<BoxCollider2D>().isTrigger = false;
             mind.GetComponent<Rigidbody2D>().isKinematic = false;
             Vector2 position = mind.position;

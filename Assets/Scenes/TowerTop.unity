@@ -123,6 +123,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &64235619 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7546447364214669691, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+  m_PrefabInstance: {fileID: 1564379484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e014eb6193fd074a97aaf06d147647a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &64235620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7546447364214669689, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+  m_PrefabInstance: {fileID: 1564379484}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ae19a2e7c4b3c43a977c30dbcc8efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &64235621 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7546447364214669690, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+  m_PrefabInstance: {fileID: 1564379484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &64235622 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 7546447364214669701, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+  m_PrefabInstance: {fileID: 1564379484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &222727212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2477,20 +2509,72 @@ PrefabInstance:
       objectReference: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
     - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.size
-      value: 1
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: serializationData.PrefabModifications.Array.data[0]
       value: '"path":"BehaviorTree","value":$eref:0'
       objectReference: {fileID: 0}
     - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[1]
+      value: '"path":"Variables.{\"Animator\"}","value":{"$id":0,"$type":"EventCenter+EventArgs,
+        Assembly-CSharp","Float":0,"Int":0,"Boolean":false,"String":null,"Object":$eref:1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[2]
+      value: '"path":"Variables.{\"Animator\"}.Object","value":$eref:1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[3]
+      value: '"path":"Variables.{\"Model\"}","value":{"$id":0,"$type":"EventCenter+EventArgs,
+        Assembly-CSharp","Float":0,"Int":0,"Boolean":false,"String":null,"Object":$eref:2}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[4]
+      value: '"path":"Variables.{\"Model\"}.Object","value":$eref:2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[5]
+      value: '"path":"Variables.{\"Rigidbody\"}","value":{"$id":0,"$type":"EventCenter+EventArgs,
+        Assembly-CSharp","Float":0,"Int":0,"Boolean":false,"String":null,"Object":$eref:3}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[6]
+      value: '"path":"Variables.{\"Rigidbody\"}.Object","value":$eref:3'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[7]
+      value: '"path":"Variables.{\"Shadow\"}","value":{"$id":0,"$type":"EventCenter+EventArgs,
+        Assembly-CSharp","Float":0,"Int":0,"Boolean":false,"String":null,"Object":$eref:4}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.data[8]
+      value: '"path":"Variables.{\"Shadow\"}.Object","value":$eref:4'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: ae765c6d7a53d3a4fb676f5bd070e701, type: 2}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 64235621}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 64235620}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[3]
+      value: 
+      objectReference: {fileID: 64235622}
+    - target: {fileID: 7546447364214669700, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.data[4]
+      value: 
+      objectReference: {fileID: 64235619}
     - target: {fileID: 7546447364214669701, guid: 248b5bcc6a43ec547884d3f3e97a0858, type: 3}
       propertyPath: m_BodyType
       value: 1
@@ -2577,7 +2661,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624755935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1, y: -0.36, z: -12.519145}
+  m_LocalPosition: {x: -22.38, y: -0.81, z: -12.519145}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

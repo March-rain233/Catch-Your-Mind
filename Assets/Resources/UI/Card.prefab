@@ -89,6 +89,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b4809e6c1883d04798070ec7372361e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Card: {fileID: 0}
 --- !u!114 &2649719734900584671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,16 +102,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68f3db1f302735747b438372f21f28f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serializationData:
-    SerializedFormat: 2
-    SerializedBytes: 
-    ReferencedUnityObjects: []
-    SerializedBytesString: 
-    Prefab: {fileID: 0}
-    PrefabModificationsReferencedUnityObjects: []
-    PrefabModifications: []
-    SerializationNodes:
-    - Name: AlphaHitTestMinimumThreshold
-      Entry: 4
-      Data: 0.1
   Image: {fileID: 7399386597449270278}
+  AlphaHitTestMinimumThreshold: 0.1

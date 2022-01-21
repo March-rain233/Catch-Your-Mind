@@ -9,7 +9,9 @@ namespace NPC
     {
         public override bool IsLeaf => true;
 
+#if UNITY_EDITOR
         public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Single;
+#endif
 
         public override INode[] GetChildren()
         {

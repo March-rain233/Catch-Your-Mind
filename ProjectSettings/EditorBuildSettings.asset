@@ -26,4 +26,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CatchScene.unity
     guid: 69eecabe89fb30949873661d9e15a37b
+  - enabled: 1
+    path: Assets/Scenes/Failure.unity
+    guid: cc661ba6b83cd1643888f3d582770bff
+  - enabled: 1
+    path: Assets/Scenes/Success.unity
+    guid: 2e18ead0936d1434d8eeeda1b1378a0f
   m_configObjects: {}

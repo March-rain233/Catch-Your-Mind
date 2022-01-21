@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System;
 
 namespace NPC
@@ -60,15 +62,17 @@ namespace NPC
                 newName = newName + $"({count})";
             }
             node.name = newName;
-
+#if UNITY_EDITOR
             node.Guid = GUID.Generate().ToString();
+#endif
             Nodes.Add(node);
-
+#if UNITY_EDITOR
             if (AssetDatabase.Contains(this))
             {
                 AssetDatabase.AddObjectToAsset(node, this);
                 AssetDatabase.SaveAssets();
             }
+#endif
             return node;
         }
 
@@ -90,11 +94,13 @@ namespace NPC
             }
             DisconnectNode(parent, node);
 
+#if UNITY_EDITOR
             if (AssetDatabase.Contains(this))
             {
                 AssetDatabase.RemoveObjectFromAsset(node);
                 AssetDatabase.SaveAssets();
             }
+#endif
         }
 
         /// <summary>

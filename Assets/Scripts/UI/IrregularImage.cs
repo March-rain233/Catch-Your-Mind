@@ -5,21 +5,14 @@ using UnityEngine.UI;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
 
-public class IrregularImage : SerializedMonoBehaviour
+public class IrregularImage : MonoBehaviour
 {
     public Image Image;
 
-    [OdinSerialize]
-    public float AlphaHitTestMinimumThreshold
+    public float AlphaHitTestMinimumThreshold;
+
+    public void Awake()
     {
-        get
-        {
-            if(Image) return Image.alphaHitTestMinimumThreshold;
-            return 0;
-        }
-        set
-        {
-            if (Image) Image.alphaHitTestMinimumThreshold = value;
-        }
+        Image.alphaHitTestMinimumThreshold = AlphaHitTestMinimumThreshold;
     }
 }

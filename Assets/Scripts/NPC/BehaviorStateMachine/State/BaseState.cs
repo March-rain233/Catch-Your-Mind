@@ -2,7 +2,9 @@ using Item;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.GraphView;
+#endif
 using UnityEngine;
 
 namespace NPC
@@ -33,10 +35,12 @@ namespace NPC
         public bool IsRoot => false;
 
         public bool IsLeaf => false;
+#if UNITY_EDITOR
 
         public Port.Capacity Output => Port.Capacity.Multi;
 
         public Port.Capacity Input => Port.Capacity.Multi;
+#endif
 
         /// <summary>
         /// ¹ý¶É

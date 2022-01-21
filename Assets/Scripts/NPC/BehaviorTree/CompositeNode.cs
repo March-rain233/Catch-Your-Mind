@@ -19,7 +19,9 @@ namespace NPC
 
         public List<Node> Childrens = new List<Node>();
 
+#if UNITY_EDITOR
         public override UnityEditor.Experimental.GraphView.Port.Capacity Output => UnityEditor.Experimental.GraphView.Port.Capacity.Multi;
+#endif
 
         protected override void OnAbort(BehaviorTreeRunner runner)
         {

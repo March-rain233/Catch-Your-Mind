@@ -15,10 +15,11 @@ public class MovieGuider : MonoBehaviour,IPointerClickHandler
     public Transform Point;
 
     int _current = 0;
+    public bool Select = true;
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (!VideoPlayer.isPlaying)
+        if (!VideoPlayer.isPlaying && Select)
         {
             if (_current == VideoClips.Count - 1)
             {
@@ -34,6 +35,7 @@ public class MovieGuider : MonoBehaviour,IPointerClickHandler
     public void StartPlay()
     {
         _current = 0;
+        Select = true;
         VideoPlayer.clip = VideoClips[_current];
         VideoPlayer.Play();
         VideoPlayer.loopPointReached += VideoPlayer_loopPointReached;
@@ -42,9 +44,18 @@ public class MovieGuider : MonoBehaviour,IPointerClickHandler
 
     private void VideoPlayer_loopPointReached(VideoPlayer source)
     {
-        if(_current == 5)
+        if(_current == 4)
         {
             Target.transform.parent = transform;
+            Select = false;
+            GameObject.Find("MakerPanel").GetComponent<MakerPanel>().OnSelect += MovieGuider_OnSelect;
         }
+    }
+
+    private void MovieGuider_OnSelect()
+    {
+        Select = true;
+        VideoPlayer.clip = VideoClips[++_current];
+        VideoPlayer.Play();
     }
 }

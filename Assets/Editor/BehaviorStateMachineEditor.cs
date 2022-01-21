@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -51,3 +52,4 @@ public class BehaviorStateMachineEditor : EditorWindow
         _inspectorView.UpdateSelection(element);
     }
 }
+#endif
